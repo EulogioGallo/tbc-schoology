@@ -29,7 +29,7 @@ class SchoologyStorage implements SchoologyApi_OauthStorage {
     // local db
     //$this->db = new PDO('pgsql:host=localhost;dbname=schoology', 'eulogio', 'TBCfosho2015!');
     // heroku db
-    $this->db = new PDO('pgsql:host=ec2-54-204-20-209.compute-1.amazonaws.com;dbname=dfk2v57uhfg0cl', 'igguiczuthbuid', 'HD7JpXLVNx-ktJWCWJHxb-TxBH');
+    $this->db = new PDO('pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil', 'dsskzsufyjspyz', '5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c');
     $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
  
     $query = $this->db->query("SELECT * FROM oauth_tokens");
@@ -206,20 +206,6 @@ function updateAssessments($student_id, $assignment_id) {
 $schoology_secret = 'da12e9775938fc21a144e8d39292f10a';
 $schoology_key = '1dd53b528230ad488c8545fa1c263dba05568d1e8';
 $schoology_uid = '22135108';
-
-
-// Laura F's Schoology Stuffs
-/*
-$schoology_secret = 'c281c1ca347d165068550bc5b4249aa5';
-$schoology_key = 'bbf4a8c6ada35fe5ca9832d8c17e4a290559c0a41';
-$schoology_uid = '789451';
-*/
- 
-/*
-$oauth = new OAuth(NULL, FALSE);
-$oauth->initialize($schoology_key, $schoology_secret);
-*/
- 
 $schoology = new SchoologyApi($schoology_key, $schoology_secret, '', '', '', TRUE);
 $storage = new SchoologyStorage();
  
