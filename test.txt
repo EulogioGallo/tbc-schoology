@@ -1,0 +1,1509 @@
+2016-02-15T22:06:16.492405+00:00 app[web.1]:         (
+2016-02-15T22:06:16.492378+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T22:06:16.492429+00:00 app[web.1]:             [realm] => section
+2016-02-15T22:06:16.498754+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=1563c5f0-6d77-4052-9ee7-4903a19403c0 fwd="50.56.38.11" dyno=web.1 connect=1ms service=45ms status=302 bytes=296
+2016-02-15T22:06:16.492454+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T22:06:16.492475+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T22:06:16.492494+00:00 app[web.1]:             [uid] => 21754026
+2016-02-15T22:06:16.492514+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T22:06:16.492538+00:00 app[web.1]:             [assignment_nid] => 456330447
+2016-02-15T22:06:16.492562+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T22:06:16.492576+00:00 app[web.1]:                 (
+2016-02-15T22:06:16.492600+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T22:06:16.492622+00:00 app[web.1]:                     [uid] => 21754026
+2016-02-15T22:06:16.492647+00:00 app[web.1]:                     [created] => 1455573926
+2016-02-15T22:06:16.492669+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T22:06:16.492690+00:00 app[web.1]:                     [late] => 1
+2016-02-15T22:06:16.492710+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T22:06:16.492738+00:00 app[web.1]:                     [assignment_nid] => 456330447
+2016-02-15T22:06:16.492769+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T22:06:16.492786+00:00 app[web.1]:                         (
+2016-02-15T22:06:16.492816+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T22:06:16.492836+00:00 app[web.1]:                                 (
+2016-02-15T22:06:16.492870+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T22:06:16.492933+00:00 app[web.1]:                                             [196798485] => stdClass Object
+2016-02-15T22:06:16.492894+00:00 app[web.1]:                                         (
+2016-02-15T22:06:16.493070+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T22:06:16.493035+00:00 app[web.1]:                                                     [fid] => 1117609163
+2016-02-15T22:06:16.493154+00:00 app[web.1]:                                                     [filename] => energy_audit.pdf
+2016-02-15T22:06:16.492961+00:00 app[web.1]:                                                 (
+2016-02-15T22:06:16.492997+00:00 app[web.1]:                                                     [id] => 196798485
+2016-02-15T22:06:16.493192+00:00 app[web.1]:                                                     [filesize] => 1448539
+2016-02-15T22:06:16.493243+00:00 app[web.1]:                                                     [md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T22:06:16.493111+00:00 app[web.1]:                                                     [title] => energy_audit.pdf
+2016-02-15T22:06:16.493281+00:00 app[web.1]:                                                     [timestamp] => 1455573924
+2016-02-15T22:06:16.493323+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-15T22:06:16.493485+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T22:06:16.493587+00:00 app[web.1]:                                                     [converted_filename] => 1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T22:06:16.493409+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/energy_audit_56c24ba370fd6.pdf
+2016-02-15T22:06:16.493523+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T22:06:16.493445+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-15T22:06:16.493717+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T22:06:16.493752+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T22:06:16.493804+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T22:06:16.493844+00:00 app[web.1]:                                                     [converted_filesize] => 1448539
+2016-02-15T22:06:16.493899+00:00 app[web.1]:                                                     [converted_md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T22:06:16.493927+00:00 app[web.1]:                                                 )
+2016-02-15T22:06:16.493928+00:00 app[web.1]: 
+2016-02-15T22:06:16.493954+00:00 app[web.1]:                                         )
+2016-02-15T22:06:16.493954+00:00 app[web.1]: 
+2016-02-15T22:06:16.493976+00:00 app[web.1]:                                 )
+2016-02-15T22:06:16.493977+00:00 app[web.1]: 
+2016-02-15T22:06:16.493996+00:00 app[web.1]: 
+2016-02-15T22:06:16.493995+00:00 app[web.1]:                         )
+2016-02-15T22:06:16.494023+00:00 app[web.1]:         )
+2016-02-15T22:06:16.494011+00:00 app[web.1]:                 )
+2016-02-15T22:06:16.494025+00:00 app[web.1]: )
+2016-02-15T22:06:16.494025+00:00 app[web.1]: 
+2016-02-15T22:06:16.494061+00:00 app[web.1]: [15-Feb-2016 22:06:16 UTC] UID: 21754026
+2016-02-15T22:06:16.494100+00:00 app[web.1]: [15-Feb-2016 22:06:16 UTC] Section ID: 124980867
+2016-02-15T22:06:16.494131+00:00 app[web.1]: [15-Feb-2016 22:06:16 UTC] Assignment ID: 456330447
+2016-02-15T22:06:16.494164+00:00 app[web.1]: [15-Feb-2016 22:06:16 UTC] Requirement Type found - courses
+2016-02-15T22:06:16.494011+00:00 app[web.1]: 
+2016-02-15T22:06:16.494165+00:00 app[web.1]: 
+2016-02-15T22:06:16.494023+00:00 app[web.1]: 
+2016-02-15T22:06:16.494181+00:00 app[web.1]: [15-Feb-2016 22:06:16 UTC] Array
+2016-02-15T22:06:16.494181+00:00 app[web.1]: (
+2016-02-15T22:06:16.494208+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T22:06:16.494210+00:00 app[web.1]: )
+2016-02-15T22:06:16.494223+00:00 app[web.1]: 
+2016-02-15T22:06:16.494222+00:00 app[web.1]: 
+2016-02-15T22:06:16.494305+00:00 app[web.1]: 10.180.57.199 - - [15/Feb/2016:22:06:16 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-15T22:32:17.171826+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=d669884b-aad7-404c-b9cc-c278c49891e1 fwd="50.56.38.11" dyno=web.1 connect=1ms service=53ms status=302 bytes=296
+2016-02-15T22:32:17.152738+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-15T22:32:17.172366+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] got token!
+2016-02-15T22:32:17.172370+00:00 app[web.1]: 
+2016-02-15T22:32:17.172377+00:00 app[web.1]: (
+2016-02-15T22:32:17.172376+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] Array
+2016-02-15T22:32:17.172378+00:00 app[web.1]:     [uid] => 22135108
+2016-02-15T22:32:17.172418+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-15T22:32:17.172450+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-15T22:32:17.172485+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-15T22:32:17.172487+00:00 app[web.1]: )
+2016-02-15T22:32:17.172488+00:00 app[web.1]: 
+2016-02-15T22:32:17.172488+00:00 app[web.1]: 
+2016-02-15T22:32:17.173156+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] {"uid":21754026,"timestamp":1455573926,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754026","revision_id":"1","assignment_nid":"456330447","object":{"revision_id":1,"uid":21754026,"created":1455573926,"num_items":1,"late":1,"draft":0,"assignment_nid":"456330447","attachments":{"files":{"file":{"196798485":{"id":196798485,"fid":1117609163,"type":"file","title":"energy_audit.pdf","filename":"energy_audit.pdf","filesize":1448539,"md5_checksum":"a8b61ceca214170426f8808a518a790b","timestamp":1455573924,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/energy_audit_56c24ba370fd6.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":1448539,"converted_md5_checksum":"a8b61ceca214170426f8808a518a790b"}}}}}}}
+2016-02-15T22:32:17.173183+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] stdClass Object
+2016-02-15T22:32:17.173209+00:00 app[web.1]: (
+2016-02-15T22:32:17.173236+00:00 app[web.1]:     [uid] => 21754026
+2016-02-15T22:32:17.173268+00:00 app[web.1]:     [timestamp] => 1455573926
+2016-02-15T22:32:17.173316+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T22:32:17.173345+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-15T22:32:17.173373+00:00 app[web.1]:             [realm] => section
+2016-02-15T22:32:17.173348+00:00 app[web.1]:         (
+2016-02-15T22:32:17.173399+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T22:32:17.173423+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T22:32:17.173444+00:00 app[web.1]:             [uid] => 21754026
+2016-02-15T22:32:17.173465+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T22:32:17.173499+00:00 app[web.1]:             [assignment_nid] => 456330447
+2016-02-15T22:32:17.173537+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T22:32:17.173552+00:00 app[web.1]:                 (
+2016-02-15T22:32:17.173577+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T22:32:17.173602+00:00 app[web.1]:                     [uid] => 21754026
+2016-02-15T22:32:17.173629+00:00 app[web.1]:                     [created] => 1455573926
+2016-02-15T22:32:17.173731+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T22:32:17.173673+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T22:32:17.173707+00:00 app[web.1]:                     [late] => 1
+2016-02-15T22:32:17.173795+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T22:32:17.173763+00:00 app[web.1]:                     [assignment_nid] => 456330447
+2016-02-15T22:32:17.173817+00:00 app[web.1]:                         (
+2016-02-15T22:32:17.173888+00:00 app[web.1]:                                 (
+2016-02-15T22:32:17.173861+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T22:32:17.173923+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T22:32:17.173991+00:00 app[web.1]:                                             [196798485] => stdClass Object
+2016-02-15T22:32:17.173948+00:00 app[web.1]:                                         (
+2016-02-15T22:32:17.174030+00:00 app[web.1]:                                                 (
+2016-02-15T22:32:17.174076+00:00 app[web.1]:                                                     [id] => 196798485
+2016-02-15T22:32:17.174118+00:00 app[web.1]:                                                     [fid] => 1117609163
+2016-02-15T22:32:17.174157+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T22:32:17.174217+00:00 app[web.1]:                                                     [title] => energy_audit.pdf
+2016-02-15T22:32:17.174265+00:00 app[web.1]:                                                     [filename] => energy_audit.pdf
+2016-02-15T22:32:17.174307+00:00 app[web.1]:                                                     [filesize] => 1448539
+2016-02-15T22:32:17.174375+00:00 app[web.1]:                                                     [md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T22:32:17.174474+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-15T22:32:17.174424+00:00 app[web.1]:                                                     [timestamp] => 1455573924
+2016-02-15T22:32:17.174590+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/energy_audit_56c24ba370fd6.pdf
+2016-02-15T22:32:17.174628+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-15T22:32:17.174670+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T22:32:17.174728+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T22:32:17.174798+00:00 app[web.1]:                                                     [converted_filename] => 1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T22:32:17.174924+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T22:32:17.174970+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T22:32:17.175021+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T22:32:17.175082+00:00 app[web.1]:                                                     [converted_filesize] => 1448539
+2016-02-15T22:32:17.175145+00:00 app[web.1]:                                                     [converted_md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T22:32:17.175175+00:00 app[web.1]:                                                 )
+2016-02-15T22:32:17.175175+00:00 app[web.1]: 
+2016-02-15T22:32:17.175210+00:00 app[web.1]: 
+2016-02-15T22:32:17.175257+00:00 app[web.1]: 
+2016-02-15T22:32:17.175210+00:00 app[web.1]:                                         )
+2016-02-15T22:32:17.175261+00:00 app[web.1]: 
+2016-02-15T22:32:17.175256+00:00 app[web.1]:                                 )
+2016-02-15T22:32:17.175282+00:00 app[web.1]:                 )
+2016-02-15T22:32:17.175260+00:00 app[web.1]:                         )
+2016-02-15T22:32:17.175283+00:00 app[web.1]: 
+2016-02-15T22:32:17.175286+00:00 app[web.1]:         )
+2016-02-15T22:32:17.175287+00:00 app[web.1]: )
+2016-02-15T22:32:17.175287+00:00 app[web.1]: 
+2016-02-15T22:32:17.175325+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] UID: 21754026
+2016-02-15T22:32:17.175289+00:00 app[web.1]: 
+2016-02-15T22:32:17.175483+00:00 app[web.1]: 
+2016-02-15T22:32:17.175459+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] Array
+2016-02-15T22:32:17.175399+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] Assignment ID: 456330447
+2016-02-15T22:32:17.175481+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T22:32:17.175460+00:00 app[web.1]: (
+2016-02-15T22:32:17.175543+00:00 app[web.1]: 10.61.199.233 - - [15/Feb/2016:22:32:17 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-15T22:32:17.175354+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] Section ID: 124980867
+2016-02-15T22:32:17.175441+00:00 app[web.1]: 
+2016-02-15T22:32:17.175481+00:00 app[web.1]: )
+2016-02-15T22:32:17.175440+00:00 app[web.1]: [15-Feb-2016 22:32:17 UTC] Requirement Type found - courses
+2016-02-15T22:32:17.175482+00:00 app[web.1]: 
+2016-02-15T22:47:33.247279+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=951b1e17-c130-4d31-b913-8e91918f13bd fwd="50.56.38.11" dyno=web.1 connect=1ms service=60ms status=302 bytes=296
+2016-02-15T22:47:33.207902+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-15T22:47:33.236043+00:00 app[web.1]: (
+2016-02-15T22:47:33.236155+00:00 app[web.1]: 
+2016-02-15T22:47:33.236135+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-15T22:47:33.236065+00:00 app[web.1]:     [uid] => 22135108
+2016-02-15T22:47:33.236156+00:00 app[web.1]: 
+2016-02-15T22:47:33.236820+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] {"uid":21754026,"timestamp":1455573926,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754026","revision_id":"1","assignment_nid":"456330447","object":{"revision_id":1,"uid":21754026,"created":1455573926,"num_items":1,"late":1,"draft":0,"assignment_nid":"456330447","attachments":{"files":{"file":{"196798485":{"id":196798485,"fid":1117609163,"type":"file","title":"energy_audit.pdf","filename":"energy_audit.pdf","filesize":1448539,"md5_checksum":"a8b61ceca214170426f8808a518a790b","timestamp":1455573924,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/energy_audit_56c24ba370fd6.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":1448539,"converted_md5_checksum":"a8b61ceca214170426f8808a518a790b"}}}}}}}
+2016-02-15T22:47:33.236035+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] got token!
+2016-02-15T22:47:33.236038+00:00 app[web.1]: 
+2016-02-15T22:47:33.236154+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-15T22:47:33.236042+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] Array
+2016-02-15T22:47:33.236854+00:00 app[web.1]:     [uid] => 21754026
+2016-02-15T22:47:33.236102+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-15T22:47:33.236837+00:00 app[web.1]: (
+2016-02-15T22:47:33.236836+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] stdClass Object
+2016-02-15T22:47:33.236873+00:00 app[web.1]:     [timestamp] => 1455573926
+2016-02-15T22:47:33.236154+00:00 app[web.1]: )
+2016-02-15T22:47:33.236919+00:00 app[web.1]:         (
+2016-02-15T22:47:33.236945+00:00 app[web.1]:             [realm] => section
+2016-02-15T22:47:33.236896+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T22:47:33.237005+00:00 app[web.1]:             [uid] => 21754026
+2016-02-15T22:47:33.236918+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-15T22:47:33.236985+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T22:47:33.237023+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T22:47:33.237071+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T22:47:33.236965+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T22:47:33.237108+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T22:47:33.237048+00:00 app[web.1]:             [assignment_nid] => 456330447
+2016-02-15T22:47:33.237133+00:00 app[web.1]:                     [uid] => 21754026
+2016-02-15T22:47:33.237085+00:00 app[web.1]:                 (
+2016-02-15T22:47:33.237200+00:00 app[web.1]:                     [late] => 1
+2016-02-15T22:47:33.237157+00:00 app[web.1]:                     [created] => 1455573926
+2016-02-15T22:47:33.237404+00:00 app[web.1]:                                         (
+2016-02-15T22:47:33.237621+00:00 app[web.1]:                                                     [title] => energy_audit.pdf
+2016-02-15T22:47:33.237767+00:00 app[web.1]:                                                     [md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T22:47:33.237179+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T22:47:33.237220+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T22:47:33.237682+00:00 app[web.1]:                                                     [filename] => energy_audit.pdf
+2016-02-15T22:47:33.237253+00:00 app[web.1]:                     [assignment_nid] => 456330447
+2016-02-15T22:47:33.237443+00:00 app[web.1]:                                             [196798485] => stdClass Object
+2016-02-15T22:47:33.237717+00:00 app[web.1]:                                                     [filesize] => 1448539
+2016-02-15T22:47:33.237347+00:00 app[web.1]:                                 (
+2016-02-15T22:47:33.237564+00:00 app[web.1]:                                                     [fid] => 1117609163
+2016-02-15T22:47:33.237582+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T22:47:33.237850+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-15T22:47:33.238107+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T22:47:33.237935+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/energy_audit_56c24ba370fd6.pdf
+2016-02-15T22:47:33.237278+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T22:47:33.237295+00:00 app[web.1]:                         (
+2016-02-15T22:47:33.237811+00:00 app[web.1]:                                                     [timestamp] => 1455573924
+2016-02-15T22:47:33.238428+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T22:47:33.237326+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T22:47:33.237379+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T22:47:33.238549+00:00 app[web.1]:                                                     [converted_md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T22:47:33.237984+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-15T22:47:33.238306+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T22:47:33.238365+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T22:47:33.238051+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T22:47:33.238190+00:00 app[web.1]:                                                     [converted_filename] => 1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T22:47:33.237485+00:00 app[web.1]:                                                 (
+2016-02-15T22:47:33.237504+00:00 app[web.1]:                                                     [id] => 196798485
+2016-02-15T22:47:33.238481+00:00 app[web.1]:                                                     [converted_filesize] => 1448539
+2016-02-15T22:47:33.238628+00:00 app[web.1]: 
+2016-02-15T22:47:33.238661+00:00 app[web.1]:                                 )
+2016-02-15T22:47:33.238626+00:00 app[web.1]:                                         )
+2016-02-15T22:47:33.238721+00:00 app[web.1]: 
+2016-02-15T22:47:33.238589+00:00 app[web.1]: 
+2016-02-15T22:47:33.238588+00:00 app[web.1]:                                                 )
+2016-02-15T22:47:33.238662+00:00 app[web.1]: 
+2016-02-15T22:47:33.238694+00:00 app[web.1]:                         )
+2016-02-15T22:47:33.238720+00:00 app[web.1]:                 )
+2016-02-15T22:47:33.238695+00:00 app[web.1]: 
+2016-02-15T22:47:33.238734+00:00 app[web.1]:         )
+2016-02-15T22:47:33.238922+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] Requirement Type found - courses
+2016-02-15T22:47:33.238923+00:00 app[web.1]: 
+2016-02-15T22:47:33.238737+00:00 app[web.1]: )
+2016-02-15T22:47:33.238826+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] Section ID: 124980867
+2016-02-15T22:47:33.238734+00:00 app[web.1]: 
+2016-02-15T22:47:33.238786+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] UID: 21754026
+2016-02-15T22:47:33.238988+00:00 app[web.1]: )
+2016-02-15T22:47:33.238987+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T22:47:33.238878+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] Assignment ID: 456330447
+2016-02-15T22:47:33.238737+00:00 app[web.1]: 
+2016-02-15T22:47:33.238989+00:00 app[web.1]: 
+2016-02-15T22:47:33.238956+00:00 app[web.1]: [15-Feb-2016 22:47:33 UTC] Array
+2016-02-15T22:47:33.239059+00:00 app[web.1]: 10.31.102.73 - - [15/Feb/2016:22:47:33 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-15T22:47:33.238957+00:00 app[web.1]: (
+2016-02-15T22:47:33.238991+00:00 app[web.1]: 
+2016-02-15T23:01:07.320965+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-15T23:01:07.342772+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=6c747738-c7ac-407a-acb0-7a7997412063 fwd="50.56.38.11" dyno=web.1 connect=1ms service=48ms status=302 bytes=296
+2016-02-15T23:01:07.343159+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] got token!
+2016-02-15T23:01:07.343162+00:00 app[web.1]: 
+2016-02-15T23:01:07.343165+00:00 app[web.1]: (
+2016-02-15T23:01:07.343188+00:00 app[web.1]:     [uid] => 22135108
+2016-02-15T23:01:07.343165+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] Array
+2016-02-15T23:01:07.343277+00:00 app[web.1]: )
+2016-02-15T23:01:07.344135+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] {"uid":21754030,"timestamp":1455577242,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754030","revision_id":"1","assignment_nid":"456328689","object":{"revision_id":1,"uid":21754030,"created":1455577242,"num_items":1,"late":0,"draft":0,"assignment_nid":"456328689","attachments":{"files":{"file":{"196808673":{"id":196808673,"fid":1117684419,"type":"file","title":"Receiving_Feedback_February_assignment.docx","filename":"Receiving_Feedback_February_assignment.docx","filesize":14562,"md5_checksum":"b3ecb1341bf4a7b112a30f5be1ede191","timestamp":1455577238,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/Receiving_Feedback_February_assignment_56c258965768b.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":17153,"converted_md5_checksum":"ce96b9676b6ea7f2b4f7a1f08a7c24c3"}}}}}}}
+2016-02-15T23:01:07.344188+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T23:01:07.343224+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-15T23:01:07.344140+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] stdClass Object
+2016-02-15T23:01:07.344144+00:00 app[web.1]:     [uid] => 21754030
+2016-02-15T23:01:07.343278+00:00 app[web.1]: 
+2016-02-15T23:01:07.343276+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-15T23:01:07.344281+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-15T23:01:07.344298+00:00 app[web.1]:             [realm] => section
+2016-02-15T23:01:07.344173+00:00 app[web.1]:     [timestamp] => 1455577242
+2016-02-15T23:01:07.344379+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T23:01:07.344340+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T23:01:07.344426+00:00 app[web.1]:                 (
+2016-02-15T23:01:07.344457+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T23:01:07.344424+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T23:01:07.344502+00:00 app[web.1]:                     [created] => 1455577242
+2016-02-15T23:01:07.343257+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-15T23:01:07.344394+00:00 app[web.1]:             [assignment_nid] => 456328689
+2016-02-15T23:01:07.344325+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T23:01:07.344282+00:00 app[web.1]:         (
+2016-02-15T23:01:07.344471+00:00 app[web.1]:                     [uid] => 21754030
+2016-02-15T23:01:07.343277+00:00 app[web.1]: 
+2016-02-15T23:01:07.344591+00:00 app[web.1]:                     [assignment_nid] => 456328689
+2016-02-15T23:01:07.344668+00:00 app[web.1]:                                 (
+2016-02-15T23:01:07.344664+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T23:01:07.344772+00:00 app[web.1]:                                             [196808673] => stdClass Object
+2016-02-15T23:01:07.344141+00:00 app[web.1]: (
+2016-02-15T23:01:07.344619+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T23:01:07.344515+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T23:01:07.344537+00:00 app[web.1]:                     [late] => 0
+2016-02-15T23:01:07.344622+00:00 app[web.1]:                         (
+2016-02-15T23:01:07.344353+00:00 app[web.1]:             [uid] => 21754030
+2016-02-15T23:01:07.345115+00:00 app[web.1]:                                                     [filename] => Receiving_Feedback_February_assignment.docx
+2016-02-15T23:01:07.344728+00:00 app[web.1]:                                         (
+2016-02-15T23:01:07.344560+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T23:01:07.344850+00:00 app[web.1]:                                                     [id] => 196808673
+2016-02-15T23:01:07.345177+00:00 app[web.1]:                                                     [filesize] => 14562
+2016-02-15T23:01:07.344796+00:00 app[web.1]:                                                 (
+2016-02-15T23:01:07.344906+00:00 app[web.1]:                                                     [fid] => 1117684419
+2016-02-15T23:01:07.344956+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T23:01:07.345312+00:00 app[web.1]:                                                     [timestamp] => 1455577238
+2016-02-15T23:01:07.345569+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/Receiving_Feedback_February_assignment_56c258965768b.docx
+2016-02-15T23:01:07.344713+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T23:01:07.345966+00:00 app[web.1]:                                                     [converted_filename] => 1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-15T23:01:07.345415+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2016-02-15T23:01:07.345627+00:00 app[web.1]:                                                     [extension] => docx
+2016-02-15T23:01:07.345036+00:00 app[web.1]:                                                     [title] => Receiving_Feedback_February_assignment.docx
+2016-02-15T23:01:07.345251+00:00 app[web.1]:                                                     [md5_checksum] => b3ecb1341bf4a7b112a30f5be1ede191
+2016-02-15T23:01:07.346205+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T23:01:07.346349+00:00 app[web.1]:                                                     [converted_md5_checksum] => ce96b9676b6ea7f2b4f7a1f08a7c24c3
+2016-02-15T23:01:07.346376+00:00 app[web.1]:                                                 )
+2016-02-15T23:01:07.346293+00:00 app[web.1]:                                                     [converted_filesize] => 17153
+2016-02-15T23:01:07.346170+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-15T23:01:07.345706+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T23:01:07.346461+00:00 app[web.1]: 
+2016-02-15T23:01:07.346707+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] Requirement Type found - courses
+2016-02-15T23:01:07.346426+00:00 app[web.1]: 
+2016-02-15T23:01:07.346404+00:00 app[web.1]: 
+2016-02-15T23:01:07.346403+00:00 app[web.1]:                                         )
+2016-02-15T23:01:07.346252+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T23:01:07.345763+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T23:01:07.346709+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] Array
+2016-02-15T23:01:07.346711+00:00 app[web.1]: 
+2016-02-15T23:01:07.346426+00:00 app[web.1]:                                 )
+2016-02-15T23:01:07.346531+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] Section ID: 124980867
+2016-02-15T23:01:07.346461+00:00 app[web.1]:                 )
+2016-02-15T23:01:07.346489+00:00 app[web.1]: )
+2016-02-15T23:01:07.346446+00:00 app[web.1]: 
+2016-02-15T23:01:07.346445+00:00 app[web.1]:                         )
+2016-02-15T23:01:07.346504+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] UID: 21754030
+2016-02-15T23:01:07.346710+00:00 app[web.1]: )
+2016-02-15T23:01:07.346712+00:00 app[web.1]: 10.186.56.209 - - [15/Feb/2016:23:01:07 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-15T23:01:07.346472+00:00 app[web.1]:         )
+2016-02-15T23:01:07.346377+00:00 app[web.1]: 
+2016-02-15T23:01:07.346710+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T23:01:07.346487+00:00 app[web.1]: 
+2016-02-15T23:01:07.346489+00:00 app[web.1]: 
+2016-02-15T23:01:07.346708+00:00 app[web.1]: 
+2016-02-15T23:01:07.346711+00:00 app[web.1]: 
+2016-02-15T23:01:07.346560+00:00 app[web.1]: [15-Feb-2016 23:01:07 UTC] Assignment ID: 456328689
+2016-02-15T23:01:07.346709+00:00 app[web.1]: (
+2016-02-15T23:01:49.320410+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=a0a8f93f-395c-4329-90e0-6026ecce3da7 fwd="50.56.38.11" dyno=web.1 connect=1ms service=82ms status=302 bytes=296
+2016-02-15T23:01:49.267443+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-15T23:01:49.321505+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] got token!
+2016-02-15T23:01:49.321509+00:00 app[web.1]: 
+2016-02-15T23:01:49.321513+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] Array
+2016-02-15T23:01:49.321513+00:00 app[web.1]: (
+2016-02-15T23:01:49.321551+00:00 app[web.1]:     [uid] => 22135108
+2016-02-15T23:01:49.321592+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-15T23:01:49.321629+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-15T23:01:49.321691+00:00 app[web.1]: )
+2016-02-15T23:01:49.321677+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-15T23:01:49.321692+00:00 app[web.1]: 
+2016-02-15T23:01:49.321692+00:00 app[web.1]: 
+2016-02-15T23:01:49.322351+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] {"uid":21754026,"timestamp":1455573926,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754026","revision_id":"1","assignment_nid":"456330447","object":{"revision_id":1,"uid":21754026,"created":1455573926,"num_items":1,"late":1,"draft":0,"assignment_nid":"456330447","attachments":{"files":{"file":{"196798485":{"id":196798485,"fid":1117609163,"type":"file","title":"energy_audit.pdf","filename":"energy_audit.pdf","filesize":1448539,"md5_checksum":"a8b61ceca214170426f8808a518a790b","timestamp":1455573924,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/energy_audit_56c24ba370fd6.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":1448539,"converted_md5_checksum":"a8b61ceca214170426f8808a518a790b"}}}}}}}
+2016-02-15T23:01:49.322356+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] stdClass Object
+2016-02-15T23:01:49.322357+00:00 app[web.1]: (
+2016-02-15T23:01:49.322375+00:00 app[web.1]:     [uid] => 21754026
+2016-02-15T23:01:49.322393+00:00 app[web.1]:     [timestamp] => 1455573926
+2016-02-15T23:01:49.322416+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T23:01:49.322437+00:00 app[web.1]:         (
+2016-02-15T23:01:49.322436+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-15T23:01:49.322461+00:00 app[web.1]:             [realm] => section
+2016-02-15T23:01:49.322634+00:00 app[web.1]:             [assignment_nid] => 456330447
+2016-02-15T23:01:49.322483+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T23:01:49.322505+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T23:01:49.322670+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T23:01:49.322584+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T23:01:49.322538+00:00 app[web.1]:             [uid] => 21754026
+2016-02-15T23:01:49.322704+00:00 app[web.1]:                 (
+2016-02-15T23:01:49.322751+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T23:01:49.322785+00:00 app[web.1]:                     [uid] => 21754026
+2016-02-15T23:01:49.322825+00:00 app[web.1]:                     [created] => 1455573926
+2016-02-15T23:01:49.32
+2920+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T23:01:49.322859+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T23:01:49.322889+00:00 app[web.1]:                     [late] => 1
+2016-02-15T23:01:49.322961+00:00 app[web.1]:                     [assignment_nid] => 456330447
+2016-02-15T23:01:49.323031+00:00 app[web.1]:                         (
+2016-02-15T23:01:49.323001+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T23:01:49.323071+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T23:01:49.323146+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T23:01:49.323102+00:00 app[web.1]:                                 (
+2016-02-15T23:01:49.323182+00:00 app[web.1]:                                         (
+2016-02-15T23:01:49.323232+00:00 app[web.1]:                                             [196798485] => stdClass Object
+2016-02-15T23:01:49.323270+00:00 app[web.1]:                                                 (
+2016-02-15T23:01:49.323317+00:00 app[web.1]:                                                     [id] => 196798485
+2016-02-15T23:01:49.323366+00:00 app[web.1]:                                                     [fid] => 1117609163
+2016-02-15T23:01:49.323411+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T23:01:49.323463+00:00 app[web.1]:                                                     [title] => energy_audit.pdf
+2016-02-15T23:01:49.323515+00:00 app[web.1]:                                                     [filename] => energy_audit.pdf
+2016-02-15T23:01:49.323564+00:00 app[web.1]:                                                     [filesize] => 1448539
+2016-02-15T23:01:49.323629+00:00 app[web.1]:                                                     [md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T23:01:49.323680+00:00 app[web.1]:                                                     [timestamp] => 1455573924
+2016-02-15T23:01:49.323733+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-15T23:01:49.323830+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/energy_audit_56c24ba370fd6.pdf
+2016-02-15T23:01:49.323877+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-15T23:01:49.324051+00:00 app[web.1]:                                                     [converted_filename] => 1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T23:01:49.323927+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T23:01:49.323976+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T23:01:49.324162+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T23:01:49.324228+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T23:01:49.324284+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T23:01:49.324353+00:00 app[web.1]:                                                     [converted_filesize] => 1448539
+2016-02-15T23:01:49.324458+00:00 app[web.1]:                                                 )
+2016-02-15T23:01:49.324420+00:00 app[web.1]:                                                     [converted_md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T23:01:49.324532+00:00 app[web.1]:                                 )
+2016-02-15T23:01:49.324563+00:00 app[web.1]: 
+2016-02-15T23:01:49.324459+00:00 app[web.1]: 
+2016-02-15T23:01:49.324585+00:00 app[web.1]:         )
+2016-02-15T23:01:49.324498+00:00 app[web.1]: 
+2016-02-15T23:01:49.324497+00:00 app[web.1]:                                         )
+2016-02-15T23:01:49.324533+00:00 app[web.1]: 
+2016-02-15T23:01:49.324582+00:00 app[web.1]:                 )
+2016-02-15T23:01:49.324583+00:00 app[web.1]: 
+2016-02-15T23:01:49.324562+00:00 app[web.1]:                         )
+2016-02-15T23:01:49.324654+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] UID: 21754026
+2016-02-15T23:01:49.324601+00:00 app[web.1]: 
+2016-02-15T23:01:49.324842+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T23:01:49.324600+00:00 app[web.1]: )
+2016-02-15T23:01:49.324812+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] Array
+2016-02-15T23:01:49.324778+00:00 app[web.1]: 
+2016-02-15T23:01:49.324813+00:00 app[web.1]: (
+2016-02-15T23:01:49.324777+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] Requirement Type found - courses
+2016-02-15T23:01:49.324843+00:00 app[web.1]: )
+2016-02-15T23:01:49.324912+00:00 app[web.1]: 10.69.91.132 - - [15/Feb/2016:23:01:49 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-15T23:01:49.324599+00:00 app[web.1]: 
+2016-02-15T23:01:49.324693+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] Section ID: 124980867
+2016-02-15T23:01:49.324734+00:00 app[web.1]: [15-Feb-2016 23:01:49 UTC] Assignment ID: 456330447
+2016-02-15T23:01:49.324844+00:00 app[web.1]: 
+2016-02-15T23:01:49.324846+00:00 app[web.1]: 
+2016-02-15T23:16:25.460111+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=d0a8857f-de7d-472b-811b-252e4f562b0c fwd="50.56.38.11" dyno=web.1 connect=0ms service=56ms status=302 bytes=296
+2016-02-15T23:16:25.431952+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-15T23:16:25.454973+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] got token!
+2016-02-15T23:16:25.454978+00:00 app[web.1]: 
+2016-02-15T23:16:25.454984+00:00 app[web.1]: (
+2016-02-15T23:16:25.454984+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] Array
+2016-02-15T23:16:25.454986+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-15T23:16:25.454985+00:00 app[web.1]:     [uid] => 22135108
+2016-02-15T23:16:25.455019+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-15T23:16:25.455059+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-15T23:16:25.455060+00:00 app[web.1]: )
+2016-02-15T23:16:25.455061+00:00 app[web.1]: 
+2016-02-15T23:16:25.455063+00:00 app[web.1]: 
+2016-02-15T23:16:25.457002+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] {"uid":21754030,"timestamp":1455577242,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754030","revision_id":"1","assignment_nid":"456328689","object":{"revision_id":1,"uid":21754030,"created":1455577242,"num_items":1,"late":0,"draft":0,"assignment_nid":"456328689","attachments":{"files":{"file":{"196808673":{"id":196808673,"fid":1117684419,"type":"file","title":"Receiving_Feedback_February_assignment.docx","filename":"Receiving_Feedback_February_assignment.docx","filesize":14562,"md5_checksum":"b3ecb1341bf4a7b112a30f5be1ede191","timestamp":1455577238,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/Receiving_Feedback_February_assignment_56c258965768b.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":17153,"converted_md5_checksum":"ce96b9676b6ea7f2b4f7a1f08a7c24c3"}}}}}}}
+2016-02-15T23:16:25.457037+00:00 app[web.1]: (
+2016-02-15T23:16:25.457035+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] stdClass Object
+2016-02-15T23:16:25.457069+00:00 app[web.1]:     [uid] => 21754030
+2016-02-15T23:16:25.457105+00:00 app[web.1]:     [timestamp] => 1455577242
+2016-02-15T23:16:25.457187+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T23:16:25.457217+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-15T23:16:25.457233+00:00 app[web.1]:         (
+2016-02-15T23:16:25.457324+00:00 app[web.1]:             [realm] => section
+2016-02-15T23:16:25.457363+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T23:16:25.457396+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T23:16:25.457472+00:00 app[web.1]:             [uid] => 21754030
+2016-02-15T23:16:25.457601+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T23:16:25.457505+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T23:16:25.457552+00:00 app[web.1]:             [assignment_nid] => 456328689
+2016-02-15T23:16:25.457781+00:00 app[web.1]:                     [created] => 1455577242
+2016-02-15T23:16:25.457691+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T23:16:25.457874+00:00 app[web.1]:                     [late] => 0
+2016-02-15T23:16:25.457624+00:00 app[web.1]:                 (
+2016-02-15T23:16:25.457734+00:00 app[web.1]:                     [uid] => 21754030
+2016-02-15T23:16:25.457912+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T23:16:25.457823+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T23:16:25.457967+00:00 app[web.1]:                     [assignment_nid] => 456328689
+2016-02-15T23:16:25.458020+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T23:16:25.458326+00:00 app[web.1]:                                             [196808673] => stdClass Object
+2016-02-15T23:16:25.458108+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T23:16:25.458146+00:00 app[web.1]:                                 (
+2016-02-15T23:16:25.458208+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T23:16:25.458253+00:00 app[web.1]:                                         (
+2016-02-15T23:16:25.458051+00:00 app[web.1]:                         (
+2016-02-15T23:16:25.458383+00:00 app[web.1]:                                                 (
+2016-02-15T23:16:25.458448+00:00 app[web.1]:                                                     [id] => 196808673
+2016-02-15T23:16:25.458518+00:00 app[web.1]:                                                     [fid] => 1117684419
+2016-02-15T23:16:25.458679+00:00 app[web.1]:                                                     [title] => Receiving_Feedback_February_assignment.docx
+2016-02-15T23:16:25.458583+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T23:16:25.458785+00:00 app[web.1]:                                                     [filename] => Receiving_Feedback_February_assignment.docx
+2016-02-15T23:16:25.458850+00:00 app[web.1]:                                                     [filesize] => 14562
+2016-02-15T23:16:25.458942+00:00 app[web.1]:                                                     [md5_checksum] => b3ecb1341bf4a7b112a30f5be1ede191
+2016-02-15T23:16:25.459019+00:00 app[web.1]:                                                     [timestamp] => 1455577238
+2016-02-15T23:16:25.459130+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2016-02-15T23:16:25.459373+00:00 app[web.1]:                                                     [extension] => docx
+2016-02-15T23:16:25.459309+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/Receiving_Feedback_February_assignment_56c258965768b.docx
+2016-02-15T23:16:25.459446+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T23:16:25.459515+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T23:16:25.459710+00:00 app[web.1]:                                                     [converted_filename] => 1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-15T23:16:25.460711+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-15T23:16:25.460769+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T23:16:25.460849+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T23:16:25.460921+00:00 app[web.1]:                                                     [converted_filesize] => 17153
+2016-02-15T23:16:25.461009+00:00 app[web.1]:                                                     [converted_md5_checksum] => ce96b9676b6ea7f2b4f7a1f08a7c24c3
+2016-02-15T23:16:25.461063+00:00 app[web.1]:                                                 )
+2016-02-15T23:16:25.461064+00:00 app[web.1]: 
+2016-02-15T23:16:25.461104+00:00 app[web.1]: 
+2016-02-15T23:16:25.461103+00:00 app[web.1]:                                         )
+2016-02-15T23:16:25.461145+00:00 app[web.1]:                                 )
+2016-02-15T23:16:25.461145+00:00 app[web.1]: 
+2016-02-15T23:16:25.461175+00:00 app[web.1]: 
+2016-02-15T23:16:25.461207+00:00 app[web.1]:                 )
+2016-02-15T23:16:25.461262+00:00 app[web.1]: 
+2016-02-15T23:16:25.461173+00:00 app[web.1]:                         )
+2016-02-15T23:16:25.461503+00:00 app[web.1]:         )
+2016-02-15T23:16:25.461522+00:00 app[web.1]: 
+2016-02-15T23:16:25.461539+00:00 app[web.1]: )
+2016-02-15T23:16:25.461563+00:00 app[web.1]: 
+2016-02-15T23:16:25.461613+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] UID: 21754030
+2016-02-15T23:16:25.461755+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] Assignment ID: 456328689
+2016-02-15T23:16:25.461693+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] Section ID: 124980867
+2016-02-15T23:16:25.461828+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] Requirement Type found - courses
+2016-02-15T23:16:25.461912+00:00 app[web.1]: [15-Feb-2016 23:16:25 UTC] Array
+2016-02-15T23:16:25.461845+00:00 app[web.1]: 
+2016-02-15T23:16:25.461913+00:00 app[web.1]: (
+2016-02-15T23:16:25.461932+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T23:16:25.461933+00:00 app[web.1]: )
+2016-02-15T23:16:25.461934+00:00 app[web.1]: 
+2016-02-15T23:16:25.462132+00:00 app[web.1]: 10.225.171.100 - - [15/Feb/2016:23:16:25 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-15T23:16:25.461949+00:00 app[web.1]: 
+2016-02-15T23:16:50.918466+00:00 app[web.1]: [15-Feb-2016 23:16:50 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-15T23:16:51.030179+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=da11
+78cf-1af8-4123-a0eb-d4df2fe0956a fwd="50.56.38.11" dyno=web.1 connect=4ms service=140ms status=302 bytes=296
+2016-02-15T23:16:51.029661+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] got token!
+2016-02-15T23:16:51.029669+00:00 app[web.1]: 
+2016-02-15T23:16:51.029727+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] Array
+2016-02-15T23:16:51.029730+00:00 app[web.1]: (
+2016-02-15T23:16:51.029761+00:00 app[web.1]:     [uid] => 22135108
+2016-02-15T23:16:51.029817+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-15T23:16:51.029899+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-15T23:16:51.029928+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-15T23:16:51.029929+00:00 app[web.1]: )
+2016-02-15T23:16:51.029931+00:00 app[web.1]: 
+2016-02-15T23:16:51.029943+00:00 app[web.1]: 
+2016-02-15T23:16:51.031050+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] {"uid":21754026,"timestamp":1455573926,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754026","revision_id":"1","assignment_nid":"456330447","object":{"revision_id":1,"uid":21754026,"created":1455573926,"num_items":1,"late":1,"draft":0,"assignment_nid":"456330447","attachments":{"files":{"file":{"196798485":{"id":196798485,"fid":1117609163,"type":"file","title":"energy_audit.pdf","filename":"energy_audit.pdf","filesize":1448539,"md5_checksum":"a8b61ceca214170426f8808a518a790b","timestamp":1455573924,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/energy_audit_56c24ba370fd6.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":1448539,"converted_md5_checksum":"a8b61ceca214170426f8808a518a790b"}}}}}}}
+2016-02-15T23:16:51.031051+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] stdClass Object
+2016-02-15T23:16:51.031052+00:00 app[web.1]: (
+2016-02-15T23:16:51.031053+00:00 app[web.1]:     [uid] => 21754026
+2016-02-15T23:16:51.031053+00:00 app[web.1]:     [timestamp] => 1455573926
+2016-02-15T23:16:51.031054+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T23:16:51.031055+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-15T23:16:51.031055+00:00 app[web.1]:         (
+2016-02-15T23:16:51.031059+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T23:16:51.031105+00:00 app[web.1]:             [uid] => 21754026
+2016-02-15T23:16:51.031104+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T23:16:51.031141+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T23:16:51.031056+00:00 app[web.1]:             [realm] => section
+2016-02-15T23:16:51.031142+00:00 app[web.1]:             [assignment_nid] => 456330447
+2016-02-15T23:16:51.031177+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T23:16:51.031178+00:00 app[web.1]:                 (
+2016-02-15T23:16:51.031223+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T23:16:51.031225+00:00 app[web.1]:                     [uid] => 21754026
+2016-02-15T23:16:51.031237+00:00 app[web.1]:                     [created] => 1455573926
+2016-02-15T23:16:51.031302+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T23:16:51.031303+00:00 app[web.1]:                     [late] => 1
+2016-02-15T23:16:51.031304+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T23:16:51.031355+00:00 app[web.1]:                     [assignment_nid] => 456330447
+2016-02-15T23:16:51.031356+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T23:16:51.031356+00:00 app[web.1]:                         (
+2016-02-15T23:16:51.031402+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T23:16:51.031403+00:00 app[web.1]:                                 (
+2016-02-15T23:16:51.031512+00:00 app[web.1]:                                             [196798485] => stdClass Object
+2016-02-15T23:16:51.031445+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T23:16:51.031479+00:00 app[web.1]:                                         (
+2016-02-15T23:16:51.031548+00:00 app[web.1]:                                                 (
+2016-02-15T23:16:51.031590+00:00 app[web.1]:                                                     [id] => 196798485
+2016-02-15T23:16:51.031593+00:00 app[web.1]:                                                     [fid] => 1117609163
+2016-02-15T23:16:51.031634+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T23:16:51.031728+00:00 app[web.1]:                                                     [filename] => energy_audit.pdf
+2016-02-15T23:16:51.031727+00:00 app[web.1]:                                                     [title] => energy_audit.pdf
+2016-02-15T23:16:51.031797+00:00 app[web.1]:                                                     [filesize] => 1448539
+2016-02-15T23:16:51.031799+00:00 app[web.1]:                                                     [md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T23:16:51.031868+00:00 app[web.1]:                                                     [timestamp] => 1455573924
+2016-02-15T23:16:51.031937+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-15T23:16:51.032368+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/energy_audit_56c24ba370fd6.pdf
+2016-02-15T23:16:51.032369+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-15T23:16:51.032370+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T23:16:51.032371+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T23:16:51.032372+00:00 app[web.1]:                                                     [converted_filename] => 1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T23:16:51.032373+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455573939-energy_audit_56c24ba370fd6_56c24bb5a962a.pdf
+2016-02-15T23:16:51.032374+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T23:16:51.032374+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T23:16:51.032375+00:00 app[web.1]:                                                     [converted_filesize] => 1448539
+2016-02-15T23:16:51.032424+00:00 app[web.1]:                                                     [converted_md5_checksum] => a8b61ceca214170426f8808a518a790b
+2016-02-15T23:16:51.032463+00:00 app[web.1]:                                                 )
+2016-02-15T23:16:51.032464+00:00 app[web.1]: 
+2016-02-15T23:16:51.032547+00:00 app[web.1]:                                         )
+2016-02-15T23:16:51.032553+00:00 app[web.1]: 
+2016-02-15T23:16:51.032554+00:00 app[web.1]:                                 )
+2016-02-15T23:16:51.032554+00:00 app[web.1]: 
+2016-02-15T23:16:51.032557+00:00 app[web.1]:                         )
+2016-02-15T23:16:51.032557+00:00 app[web.1]: 
+2016-02-15T23:16:51.032620+00:00 app[web.1]:                 )
+2016-02-15T23:16:51.032621+00:00 app[web.1]: 
+2016-02-15T23:16:51.032622+00:00 app[web.1]: 
+2016-02-15T23:16:51.032622+00:00 app[web.1]:         )
+2016-02-15T23:16:51.032623+00:00 app[web.1]: 
+2016-02-15T23:16:51.032623+00:00 app[web.1]: )
+2016-02-15T23:16:51.032760+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] Section ID: 124980867
+2016-02-15T23:16:51.032674+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] UID: 21754026
+2016-02-15T23:16:51.032761+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] Assignment ID: 456330447
+2016-02-15T23:16:51.032825+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] Requirement Type found - courses
+2016-02-15T23:16:51.032827+00:00 app[web.1]: 
+2016-02-15T23:16:51.032827+00:00 app[web.1]: [15-Feb-2016 23:16:51 UTC] Array
+2016-02-15T23:16:51.032828+00:00 app[web.1]: (
+2016-02-15T23:16:51.032945+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T23:16:51.032947+00:00 app[web.1]: )
+2016-02-15T23:16:51.032947+00:00 app[web.1]: 
+2016-02-15T23:16:51.032948+00:00 app[web.1]: 
+2016-02-15T23:16:51.032948+00:00 app[web.1]: 10.63.87.95 - - [15/Feb/2016:23:16:50 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-15T23:31:36.865290+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=d4f5cfb2-19b8-4ac1-b9d7-b7ca0fe57424 fwd="50.56.38.11" dyno=web.1 connect=0ms service=88ms status=302 bytes=296
+2016-02-15T23:31:36.779922+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-15T23:31:36.819377+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] stdClass Object
+2016-02-15T23:31:36.819398+00:00 app[web.1]: (
+2016-02-15T23:31:36.819425+00:00 app[web.1]:     [uid] => 21754030
+2016-02-15T23:31:36.819454+00:00 app[web.1]:     [timestamp] => 1455577242
+2016-02-15T23:31:36.819678+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T23:31:36.819715+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-15T23:31:36.819716+00:00 app[web.1]:         (
+2016-02-15T23:31:36.819749+00:00 app[web.1]:             [realm] => section
+2016-02-15T23:31:36.819825+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T23:31:36.820293+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T23:31:36.820242+00:00 app[web.1]:             [uid] => 21754030
+2016-02-15T23:31:36.819860+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T23:31:36.820334+00:00 app[web.1]:             [assignment_nid] => 456328689
+2016-02-15T23:31:36.820398+00:00 app[web.1]:                 (
+2016-02-15T23:31:36.820439+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T23:31:36.820376+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T23:31:36.820481+00:00 app[web.1]:                     [uid] => 21754030
+2016-02-15T23:31:36.820639+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T23:31:36.820597+00:00 app[web.1]:                     [created] => 1455577242
+2016-02-15T23:31:36.820714+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T23:31:36.820677+00:00 app[web.1]:                     [late] => 0
+2016-02-15T23:31:36.820765+00:00 app[web.1]:                     [assignment_nid] => 456328689
+2016-02-15T23:31:36.820817+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T23:31:36.820850+00:00 app[web.1]:                         (
+2016-02-15T23:31:36.820917+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T23:31:36.820941+00:00 app[web.1]:                                 (
+2016-02-15T23:31:36.821053+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T23:31:36.821098+00:00 app[web.1]:                                         (
+2016-02-15T23:31:36.821178+00:00 app[web.1]:                                             [196808673] => stdClass Object
+2016-02-15T23:31:36.821233+00:00 app[web.1]:                                                 (
+2016-02-15T23:31:36.828759+00:00 app[web.1]:                                                     [fid] => 1117684419
+2016-02-15T23:31:36.821286+00:00 app[web.1]:                                                     [id] => 196808673
+2016-02-15T23:31:36.829006+00:00 app[web.1]:                                                     [filename] => Receiving_Feedback_February_assignment.docx
+2016-02-15T23:31:36.829063+00:00 app[web.1]:                                                     [filesize] => 14562
+2016-02-15T23:31:36.829217+00:00 app[web.1]:                                                     [timestamp] => 1455577238
+2016-02-15T23:31:36.829152+00:00 app[web.1]:                                                     [md5_checksum] => b3ecb1341bf4a7b112a30f5be1ede191
+2016-02-15T23:31:36.828819+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T23:31:36.828909+00:00 app[web.1]:                                                     [title] => Receiving_Feedback_February_assignment.docx
+2016-02-15T23:31:36.829649+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T23:31:36.829498+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/Receiving_Feedback_February_assignment_56c258965768b.docx
+2016-02-15T23:31:36.829719+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T23:31:36.829332+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2016-02-15T23:31:36.829560+00:00 app[web.1]:                                                     [extension] => docx
+2016-02-15T23:31:36.829862+00:00 app[web.1]:                                                     [converted_filename] => 1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-15T23:31:36.830249+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T23:31:36.830179+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-15T23:31:36.830328+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T23:31:36.830404+00:00 app[web.1]:                                                     [converted_filesize] => 17153
+2016-02-15T23:31:36.830559+00:00 app[web.1]:                                                     [converted_md5_checksum] => ce96b9676b6ea7f2b4f7a1f08a7c24c3
+2016-02-15T23:31:36.830616+00:00 app[web.1]:                                                 )
+2016-02-15T23:31:36.830620+00:00 app[web.1]: 
+2016-02-15T23:31:36.830662+00:00 app[web.1]:                                         )
+2016-02-15T23:31:36.830664+00:00 app[web.1]: 
+2016-02-15T23:31:36.830704+00:00 app[web.1]: 
+2016-02-15T23:31:36.830702+00:00 app[web.1]:                                 )
+2016-02-15T23:31:36.830739+00:00 app[web.1]:                         )
+2016-02-15T23:31:36.830741+00:00 app[web.1]: 
+2016-02-15T23:31:36.830768+00:00 app[web.1]:                 )
+2016-02-15T23:31:36.830770+00:00 app[web.1]: 
+2016-02-15T23:31:36.830795+00:00 app[web.1]:         )
+2016-02-15T23:31:36.830796+00:00 app[web.1]: 
+2016-02-15T23:31:36.830798+00:00 app[web.1]: )
+2016-02-15T23:31:36.830800+00:00 app[web.1]: 
+2016-02-15T23:31:36.830894+00:00 app[web.1]
+: [15-Feb-2016 23:31:36 UTC] UID: 21754030
+2016-02-15T23:31:36.831058+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] Assignment ID: 456328689
+2016-02-15T23:31:36.831113+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] Requirement Type found - courses
+2016-02-15T23:31:36.830940+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] Section ID: 124980867
+2016-02-15T23:31:36.831225+00:00 app[web.1]: )
+2016-02-15T23:31:36.831114+00:00 app[web.1]: 
+2016-02-15T23:31:36.831179+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T23:31:36.831148+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] Array
+2016-02-15T23:31:36.831149+00:00 app[web.1]: (
+2016-02-15T23:31:36.831226+00:00 app[web.1]: 
+2016-02-15T23:31:36.831228+00:00 app[web.1]: 
+2016-02-15T23:31:36.840784+00:00 app[web.1]: 10.158.137.155 - - [15/Feb/2016:23:31:36 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-15T23:31:36.816284+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] got token!
+2016-02-15T23:31:36.816288+00:00 app[web.1]: 
+2016-02-15T23:31:36.816308+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] Array
+2016-02-15T23:31:36.816559+00:00 app[web.1]:     [uid] => 22135108
+2016-02-15T23:31:36.816308+00:00 app[web.1]: (
+2016-02-15T23:31:36.816915+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-15T23:31:36.816612+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-15T23:31:36.816872+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-15T23:31:36.816917+00:00 app[web.1]: )
+2016-02-15T23:31:36.816970+00:00 app[web.1]: 
+2016-02-15T23:31:36.816967+00:00 app[web.1]: 
+2016-02-15T23:31:36.818822+00:00 app[web.1]: [15-Feb-2016 23:31:36 UTC] {"uid":21754030,"timestamp":1455577242,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754030","revision_id":"1","assignment_nid":"456328689","object":{"revision_id":1,"uid":21754030,"created":1455577242,"num_items":1,"late":0,"draft":0,"assignment_nid":"456328689","attachments":{"files":{"file":{"196808673":{"id":196808673,"fid":1117684419,"type":"file","title":"Receiving_Feedback_February_assignment.docx","filename":"Receiving_Feedback_February_assignment.docx","filesize":14562,"md5_checksum":"b3ecb1341bf4a7b112a30f5be1ede191","timestamp":1455577238,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/Receiving_Feedback_February_assignment_56c258965768b.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":17153,"converted_md5_checksum":"ce96b9676b6ea7f2b4f7a1f08a7c24c3"}}}}}}}
+2016-02-15T23:46:41.253384+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-15T23:46:41.280967+00:00 app[web.1]:                                                     [filename] => Receiving_Feedback_February_assignment.docx
+2016-02-15T23:46:41.277144+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] got token!
+2016-02-15T23:46:41.277279+00:00 app[web.1]: 
+2016-02-15T23:46:41.277351+00:00 app[web.1]: (
+2016-02-15T23:46:41.277339+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] Array
+2016-02-15T23:46:41.277543+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-15T23:46:41.277378+00:00 app[web.1]:     [uid] => 22135108
+2016-02-15T23:46:41.277449+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-15T23:46:41.277583+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-15T23:46:41.277606+00:00 app[web.1]: 
+2016-02-15T23:46:41.277595+00:00 app[web.1]: )
+2016-02-15T23:46:41.277617+00:00 app[web.1]: 
+2016-02-15T23:46:41.278839+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] stdClass Object
+2016-02-15T23:46:41.278774+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] {"uid":21754030,"timestamp":1455577242,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754030","revision_id":"1","assignment_nid":"456328689","object":{"revision_id":1,"uid":21754030,"created":1455577242,"num_items":1,"late":0,"draft":0,"assignment_nid":"456328689","attachments":{"files":{"file":{"196808673":{"id":196808673,"fid":1117684419,"type":"file","title":"Receiving_Feedback_February_assignment.docx","filename":"Receiving_Feedback_February_assignment.docx","filesize":14562,"md5_checksum":"b3ecb1341bf4a7b112a30f5be1ede191","timestamp":1455577238,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/Receiving_Feedback_February_assignment_56c258965768b.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":17153,"converted_md5_checksum":"ce96b9676b6ea7f2b4f7a1f08a7c24c3"}}}}}}}
+2016-02-15T23:46:41.278907+00:00 app[web.1]:     [timestamp] => 1455577242
+2016-02-15T23:46:41.278992+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-15T23:46:41.278851+00:00 app[web.1]: (
+2016-02-15T23:46:41.279163+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-15T23:46:41.278877+00:00 app[web.1]:     [uid] => 21754030
+2016-02-15T23:46:41.279023+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-15T23:46:41.279040+00:00 app[web.1]:         (
+2016-02-15T23:46:41.279128+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-15T23:46:41.279282+00:00 app[web.1]:             [assignment_nid] => 456328689
+2016-02-15T23:46:41.279194+00:00 app[web.1]:             [uid] => 21754030
+2016-02-15T23:46:41.279072+00:00 app[web.1]:             [realm] => section
+2016-02-15T23:46:41.279225+00:00 app[web.1]:             [revision_id] => 1
+2016-02-15T23:46:41.279343+00:00 app[web.1]:                 (
+2016-02-15T23:46:41.279320+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-15T23:46:41.279415+00:00 app[web.1]:                     [uid] => 21754030
+2016-02-15T23:46:41.279379+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-15T23:46:41.279543+00:00 app[web.1]:                     [late] => 0
+2016-02-15T23:46:41.279475+00:00 app[web.1]:                     [created] => 1455577242
+2016-02-15T23:46:41.279511+00:00 app[web.1]:                     [num_items] => 1
+2016-02-15T23:46:41.279713+00:00 app[web.1]:                         (
+2016-02-15T23:46:41.279576+00:00 app[web.1]:                     [draft] => 0
+2016-02-15T23:46:41.279639+00:00 app[web.1]:                     [assignment_nid] => 456328689
+2016-02-15T23:46:41.279685+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-15T23:46:41.279780+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-15T23:46:41.279986+00:00 app[web.1]:                                             [196808673] => stdClass Object
+2016-02-15T23:46:41.279814+00:00 app[web.1]:                                 (
+2016-02-15T23:46:41.279905+00:00 app[web.1]:                                         (
+2016-02-15T23:46:41.279866+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-15T23:46:41.280030+00:00 app[web.1]:                                                 (
+2016-02-15T23:46:41.280166+00:00 app[web.1]:                                                     [fid] => 1117684419
+2016-02-15T23:46:41.280107+00:00 app[web.1]:                                                     [id] => 196808673
+2016-02-15T23:46:41.280223+00:00 app[web.1]:                                                     [type] => file
+2016-02-15T23:46:41.280687+00:00 app[web.1]:                                                     [title] => Receiving_Feedback_February_assignment.docx
+2016-02-15T23:46:41.281239+00:00 app[web.1]:                                                     [filesize] => 14562
+2016-02-15T23:46:41.281320+00:00 app[web.1]:                                                     [md5_checksum] => b3ecb1341bf4a7b112a30f5be1ede191
+2016-02-15T23:46:41.282851+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-15T23:46:41.282988+00:00 app[web.1]:                                                     [converted_filename] => 1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-15T23:46:41.281421+00:00 app[web.1]:                                                     [timestamp] => 1455577238
+2016-02-15T23:46:41.281630+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2016-02-15T23:46:41.282706+00:00 app[web.1]:                                                     [extension] => docx
+2016-02-15T23:46:41.282769+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-15T23:46:41.283558+00:00 app[web.1]:                                                     [converted_md5_checksum] => ce96b9676b6ea7f2b4f7a1f08a7c24c3
+2016-02-15T23:46:41.277528+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=27a77368-228d-4746-bf0a-a92caf220789 fwd="50.56.38.11" dyno=web.1 connect=3ms service=48ms status=302 bytes=296
+2016-02-15T23:46:41.282631+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/Receiving_Feedback_February_assignment_56c258965768b.docx
+2016-02-15T23:46:41.283183+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-15T23:46:41.283250+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-15T23:46:41.283341+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-15T23:46:41.283435+00:00 app[web.1]:                                                     [converted_filesize] => 17153
+2016-02-15T23:46:41.283729+00:00 app[web.1]: 
+2016-02-15T23:46:41.283788+00:00 app[web.1]: 
+2016-02-15T23:46:41.283685+00:00 app[web.1]: 
+2016-02-15T23:46:41.283821+00:00 app[web.1]: 
+2016-02-15T23:46:41.283838+00:00 app[web.1]:         )
+2016-02-15T23:46:41.283860+00:00 app[web.1]: )
+2016-02-15T23:46:41.283849+00:00 app[web.1]: 
+2016-02-15T23:46:41.284020+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] Assignment ID: 456328689
+2016-02-15T23:46:41.283675+00:00 app[web.1]:                                         )
+2016-02-15T23:46:41.283719+00:00 app[web.1]:                                 )
+2016-02-15T23:46:41.283623+00:00 app[web.1]:                                                 )
+2016-02-15T23:46:41.283811+00:00 app[web.1]:                 )
+2016-02-15T23:46:41.283910+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] UID: 21754030
+2016-02-15T23:46:41.283635+00:00 app[web.1]: 
+2016-02-15T23:46:41.283768+00:00 app[web.1]:                         )
+2016-02-15T23:46:41.284072+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] Requirement Type found - courses
+2016-02-15T23:46:41.284134+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] Array
+2016-02-15T23:46:41.284083+00:00 app[web.1]: 
+2016-02-15T23:46:41.284185+00:00 app[web.1]: )
+2016-02-15T23:46:41.283973+00:00 app[web.1]: [15-Feb-2016 23:46:41 UTC] Section ID: 124980867
+2016-02-15T23:46:41.284207+00:00 app[web.1]: 
+2016-02-15T23:46:41.284196+00:00 app[web.1]: 
+2016-02-15T23:46:41.284174+00:00 app[web.1]:     [req_type] => courses
+2016-02-15T23:46:41.284146+00:00 app[web.1]: (
+2016-02-15T23:46:41.283871+00:00 app[web.1]: 
+2016-02-15T23:46:41.284310+00:00 app[web.1]: 10.229.42.168 - - [15/Feb/2016:23:46:41 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-16T00:01:53.701313+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-16T00:01:53.952561+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=76967412-26a8-45a2-8963-0b664d7086ae fwd="50.56.38.11" dyno=web.1 connect=1ms service=276ms status=302 bytes=296
+2016-02-16T00:01:53.944823+00:00 app[web.1]: 
+2016-02-16T00:01:53.944819+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] got token!
+2016-02-16T00:01:53.944844+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] Array
+2016-02-16T00:01:53.944846+00:00 app[web.1]: (
+2016-02-16T00:01:53.944877+00:00 app[web.1]:     [uid] => 22135108
+2016-02-16T00:01:53.944942+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-16T00:01:53.945011+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-16T00:01:53.945032+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-16T00:01:53.945035+00:00 app[web.1]: 
+2016-02-16T00:01:53.945034+00:00 app[web.1]: )
+2016-02-16T00:01:53.945037+00:00 app[web.1]: 
+2016-02-16T00:01:53.950961+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] {"uid":21754030,"timestamp":1455577242,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124980867,"realm_id":124980867,"uid":"21754030","revision_id":"1","assignment_nid":"456328689","object":{"revision_id":1,"uid":21754030,"created":1455577242,"num_items":1,"late":0,"draft":0,"assignment_nid":"456328689","attachments":{"files":{"file":{"196808673":{"id":196808673,"fid":1117684419,"type":"file","title":"Receiving_Feedback_February_assignment.docx","filename":"Receiving_Feedback_February_assignment.docx","filesize":14562,"md5_checksum":"b3ecb1341bf4a7b112a30f5be1ede191","timestamp":1455577238,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/Receiving_Feedback_February_assignment_56c258965768b.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124980867\/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":17153,"converted_md5_checksum":"ce96b9676b6ea7f2b4f7a1f08a7c24c3"}}}}}}}
+2016-02-16T00:01:53.950981+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] stdClass Object
+2016-02-16T00:01:53.950983+00:00 app[web.1]: (
+2016-02-16T00:01:53.951069+00:0
+0 app[web.1]:     [uid] => 21754030
+2016-02-16T00:01:53.951070+00:00 app[web.1]:     [timestamp] => 1455577242
+2016-02-16T00:01:53.951071+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-16T00:01:53.951180+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-16T00:01:53.951181+00:00 app[web.1]:         (
+2016-02-16T00:01:53.951183+00:00 app[web.1]:             [section_id] => 124980867
+2016-02-16T00:01:53.951182+00:00 app[web.1]:             [realm] => section
+2016-02-16T00:01:53.951267+00:00 app[web.1]:             [realm_id] => 124980867
+2016-02-16T00:01:53.951268+00:00 app[web.1]:             [uid] => 21754030
+2016-02-16T00:01:53.951269+00:00 app[web.1]:             [revision_id] => 1
+2016-02-16T00:01:53.951369+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-16T00:01:53.951368+00:00 app[web.1]:             [assignment_nid] => 456328689
+2016-02-16T00:01:53.951370+00:00 app[web.1]:                 (
+2016-02-16T00:01:53.951451+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-16T00:01:53.951453+00:00 app[web.1]:                     [created] => 1455577242
+2016-02-16T00:01:53.951452+00:00 app[web.1]:                     [uid] => 21754030
+2016-02-16T00:01:53.951549+00:00 app[web.1]:                     [num_items] => 1
+2016-02-16T00:01:53.951550+00:00 app[web.1]:                     [late] => 0
+2016-02-16T00:01:53.951551+00:00 app[web.1]:                     [draft] => 0
+2016-02-16T00:01:53.951635+00:00 app[web.1]:                     [assignment_nid] => 456328689
+2016-02-16T00:01:53.951637+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-16T00:01:53.951744+00:00 app[web.1]:                         (
+2016-02-16T00:01:53.951746+00:00 app[web.1]:                                 (
+2016-02-16T00:01:53.951745+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-16T00:01:53.951832+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-16T00:01:53.951833+00:00 app[web.1]:                                         (
+2016-02-16T00:01:53.951937+00:00 app[web.1]:                                                 (
+2016-02-16T00:01:53.951936+00:00 app[web.1]:                                             [196808673] => stdClass Object
+2016-02-16T00:01:53.952488+00:00 app[web.1]:                                                     [type] => file
+2016-02-16T00:01:53.952490+00:00 app[web.1]:                                                     [filename] => Receiving_Feedback_February_assignment.docx
+2016-02-16T00:01:53.952486+00:00 app[web.1]:                                                     [id] => 196808673
+2016-02-16T00:01:53.952487+00:00 app[web.1]:                                                     [fid] => 1117684419
+2016-02-16T00:01:53.952489+00:00 app[web.1]:                                                     [title] => Receiving_Feedback_February_assignment.docx
+2016-02-16T00:01:53.952583+00:00 app[web.1]:                                                     [md5_checksum] => b3ecb1341bf4a7b112a30f5be1ede191
+2016-02-16T00:01:53.952491+00:00 app[web.1]:                                                     [filesize] => 14562
+2016-02-16T00:01:53.952769+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2016-02-16T00:01:53.952972+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/Receiving_Feedback_February_assignment_56c258965768b.docx
+2016-02-16T00:01:53.952973+00:00 app[web.1]:                                                     [extension] => docx
+2016-02-16T00:01:53.952684+00:00 app[web.1]:                                                     [timestamp] => 1455577238
+2016-02-16T00:01:53.953529+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-16T00:01:53.953271+00:00 app[web.1]:                                                     [converted_filename] => 1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-16T00:01:53.953448+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124980867/1455577264-Receiving_Feedback_February_assignment_56c258965768b_56c258b228373.pdf
+2016-02-16T00:01:53.953072+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-16T00:01:53.953091+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-16T00:01:53.953635+00:00 app[web.1]:                                                     [converted_filesize] => 17153
+2016-02-16T00:01:53.953633+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-16T00:01:53.954962+00:00 app[web.1]:                                                     [converted_md5_checksum] => ce96b9676b6ea7f2b4f7a1f08a7c24c3
+2016-02-16T00:01:53.954967+00:00 app[web.1]:                                                 )
+2016-02-16T00:01:53.954969+00:00 app[web.1]:                                         )
+2016-02-16T00:01:53.954970+00:00 app[web.1]: 
+2016-02-16T00:01:53.954971+00:00 app[web.1]: 
+2016-02-16T00:01:53.954971+00:00 app[web.1]:                                 )
+2016-02-16T00:01:53.954973+00:00 app[web.1]: 
+2016-02-16T00:01:53.954973+00:00 app[web.1]:                 )
+2016-02-16T00:01:53.954968+00:00 app[web.1]: 
+2016-02-16T00:01:53.954972+00:00 app[web.1]:                         )
+2016-02-16T00:01:53.954974+00:00 app[web.1]: 
+2016-02-16T00:01:53.954974+00:00 app[web.1]:         )
+2016-02-16T00:01:53.954975+00:00 app[web.1]: )
+2016-02-16T00:01:53.954975+00:00 app[web.1]: 
+2016-02-16T00:01:53.954977+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] Section ID: 124980867
+2016-02-16T00:01:53.954976+00:00 app[web.1]: 
+2016-02-16T00:01:53.954977+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] UID: 21754030
+2016-02-16T00:01:53.954978+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] Assignment ID: 456328689
+2016-02-16T00:01:53.954979+00:00 app[web.1]: 
+2016-02-16T00:01:53.954980+00:00 app[web.1]: (
+2016-02-16T00:01:53.954980+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] Array
+2016-02-16T00:01:53.954981+00:00 app[web.1]:     [req_type] => courses
+2016-02-16T00:01:53.954978+00:00 app[web.1]: [16-Feb-2016 00:01:53 UTC] Requirement Type found - courses
+2016-02-16T00:01:53.954982+00:00 app[web.1]: 
+2016-02-16T00:01:53.954981+00:00 app[web.1]: )
+2016-02-16T00:01:53.954983+00:00 app[web.1]: 10.139.101.59 - - [16/Feb/2016:00:01:53 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-16T00:01:53.954982+00:00 app[web.1]: 
+2016-02-16T00:35:01.717787+00:00 heroku[web.1]: Idling
+2016-02-16T00:35:01.718561+00:00 heroku[web.1]: State changed from up to down
+2016-02-16T00:35:01.723232+00:00 heroku[web.1]: State changed from down to starting
+2016-02-16T00:35:07.201989+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-02-16T00:35:07.540765+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2016-02-16T00:35:08.426518+00:00 app[web.1]: Going down, terminating child processes...
+2016-02-16T00:35:09.419568+00:00 heroku[web.1]: Process exited with status 0
+2016-02-16T00:35:09.481662+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2016-02-16T00:35:09.619421+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2016-02-16T00:35:09.499509+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2016-02-16T00:35:09.624367+00:00 app[web.1]: Starting php-fpm...
+2016-02-16T00:35:11.626818+00:00 app[web.1]: Starting httpd...
+2016-02-16T00:35:11.718785+00:00 heroku[web.1]: State changed from starting to up
+2016-02-16T01:07:00.913297+00:00 heroku[web.1]: Idling
+2016-02-16T01:07:00.913963+00:00 heroku[web.1]: State changed from up to down
+2016-02-16T01:07:05.401021+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-02-16T01:07:06.561407+00:00 app[web.1]: Going down, terminating child processes...
+2016-02-16T01:07:07.470583+00:00 heroku[web.1]: Process exited with status 0
+2016-02-17T20:00:56.566218+00:00 heroku[web.1]: Unidling
+2016-02-17T20:00:56.566567+00:00 heroku[web.1]: State changed from down to starting
+2016-02-17T20:01:10.779441+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2016-02-17T20:01:13.502962+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2016-02-17T20:01:13.785101+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2016-02-17T20:01:13.582186+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2016-02-17T20:01:13.788252+00:00 app[web.1]: Starting php-fpm...
+2016-02-17T20:01:15.795828+00:00 app[web.1]: Starting httpd...
+2016-02-17T20:01:16.185849+00:00 heroku[web.1]: State changed from starting to up
+2016-02-17T20:01:18.670209+00:00 app[web.1]: [17-Feb-2016 20:01:18 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-17T20:01:23.016032+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=c1b82087-dfa6-448c-bd9e-e59448fb13dd fwd="50.56.38.11" dyno=web.1 connect=1ms service=4345ms status=302 bytes=296
+2016-02-17T20:01:22.999139+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] got token!
+2016-02-17T20:01:22.999374+00:00 app[web.1]: (
+2016-02-17T20:01:22.999301+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] Array
+2016-02-17T20:01:22.999555+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-17T20:01:22.999178+00:00 app[web.1]: 
+2016-02-17T20:01:22.999408+00:00 app[web.1]:     [uid] => 22135108
+2016-02-17T20:01:22.999608+00:00 app[web.1]: )
+2016-02-17T20:01:23.002416+00:00 app[web.1]:                     [created] => 1455739053
+2016-02-17T20:01:23.001647+00:00 app[web.1]: (
+2016-02-17T20:01:23.002280+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-17T20:01:23.002236+00:00 app[web.1]:                 (
+2016-02-17T20:01:23.001680+00:00 app[web.1]:     [uid] => 11545701
+2016-02-17T20:01:23.002137+00:00 app[web.1]:             [assignment_nid] => 383485231
+2016-02-17T20:01:22.999624+00:00 app[web.1]: 
+2016-02-17T20:01:22.999591+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-17T20:01:23.001615+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] stdClass Object
+2016-02-17T20:01:22.999468+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-17T20:01:23.002565+00:00 app[web.1]:                     [draft] => 0
+2016-02-17T20:01:23.002524+00:00 app[web.1]:                     [late] => 1
+2016-02-17T20:01:23.001717+00:00 app[web.1]:     [timestamp] => 1455739053
+2016-02-17T20:01:23.003074+00:00 app[web.1]:                                             [198092077] => stdClass Object
+2016-02-17T20:01:23.002734+00:00 app[web.1]:                         (
+2016-02-17T20:01:23.002617+00:00 app[web.1]:                     [assignment_nid] => 383485231
+2016-02-17T20:01:23.001761+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-17T20:01:23.002074+00:00 app[web.1]:             [revision_id] => 1
+2016-02-17T20:01:23.001929+00:00 app[web.1]:             [section_id] => 124485759
+2016-02-17T20:01:23.001827+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-17T20:01:23.001887+00:00 app[web.1]:             [realm] => section
+2016-02-17T20:01:23.002367+00:00 app[web.1]:                     [uid] => 11545701
+2016-02-17T20:01:23.002206+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-17T20:01:22.999638+00:00 app[web.1]: 
+2016-02-17T20:01:23.002036+00:00 app[web.1]:             [uid] => 11545701
+2016-02-17T20:01:23.002863+00:00 app[web.1]:                                 (
+2016-02-17T20:01:23.001051+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] {"uid":11545701,"timestamp":1455739053,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124485759,"realm_id":124485759,"uid":"11545701","revision_id":"1","assignment_nid":"383485231","object":{"revision_id":1,"uid":11545701,"created":1455739053,"num_items":1,"late":1,"draft":0,"assignment_nid":"383485231","attachments":{"files":{"file":{"198092077":{"id":198092077,"fid":1125043927,"type":"file","title":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filename":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filesize":830917,"md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4","timestamp":1455739051,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":830917,"converted_md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4"}}}}}}}
+2016-02-17T20:01:23.002458+00:00 app[web.1]:                     [num_items] => 1
+2016-02-17T20:01:23.003001+00:00 app[web.1]:                                         (
+2016-02-17T20:01:23.001998+00:00 app[web.1]:             [realm_id] => 124485759
+2016-02-17T20:01:23.003316+00:00 app[web.1]:                                                     [fid] => 1125043927
+2016-02-17T20:01:23.003642+00:00 app[web.1]:                                                     [filename] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T20:01:23.001849+00:00 app[web.1]:         (
+2016-02-17T20:01:23.003712+00:00 app[web.1]:                                                     [filesize] => 830917
+2016-02-17T20:01:23.002924+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-17T20:01:23.002698+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-17T20:01:23.003381+00:00 app[web.1]:                                                     [type] => file
+2016-02-17T20:01:23.002797+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-17T20:01:23.003504+00:00 app[web.1]:                                                     [title] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T20:01:23.004220+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf
+2016-02-17T20:01:23.004316+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-17T20:01:23.003155+00:00 app[web.1]:                                                 (
+2016-02-17T20:01:23.003906+00:00 app[web.1]:                                                     [timestamp] => 1455739051
+2016-02-17T20:01:23.003223+00:00 app[web.1]:                                                     [id] => 198092077
+2016-02-17T20:01:23.003832+00:00 app[web.1]:                                                     [md5_checksum] => e1d6e4f14e93700a8979c44c0dd6
+a2c4
+2016-02-17T20:01:23.004389+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-17T20:01:23.005086+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-17T20:01:23.005003+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-17T20:01:23.005405+00:00 app[web.1]:                                                 )
+2016-02-17T20:01:23.005190+00:00 app[web.1]:                                                     [converted_filesize] => 830917
+2016-02-17T20:01:23.004670+00:00 app[web.1]:                                                     [converted_filename] => 1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T20:01:23.004011+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-17T20:01:23.004900+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T20:01:23.004482+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-17T20:01:23.005424+00:00 app[web.1]: 
+2016-02-17T20:01:23.005669+00:00 app[web.1]:                                 )
+2016-02-17T20:01:23.005539+00:00 app[web.1]: 
+2016-02-17T20:01:23.005686+00:00 app[web.1]: 
+2016-02-17T20:01:23.005306+00:00 app[web.1]:                                                     [converted_md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T20:01:23.005737+00:00 app[web.1]: 
+2016-02-17T20:01:23.005843+00:00 app[web.1]: 
+2016-02-17T20:01:23.006049+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] Assignment ID: 383485231
+2016-02-17T20:01:23.005765+00:00 app[web.1]:                 )
+2016-02-17T20:01:23.005859+00:00 app[web.1]: )
+2016-02-17T20:01:23.005921+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] UID: 11545701
+2016-02-17T20:01:23.005721+00:00 app[web.1]:                         )
+2016-02-17T20:01:23.005803+00:00 app[web.1]:         )
+2016-02-17T20:01:23.006252+00:00 app[web.1]:     [req_type] => courses
+2016-02-17T20:01:23.006123+00:00 app[web.1]: 
+2016-02-17T20:01:23.006218+00:00 app[web.1]: (
+2016-02-17T20:01:23.006203+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] Array
+2016-02-17T20:01:23.005781+00:00 app[web.1]: 
+2016-02-17T20:01:23.005874+00:00 app[web.1]: 
+2016-02-17T20:01:23.005494+00:00 app[web.1]:                                         )
+2016-02-17T20:01:23.006790+00:00 app[web.1]: 10.234.196.52 - - [17/Feb/2016:20:01:18 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-17T20:01:23.006297+00:00 app[web.1]: 
+2016-02-17T20:01:23.006283+00:00 app[web.1]: 
+2016-02-17T20:01:23.006107+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] Requirement Type found - courses
+2016-02-17T20:01:23.005972+00:00 app[web.1]: [17-Feb-2016 20:01:22 UTC] Section ID: 124485759
+2016-02-17T20:01:23.006268+00:00 app[web.1]: )
+2016-02-17T20:19:20.424182+00:00 app[web.1]: [17-Feb-2016 20:19:20 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-17T20:19:23.432921+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=5081c82d-4b46-42ca-9459-f835e42d02cf fwd="50.56.38.11" dyno=web.1 connect=1ms service=3022ms status=302 bytes=296
+2016-02-17T20:19:23.419623+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] got token!
+2016-02-17T20:19:23.419663+00:00 app[web.1]: 
+2016-02-17T20:19:23.419693+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] Array
+2016-02-17T20:19:23.419694+00:00 app[web.1]: (
+2016-02-17T20:19:23.419720+00:00 app[web.1]:     [uid] => 22135108
+2016-02-17T20:19:23.419760+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-17T20:19:23.419819+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-17T20:19:23.419844+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-17T20:19:23.419845+00:00 app[web.1]: )
+2016-02-17T20:19:23.419848+00:00 app[web.1]: 
+2016-02-17T20:19:23.419848+00:00 app[web.1]: 
+2016-02-17T20:19:23.420591+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] {"uid":11545701,"timestamp":1455739053,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124485759,"realm_id":124485759,"uid":"11545701","revision_id":"1","assignment_nid":"383485231","object":{"revision_id":1,"uid":11545701,"created":1455739053,"num_items":1,"late":1,"draft":0,"assignment_nid":"383485231","attachments":{"files":{"file":{"198092077":{"id":198092077,"fid":1125043927,"type":"file","title":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filename":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filesize":830917,"md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4","timestamp":1455739051,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":830917,"converted_md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4"}}}}}}}
+2016-02-17T20:19:23.420619+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] stdClass Object
+2016-02-17T20:19:23.420621+00:00 app[web.1]: (
+2016-02-17T20:19:23.420645+00:00 app[web.1]:     [uid] => 11545701
+2016-02-17T20:19:23.420672+00:00 app[web.1]:     [timestamp] => 1455739053
+2016-02-17T20:19:23.420703+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-17T20:19:23.420729+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-17T20:19:23.420732+00:00 app[web.1]:         (
+2016-02-17T20:19:23.420764+00:00 app[web.1]:             [realm] => section
+2016-02-17T20:19:23.420792+00:00 app[web.1]:             [section_id] => 124485759
+2016-02-17T20:19:23.420822+00:00 app[web.1]:             [realm_id] => 124485759
+2016-02-17T20:19:23.420848+00:00 app[web.1]:             [uid] => 11545701
+2016-02-17T20:19:23.420874+00:00 app[web.1]:             [revision_id] => 1
+2016-02-17T20:19:23.420906+00:00 app[web.1]:             [assignment_nid] => 383485231
+2016-02-17T20:19:23.420937+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-17T20:19:23.420987+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-17T20:19:23.421027+00:00 app[web.1]:                     [uid] => 11545701
+2016-02-17T20:19:23.420956+00:00 app[web.1]:                 (
+2016-02-17T20:19:23.421089+00:00 app[web.1]:                     [num_items] => 1
+2016-02-17T20:19:23.421059+00:00 app[web.1]:                     [created] => 1455739053
+2016-02-17T20:19:23.421116+00:00 app[web.1]:                     [late] => 1
+2016-02-17T20:19:23.421143+00:00 app[web.1]:                     [draft] => 0
+2016-02-17T20:19:23.421178+00:00 app[web.1]:                     [assignment_nid] => 383485231
+2016-02-17T20:19:23.421215+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-17T20:19:23.421305+00:00 app[web.1]:                                 (
+2016-02-17T20:19:23.421240+00:00 app[web.1]:                         (
+2016-02-17T20:19:23.421345+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-17T20:19:23.421278+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-17T20:19:23.421559+00:00 app[web.1]:                                                     [fid] => 1125043927
+2016-02-17T20:19:23.421376+00:00 app[web.1]:                                         (
+2016-02-17T20:19:23.421504+00:00 app[web.1]:                                                     [id] => 198092077
+2016-02-17T20:19:23.421421+00:00 app[web.1]:                                             [198092077] => stdClass Object
+2016-02-17T20:19:23.421457+00:00 app[web.1]:                                                 (
+2016-02-17T20:19:23.421713+00:00 app[web.1]:                                                     [title] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T20:19:23.421815+00:00 app[web.1]:                                                     [filename] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T20:19:23.421617+00:00 app[web.1]:                                                     [type] => file
+2016-02-17T20:19:23.421866+00:00 app[web.1]:                                                     [filesize] => 830917
+2016-02-17T20:19:23.422072+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-17T20:19:23.422022+00:00 app[web.1]:                                                     [timestamp] => 1455739051
+2016-02-17T20:19:23.421948+00:00 app[web.1]:                                                     [md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T20:19:23.422231+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf
+2016-02-17T20:19:23.422291+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-17T20:19:23.422617+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T20:19:23.422390+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-17T20:19:23.422653+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-17T20:19:23.422493+00:00 app[web.1]:                                                     [converted_filename] => 1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T20:19:23.422717+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-17T20:19:23.422347+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-17T20:19:23.422760+00:00 app[web.1]:                                                     [converted_filesize] => 830917
+2016-02-17T20:19:23.422840+00:00 app[web.1]:                                                 )
+2016-02-17T20:19:23.422814+00:00 app[web.1]:                                                     [converted_md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T20:19:23.422841+00:00 app[web.1]: 
+2016-02-17T20:19:23.422866+00:00 app[web.1]:                                         )
+2016-02-17T20:19:23.422888+00:00 app[web.1]:                                 )
+2016-02-17T20:19:23.422867+00:00 app[web.1]: 
+2016-02-17T20:19:23.422889+00:00 app[web.1]: 
+2016-02-17T20:19:23.422907+00:00 app[web.1]:                         )
+2016-02-17T20:19:23.422908+00:00 app[web.1]: 
+2016-02-17T20:19:23.422916+00:00 app[web.1]:                 )
+2016-02-17T20:19:23.422916+00:00 app[web.1]: 
+2016-02-17T20:19:23.422934+00:00 app[web.1]:         )
+2016-02-17T20:19:23.422935+00:00 app[web.1]: 
+2016-02-17T20:19:23.422936+00:00 app[web.1]: )
+2016-02-17T20:19:23.422965+00:00 app[web.1]: 
+2016-02-17T20:19:23.422993+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] UID: 11545701
+2016-02-17T20:19:23.423047+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] Assignment ID: 383485231
+2016-02-17T20:19:23.423021+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] Section ID: 124485759
+2016-02-17T20:19:23.423079+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] Requirement Type found - courses
+2016-02-17T20:19:23.423080+00:00 app[web.1]: 
+2016-02-17T20:19:23.423100+00:00 app[web.1]: [17-Feb-2016 20:19:23 UTC] Array
+2016-02-17T20:19:23.423101+00:00 app[web.1]: (
+2016-02-17T20:19:23.423125+00:00 app[web.1]:     [req_type] => courses
+2016-02-17T20:19:23.423126+00:00 app[web.1]: )
+2016-02-17T20:19:23.423127+00:00 app[web.1]: 
+2016-02-17T20:19:23.423127+00:00 app[web.1]: 
+2016-02-17T20:19:23.423176+00:00 app[web.1]: 10.139.111.112 - - [17/Feb/2016:20:19:20 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-17T20:39:25.644863+00:00 app[web.1]: [17-Feb-2016 20:39:25 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-17T20:39:26.187224+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=603e947a-4e58-44eb-8d8f-e35bdadd570e fwd="50.56.38.11" dyno=web.1 connect=0ms service=569ms status=302 bytes=296
+2016-02-17T20:39:26.185888+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] got token!
+2016-02-17T20:39:26.185892+00:00 app[web.1]: 
+2016-02-17T20:39:26.185905+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] Array
+2016-02-17T20:39:26.185932+00:00 app[web.1]: (
+2016-02-17T20:39:26.185956+00:00 app[web.1]:     [uid] => 22135108
+2016-02-17T20:39:26.185996+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-17T20:39:26.186033+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-17T20:39:26.186066+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-17T20:39:26.186067+00:00 app[web.1]: )
+2016-02-17T20:39:26.186069+00:00 app[web.1]: 
+2016-02-17T20:39:26.186068+00:00 app[web.1]: 
+2016-02-17T20:39:26.186797+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] {"uid":11545701,"timestamp":1455739053,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124485759,"realm_id":124485759,"uid":"11545701","revision_id":"1","assignment_nid":"383485231","object":{"revision_id":1,"uid":11545701,"created":1455739053,"num_items":1,"late":1,"draft":0,"assignment_nid":"383485231","attachments":{"files":{"file":{"198092077":{"id":198092077,"fid":1125043927,"type":"file","title":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filename":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filesize":830917,"md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4","timestamp":1455739051,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.p
+df","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":830917,"converted_md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4"}}}}}}}
+2016-02-17T20:39:26.186841+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] stdClass Object
+2016-02-17T20:39:26.186843+00:00 app[web.1]: (
+2016-02-17T20:39:26.186874+00:00 app[web.1]:     [timestamp] => 1455739053
+2016-02-17T20:39:26.186845+00:00 app[web.1]:     [uid] => 11545701
+2016-02-17T20:39:26.187282+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-17T20:39:26.187325+00:00 app[web.1]:         (
+2016-02-17T20:39:26.187308+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-17T20:39:26.187419+00:00 app[web.1]:             [realm] => section
+2016-02-17T20:39:26.188490+00:00 app[web.1]:             [uid] => 11545701
+2016-02-17T20:39:26.188567+00:00 app[web.1]:             [revision_id] => 1
+2016-02-17T20:39:26.187453+00:00 app[web.1]:             [section_id] => 124485759
+2016-02-17T20:39:26.188452+00:00 app[web.1]:             [realm_id] => 124485759
+2016-02-17T20:39:26.188614+00:00 app[web.1]:             [assignment_nid] => 383485231
+2016-02-17T20:39:26.188660+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-17T20:39:26.188775+00:00 app[web.1]:                     [uid] => 11545701
+2016-02-17T20:39:26.188689+00:00 app[web.1]:                 (
+2016-02-17T20:39:26.188732+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-17T20:39:26.188823+00:00 app[web.1]:                     [created] => 1455739053
+2016-02-17T20:39:26.188966+00:00 app[web.1]:                     [late] => 1
+2016-02-17T20:39:26.189163+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-17T20:39:26.188929+00:00 app[web.1]:                     [num_items] => 1
+2016-02-17T20:39:26.189093+00:00 app[web.1]:                     [assignment_nid] => 383485231
+2016-02-17T20:39:26.189017+00:00 app[web.1]:                     [draft] => 0
+2016-02-17T20:39:26.189197+00:00 app[web.1]:                         (
+2016-02-17T20:39:26.189265+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-17T20:39:26.189405+00:00 app[web.1]:                                 (
+2016-02-17T20:39:26.189687+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-17T20:39:26.189856+00:00 app[web.1]:                                         (
+2016-02-17T20:39:26.190138+00:00 app[web.1]:                                             [198092077] => stdClass Object
+2016-02-17T20:39:26.190189+00:00 app[web.1]:                                                 (
+2016-02-17T20:39:26.190628+00:00 app[web.1]:                                                     [id] => 198092077
+2016-02-17T20:39:26.190860+00:00 app[web.1]:                                                     [fid] => 1125043927
+2016-02-17T20:39:26.190976+00:00 app[web.1]:                                                     [type] => file
+2016-02-17T20:39:26.191329+00:00 app[web.1]:                                                     [title] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T20:39:26.191655+00:00 app[web.1]:                                                     [filename] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T20:39:26.191759+00:00 app[web.1]:                                                     [filesize] => 830917
+2016-02-17T20:39:26.192001+00:00 app[web.1]:                                                     [timestamp] => 1455739051
+2016-02-17T20:39:26.192090+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-17T20:39:26.192379+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf
+2016-02-17T20:39:26.191931+00:00 app[web.1]:                                                     [md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T20:39:26.192763+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-17T20:39:26.192451+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-17T20:39:26.193387+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-17T20:39:26.193007+00:00 app[web.1]:                                                     [converted_filename] => 1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T20:39:26.192583+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-17T20:39:26.193942+00:00 app[web.1]:                                                 )
+2016-02-17T20:39:26.193281+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T20:39:26.193960+00:00 app[web.1]: 
+2016-02-17T20:39:26.193703+00:00 app[web.1]:                                                     [converted_filesize] => 830917
+2016-02-17T20:39:26.193858+00:00 app[web.1]:                                                     [converted_md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T20:39:26.194095+00:00 app[web.1]: 
+2016-02-17T20:39:26.194067+00:00 app[web.1]:                                 )
+2016-02-17T20:39:26.194026+00:00 app[web.1]: 
+2016-02-17T20:39:26.194184+00:00 app[web.1]: 
+2016-02-17T20:39:26.193481+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-17T20:39:26.194168+00:00 app[web.1]:                         )
+2016-02-17T20:39:26.194211+00:00 app[web.1]:                 )
+2016-02-17T20:39:26.194318+00:00 app[web.1]: )
+2016-02-17T20:39:26.194298+00:00 app[web.1]: 
+2016-02-17T20:39:26.194334+00:00 app[web.1]: 
+2016-02-17T20:39:26.194650+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] Assignment ID: 383485231
+2016-02-17T20:39:26.194010+00:00 app[web.1]:                                         )
+2016-02-17T20:39:26.194494+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] Section ID: 124485759
+2016-02-17T20:39:26.194241+00:00 app[web.1]: 
+2016-02-17T20:39:26.194280+00:00 app[web.1]:         )
+2016-02-17T20:39:26.194758+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] Requirement Type found - courses
+2016-02-17T20:39:26.194386+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] UID: 11545701
+2016-02-17T20:39:26.194774+00:00 app[web.1]: 
+2016-02-17T20:39:26.194860+00:00 app[web.1]: [17-Feb-2016 20:39:26 UTC] Array
+2016-02-17T20:39:26.194920+00:00 app[web.1]:     [req_type] => courses
+2016-02-17T20:39:26.194882+00:00 app[web.1]: (
+2016-02-17T20:39:26.194967+00:00 app[web.1]: 
+2016-02-17T20:39:26.194982+00:00 app[web.1]: 
+2016-02-17T20:39:26.194951+00:00 app[web.1]: )
+2016-02-17T20:39:26.195108+00:00 app[web.1]: 10.158.137.35 - - [17/Feb/2016:20:39:25 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-17T21:02:35.027188+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-17T21:02:35.094674+00:00 app[web.1]: (
+2016-02-17T21:02:35.094848+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-17T21:02:35.094705+00:00 app[web.1]:     [uid] => 11545701
+2016-02-17T21:02:35.094784+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-17T21:02:35.094643+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] stdClass Object
+2016-02-17T21:02:35.094741+00:00 app[web.1]:     [timestamp] => 1455739053
+2016-02-17T21:02:35.094949+00:00 app[web.1]:             [section_id] => 124485759
+2016-02-17T21:02:35.094870+00:00 app[web.1]:         (
+2016-02-17T21:02:35.095234+00:00 app[web.1]:                 (
+2016-02-17T21:02:35.095828+00:00 app[web.1]:                                 (
+2016-02-17T21:02:35.096540+00:00 app[web.1]:                                                     [title] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T21:02:35.094907+00:00 app[web.1]:             [realm] => section
+2016-02-17T21:02:35.095019+00:00 app[web.1]:             [realm_id] => 124485759
+2016-02-17T21:02:35.095054+00:00 app[web.1]:             [uid] => 11545701
+2016-02-17T21:02:35.095626+00:00 app[web.1]:                     [assignment_nid] => 383485231
+2016-02-17T21:02:35.096273+00:00 app[web.1]:                                                     [fid] => 1125043927
+2016-02-17T21:02:35.095276+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-17T21:02:35.095479+00:00 app[web.1]:                     [num_items] => 1
+2016-02-17T21:02:35.096855+00:00 app[web.1]:                                                     [md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T21:02:35.097863+00:00 app[web.1]:                                                     [converted_filename] => 1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T21:02:35.095134+00:00 app[web.1]:             [assignment_nid] => 383485231
+2016-02-17T21:02:35.095204+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-17T21:02:35.096026+00:00 app[web.1]:                                             [198092077] => stdClass Object
+2016-02-17T21:02:35.095440+00:00 app[web.1]:                     [created] => 1455739053
+2016-02-17T21:02:35.095578+00:00 app[web.1]:                     [draft] => 0
+2016-02-17T21:02:35.096768+00:00 app[web.1]:                                                     [filesize] => 830917
+2016-02-17T21:02:35.097017+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-17T21:02:35.095914+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-17T21:02:35.095959+00:00 app[web.1]:                                         (
+2016-02-17T21:02:35.096679+00:00 app[web.1]:                                                     [filename] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T21:02:35.095090+00:00 app[web.1]:             [revision_id] => 1
+2016-02-17T21:02:35.096946+00:00 app[web.1]:                                                     [timestamp] => 1455739051
+2016-02-17T21:02:35.097646+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-17T21:02:35.098246+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T21:02:35.095679+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-17T21:02:35.095736+00:00 app[web.1]:                         (
+2016-02-17T21:02:35.095790+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-17T21:02:35.096161+00:00 app[web.1]:                                                     [id] => 198092077
+2016-02-17T21:02:35.096339+00:00 app[web.1]:                                                     [type] => file
+2016-02-17T21:02:35.095390+00:00 app[web.1]:                     [uid] => 11545701
+2016-02-17T21:02:35.095515+00:00 app[web.1]:                     [late] => 1
+2016-02-17T21:02:35.097369+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-17T21:02:35.097508+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-17T21:02:35.098708+00:00 app[web.1]:                                                     [converted_filesize] => 830917
+2016-02-17T21:02:35.098879+00:00 app[web.1]:                                                 )
+2016-02-17T21:02:35.096098+00:00 app[web.1]:                                                 (
+2016-02-17T21:02:35.097227+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf
+2016-02-17T21:02:35.098371+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-17T21:02:35.098987+00:00 app[web.1]: 
+2016-02-17T21:02:35.098827+00:00 app[web.1]:                                                     [converted_md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T21:02:35.098585+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-17T21:02:35.098969+00:00 app[web.1]:                                         )
+2016-02-17T21:02:35.099043+00:00 app[web.1]: 
+2016-02-17T21:02:35.099026+00:00 app[web.1]:                                 )
+2016-02-17T21:02:35.099119+00:00 app[web.1]: 
+2016-02-17T21:02:35.098896+00:00 app[web.1]: 
+2016-02-17T21:02:35.099077+00:00 app[web.1]:                         )
+2016-02-17T21:02:35.099147+00:00 app[web.1]:                 )
+2016-02-17T21:02:35.100090+00:00 app[web.1]: )
+2016-02-17T21:02:35.101261+00:00 app[web.1]: 10.45.53.139 - - [17/Feb/2016:21:02:34 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-17T21:02:35.100118+00:00 app[web.1]: 
+2016-02-17T21:02:35.099387+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] UID: 11545701
+2016-02-17T21:02:35.100166+00:00 app[web.1]: 
+2016-02-17T21:02:35.099208+00:00 app[web.1]: 
+2016-02-17T21:02:35.099889+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] Requirement Type found - courses
+2016-02-17T21:02:35.100027+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] Array
+2016-02-17T21:02:35.100043+00:00 app[web.1]: (
+2016-02-17T21:02:35.100076+00:00 app[web.1]:     [req_type] => courses
+2016-02-17T21:02:35.099162+00:00 app[web.1]: 
+2016-02-17T21:02:35.099239+00:00 app[web.1]: 
+2016-02-17T21:02:35.099543+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] Section ID: 124485759
+2016-02-17T21:02:35.099183+00:00 app[web.1]:         )
+2016-02-17T21:02:35.099224+00:00 app[web.1]: )
+2016-02-17T21:02:35.099745+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] Assignment ID: 383485231
+2016-02-17T21:02:35.099907+00:00 app[web.1]: 
+2016-02-17T21:02:35.111067+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=b912700b-54ac-4542-8b05-585bf3ac8393 fwd="50.56.38.11" dyno=web.1 connect=0ms service=106ms status=302 bytes=296
+2016-02-17T21:02:35.092472+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] got token!
+2016-02-17T21:02:35.092506+00:00 app[web.1]: 
+2016-02-17T21:02:35.092630+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] Array
+2016-02-17T21:02:35.092669+00:00 app[web.1]: (
+2016-02-17T21:02:35.092698+00:00 app[web.1]:     [uid] => 22135108
+2016-02-17T21:02:35.092754+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-17T21:02:35.092824+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-17T21:02:35.092857+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-17T21:02:35.092870+00:00 app[web.1]: )
+2016-02-17T21:02:35.092882+00:00 app[web.1]: 
+2016-02-17T21:02:35.092894+00:00 app[web.1]: 
+2016-02-17T21:02:35.094237+00:00 app[web.1]: [17-Feb-2016 21:02:35 UTC] {"uid":11545701,"timestamp":1455739053,"type":"dropbox_submission.update","data":{"realm":"
+section","section_id":124485759,"realm_id":124485759,"uid":"11545701","revision_id":"1","assignment_nid":"383485231","object":{"revision_id":1,"uid":11545701,"created":1455739053,"num_items":1,"late":1,"draft":0,"assignment_nid":"383485231","attachments":{"files":{"file":{"198092077":{"id":198092077,"fid":1125043927,"type":"file","title":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filename":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filesize":830917,"md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4","timestamp":1455739051,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":830917,"converted_md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4"}}}}}}}
+2016-02-17T21:20:01.481340+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=968a3539-6fa0-4256-8a1f-c7a452b17e45 fwd="50.56.38.11" dyno=web.1 connect=0ms service=60ms status=302 bytes=296
+2016-02-17T21:20:01.446088+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-17T21:20:01.475217+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] Array
+2016-02-17T21:20:01.475243+00:00 app[web.1]: (
+2016-02-17T21:20:01.475569+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-17T21:20:01.475624+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-17T21:20:01.475742+00:00 app[web.1]: 
+2016-02-17T21:20:01.475135+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] got token!
+2016-02-17T21:20:01.475716+00:00 app[web.1]: )
+2016-02-17T21:20:01.475175+00:00 app[web.1]: 
+2016-02-17T21:20:01.475763+00:00 app[web.1]: 
+2016-02-17T21:20:01.475694+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-17T21:20:01.478070+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] {"uid":11545701,"timestamp":1455739053,"type":"dropbox_submission.update","data":{"realm":"section","section_id":124485759,"realm_id":124485759,"uid":"11545701","revision_id":"1","assignment_nid":"383485231","object":{"revision_id":1,"uid":11545701,"created":1455739053,"num_items":1,"late":1,"draft":0,"assignment_nid":"383485231","attachments":{"files":{"file":{"198092077":{"id":198092077,"fid":1125043927,"type":"file","title":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filename":"Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf","filesize":830917,"md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4","timestamp":1455739051,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/124485759\/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":830917,"converted_md5_checksum":"e1d6e4f14e93700a8979c44c0dd6a2c4"}}}}}}}
+2016-02-17T21:20:01.478219+00:00 app[web.1]:     [uid] => 11545701
+2016-02-17T21:20:01.478178+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] stdClass Object
+2016-02-17T21:20:01.475289+00:00 app[web.1]:     [uid] => 22135108
+2016-02-17T21:20:01.478194+00:00 app[web.1]: (
+2016-02-17T21:20:01.478271+00:00 app[web.1]:     [timestamp] => 1455739053
+2016-02-17T21:20:01.478334+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-17T21:20:01.478305+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-17T21:20:01.478368+00:00 app[web.1]:         (
+2016-02-17T21:20:01.478517+00:00 app[web.1]:             [section_id] => 124485759
+2016-02-17T21:20:01.478467+00:00 app[web.1]:             [realm] => section
+2016-02-17T21:20:01.478627+00:00 app[web.1]:             [realm_id] => 124485759
+2016-02-17T21:20:01.478801+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-17T21:20:01.478828+00:00 app[web.1]:                 (
+2016-02-17T21:20:01.478670+00:00 app[web.1]:             [uid] => 11545701
+2016-02-17T21:20:01.478763+00:00 app[web.1]:             [assignment_nid] => 383485231
+2016-02-17T21:20:01.479000+00:00 app[web.1]:                     [uid] => 11545701
+2016-02-17T21:20:01.478704+00:00 app[web.1]:             [revision_id] => 1
+2016-02-17T21:20:01.478895+00:00 app[web.1]:                     [revision_id] => 1
+2016-02-17T21:20:01.479093+00:00 app[web.1]:                     [created] => 1455739053
+2016-02-17T21:20:01.479193+00:00 app[web.1]:                     [late] => 1
+2016-02-17T21:20:01.479155+00:00 app[web.1]:                     [num_items] => 1
+2016-02-17T21:20:01.479284+00:00 app[web.1]:                     [draft] => 0
+2016-02-17T21:20:01.479371+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-17T21:20:01.479324+00:00 app[web.1]:                     [assignment_nid] => 383485231
+2016-02-17T21:20:01.479437+00:00 app[web.1]:                         (
+2016-02-17T21:20:01.479529+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-17T21:20:01.479748+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-17T21:20:01.479590+00:00 app[web.1]:                                 (
+2016-02-17T21:20:01.479800+00:00 app[web.1]:                                         (
+2016-02-17T21:20:01.479860+00:00 app[web.1]:                                             [198092077] => stdClass Object
+2016-02-17T21:20:01.480094+00:00 app[web.1]:                                                     [id] => 198092077
+2016-02-17T21:20:01.479989+00:00 app[web.1]:                                                 (
+2016-02-17T21:20:01.480188+00:00 app[web.1]:                                                     [fid] => 1125043927
+2016-02-17T21:20:01.481000+00:00 app[web.1]:                                                     [filename] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T21:20:01.481108+00:00 app[web.1]:                                                     [filesize] => 830917
+2016-02-17T21:20:01.480305+00:00 app[web.1]:                                                     [type] => file
+2016-02-17T21:20:01.481262+00:00 app[web.1]:                                                     [timestamp] => 1455739051
+2016-02-17T21:20:01.480774+00:00 app[web.1]:                                                     [title] => Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden.pdf
+2016-02-17T21:20:01.481800+00:00 app[web.1]:                                                     [extension] => pdf
+2016-02-17T21:20:01.481183+00:00 app[web.1]:                                                     [md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T21:20:01.481891+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-17T21:20:01.481434+00:00 app[web.1]:                                                     [filemime] => application/pdf
+2016-02-17T21:20:01.481967+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-17T21:20:01.482483+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T21:20:01.482602+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-17T21:20:01.481667+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/124485759/Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba.pdf
+2016-02-17T21:20:01.482177+00:00 app[web.1]:                                                     [converted_filename] => 1455739054-Uncommon_Schools_-_S6_ALP__-_Accountability_Systems_Durden_56c4d0aac73ba_56c4d0b3bc4df.pdf
+2016-02-17T21:20:01.482869+00:00 app[web.1]:                                                     [converted_filesize] => 830917
+2016-02-17T21:20:01.482728+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-17T21:20:01.483033+00:00 app[web.1]:                                                 )
+2016-02-17T21:20:01.482984+00:00 app[web.1]:                                                     [converted_md5_checksum] => e1d6e4f14e93700a8979c44c0dd6a2c4
+2016-02-17T21:20:01.483157+00:00 app[web.1]: 
+2016-02-17T21:20:01.483255+00:00 app[web.1]:                 )
+2016-02-17T21:20:01.483108+00:00 app[web.1]: 
+2016-02-17T21:20:01.483104+00:00 app[web.1]: 
+2016-02-17T21:20:01.483216+00:00 app[web.1]: 
+2016-02-17T21:20:01.483281+00:00 app[web.1]: 
+2016-02-17T21:20:01.483313+00:00 app[web.1]: 
+2016-02-17T21:20:01.483106+00:00 app[web.1]:                                         )
+2016-02-17T21:20:01.483312+00:00 app[web.1]:         )
+2016-02-17T21:20:01.483314+00:00 app[web.1]: )
+2016-02-17T21:20:01.483140+00:00 app[web.1]:                                 )
+2016-02-17T21:20:01.483316+00:00 app[web.1]: 
+2016-02-17T21:20:01.483194+00:00 app[web.1]:                         )
+2016-02-17T21:20:01.483540+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] UID: 11545701
+2016-02-17T21:20:01.483541+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] Section ID: 124485759
+2016-02-17T21:20:01.483675+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] Requirement Type found - courses
+2016-02-17T21:20:01.483542+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] Assignment ID: 383485231
+2016-02-17T21:20:01.483676+00:00 app[web.1]: 
+2016-02-17T21:20:01.483694+00:00 app[web.1]: [17-Feb-2016 21:20:01 UTC] Array
+2016-02-17T21:20:01.483744+00:00 app[web.1]:     [req_type] => courses
+2016-02-17T21:20:01.483711+00:00 app[web.1]: (
+2016-02-17T21:20:01.483779+00:00 app[web.1]: 
+2016-02-17T21:20:01.483777+00:00 app[web.1]: )
+2016-02-17T21:20:01.483884+00:00 app[web.1]: 10.147.38.224 - - [17/Feb/2016:21:20:01 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-17T21:20:01.483779+00:00 app[web.1]: 
+2016-02-17T21:51:34.779506+00:00 heroku[web.1]: Idling
+2016-02-17T21:51:34.780119+00:00 heroku[web.1]: State changed from up to down
+2016-02-17T21:51:39.608268+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-02-17T21:51:40.774991+00:00 app[web.1]: Going down, terminating child processes...
+2016-02-17T21:51:41.703398+00:00 heroku[web.1]: Process exited with status 0
+2016-02-18T17:53:50.384263+00:00 heroku[web.1]: Unidling
+2016-02-18T17:53:50.384551+00:00 heroku[web.1]: State changed from down to starting
+2016-02-18T17:53:54.681921+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2016-02-18T17:53:57.101301+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2016-02-18T17:53:57.220300+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2016-02-18T17:53:57.119875+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2016-02-18T17:53:57.227712+00:00 app[web.1]: Starting php-fpm...
+2016-02-18T17:53:59.231123+00:00 app[web.1]: Starting httpd...
+2016-02-18T17:53:59.734004+00:00 heroku[web.1]: State changed from starting to up
+2016-02-18T17:54:00.612375+00:00 app[web.1]: [18-Feb-2016 17:54:00 UTC] got token!
+2016-02-18T17:54:00.612450+00:00 app[web.1]: [18-Feb-2016 17:54:00 UTC] Array
+2016-02-18T17:54:00.612495+00:00 app[web.1]:     [uid] => 22135108
+2016-02-18T17:54:00.612575+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-18T17:54:00.612627+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-18T17:54:00.612658+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-18T17:54:00.612688+00:00 app[web.1]: 
+2016-02-18T17:54:00.612412+00:00 app[web.1]: 
+2016-02-18T17:54:00.612691+00:00 app[web.1]: 
+2016-02-18T17:54:00.612767+00:00 app[web.1]: [18-Feb-2016 17:54:00 UTC] 
+2016-02-18T17:54:00.612826+00:00 app[web.1]: [18-Feb-2016 17:54:00 UTC] Section ID: 
+2016-02-18T17:54:00.612926+00:00 app[web.1]: 
+2016-02-18T17:54:00.612465+00:00 app[web.1]: (
+2016-02-18T17:54:00.612686+00:00 app[web.1]: )
+2016-02-18T17:54:00.612716+00:00 app[web.1]: [18-Feb-2016 17:54:00 UTC] 
+2016-02-18T17:54:00.612924+00:00 app[web.1]: [18-Feb-2016 17:54:00 UTC] Requirement Type NOT FOUND!
+2016-02-18T17:54:00.612825+00:00 app[web.1]: [18-Feb-2016 17:54:00 UTC] UID: 
+2016-02-18T17:54:00.612865+00:00 app[web.1]: [18-Feb-2016 17:54:00 UTC] Assignment ID: 
+2016-02-18T17:54:01.096645+00:00 heroku[router]: at=info method=GET path="/" host=glacial-tor-7252.herokuapp.com request_id=d9bc165f-5367-485a-9b7a-9ce46bfa9a23 fwd="67.151.98.115" dyno=web.1 connect=2ms service=554ms status=200 bytes=190
+2016-02-18T17:54:01.092464+00:00 app[web.1]: 10.93.194.164 - - [18/Feb/2016:17:54:00 +0000] "GET / HTTP/1.1" 200 - "https://dashboard.heroku.com/apps/glacial-tor-7252/settings" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+2016-02-18T17:54:01.261883+00:00 app[web.1]: [18-Feb-2016 17:54:01 UTC] got token!
+2016-02-18T17:54:01.261892+00:00 app[web.1]: 
+2016-02-18T17:54:01.261937+00:00 app[web.1]:     [uid] => 22135108
+2016-02-18T17:54:01.263029+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-18T17:54:01.263206+00:00 app[web.1]: )
+2016-02-18T17:54:01.261894+00:00 app[web.1]: [18-Feb-2016 17:54:01 UTC] Array
+2016-02-18T17:54:01.261907+00:00 app[web.1]: (
+2016-02-18T17:54:01.263541+00:00 app[web.1]: [18-Feb-2016 17:54:01 UTC] UID: 
+2016-02-18T17:54:01.263135+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-18T17:54:01.263248+00:00 app[web.1]: 
+2016-02-18T17:54:01.263177+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-18T17:54:01.263436+00:00 app[web.1]: [18-Feb-2016 17:54:01 UTC] 
+2016-02-18T17:54:01.263808+00:00 app[web.1]: 
+2016-02-18T17:54:01.263221+00:00 app[web.1]: 
+2016-02-18T17:54:01.263638+00:00 app[web.1]: [18-Feb-2016 17:54:01 UTC] Assignment ID: 
+2016-02-18T17:54:01.263787+00:00 app[web.1]: [18-Feb-2016 17:54:01 UTC] Requirement Type NOT FOUND!
+2016-02-18T17:54:01.263337+00:00 app[web.1]: [18-Feb-2016 17:54:01 UTC] 
+2016-02-18T17:54:01.263598+00:00 app[web.1]: [18-Feb-2016 17:54:01 UTC] Section ID: 
+2016-02-18T17:54:01.674911+00:00 app[web.1]: 10.93.194.164 - - [18/Feb/2016:17:54:01 +0000] "GET /favicon.ico HTTP/1.1" 200 - "https://glacial-tor-7252.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36
+2016-02-18T17:54:01.678858+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=glacial-tor-7252.herokuapp.com request_id=fcf943c4-4149-42a4
+-8ed1-d530b25f0749 fwd="67.151.98.115" dyno=web.1 connect=0ms service=477ms status=200 bytes=190
+2016-02-18T18:27:49.534169+00:00 heroku[web.1]: Idling
+2016-02-18T18:27:49.534694+00:00 heroku[web.1]: State changed from up to down
+2016-02-18T18:29:58.667021+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-02-18T18:30:00.282240+00:00 app[web.1]: Going down, terminating child processes...
+2016-02-18T18:30:02.062010+00:00 heroku[web.1]: Process exited with status 0
+2016-02-18T20:39:37.118021+00:00 heroku[web.1]: State changed from down to starting
+2016-02-18T20:39:37.116863+00:00 heroku[web.1]: Unidling
+2016-02-18T20:39:41.712314+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2016-02-18T20:39:43.972170+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2016-02-18T20:39:44.190029+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2016-02-18T20:39:44.047420+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2016-02-18T20:39:44.195024+00:00 app[web.1]: Starting php-fpm...
+2016-02-18T20:39:46.352394+00:00 heroku[web.1]: State changed from starting to up
+2016-02-18T20:39:46.211578+00:00 app[web.1]: Starting httpd...
+2016-02-18T20:39:47.386290+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=64d8866a-a250-42bc-8b3f-8ccd0be422e4 fwd="50.56.38.11" dyno=web.1 connect=0ms service=99ms status=302 bytes=296
+2016-02-18T20:39:47.314077+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+2016-02-18T20:39:47.395224+00:00 app[web.1]: (
+2016-02-18T20:39:47.395292+00:00 app[web.1]:     [timestamp] => 1455827588
+2016-02-18T20:39:47.395335+00:00 app[web.1]:     [type] => dropbox_submission.update
+2016-02-18T20:39:47.395206+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] stdClass Object
+2016-02-18T20:39:47.395255+00:00 app[web.1]:     [uid] => 24224407
+2016-02-18T20:39:47.395438+00:00 app[web.1]:             [realm] => section
+2016-02-18T20:39:47.395597+00:00 app[web.1]:             [revision_id] => 4
+2016-02-18T20:39:47.395560+00:00 app[web.1]:             [uid] => 24224407
+2016-02-18T20:39:47.395378+00:00 app[web.1]:     [data] => stdClass Object
+2016-02-18T20:39:47.395400+00:00 app[web.1]:         (
+2016-02-18T20:39:47.395747+00:00 app[web.1]:                     [revision_id] => 4
+2016-02-18T20:39:47.395482+00:00 app[web.1]:             [section_id] => 315598229
+2016-02-18T20:39:47.395523+00:00 app[web.1]:             [realm_id] => 315598229
+2016-02-18T20:39:47.395640+00:00 app[web.1]:             [assignment_nid] => 340468553
+2016-02-18T20:39:47.395930+00:00 app[web.1]:                     [late] => 0
+2016-02-18T20:39:47.395683+00:00 app[web.1]:             [object] => stdClass Object
+2016-02-18T20:39:47.395709+00:00 app[web.1]:                 (
+2016-02-18T20:39:47.395833+00:00 app[web.1]:                     [created] => 1455827588
+2016-02-18T20:39:47.405063+00:00 app[web.1]:                             [files] => stdClass Object
+2016-02-18T20:39:47.395789+00:00 app[web.1]:                     [uid] => 24224407
+2016-02-18T20:39:47.395874+00:00 app[web.1]:                     [num_items] => 1
+2016-02-18T20:39:47.395993+00:00 app[web.1]:                     [draft] => 0
+2016-02-18T20:39:47.396129+00:00 app[web.1]:                         (
+2016-02-18T20:39:47.405193+00:00 app[web.1]:                                     [file] => stdClass Object
+2016-02-18T20:39:47.405387+00:00 app[web.1]:                                                 (
+2016-02-18T20:39:47.396041+00:00 app[web.1]:                     [assignment_nid] => 340468553
+2016-02-18T20:39:47.396094+00:00 app[web.1]:                     [attachments] => stdClass Object
+2016-02-18T20:39:47.405523+00:00 app[web.1]:                                                     [fid] => 1129542539
+2016-02-18T20:39:47.405669+00:00 app[web.1]:                                                     [title] => dropbox_24224407_r4.html
+2016-02-18T20:39:47.405238+00:00 app[web.1]:                                         (
+2016-02-18T20:39:47.405326+00:00 app[web.1]:                                             [198887151] => stdClass Object
+2016-02-18T20:39:47.405454+00:00 app[web.1]:                                                     [id] => 198887151
+2016-02-18T20:39:47.405586+00:00 app[web.1]:                                                     [type] => file
+2016-02-18T20:39:47.405108+00:00 app[web.1]:                                 (
+2016-02-18T20:39:47.405750+00:00 app[web.1]:                                                     [filename] => dropbox_24224407_r4.html
+2016-02-18T20:39:47.405803+00:00 app[web.1]:                                                     [filesize] => 169
+2016-02-18T20:39:47.405893+00:00 app[web.1]:                                                     [md5_checksum] => d8d6af23e2c221aa5fe459d7f750c636
+2016-02-18T20:39:47.406003+00:00 app[web.1]:                                                     [filemime] => text/html
+2016-02-18T20:39:47.406175+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/315598229/dropbox_24224407_r4_56c62a8458871.html
+2016-02-18T20:39:47.405964+00:00 app[web.1]:                                                     [timestamp] => 1455827588
+2016-02-18T20:39:47.406178+00:00 app[web.1]:                                                     [extension] => html
+2016-02-18T20:39:47.406445+00:00 app[web.1]:                                                     [converted_status] => 1
+2016-02-18T20:39:47.406446+00:00 app[web.1]:                                                     [converted_type] => 4
+2016-02-18T20:39:47.406673+00:00 app[web.1]:                                                     [converted_extension] => pdf
+2016-02-18T20:39:47.406612+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201602/course/315598229/1455827589-d8d6af23e2c221aa5fe459d7f750c636-56c62a852f012_56c62a8637e43.pdf
+2016-02-18T20:39:47.406448+00:00 app[web.1]:                                                     [converted_filename] => 1455827589-d8d6af23e2c221aa5fe459d7f750c636-56c62a852f012_56c62a8637e43.pdf
+2016-02-18T20:39:47.406790+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
+2016-02-18T20:39:47.406793+00:00 app[web.1]:                                                     [converted_filesize] => 7957
+2016-02-18T20:39:47.406894+00:00 app[web.1]:                                                     [converted_md5_checksum] => 589c6aa3895d4a28781ea221763ec3c3
+2016-02-18T20:39:47.406958+00:00 app[web.1]:                                                 )
+2016-02-18T20:39:47.406962+00:00 app[web.1]:                                         )
+2016-02-18T20:39:47.407006+00:00 app[web.1]:                                 )
+2016-02-18T20:39:47.406964+00:00 app[web.1]: 
+2016-02-18T20:39:47.407061+00:00 app[web.1]:                 )
+2016-02-18T20:39:47.407036+00:00 app[web.1]:                         )
+2016-02-18T20:39:47.407037+00:00 app[web.1]: 
+2016-02-18T20:39:47.406959+00:00 app[web.1]: 
+2016-02-18T20:39:47.407082+00:00 app[web.1]:         )
+2016-02-18T20:39:47.407085+00:00 app[web.1]: )
+2016-02-18T20:39:47.407007+00:00 app[web.1]: 
+2016-02-18T20:39:47.407252+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] UID: 24224407
+2016-02-18T20:39:47.407086+00:00 app[web.1]: 
+2016-02-18T20:39:47.407062+00:00 app[web.1]: 
+2016-02-18T20:39:47.407082+00:00 app[web.1]: 
+2016-02-18T20:39:47.407360+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] Section ID: 315598229
+2016-02-18T20:39:47.407478+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] Assignment ID: 340468553
+2016-02-18T20:39:47.407675+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] Array
+2016-02-18T20:39:47.407583+00:00 app[web.1]: 
+2016-02-18T20:39:47.407581+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] Requirement Type found - courses
+2016-02-18T20:39:47.407677+00:00 app[web.1]: (
+2016-02-18T20:39:47.407709+00:00 app[web.1]: 
+2016-02-18T20:39:47.407707+00:00 app[web.1]: )
+2016-02-18T20:39:47.407706+00:00 app[web.1]:     [req_type] => courses
+2016-02-18T20:39:47.407710+00:00 app[web.1]: 
+2016-02-18T20:39:47.408875+00:00 app[web.1]: 10.139.103.181 - - [18/Feb/2016:20:39:47 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2016-02-18T20:39:47.393351+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] got token!
+2016-02-18T20:39:47.393387+00:00 app[web.1]: 
+2016-02-18T20:39:47.393511+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] Array
+2016-02-18T20:39:47.393557+00:00 app[web.1]: (
+2016-02-18T20:39:47.393589+00:00 app[web.1]:     [uid] => 22135108
+2016-02-18T20:39:47.393645+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
+2016-02-18T20:39:47.393716+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
+2016-02-18T20:39:47.393764+00:00 app[web.1]:     [token_is_access] => 1
+2016-02-18T20:39:47.393780+00:00 app[web.1]: )
+2016-02-18T20:39:47.393794+00:00 app[web.1]: 
+2016-02-18T20:39:47.393808+00:00 app[web.1]: 
+2016-02-18T20:39:47.394857+00:00 app[web.1]: [18-Feb-2016 20:39:47 UTC] {"uid":24224407,"timestamp":1455827588,"type":"dropbox_submission.update","data":{"realm":"section","section_id":315598229,"realm_id":315598229,"uid":"24224407","revision_id":"4","assignment_nid":"340468553","object":{"revision_id":4,"uid":24224407,"created":1455827588,"num_items":1,"late":0,"draft":0,"assignment_nid":"340468553","attachments":{"files":{"file":{"198887151":{"id":198887151,"fid":1129542539,"type":"file","title":"dropbox_24224407_r4.html","filename":"dropbox_24224407_r4.html","filesize":169,"md5_checksum":"d8d6af23e2c221aa5fe459d7f750c636","timestamp":1455827588,"filemime":"text\/html","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/315598229\/dropbox_24224407_r4_56c62a8458871.html","extension":"html","converted_status":"1","converted_type":4,"converted_filename":"1455827589-d8d6af23e2c221aa5fe459d7f750c636-56c62a852f012_56c62a8637e43.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201602\/course\/315598229\/1455827589-d8d6af23e2c221aa5fe459d7f750c636-56c62a852f012_56c62a8637e43.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":7957,"converted_md5_checksum":"589c6aa3895d4a28781ea221763ec3c3"}}}}}}}
