@@ -94,3 +94,25 @@
 2017-05-25T22:53:48.191918+00:00 app[web.1]: 
 2017-05-25T22:53:48.211394+00:00 app[web.1]: 10.69.198.55 - - [25/May/2017:22:53:48 +0000] "GET / HTTP/1.1" 302 1726 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
 2017-05-25T22:53:48.206957+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=9a6f5b96-c707-479b-b77f-a4b354913e52 fwd="38.93.38.58" dyno=web.1 connect=1ms service=194ms status=302 bytes=2067 protocol=https
+2017-05-25T23:29:48.780887+00:00 heroku[web.1]: Idling
+2017-05-25T23:29:48.781769+00:00 heroku[web.1]: State changed from up to down
+2017-05-25T23:29:49.733635+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-25T23:29:49.747863+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-25T23:29:50.074348+00:00 heroku[web.1]: Process exited with status 143
+2017-05-26T17:22:04.154859+00:00 heroku[web.1]: State changed from down to starting
+2017-05-26T17:22:05.555455+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-26T17:22:08.128219+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-26T17:22:08.146464+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-26T17:22:08.307161+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-26T17:22:08.337434+00:00 app[web.1]: Starting php-fpm...
+2017-05-26T17:22:10.345156+00:00 app[web.1]: Starting httpd...
+2017-05-26T17:22:10.913181+00:00 heroku[web.1]: State changed from starting to up
+2017-05-26T17:22:39.414444+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-26T17:22:39.577327+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=9a9c4848-55bd-4996-886e-9ce8f142e37d fwd="38.93.38.58" dyno=web.1 connect=0ms service=176ms status=302 bytes=2068 protocol=https
+2017-05-26T17:22:39.570184+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] PHP Warning:  error_log() expects parameter 1 to be string, object given in /app/web/index.php on line 283
+2017-05-26T17:22:39.570241+00:00 app[web.1]: 
+2017-05-26T17:22:39.570285+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] 1
+2017-05-26T17:22:39.570286+00:00 app[web.1]: 
+2017-05-26T17:22:39.570240+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] Request Token Results!
+2017-05-26T17:22:39.420234+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-26T17:22:39.576943+00:00 app[web.1]: 10.164.172.163 - - [26/May/2017:17:22:39 +0000] "GET / HTTP/1.1" 302 1727 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
