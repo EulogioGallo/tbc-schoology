@@ -288,6 +288,7 @@ if($token) {
  
       $storage->saveRequestTokens($schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
  
+ 	  /*
       $params = array(
         'oauth_callback=' . urlencode('https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']),
         'oauth_token=' . urlencode($result['oauth_token']),
@@ -296,6 +297,7 @@ if($token) {
       $query_string = implode('&', $params);
       $header_string = 'Location: https://www.schoology.com/oauth/authorize?' . $query_string;
       header($header_string);
+	  */
       exit;
 
     } else {
