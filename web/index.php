@@ -295,7 +295,7 @@ if($token) {
 	  error_log(print_r($token, true));
 	  $schoology->setKey($token['token_key']);
       $schoology->setSecret($token['token_secret']);
-	  $api_result = $schoology->apiResult('courses/1079274138');
+	  $api_result = $schoology->apiResult('users/22135108/sections');
 	  error_log(print_r($api_result, true));
       exit;
 
