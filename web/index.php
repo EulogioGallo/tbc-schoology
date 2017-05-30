@@ -212,9 +212,6 @@ $schoology = new SchoologyApi($schoology_key, $schoology_secret, '', '', '', TRU
 $storage = new SchoologyStorage();
  
 $token = $storage->getAccessTokens($schoology_uid);
-
-error_log("Test!\n");
-error_log(print_r($schoology, true));
  
 if($token) {
 
@@ -293,16 +290,13 @@ if($token) {
  
       $storage->saveRequestTokens($schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
  
- 	  /*
-      $params = array(
-        'oauth_callback=' . urlencode('https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']),
-        'oauth_token=' . urlencode($result['oauth_token']),
-      );
- 
-      $query_string = implode('&', $params);
-      $header_string = 'Location: https://www.schoology.com/oauth/authorize?' . $query_string;
-      header($header_string);
-	  */
+ 	  // now lets see if we can get some info via API
+	  $token = $storage->getAccessTokens($schoology_uid);
+	  error_log(print_r($token, true));
+	  $schoology->setKey($token['token_key']);
+      $schoology->setSecret($token['token_secret']);
+	  $api_result = $schoology->apiResult('courses/1079274138');
+	  error_log(print_r($api_result, true));
       exit;
 
     } else {
