@@ -257,3 +257,77 @@
 2017-05-30T18:32:01.544431+00:00 heroku[web.1]: Stopping all processes with SIGTERM
 2017-05-30T18:32:01.569928+00:00 app[web.1]: Going down, terminating child processes...
 2017-05-30T18:32:01.755569+00:00 heroku[web.1]: Process exited with status 143
+2017-05-30T20:00:49.955051+00:00 heroku[web.1]: State changed from down to starting
+2017-05-30T20:00:51.485835+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-30T20:00:54.355118+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-30T20:00:54.376989+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-30T20:00:54.547210+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-30T20:00:54.563598+00:00 app[web.1]: Starting php-fpm...
+2017-05-30T20:00:56.572883+00:00 app[web.1]: Starting httpd...
+2017-05-30T20:00:56.979439+00:00 heroku[web.1]: State changed from starting to up
+2017-05-30T20:01:31.859920+00:00 app[web.1]: 
+2017-05-30T20:01:31.756875+00:00 app[web.1]: [30-May-2017 20:01:31 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-30T20:01:31.859809+00:00 app[web.1]: [30-May-2017 20:01:31 UTC] 1
+2017-05-30T20:01:31.864620+00:00 app[web.1]: 10.164.172.163 - - [30/May/2017:20:01:31 +0000] "GET / HTTP/1.1" 200 4546 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:01:31.760907+00:00 app[web.1]: [30-May-2017 20:01:31 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-30T20:01:31.778183+00:00 app[web.1]: [30-May-2017 20:01:31 UTC] 1
+2017-05-30T20:01:31.859882+00:00 app[web.1]: [30-May-2017 20:01:31 UTC] Request Token Results!
+2017-05-30T20:01:31.859883+00:00 app[web.1]: 
+2017-05-30T20:01:31.859918+00:00 app[web.1]: [30-May-2017 20:01:31 UTC] 1
+2017-05-30T20:01:31.865535+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=ad6c53ab-6460-42fc-bd76-e3862983982c fwd="38.93.38.58" dyno=web.1 connect=0ms service=119ms status=200 bytes=4718 protocol=https
+2017-05-30T20:01:32.059422+00:00 app[web.1]: [30-May-2017 20:01:32 UTC] 1
+2017-05-30T20:01:32.012877+00:00 app[web.1]: [30-May-2017 20:01:32 UTC] 1
+2017-05-30T20:01:32.059513+00:00 app[web.1]: [30-May-2017 20:01:32 UTC] Request Token Results!
+2017-05-30T20:01:32.059515+00:00 app[web.1]: 
+2017-05-30T20:01:32.059552+00:00 app[web.1]: [30-May-2017 20:01:32 UTC] 1
+2017-05-30T20:01:32.059553+00:00 app[web.1]: 
+2017-05-30T20:01:32.066661+00:00 app[web.1]: 10.164.172.163 - - [30/May/2017:20:01:31 +0000] "GET /favicon.ico HTTP/1.1" 200 4543 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:01:32.067356+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=a6d52257-e41b-4c8e-a662-638ab06d3caa fwd="38.93.38.58" dyno=web.1 connect=0ms service=80ms status=200 bytes=4715 protocol=https
+2017-05-30T20:01:33.784035+00:00 app[web.1]: [30-May-2017 20:01:33 UTC] 1
+2017-05-30T20:01:33.845384+00:00 app[web.1]: [30-May-2017 20:01:33 UTC] 1
+2017-05-30T20:01:33.845473+00:00 app[web.1]: [30-May-2017 20:01:33 UTC] Request Token Results!
+2017-05-30T20:01:33.845493+00:00 app[web.1]: 
+2017-05-30T20:01:33.845644+00:00 app[web.1]: [30-May-2017 20:01:33 UTC] 1
+2017-05-30T20:01:33.857778+00:00 app[web.1]: 10.164.172.163 - - [30/May/2017:20:01:33 +0000] "GET / HTTP/1.1" 200 4545 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:01:33.845645+00:00 app[web.1]: 
+2017-05-30T20:01:33.983382+00:00 app[web.1]: [30-May-2017 20:01:33 UTC] 1
+2017-05-30T20:01:33.858722+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=212d851a-5783-4688-b2e0-b637680f2da2 fwd="38.93.38.58" dyno=web.1 connect=0ms service=101ms status=200 bytes=4717 protocol=https
+2017-05-30T20:01:34.050517+00:00 app[web.1]: [30-May-2017 20:01:34 UTC] 1
+2017-05-30T20:01:34.050551+00:00 app[web.1]: [30-May-2017 20:01:34 UTC] Request Token Results!
+2017-05-30T20:01:34.050578+00:00 app[web.1]: 
+2017-05-30T20:01:34.050609+00:00 app[web.1]: [30-May-2017 20:01:34 UTC] 1
+2017-05-30T20:01:34.057278+00:00 app[web.1]: 10.164.172.163 - - [30/May/2017:20:01:33 +0000] "GET /favicon.ico HTTP/1.1" 200 4553 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:01:34.050610+00:00 app[web.1]: 
+2017-05-30T20:01:34.058170+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=e3669e61-4a13-45c1-b20b-c8ed5eff1618 fwd="38.93.38.58" dyno=web.1 connect=1ms service=95ms status=200 bytes=4725 protocol=https
+2017-05-30T20:02:26.753573+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=4f9e477c-a99d-496e-8e1d-5606404dd8d8 fwd="38.93.38.58" dyno=web.1 connect=0ms service=74ms status=200 bytes=4721 protocol=https
+2017-05-30T20:02:26.694266+00:00 app[web.1]: [30-May-2017 20:02:26 UTC] 1
+2017-05-30T20:02:26.747657+00:00 app[web.1]: [30-May-2017 20:02:26 UTC] 1
+2017-05-30T20:02:26.747674+00:00 app[web.1]: [30-May-2017 20:02:26 UTC] Request Token Results!
+2017-05-30T20:02:26.747677+00:00 app[web.1]: 
+2017-05-30T20:02:26.747735+00:00 app[web.1]: [30-May-2017 20:02:26 UTC] 1
+2017-05-30T20:02:26.747736+00:00 app[web.1]: 
+2017-05-30T20:02:26.752711+00:00 app[web.1]: 10.164.172.163 - - [30/May/2017:20:02:26 +0000] "GET / HTTP/1.1" 200 4549 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:02:26.883823+00:00 app[web.1]: [30-May-2017 20:02:26 UTC] 1
+2017-05-30T20:02:26.936278+00:00 app[web.1]: [30-May-2017 20:02:26 UTC] 1
+2017-05-30T20:02:26.936292+00:00 app[web.1]: [30-May-2017 20:02:26 UTC] Request Token Results!
+2017-05-30T20:02:26.936293+00:00 app[web.1]: 
+2017-05-30T20:02:26.936337+00:00 app[web.1]: [30-May-2017 20:02:26 UTC] 1
+2017-05-30T20:02:26.936337+00:00 app[web.1]: 
+2017-05-30T20:02:26.941644+00:00 app[web.1]: 10.164.172.163 - - [30/May/2017:20:02:26 +0000] "GET /favicon.ico HTTP/1.1" 200 4533 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:02:26.942367+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=54ccb6fc-1b88-43d7-8fb7-a2fede0ba212 fwd="38.93.38.58" dyno=web.1 connect=1ms service=77ms status=200 bytes=4705 protocol=https
+2017-05-30T20:02:27.584929+00:00 app[web.1]: [30-May-2017 20:02:27 UTC] 1
+2017-05-30T20:02:27.540090+00:00 app[web.1]: [30-May-2017 20:02:27 UTC] 1
+2017-05-30T20:02:27.584937+00:00 app[web.1]: [30-May-2017 20:02:27 UTC] Request Token Results!
+2017-05-30T20:02:27.584938+00:00 app[web.1]: 
+2017-05-30T20:02:27.584976+00:00 app[web.1]: [30-May-2017 20:02:27 UTC] 1
+2017-05-30T20:02:27.584977+00:00 app[web.1]: 
+2017-05-30T20:02:27.589680+00:00 app[web.1]: 10.164.172.163 - - [30/May/2017:20:02:27 +0000] "GET / HTTP/1.1" 200 4541 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:02:27.775585+00:00 app[web.1]: [30-May-2017 20:02:27 UTC] 1
+2017-05-30T20:02:27.712113+00:00 app[web.1]: [30-May-2017 20:02:27 UTC] 1
+2017-05-30T20:02:27.778077+00:00 app[web.1]: [30-May-2017 20:02:27 UTC] Request Token Results!
+2017-05-30T20:02:27.778079+00:00 app[web.1]: 
+2017-05-30T20:02:27.778083+00:00 app[web.1]: [30-May-2017 20:02:27 UTC] 1
+2017-05-30T20:02:27.781644+00:00 app[web.1]: 10.164.172.163 - - [30/May/2017:20:02:27 +0000] "GET /favicon.ico HTTP/1.1" 200 4549 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:02:27.778085+00:00 app[web.1]: 
+2017-05-30T20:02:27.591599+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=6bfaa1c1-5fa1-4cc0-a519-2a71fe58ae27 fwd="38.93.38.58" dyno=web.1 connect=0ms service=66ms status=200 bytes=4713 protocol=https
+2017-05-30T20:02:27.782517+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=43cb63be-25cb-4d9a-be24-3184ab06f961 fwd="38.93.38.58" dyno=web.1 connect=0ms service=86ms status=200 bytes=4721 protocol=https
