@@ -331,3 +331,57 @@
 2017-05-30T20:02:27.778085+00:00 app[web.1]: 
 2017-05-30T20:02:27.591599+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=6bfaa1c1-5fa1-4cc0-a519-2a71fe58ae27 fwd="38.93.38.58" dyno=web.1 connect=0ms service=66ms status=200 bytes=4713 protocol=https
 2017-05-30T20:02:27.782517+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=43cb63be-25cb-4d9a-be24-3184ab06f961 fwd="38.93.38.58" dyno=web.1 connect=0ms service=86ms status=200 bytes=4721 protocol=https
+2017-05-30T20:04:04.225894+00:00 heroku[web.1]: Restarting
+2017-05-30T20:04:04.226534+00:00 heroku[web.1]: State changed from up to starting
+2017-05-30T20:04:05.088820+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-30T20:04:05.105620+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-30T20:04:05.225714+00:00 heroku[web.1]: Process exited with status 143
+2017-05-30T20:04:06.154942+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-30T20:04:09.687864+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-30T20:04:09.712868+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-30T20:04:10.066025+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-30T20:04:10.140430+00:00 app[web.1]: Starting php-fpm...
+2017-05-30T20:04:12.153283+00:00 app[web.1]: Starting httpd...
+2017-05-30T20:04:12.949971+00:00 heroku[web.1]: State changed from starting to up
+2017-05-30T20:04:37.731030+00:00 app[web.1]: [30-May-2017 20:04:37 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-30T20:04:37.737369+00:00 app[web.1]: [30-May-2017 20:04:37 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-30T20:04:37.775433+00:00 app[web.1]: [30-May-2017 20:04:37 UTC] Test!
+2017-05-30T20:04:37.775436+00:00 app[web.1]: 
+2017-05-30T20:04:37.775543+00:00 app[web.1]: [30-May-2017 20:04:37 UTC] 1
+2017-05-30T20:04:37.868035+00:00 app[web.1]: [30-May-2017 20:04:37 UTC] Request Token Results!
+2017-05-30T20:04:37.867958+00:00 app[web.1]: [30-May-2017 20:04:37 UTC] 1
+2017-05-30T20:04:37.868057+00:00 app[web.1]: 
+2017-05-30T20:04:37.868098+00:00 app[web.1]: [30-May-2017 20:04:37 UTC] 1
+2017-05-30T20:04:37.868115+00:00 app[web.1]: 
+2017-05-30T20:04:37.880714+00:00 app[web.1]: 10.45.85.125 - - [30/May/2017:20:04:37 +0000] "GET / HTTP/1.1" 200 4552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:04:37.880727+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=60932c79-9257-4246-b3ab-ea193ea81604 fwd="38.93.38.58" dyno=web.1 connect=1ms service=164ms status=200 bytes=4724 protocol=https
+2017-05-30T20:04:38.047781+00:00 app[web.1]: [30-May-2017 20:04:38 UTC] Test!
+2017-05-30T20:04:38.047818+00:00 app[web.1]: 
+2017-05-30T20:04:38.047859+00:00 app[web.1]: [30-May-2017 20:04:38 UTC] 1
+2017-05-30T20:04:38.103665+00:00 app[web.1]: [30-May-2017 20:04:38 UTC] Request Token Results!
+2017-05-30T20:04:38.103666+00:00 app[web.1]: 
+2017-05-30T20:04:38.103662+00:00 app[web.1]: [30-May-2017 20:04:38 UTC] 1
+2017-05-30T20:04:38.103667+00:00 app[web.1]: [30-May-2017 20:04:38 UTC] 1
+2017-05-30T20:04:38.103667+00:00 app[web.1]: 
+2017-05-30T20:04:38.128444+00:00 app[web.1]: 10.45.85.125 - - [30/May/2017:20:04:38 +0000] "GET /favicon.ico HTTP/1.1" 200 4549 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:04:38.128774+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=7fdc0287-302c-44d0-b2a0-e60081b8203e fwd="38.93.38.58" dyno=web.1 connect=1ms service=118ms status=200 bytes=4721 protocol=https
+2017-05-30T20:04:40.787733+00:00 app[web.1]: [30-May-2017 20:04:40 UTC] Test!
+2017-05-30T20:04:40.787785+00:00 app[web.1]: 
+2017-05-30T20:04:40.787826+00:00 app[web.1]: [30-May-2017 20:04:40 UTC] 1
+2017-05-30T20:04:40.851232+00:00 app[web.1]: [30-May-2017 20:04:40 UTC] 1
+2017-05-30T20:04:40.851349+00:00 app[web.1]: [30-May-2017 20:04:40 UTC] Request Token Results!
+2017-05-30T20:04:40.851369+00:00 app[web.1]: 
+2017-05-30T20:04:40.851425+00:00 app[web.1]: [30-May-2017 20:04:40 UTC] 1
+2017-05-30T20:04:40.851460+00:00 app[web.1]: 
+2017-05-30T20:04:40.869643+00:00 app[web.1]: 10.45.85.125 - - [30/May/2017:20:04:40 +0000] "GET / HTTP/1.1" 200 4549 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T20:04:41.023815+00:00 app[web.1]: [30-May-2017 20:04:41 UTC] Test!
+2017-05-30T20:04:41.023818+00:00 app[web.1]: 
+2017-05-30T20:04:41.023819+00:00 app[web.1]: [30-May-2017 20:04:41 UTC] 1
+2017-05-30T20:04:40.870591+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=119d56d2-1714-4bbd-bdac-b0905a49546d fwd="38.93.38.58" dyno=web.1 connect=2ms service=127ms status=200 bytes=4721 protocol=https
+2017-05-30T20:04:41.462678+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=ae570384-9a92-4ae1-8184-a8beda9b320a fwd="38.93.38.58" dyno=web.1 connect=1ms service=487ms status=200 bytes=4711 protocol=https
+2017-05-30T20:04:41.448562+00:00 app[web.1]: [30-May-2017 20:04:41 UTC] 1
+2017-05-30T20:04:41.448654+00:00 app[web.1]: [30-May-2017 20:04:41 UTC] Request Token Results!
+2017-05-30T20:04:41.448700+00:00 app[web.1]: [30-May-2017 20:04:41 UTC] 1
+2017-05-30T20:04:41.448666+00:00 app[web.1]: 
+2017-05-30T20:04:41.448713+00:00 app[web.1]: 
+2017-05-30T20:04:41.462376+00:00 app[web.1]: 10.45.85.125 - - [30/May/2017:20:04:40 +0000] "GET /favicon.ico HTTP/1.1" 200 4539 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36

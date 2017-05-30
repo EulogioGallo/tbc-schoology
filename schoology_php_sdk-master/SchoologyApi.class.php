@@ -68,6 +68,9 @@ class SchoologyApi
     $this->curl_resource = curl_init();
     $this->_is_two_legged = $two_legged;
     $this->_saml_cert_path = __DIR__ . '/app.schoology.com.crt';
+	
+	error_log("In constructor...\n");
+	error_log(print_r($this));
   }
   
   public function __destruct(){
