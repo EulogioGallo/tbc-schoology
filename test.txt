@@ -1,1501 +1,259 @@
-2017-05-25T05:05:17.424241+00:00 app[web.1]: 
-2017-05-25T05:05:17.424301+00:00 app[web.1]:                 )
-2017-05-25T05:05:17.424302+00:00 app[web.1]: 
-2017-05-25T05:05:17.424323+00:00 app[web.1]:         )
-2017-05-25T05:05:17.424324+00:00 app[web.1]: 
-2017-05-25T05:05:17.424326+00:00 app[web.1]: )
-2017-05-25T05:05:17.424377+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] UID: 46664632
-2017-05-25T05:05:17.424326+00:00 app[web.1]: 
-2017-05-25T05:05:17.424428+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] Section ID: 889115804
-2017-05-25T05:05:17.424483+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] Assignment ID: 1027844626
-2017-05-25T05:05:17.424550+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] Requirement Type found - courses
-2017-05-25T05:05:17.424552+00:00 app[web.1]: 
-2017-05-25T05:05:17.424732+00:00 app[web.1]: 
-2017-05-25T05:05:17.424729+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664632' AND Schoology_Grade_ID__c = '1027844626' LIMIT 1
-2017-05-25T05:05:17.424784+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] In Salesforce Query
-2017-05-25T05:05:17.526303+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T05:05:17.424785+00:00 app[web.1]: 
-2017-05-25T05:05:17.526607+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T05:05:17.526627+00:00 app[web.1]: 
-2017-05-25T05:05:17.526648+00:00 app[web.1]: 
-2017-05-25T05:05:17.526760+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T05:05:17.526776+00:00 app[web.1]: 
-2017-05-25T05:05:17.526819+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] 
-2017-05-25T05:05:17.526875+00:00 app[web.1]: 
-2017-05-25T05:05:17.526915+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] 
-2017-05-25T05:05:17.526860+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] 
-2017-05-25T05:05:17.527033+00:00 app[web.1]: 10.31.48.247 - - [25/May/2017:05:05:16 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T05:05:17.526932+00:00 app[web.1]: 
-2017-05-25T05:05:17.845153+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=6fa20fc2-1fdf-4e31-b8fd-260e3470f57b fwd="52.5.140.116" dyno=web.1 connect=1ms service=456ms status=302 bytes=298 protocol=https
-2017-05-25T05:05:17.841836+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T05:05:17.842211+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T05:05:17.842229+00:00 app[web.1]: 
-2017-05-25T05:05:17.842246+00:00 app[web.1]: 
-2017-05-25T05:05:17.842402+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T05:05:17.842421+00:00 app[web.1]: 
-2017-05-25T05:05:17.842462+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] 
-2017-05-25T05:05:17.842531+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] 
-2017-05-25T05:05:17.842548+00:00 app[web.1]: 
-2017-05-25T05:05:17.842588+00:00 app[web.1]: [25-May-2017 05:05:17 UTC] 
-2017-05-25T05:05:17.842605+00:00 app[web.1]: 
-2017-05-25T05:05:17.842887+00:00 app[web.1]: 10.79.219.198 - - [25/May/2017:05:05:17 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T05:20:16.230219+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] got token!
-2017-05-25T05:20:16.230236+00:00 app[web.1]: 
-2017-05-25T05:20:16.230237+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] Array
-2017-05-25T05:20:16.230238+00:00 app[web.1]: (
-2017-05-25T05:20:16.230239+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T05:20:16.230238+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T05:20:16.230245+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T05:20:16.230284+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T05:20:16.230285+00:00 app[web.1]: )
-2017-05-25T05:20:16.230288+00:00 app[web.1]: 
-2017-05-25T05:20:16.230289+00:00 app[web.1]: 
-2017-05-25T05:20:16.230985+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] {"uid":46664622,"timestamp":1495682430,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664622","revision_id":"1","assignment_nid":"1029557208","object":{"revision_id":1,"uid":46664622,"created":1495682430,"num_items":1,"late":1,"draft":0,"assignment_nid":"1029557208","attachments":{"files":{"file":{"436195766":{"id":436195766,"fid":2421042456,"type":"file","title":"Small Action Presentation.docx","filename":"Small Action Presentation.docx","filesize":30772,"md5_checksum":"d98e75a23b58630a7b8add9d9bbc08f9","timestamp":1495682429,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Small_Action_Presentation_59264d7d25811.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Small Action Presentation.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436195766\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":73407,"converted_md5_checksum":"1ed8e248794e6a64c3bff18e62927ea8"}}}}}}}
-2017-05-25T05:20:16.231006+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] stdClass Object
-2017-05-25T05:20:16.231007+00:00 app[web.1]: (
-2017-05-25T05:20:16.231026+00:00 app[web.1]:     [uid] => 46664622
-2017-05-25T05:20:16.231047+00:00 app[web.1]:     [timestamp] => 1495682430
-2017-05-25T05:20:16.231075+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T05:20:16.231095+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T05:20:16.231125+00:00 app[web.1]:             [realm] => section
-2017-05-25T05:20:16.231098+00:00 app[web.1]:         (
-2017-05-25T05:20:16.231178+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T05:20:16.231155+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T05:20:16.231199+00:00 app[web.1]:             [uid] => 46664622
-2017-05-25T05:20:16.231221+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T05:20:16.231249+00:00 app[web.1]:             [assignment_nid] => 1029557208
-2017-05-25T05:20:16.231275+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T05:20:16.231290+00:00 app[web.1]:                 (
-2017-05-25T05:20:16.231336+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T05:20:16.231367+00:00 app[web.1]:                     [uid] => 46664622
-2017-05-25T05:20:16.231404+00:00 app[web.1]:                     [created] => 1495682430
-2017-05-25T05:20:16.231437+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T05:20:16.231468+00:00 app[web.1]:                     [late] => 1
-2017-05-25T05:20:16.231499+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T05:20:16.231541+00:00 app[web.1]:                     [assignment_nid] => 1029557208
-2017-05-25T05:20:16.231581+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T05:20:16.231607+00:00 app[web.1]:                         (
-2017-05-25T05:20:16.231649+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T05:20:16.231679+00:00 app[web.1]:                                 (
-2017-05-25T05:20:16.231723+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T05:20:16.231757+00:00 app[web.1]:                                         (
-2017-05-25T05:20:16.231809+00:00 app[web.1]:                                             [436195766] => stdClass Object
-2017-05-25T05:20:16.231869+00:00 app[web.1]:                                                 (
-2017-05-25T05:20:16.231920+00:00 app[web.1]:                                                     [id] => 436195766
-2017-05-25T05:20:16.231984+00:00 app[web.1]:                                                     [fid] => 2421042456
-2017-05-25T05:20:16.232047+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T05:20:16.232135+00:00 app[web.1]:                                                     [title] => Small Action Presentation.docx
-2017-05-25T05:20:16.232224+00:00 app[web.1]:                                                     [filename] => Small Action Presentation.docx
-2017-05-25T05:20:16.232290+00:00 app[web.1]:                                                     [filesize] => 30772
-2017-05-25T05:20:16.232381+00:00 app[web.1]:                                                     [md5_checksum] => d98e75a23b58630a7b8add9d9bbc08f9
-2017-05-25T05:20:16.232450+00:00 app[web.1]:                                                     [timestamp] => 1495682429
-2017-05-25T05:20:16.232726+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Small_Action_Presentation_59264d7d25811.docx
-2017-05-25T05:20:16.232567+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T05:20:16.232795+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T05:20:16.233031+00:00 app[web.1]:                                                     [converted_filename] => Small Action Presentation.pdf
-2017-05-25T05:20:16.232868+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T05:20:16.232946+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T05:20:16.233159+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436195766/conversion/file.pdf
-2017-05-25T05:20:16.233234+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T05:20:16.233322+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T05:20:16.233393+00:00 app[web.1]:                                                     [converted_filesize] => 73407
-2017-05-25T05:20:16.233490+00:00 app[web.1]:                                                     [converted_md5_checksum] => 1ed8e248794e6a64c3bff18e62927ea8
-2017-05-25T05:20:16.233537+00:00 app[web.1]:                                                 )
-2017-05-25T05:20:16.233538+00:00 app[web.1]: 
-2017-05-25T05:20:16.233584+00:00 app[web.1]:                                         )
-2017-05-25T05:20:16.233584+00:00 app[web.1]: 
-2017-05-25T05:20:16.233634+00:00 app[web.1]:                                 )
-2017-05-25T05:20:16.233662+00:00 app[web.1]: 
-2017-05-25T05:20:16.233661+00:00 app[web.1]:                         )
-2017-05-25T05:20:16.233635+00:00 app[web.1]: 
-2017-05-25T05:20:16.233686+00:00 app[web.1]:                 )
-2017-05-25T05:20:16.233686+00:00 app[web.1]: 
-2017-05-25T05:20:16.233707+00:00 app[web.1]:         )
-2017-05-25T05:20:16.233707+00:00 app[web.1]: 
-2017-05-25T05:20:16.233708+00:00 app[web.1]: )
-2017-05-25T05:20:16.233725+00:00 app[web.1]: 
-2017-05-25T05:20:16.233767+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] UID: 46664622
-2017-05-25T05:20:16.233819+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] Section ID: 889115804
-2017-05-25T05:20:16.233863+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] Assignment ID: 1029557208
-2017-05-25T05:20:16.233918+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] Requirement Type found - courses
-2017-05-25T05:20:16.233919+00:00 app[web.1]: 
-2017-05-25T05:20:16.234129+00:00 app[web.1]: 
-2017-05-25T05:20:16.234128+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664622' AND Schoology_Grade_ID__c = '1029557208' LIMIT 1
-2017-05-25T05:20:16.234180+00:00 app[web.1]: 
-2017-05-25T05:20:16.234179+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] In Salesforce Query
-2017-05-25T05:20:16.763814+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=324fbc2d-7870-45b1-b369-7cd81bdc7dc4 fwd="52.4.171.101" dyno=web.1 connect=0ms service=563ms status=302 bytes=298 protocol=https
-2017-05-25T05:20:16.755563+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T05:20:16.755807+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T05:20:16.755811+00:00 app[web.1]: 
-2017-05-25T05:20:16.755966+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T05:20:16.755813+00:00 app[web.1]: 
-2017-05-25T05:20:16.755970+00:00 app[web.1]: 
-2017-05-25T05:20:16.756057+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] 
-2017-05-25T05:20:16.756450+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] 
-2017-05-25T05:20:16.756454+00:00 app[web.1]: 
-2017-05-25T05:20:16.756537+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] 
-2017-05-25T05:20:16.756540+00:00 app[web.1]: 
-2017-05-25T05:20:16.762726+00:00 app[web.1]: 10.81.172.78 - - [25/May/2017:05:20:16 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T05:20:16.784972+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] got token!
-2017-05-25T05:20:16.784974+00:00 app[web.1]: 
-2017-05-25T05:20:16.785001+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] Array
-2017-05-25T05:20:16.785030+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T05:20:16.785002+00:00 app[web.1]: (
-2017-05-25T05:20:16.785093+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T05:20:16.785157+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T05:20:16.785185+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T05:20:16.785187+00:00 app[web.1]: )
-2017-05-25T05:20:16.785189+00:00 app[web.1]: 
-2017-05-25T05:20:16.785190+00:00 app[web.1]: 
-2017-05-25T05:20:16.785879+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] {"uid":46664622,"timestamp":1495682938,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664622","revision_id":"2","assignment_nid":"1029557208","object":{"revision_id":2,"uid":46664622,"created":1495682938,"num_items":1,"late":1,"draft":0,"assignment_nid":"1029557208","attachments":{"files":{"file":{"436198540":{"id":436198540,"fid":2421047516,"type":"file","title":"Shadowing Reflection Teacher 9.docx","filename":"Shadowing Reflection Teacher 9.docx","filesize":16727,"md5_checksum":"7f8a8fa68ee81c20bff99a64664f0d19","timestamp":1495682937,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Shadowing_Reflection_Teacher_9_59264f79c7f2b.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Shadowing Reflection Teacher 9.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436198540\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":33445,"converted_md5_checksum":"4ad6cef7be00b91747d7aaa24026396a"}}}}}}}
-2017-05-25T05:20:16.785919+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] stdClass Object
-2017-05-25T05:20:16.785920+00:00 app[web.1]: (
-2017-05-25T05:20:16.785949+00:00 app[web.1]:     [uid] => 46664622
-2017-05-25T05:20:16.785996+00:00 app[web.1]:     [timestamp] => 1495682938
-2017-05-25T05:20:16.786032+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T05:20:16.786063+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T05:20:16.786171+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T05:20:16.786202+00:00 app[web.1]:             [uid] => 46664622
-2017-05-25T05:20:16.786235+00:00 app[web.1]:             [revision_id] => 2
-2017-05-25T05:20:16.786066+00:00 app[web.1]:         (
-2017-05-25T05:20:16.786102+00:00 app[web.1]:             [realm] => section
-2017-05-25T05:20:16.786137+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T05:20:16.786273+00:00 app[web.1]:             [assignment_nid] => 1029557208
-2017-05-25T05:20:16.786310+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T05:20:16.786333+00:00 app[web.1]:                 (
-2017-05-25T05:20:16.786369+00:00 app[web.1]:                     [revision_id] => 2
-2017-05-25T05:20:16.786442+00:00 app[web.1]:                     [created] => 1495682938
-2017-05-25T05:20:16.786404+00:00 app[web.1]:                     [uid] => 46664622
-2017-05-25T05:20:16.786508+00:00 app[web.1]:                     [late] => 1
-2017-05-25T05:20:16.786476+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T05:20:16.786543+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T05:20:16.786584+00:00 app[web.1]:                     [assignment_nid] => 1029557208
-2017-05-25T05:20:16.786626+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T05:20:16.786656+00:00 app[web.1]:                         (
-2017-05-25T05:20:16.786700+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T05:20:16.786780+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T05:20:16.786732+00:00 app[web.1]:                                 (
-2017-05-25T05:20:16.786872+00:00 app[web.1]:                                             [436198540] => stdClass Object
-2017-05-25T05:20:16.786817+00:00 app[web.1]:                                         (
-2017-05-25T05:20:16.786912+00:00 app[web.1]:                                                 (
-2017-05-25T05:20:16.786963+00:00 app[web.1]:                                                     [id] => 436198540
-2017-05-25T05:20:16.787016+00:00 app[web.1]:                                                     [fid] => 2421047516
-2017-05-25T05:20:16.787135+00:00 app[web.1]:                                                     [title] => Shadowing Reflection Teacher 9.docx
-2017-05-25T05:20:16.787068+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T05:20:16.787202+00:00 app[web.1]:                                                     [filename] => Shadowing Reflection Teacher 9.docx
-2017-05-25T05:20:16.787255+00:00 app[web.1]:                                                     [filesize] => 16727
-2017-05-25T05:20:16.787323+00:00 app[web.1]:                                                     [md5_checksum] => 7f8a8fa68ee81c20bff99a64664f0d19
-2017-05-25T05:20:16.787378+00:00 app[web.1]:                                                     [timestamp] => 1495682937
-2017-05-25T05:20:16.787464+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T05:20:16.787581+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Shadowing_Reflection_Teacher_9_59264f79c7f2b.docx
-2017-05-25T05:20:16.787634+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T05:20:16.787962+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T05:20:16.787689+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T05:20:16.787741+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T05:20:16.787813+00:00 app[web.1]:                                                     [converted_filename] => Shadowing Reflection Teacher 9.pdf
-2017-05-25T05:20:16.787905+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436198540/conversion/file.pdf
-2017-05-25T05:20:16.788024+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T05:20:16.788081+00:00 app[web.1]:                                                     [converted_filesize] => 33445
-2017-05-25T05:20:16.788155+00:00 app[web.1]:                                                     [converted_md5_checksum] => 4ad6cef7be00b91747d7aaa24026396a
-2017-05-25T05:20:16.788237+00:00 app[web.1]:                                         )
-2017-05-25T05:20:16.788197+00:00 app[web.1]:                                                 )
-2017-05-25T05:20:16.788198+00:00 app[web.1]: 
-2017-05-25T05:20:16.788237+00:00 app[web.1]: 
-2017-05-25T05:20:16.788272+00:00 app[web.1]:                                 )
-2017-05-25T05:20:16.788272+00:00 app[web.1]: 
-2017-05-25T05:20:16.788303+00:00 app[web.1]:                         )
-2017-05-25T05:20:16.788304+00:00 app[web.1]: 
-2017-05-25T05:20:16.788343+00:00 app[web.1]:                 )
-2017-05-25T05:20:16.788344+00:00 app[web.1]: 
-2017-05-25T05:20:16.788346+00:00 app[web.1]:         )
-2017-05-25T05:20:16.788358+00:00 app[web.1]: 
-2017-05-25T05:20:16.788359+00:00 app[web.1]: )
-2017-05-25T05:20:16.788361+00:00 app[web.1]: 
-2017-05-25T05:20:16.788404+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] UID: 46664622
-2017-05-25T05:20:16.788445+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] Section ID: 889115804
-2017-05-25T05:20:16.788537+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] Requirement Type found - courses
-2017-05-25T05:20:16.788538+00:00 app[web.1]: 
-2017-05-25T05:20:16.788669+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664622' AND Schoology_Grade_ID__c = '1029557208' LIMIT 1
-2017-05-25T05:20:16.788670+00:00 app[web.1]: 
-2017-05-25T05:20:16.788711+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] In Salesforce Query
-2017-05-25T05:20:16.788712+00:00 app[web.1]: 
-2017-05-25T05:20:16.788490+00:00 app[web.1]: [25-May-2017 05:20:16 UTC] Assignment ID: 1029557208
-2017-05-25T05:20:17.134042+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=5d731e36-e9ed-4133-aac6-96887605bb6c fwd="52.4.171.101" dyno=web.1 connect=0ms service=391ms status=302 bytes=298 protocol=https
-2017-05-25T05:20:17.131260+00:00 app[web.1]: [25-May-2017 05:20:17 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T05:20:17.131468+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T05:20:17.131469+00:00 app[web.1]: 
-2017-05-25T05:20:17.131470+00:00 app[web.1]: 
-2017-05-25T05:20:17.131549+00:00 app[web.1]: [25-May-2017 05:20:17 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T05:20:17.131549+00:00 app[web.1]: 
-2017-05-25T05:20:17.131586+00:00 app[web.1]: [25-May-2017 05:20:17 UTC] 
-2017-05-25T05:20:17.131621+00:00 app[web.1]: [25-May-2017 05:20:17 UTC] 
-2017-05-25T05:20:17.131622+00:00 app[web.1]: 
-2017-05-25T05:20:17.131657+00:00 app[web.1]: [25-May-2017 05:20:17 UTC] 
-2017-05-25T05:20:17.132065+00:00 app[web.1]: 10.109.163.176 - - [25/May/2017:05:20:16 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T05:20:17.131658+00:00 app[web.1]: 
-2017-05-25T05:57:53.457175+00:00 heroku[web.1]: Idling
-2017-05-25T05:57:53.457809+00:00 heroku[web.1]: State changed from up to down
-2017-05-25T05:57:54.040318+00:00 app[web.1]: Going down, terminating child processes...
-2017-05-25T05:57:54.029372+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2017-05-25T05:57:54.198643+00:00 heroku[web.1]: Process exited with status 143
-2017-05-25T15:59:59.095381+00:00 heroku[web.1]: Unidling
-2017-05-25T15:59:59.095725+00:00 heroku[web.1]: State changed from down to starting
-2017-05-25T16:00:04.346654+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
-2017-05-25T16:00:06.243600+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
-2017-05-25T16:00:06.256622+00:00 app[web.1]: Optimizing defaults for 1X dyno...
-2017-05-25T16:00:06.362751+00:00 app[web.1]: 4 processes at 128MB memory limit.
-2017-05-25T16:00:06.366581+00:00 app[web.1]: Starting php-fpm...
-2017-05-25T16:00:08.501539+00:00 heroku[web.1]: State changed from starting to up
-2017-05-25T16:00:08.368138+00:00 app[web.1]: Starting httpd...
-2017-05-25T16:00:11.160417+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
-2017-05-25T16:00:11.163498+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
-2017-05-25T16:00:11.181564+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] got token!
-2017-05-25T16:00:11.181567+00:00 app[web.1]: 
-2017-05-25T16:00:11.181589+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] Array
-2017-05-25T16:00:11.181590+00:00 app[web.1]: (
-2017-05-25T16:00:11.181613+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T16:00:11.181658+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T16:00:11.181693+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T16:00:11.181724+00:00 app[web.1]: )
-2017-05-25T16:00:11.181723+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T16:00:11.181733+00:00 app[web.1]: 
-2017-05-25T16:00:11.181733+00:00 app[web.1]: 
-2017-05-25T16:00:11.182513+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] {"uid":46664630,"timestamp":1495727714,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664630","revision_id":"1","assignment_nid":"1027849742","object":{"revision_id":1,"uid":46664630,"created":1495727714,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027849742","attachments":{"files":{"file":{"436471680":{"id":436471680,"fid":2421882606,"type":"file","title":"Scorecard Over Multiple Years.docx","filename":"Scorecard Over Multiple Years.docx","filesize":266747,"md5_checksum":"8f19de9499e0f19feebd02847c5f88d8","timestamp":1495727699,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Scorecard_Over_Multiple_Years_5926fe531f683.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Scorecard Over Multiple Years.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436471680\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":172369,"converted_md5_checksum":"a7405909683efea6e8174c3de5da513b"}}}}}}}
-2017-05-25T16:00:11.182535+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] stdClass Object
-2017-05-25T16:00:11.182535+00:00 app[web.1]: (
-2017-05-25T16:00:11.182554+00:00 app[web.1]:     [uid] => 46664630
-2017-05-25T16:00:11.182579+00:00 app[web.1]:     [timestamp] => 1495727714
-2017-05-25T16:00:11.182603+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T16:00:11.182621+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T16:00:11.182622+00:00 app[web.1]:         (
-2017-05-25T16:00:11.182650+00:00 app[web.1]:             [realm] => section
-2017-05-25T16:00:11.182674+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T16:00:11.182717+00:00 app[web.1]:             [uid] => 46664630
-2017-05-25T16:00:11.182696+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T16:00:11.182746+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T16:00:11.182780+00:00 app[web.1]:             [assignment_nid] => 1027849742
-2017-05-25T16:00:11.182812+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T16:00:11.182833+00:00 app[web.1]:                 (
-2017-05-25T16:00:11.182865+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T16:00:11.182897+00:00 app[web.1]:                     [uid] => 46664630
-2017-05-25T16:00:11.182931+00:00 app[web.1]:                     [created] => 1495727714
-2017-05-25T16:00:11.182962+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T16:00:11.182990+00:00 app[web.1]:                     [late] => 0
-2017-05-25T16:00:11.183019+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T16:00:11.183056+00:00 app[web.1]:                     [assignment_nid] => 1027849742
-2017-05-25T16:00:11.183097+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T16:00:11.183121+00:00 app[web.1]:                         (
-2017-05-25T16:00:11.183161+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T16:00:11.183191+00:00 app[web.1]:                                 (
-2017-05-25T16:00:11.183233+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T16:00:11.183267+00:00 app[web.1]:                                         (
-2017-05-25T16:00:11.183320+00:00 app[web.1]:                                             [436471680] => stdClass Object
-2017-05-25T16:00:11.183355+00:00 app[web.1]:                                                 (
-2017-05-25T16:00:11.183402+00:00 app[web.1]:                                                     [id] => 436471680
-2017-05-25T16:00:11.183450+00:00 app[web.1]:                                                     [fid] => 2421882606
-2017-05-25T16:00:11.183496+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T16:00:11.183618+00:00 app[web.1]:                                                     [filename] => Scorecard Over Multiple Years.docx
-2017-05-25T16:00:11.183556+00:00 app[web.1]:                                                     [title] => Scorecard Over Multiple Years.docx
-2017-05-25T16:00:11.183665+00:00 app[web.1]:                                                     [filesize] => 266747
-2017-05-25T16:00:11.183730+00:00 app[web.1]:                                                     [md5_checksum] => 8f19de9499e0f19feebd02847c5f88d8
-2017-05-25T16:00:11.183781+00:00 app[web.1]:                                                     [timestamp] => 1495727699
-2017-05-25T16:00:11.183862+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T16:00:11.183971+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Scorecard_Over_Multiple_Years_5926fe531f683.docx
-2017-05-25T16:00:11.184018+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T16:00:11.184069+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T16:00:11.184118+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T16:00:11.184185+00:00 app[web.1]:                                                     [converted_filename] => Scorecard Over Multiple Years.pdf
-2017-05-25T16:00:11.184271+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436471680/conversion/file.pdf
-2017-05-25T16:00:11.184324+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T16:00:11.184381+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T16:00:11.184434+00:00 app[web.1]:                                                     [converted_filesize] => 172369
-2017-05-25T16:00:11.184502+00:00 app[web.1]:                                                     [converted_md5_checksum] => a7405909683efea6e8174c3de5da513b
-2017-05-25T16:00:11.184538+00:00 app[web.1]:                                                 )
-2017-05-25T16:00:11.184539+00:00 app[web.1]: 
-2017-05-25T16:00:11.184574+00:00 app[web.1]:                                         )
-2017-05-25T16:00:11.184606+00:00 app[web.1]:                                 )
-2017-05-25T16:00:11.184575+00:00 app[web.1]: 
-2017-05-25T16:00:11.184606+00:00 app[web.1]: 
-2017-05-25T16:00:11.184634+00:00 app[web.1]: 
-2017-05-25T16:00:11.184633+00:00 app[web.1]:                         )
-2017-05-25T16:00:11.184658+00:00 app[web.1]: 
-2017-05-25T16:00:11.184657+00:00 app[web.1]:                 )
-2017-05-25T16:00:11.184676+00:00 app[web.1]:         )
-2017-05-25T16:00:11.184677+00:00 app[web.1]: 
-2017-05-25T16:00:11.184679+00:00 app[web.1]: )
-2017-05-25T16:00:11.184681+00:00 app[web.1]: 
-2017-05-25T16:00:11.184718+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] UID: 46664630
-2017-05-25T16:00:11.184755+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] Section ID: 889115804
-2017-05-25T16:00:11.184836+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] Requirement Type found - courses
-2017-05-25T16:00:11.184794+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] Assignment ID: 1027849742
-2017-05-25T16:00:11.184837+00:00 app[web.1]: 
-2017-05-25T16:00:11.184960+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664630' AND Schoology_Grade_ID__c = '1027849742' LIMIT 1
-2017-05-25T16:00:11.184961+00:00 app[web.1]: 
-2017-05-25T16:00:11.184999+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] In Salesforce Query
-2017-05-25T16:00:11.185000+00:00 app[web.1]: 
-2017-05-25T16:00:11.782039+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T16:00:11.782219+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T16:00:11.782220+00:00 app[web.1]: 
-2017-05-25T16:00:11.782221+00:00 app[web.1]: 
-2017-05-25T16:00:11.782290+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T16:00:11.782291+00:00 app[web.1]: 
-2017-05-25T16:00:11.782321+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] 
-2017-05-25T16:00:11.782350+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] 
-2017-05-25T16:00:11.782351+00:00 app[web.1]: 
-2017-05-25T16:00:11.782381+00:00 app[web.1]: [25-May-2017 16:00:11 UTC] 
-2017-05-25T16:00:11.782382+00:00 app[web.1]: 
-2017-05-25T16:00:11.783125+00:00 app[web.1]: 10.167.190.210 - - [25/May/2017:16:00:11 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T16:00:11.782783+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=fde35c10-edd3-48a2-97b0-0295674e095d fwd="52.4.171.101" dyno=web.1 connect=1ms service=631ms status=302 bytes=298 protocol=https
-2017-05-25T16:06:37.694956+00:00 heroku[web.1]: Relocating dyno to a new server
-2017-05-25T16:06:37.699892+00:00 heroku[web.1]: State changed from up to down
-2017-05-25T16:06:37.709850+00:00 heroku[web.1]: State changed from down to starting
-2017-05-25T16:06:42.259547+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
-2017-05-25T16:06:44.104470+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
-2017-05-25T16:06:44.117705+00:00 app[web.1]: Optimizing defaults for 1X dyno...
-2017-05-25T16:06:44.216135+00:00 app[web.1]: 4 processes at 128MB memory limit.
-2017-05-25T16:06:44.219719+00:00 app[web.1]: Starting php-fpm...
-2017-05-25T16:06:46.224654+00:00 app[web.1]: Starting httpd...
-2017-05-25T16:06:46.791363+00:00 heroku[web.1]: State changed from starting to up
-2017-05-25T16:06:59.435110+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2017-05-25T16:07:00.558835+00:00 app[web.1]: Going down, terminating child processes...
-2017-05-25T16:07:00.758724+00:00 heroku[web.1]: Process exited with status 143
-2017-05-25T16:26:13.570024+00:00 app[web.1]: [25-May-2017 16:26:13 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
-2017-05-25T16:26:13.851374+00:00 app[web.1]: [25-May-2017 16:26:13 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
-2017-05-25T16:26:13.947618+00:00 app[web.1]: [25-May-2017 16:26:13 UTC] got token!
-2017-05-25T16:26:13.960094+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T16:26:13.960091+00:00 app[web.1]: (
-2017-05-25T16:26:13.947620+00:00 app[web.1]: 
-2017-05-25T16:26:13.960126+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T16:26:13.960089+00:00 app[web.1]: [25-May-2017 16:26:13 UTC] Array
-2017-05-25T16:26:13.960158+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T16:26:13.960176+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T16:26:13.960177+00:00 app[web.1]: )
-2017-05-25T16:26:13.960178+00:00 app[web.1]: 
-2017-05-25T16:26:13.960179+00:00 app[web.1]: 
-2017-05-25T16:26:13.960839+00:00 app[web.1]: [25-May-2017 16:26:13 UTC] {"uid":46664630,"timestamp":1495727714,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664630","revision_id":"1","assignment_nid":"1027849742","object":{"revision_id":1,"uid":46664630,"created":1495727714,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027849742","attachments":{"files":{"file":{"436471680":{"id":436471680,"fid":2421882606,"type":"file","title":"Scorecard Over Multiple Years.docx","filename":"Scorecard Over Multiple Years.docx","filesize":266747,"md5_checksum":"8f19de9499e0f19feebd02847c5f88d8","timestamp":1495727699,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Scorecard_Over_Multiple_Years_5926fe531f683.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Scorecard Over Multiple Years.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436471680\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":172369,"converted_md5_checksum":"a7405909683efea6e8174c3de5da513b"}}}}}}}
-2017-05-25T16:26:14.004831+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] stdClass Object
-2017-05-25T16:26:14.005020+00:00 app[web.1]: (
-2017-05-25T16:26:14.005022+00:00 app[web.1]:     [uid] => 46664630
-2017-05-25T16:26:14.005023+00:00 app[web.1]:     [timestamp] => 1495727714
-2017-05-25T16:26:14.005024+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T16:26:14.005025+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T16:26:14.005025+00:00 app[web.1]:         (
-2017-05-25T16:26:14.005061+00:00 app[web.1]:             [realm] => section
-2017-05-25T16:26:14.005417+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T16:26:14.005419+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T16:26:14.005420+00:00 app[web.1]:             [uid] => 46664630
-2017-05-25T16:26:14.005420+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T16:26:14.005421+00:00 app[web.1]:             [assignment_nid] => 1027849742
-2017-05-25T16:26:14.005421+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T16:26:14.005422+00:00 app[web.1]:                 (
-2017-05-25T16:26:14.005423+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T16:26:14.005423+00:00 app[web.1]:                     [uid] => 46664630
-2017-05-25T16:26:14.005445+00:00 app[web.1]:                     [created] => 1495727714
-2017-05-25T16:26:14.005490+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T16:26:14.005559+00:00 app[web.1]:                     [late] => 0
-2017-05-25T16:26:14.005600+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T16:26:14.005656+00:00 app[web.1]:                     [assignment_nid] => 1027849742
-2017-05-25T16:26:14.005744+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T16:26:14.005793+00:00 app[web.1]:                         (
-2017-05-25T16:26:14.005843+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T16:26:14.005898+00:00 app[web.1]:                                 (
-2017-05-25T16:26:14.005958+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T16:26:14.006002+00:00 app[web.1]:                                         (
-2017-05-25T16:26:14.006076+00:00 app[web.1]:                                             [436471680] => stdClass Object
-2017-05-25T16:26:14.006125+00:00 app[web.1]:                                                 (
-2017-05-25T16:26:14.006199+00:00 app[web.1]:                                                     [id] => 436471680
-2017-05-25T16:26:14.006260+00:00 app[web.1]:                                                     [fid] => 2421882606
-2017-05-25T16:26:14.006322+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T16:26:14.006414+00:00 app[web.1]:                                                     [title] => Scorecard Over Multiple Years.docx
-2017-05-25T16:26:14.006505+00:00 app[web.1]:                                                     [filename] => Scorecard Over Multiple Years.docx
-2017-05-25T16:26:14.006577+00:00 app[web.1]:                                                     [filesize] => 266747
-2017-05-25T16:26:14.006670+00:00 app[web.1]:                                                     [md5_checksum] => 8f19de9499e0f19feebd02847c5f88d8
-2017-05-25T16:26:14.006744+00:00 app[web.1]:                                                     [timestamp] => 1495727699
-2017-05-25T16:26:14.006865+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T16:26:14.007035+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Scorecard_Over_Multiple_Years_5926fe531f683.docx
-2017-05-25T16:26:14.007103+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T16:26:14.007173+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T16:26:14.007242+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T16:26:14.007338+00:00 app[web.1]:                                                     [converted_filename] => Scorecard Over Multiple Years.pdf
-2017-05-25T16:26:14.007471+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436471680/conversion/file.pdf
-2017-05-25T16:26:14.007546+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T16:26:14.007630+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T16:26:14.007705+00:00 app[web.1]:                                                     [converted_filesize] => 172369
-2017-05-25T16:26:14.007825+00:00 app[web.1]:                                                     [converted_md5_checksum] => a7405909683efea6e8174c3de5da513b
-2017-05-25T16:26:14.007874+00:00 app[web.1]:                                                 )
-2017-05-25T16:26:14.007876+00:00 app[web.1]: 
-2017-05-25T16:26:14.007920+00:00 app[web.1]:                                         )
-2017-05-25T16:26:14.007947+00:00 app[web.1]: 
-2017-05-25T16:26:14.007985+00:00 app[web.1]:                                 )
-2017-05-25T16:26:14.007987+00:00 app[web.1]: 
-2017-05-25T16:26:14.008020+00:00 app[web.1]:                         )
-2017-05-25T16:26:14.008021+00:00 app[web.1]: 
-2017-05-25T16:26:14.008049+00:00 app[web.1]:                 )
-2017-05-25T16:26:14.008050+00:00 app[web.1]: 
-2017-05-25T16:26:14.008073+00:00 app[web.1]:         )
-2017-05-25T16:26:14.008078+00:00 app[web.1]: 
-2017-05-25T16:26:14.008074+00:00 app[web.1]: 
-2017-05-25T16:26:14.008077+00:00 app[web.1]: )
-2017-05-25T16:26:14.008124+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] UID: 46664630
-2017-05-25T16:26:14.008174+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] Section ID: 889115804
-2017-05-25T16:26:14.008228+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] Assignment ID: 1027849742
-2017-05-25T16:26:14.008288+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] Requirement Type found - courses
-2017-05-25T16:26:14.008289+00:00 app[web.1]: 
-2017-05-25T16:26:14.008513+00:00 app[web.1]: 
-2017-05-25T16:26:14.008559+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] In Salesforce Query
-2017-05-25T16:26:14.008510+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664630' AND Schoology_Grade_ID__c = '1027849742' LIMIT 1
-2017-05-25T16:26:14.008560+00:00 app[web.1]: 
-2017-05-25T16:26:14.617364+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=a3a403c8-2a7e-4b98-8ca7-6d39d9e4a5d0 fwd="52.4.171.101" dyno=web.1 connect=0ms service=2019ms status=302 bytes=298 protocol=https
-2017-05-25T16:26:14.613657+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T16:26:14.613794+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T16:26:14.613795+00:00 app[web.1]: 
-2017-05-25T16:26:14.613796+00:00 app[web.1]: 
-2017-05-25T16:26:14.613856+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T16:26:14.613856+00:00 app[web.1]: 
-2017-05-25T16:26:14.613879+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] 
-2017-05-25T16:26:14.613898+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] 
-2017-05-25T16:26:14.613898+00:00 app[web.1]: 
-2017-05-25T16:26:14.613919+00:00 app[web.1]: [25-May-2017 16:26:14 UTC] 
-2017-05-25T16:26:14.613920+00:00 app[web.1]: 
-2017-05-25T16:26:14.615667+00:00 app[web.1]: 10.109.132.249 - - [25/May/2017:16:26:12 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T16:54:20.195771+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] got token!
-2017-05-25T16:54:20.195823+00:00 app[web.1]: 
-2017-05-25T16:54:20.196001+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] Array
-2017-05-25T16:54:20.196019+00:00 app[web.1]: (
-2017-05-25T16:54:20.196097+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T16:54:20.196161+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T16:54:20.196256+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T16:54:20.196293+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T16:54:20.196308+00:00 app[web.1]: )
-2017-05-25T16:54:20.196321+00:00 app[web.1]: 
-2017-05-25T16:54:20.196340+00:00 app[web.1]: 
-2017-05-25T16:54:20.197679+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] {"uid":46664630,"timestamp":1495727714,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664630","revision_id":"1","assignment_nid":"1027849742","object":{"revision_id":1,"uid":46664630,"created":1495727714,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027849742","attachments":{"files":{"file":{"436471680":{"id":436471680,"fid":2421882606,"type":"file","title":"Scorecard Over Multiple Years.docx","filename":"Scorecard Over Multiple Years.docx","filesize":266747,"md5_checksum":"8f19de9499e0f19feebd02847c5f88d8","timestamp":1495727699,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Scorecard_Over_Multiple_Years_5926fe531f683.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Scorecard Over Multiple Years.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436471680\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":172369,"converted_md5_checksum":"a7405909683efea6e8174c3de5da513b"}}}}}}}
-2017-05-25T16:54:20.198044+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] stdClass Object
-2017-05-25T16:54:20.198062+00:00 app[web.1]: (
-2017-05-25T16:54:20.198126+00:00 app[web.1]:     [uid] => 46664630
-2017-05-25T16:54:20.198166+00:00 app[web.1]:     [timestamp] => 1495727714
-2017-05-25T16:54:20.198213+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T16:54:20.198280+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T16:54:20.198304+00:00 app[web.1]:         (
-2017-05-25T16:54:20.198343+00:00 app[web.1]:             [realm] => section
-2017-05-25T16:54:20.198388+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T16:54:20.198456+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T16:54:20.198494+00:00 app[web.1]:             [uid] => 46664630
-2017-05-25T16:54:20.198534+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T16:54:20.198609+00:00 app[web.1]:             [assignment_nid] => 1027849742
-2017-05-25T16:54:20.198656+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T16:54:20.198685+00:00 app[web.1]:                 (
-2017-05-25T16:54:20.198743+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T16:54:20.198801+00:00 app[web.1]:                     [uid] => 46664630
-2017-05-25T16:54:20.198850+00:00 app[web.1]:                     [created] => 1495727714
-2017-05-25T16:54:20.198895+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T16:54:20.198963+00:00 app[web.1]:                     [late] => 0
-2017-05-25T16:54:20.199005+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T16:54:20.199061+00:00 app[web.1]:                     [assignment_nid] => 1027849742
-2017-05-25T16:54:20.199144+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T16:54:20.199181+00:00 app[web.1]:                         (
-2017-05-25T16:54:20.199252+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T16:54:20.199306+00:00 app[web.1]:                                 (
-2017-05-25T16:54:20.199443+00:00 app[web.1]:                                         (
-2017-05-25T16:54:20.199369+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T16:54:20.199518+00:00 app[web.1]:                                             [436471680] => stdClass Object
-2017-05-25T16:54:20.199574+00:00 app[web.1]:                                                 (
-2017-05-25T16:54:20.199670+00:00 app[web.1]:                                                     [id] => 436471680
-2017-05-25T16:54:20.199742+00:00 app[web.1]:                                                     [fid] => 2421882606
-2017-05-25T16:54:20.201592+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T16:54:20.201699+00:00 app[web.1]:                                                     [title] => Scorecard Over Multiple Years.docx
-2017-05-25T16:54:20.201904+00:00 app[web.1]:                                                     [filesize] => 266747
-2017-05-25T16:54:20.201802+00:00 app[web.1]:                                                     [filename] => Scorecard Over Multiple Years.docx
-2017-05-25T16:54:20.201998+00:00 app[web.1]:                                                     [md5_checksum] => 8f19de9499e0f19feebd02847c5f88d8
-2017-05-25T16:54:20.202097+00:00 app[web.1]:                                                     [timestamp] => 1495727699
-2017-05-25T16:54:20.202250+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T16:54:20.202445+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Scorecard_Over_Multiple_Years_5926fe531f683.docx
-2017-05-25T16:54:20.202531+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T16:54:20.202618+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T16:54:20.202708+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T16:54:20.202818+00:00 app[web.1]:                                                     [converted_filename] => Scorecard Over Multiple Years.pdf
-2017-05-25T16:54:20.202977+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436471680/conversion/file.pdf
-2017-05-25T16:54:20.203084+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T16:54:20.203167+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T16:54:20.203276+00:00 app[web.1]:                                                     [converted_filesize] => 172369
-2017-05-25T16:54:20.203459+00:00 app[web.1]:                                                 )
-2017-05-25T16:54:20.203392+00:00 app[web.1]:                                                     [converted_md5_checksum] => a7405909683efea6e8174c3de5da513b
-2017-05-25T16:54:20.203476+00:00 app[web.1]: 
-2017-05-25T16:54:20.203523+00:00 app[web.1]:                                         )
-2017-05-25T16:54:20.203538+00:00 app[web.1]: 
-2017-05-25T16:54:20.203604+00:00 app[web.1]:                                 )
-2017-05-25T16:54:20.203620+00:00 app[web.1]: 
-2017-05-25T16:54:20.203655+00:00 app[web.1]:                         )
-2017-05-25T16:54:20.203699+00:00 app[web.1]:                 )
-2017-05-25T16:54:20.203670+00:00 app[web.1]: 
-2017-05-25T16:54:20.203715+00:00 app[web.1]: 
-2017-05-25T16:54:20.203764+00:00 app[web.1]:         )
-2017-05-25T16:54:20.203779+00:00 app[web.1]: 
-2017-05-25T16:54:20.203795+00:00 app[web.1]: )
-2017-05-25T16:54:20.203809+00:00 app[web.1]: 
-2017-05-25T16:54:20.203958+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] UID: 46664630
-2017-05-25T16:54:20.204158+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] Section ID: 889115804
-2017-05-25T16:54:20.213220+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] Requirement Type found - courses
-2017-05-25T16:54:20.213024+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] Assignment ID: 1027849742
-2017-05-25T16:54:20.213258+00:00 app[web.1]: 
-2017-05-25T16:54:20.213516+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664630' AND Schoology_Grade_ID__c = '1027849742' LIMIT 1
-2017-05-25T16:54:20.213534+00:00 app[web.1]: 
-2017-05-25T16:54:20.213636+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] In Salesforce Query
-2017-05-25T16:54:20.213654+00:00 app[web.1]: 
-2017-05-25T16:54:20.685903+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=0a401aae-ef85-49c2-be21-8c38dd6944db fwd="52.5.140.116" dyno=web.1 connect=1ms service=509ms status=302 bytes=298 protocol=https
-2017-05-25T16:54:20.683046+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T16:54:20.683379+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T16:54:20.683396+00:00 app[web.1]: 
-2017-05-25T16:54:20.683412+00:00 app[web.1]: 
-2017-05-25T16:54:20.683531+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T16:54:20.683545+00:00 app[web.1]: 
-2017-05-25T16:54:20.683632+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] 
-2017-05-25T16:54:20.683648+00:00 app[web.1]: 
-2017-05-25T16:54:20.683586+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] 
-2017-05-25T16:54:20.683685+00:00 app[web.1]: [25-May-2017 16:54:20 UTC] 
-2017-05-25T16:54:20.683700+00:00 app[web.1]: 
-2017-05-25T16:54:20.684508+00:00 app[web.1]: 10.167.190.210 - - [25/May/2017:16:54:20 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T17:23:31.806699+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] got token!
-2017-05-25T17:23:31.806715+00:00 app[web.1]: 
-2017-05-25T17:23:31.806720+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] Array
-2017-05-25T17:23:31.806721+00:00 app[web.1]: (
-2017-05-25T17:23:31.806722+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T17:23:31.806773+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T17:23:31.806804+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T17:23:31.806825+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T17:23:31.806825+00:00 app[web.1]: )
-2017-05-25T17:23:31.806826+00:00 app[web.1]: 
-2017-05-25T17:23:31.806828+00:00 app[web.1]: 
-2017-05-25T17:23:31.807472+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] {"uid":46664630,"timestamp":1495727714,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664630","revision_id":"1","assignment_nid":"1027849742","object":{"revision_id":1,"uid":46664630,"created":1495727714,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027849742","attachments":{"files":{"file":{"436471680":{"id":436471680,"fid":2421882606,"type":"file","title":"Scorecard Over Multiple Years.docx","filename":"Scorecard Over Multiple Years.docx","filesize":266747,"md5_checksum":"8f19de9499e0f19feebd02847c5f88d8","timestamp":1495727699,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Scorecard_Over_Multiple_Years_5926fe531f683.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Scorecard Over Multiple Years.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436471680\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":172369,"converted_md5_checksum":"a7405909683efea6e8174c3de5da513b"}}}}}}}
-2017-05-25T17:23:31.807497+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] stdClass Object
-2017-05-25T17:23:31.807498+00:00 app[web.1]: (
-2017-05-25T17:23:31.807516+00:00 app[web.1]:     [uid] => 46664630
-2017-05-25T17:23:31.807536+00:00 app[web.1]:     [timestamp] => 1495727714
-2017-05-25T17:23:31.807561+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T17:23:31.807596+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T17:23:31.807597+00:00 app[web.1]:         (
-2017-05-25T17:23:31.807599+00:00 app[web.1]:             [realm] => section
-2017-05-25T17:23:31.807644+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T17:23:31.807666+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T17:23:31.807687+00:00 app[web.1]:             [uid] => 46664630
-2017-05-25T17:23:31.807708+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T17:23:31.807735+00:00 app[web.1]:             [assignment_nid] => 1027849742
-2017-05-25T17:23:31.807761+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T17:23:31.807763+00:00 app[web.1]:                 (
-2017-05-25T17:23:31.807798+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T17:23:31.807820+00:00 app[web.1]:                     [uid] => 46664630
-2017-05-25T17:23:31.807847+00:00 app[web.1]:                     [created] => 1495727714
-2017-05-25T17:23:31.807870+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T17:23:31.807892+00:00 app[web.1]:                     [late] => 0
-2017-05-25T17:23:31.807914+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T17:23:31.807945+00:00 app[web.1]:                     [assignment_nid] => 1027849742
-2017-05-25T17:23:31.807976+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T17:23:31.807988+00:00 app[web.1]:                         (
-2017-05-25T17:23:31.808024+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T17:23:31.808046+00:00 app[web.1]:                                 (
-2017-05-25T17:23:31.808082+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T17:23:31.808109+00:00 app[web.1]:                                         (
-2017-05-25T17:23:31.808151+00:00 app[web.1]:                                             [436471680] => stdClass Object
-2017-05-25T17:23:31.808179+00:00 app[web.1]:                                                 (
-2017-05-25T17:23:31.808219+00:00 app[web.1]:                                                     [id] => 436471680
-2017-05-25T17:23:31.808259+00:00 app[web.1]:                                                     [fid] => 2421882606
-2017-05-25T17:23:31.808299+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T17:23:31.808373+00:00 app[web.1]:                                                     [title] => Scorecard Over Multiple Years.docx
-2017-05-25T17:23:31.808428+00:00 app[web.1]:                                                     [filename] => Scorecard Over Multiple Years.docx
-2017-05-25T17:23:31.808466+00:00 app[web.1]:                                                     [filesize] => 266747
-2017-05-25T17:23:31.808522+00:00 app[web.1]:                                                     [md5_checksum] => 8f19de9499e0f19feebd02847c5f88d8
-2017-05-25T17:23:31.808565+00:00 app[web.1]:                                                     [timestamp] => 1495727699
-2017-05-25T17:23:31.808640+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T17:23:31.808742+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Scorecard_Over_Multiple_Years_5926fe531f683.docx
-2017-05-25T17:23:31.808783+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T17:23:31.808825+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T17:23:31.808866+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T17:23:31.808926+00:00 app[web.1]:                                                     [converted_filename] => Scorecard Over Multiple Years.pdf
-2017-05-25T17:23:31.809004+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436471680/conversion/file.pdf
-2017-05-25T17:23:31.809048+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T17:23:31.809143+00:00 app[web.1]:                                                     [converted_filesize] => 172369
-2017-05-25T17:23:31.809097+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T17:23:31.809204+00:00 app[web.1]:                                                     [converted_md5_checksum] => a7405909683efea6e8174c3de5da513b
-2017-05-25T17:23:31.809232+00:00 app[web.1]:                                                 )
-2017-05-25T17:23:31.809233+00:00 app[web.1]: 
-2017-05-25T17:23:31.809261+00:00 app[web.1]:                                         )
-2017-05-25T17:23:31.809262+00:00 app[web.1]: 
-2017-05-25T17:23:31.809285+00:00 app[web.1]:                                 )
-2017-05-25T17:23:31.809285+00:00 app[web.1]: 
-2017-05-25T17:23:31.809305+00:00 app[web.1]:                         )
-2017-05-25T17:23:31.809306+00:00 app[web.1]: 
-2017-05-25T17:23:31.809317+00:00 app[web.1]:                 )
-2017-05-25T17:23:31.809318+00:00 app[web.1]: 
-2017-05-25T17:23:31.809320+00:00 app[web.1]:         )
-2017-05-25T17:23:31.809321+00:00 app[web.1]: 
-2017-05-25T17:23:31.809323+00:00 app[web.1]: )
-2017-05-25T17:23:31.809324+00:00 app[web.1]: 
-2017-05-25T17:23:31.809361+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] UID: 46664630
-2017-05-25T17:23:31.809390+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] Section ID: 889115804
-2017-05-25T17:23:31.809422+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] Assignment ID: 1027849742
-2017-05-25T17:23:31.809457+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] Requirement Type found - courses
-2017-05-25T17:23:31.809457+00:00 app[web.1]: 
-2017-05-25T17:23:31.809573+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664630' AND Schoology_Grade_ID__c = '1027849742' LIMIT 1
-2017-05-25T17:23:31.809574+00:00 app[web.1]: 
-2017-05-25T17:23:31.809603+00:00 app[web.1]: [25-May-2017 17:23:31 UTC] In Salesforce Query
-2017-05-25T17:23:31.809604+00:00 app[web.1]: 
-2017-05-25T17:23:32.330567+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=a2b736c8-d909-4a2a-a9b9-3b84d513688d fwd="52.5.140.116" dyno=web.1 connect=1ms service=539ms status=302 bytes=298 protocol=https
-2017-05-25T17:23:32.326327+00:00 app[web.1]: [25-May-2017 17:23:32 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T17:23:32.326466+00:00 app[web.1]: 
-2017-05-25T17:23:32.326466+00:00 app[web.1]: 
-2017-05-25T17:23:32.326464+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T17:23:32.326532+00:00 app[web.1]: [25-May-2017 17:23:32 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T17:23:32.326533+00:00 app[web.1]: 
-2017-05-25T17:23:32.326535+00:00 app[web.1]: [25-May-2017 17:23:32 UTC] 
-2017-05-25T17:23:32.326757+00:00 app[web.1]: [25-May-2017 17:23:32 UTC] 
-2017-05-25T17:23:32.326759+00:00 app[web.1]: 
-2017-05-25T17:23:32.326800+00:00 app[web.1]: [25-May-2017 17:23:32 UTC] 
-2017-05-25T17:23:32.326801+00:00 app[web.1]: 
-2017-05-25T17:23:32.327827+00:00 app[web.1]: 10.45.50.47 - - [25/May/2017:17:23:31 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T17:52:00.492624+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] got token!
-2017-05-25T17:52:00.492710+00:00 app[web.1]: 
-2017-05-25T17:52:00.492895+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] Array
-2017-05-25T17:52:00.492908+00:00 app[web.1]: (
-2017-05-25T17:52:00.492936+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T17:52:00.492995+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T17:52:00.493156+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T17:52:00.493255+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T17:52:00.493560+00:00 app[web.1]: )
-2017-05-25T17:52:00.493572+00:00 app[web.1]: 
-2017-05-25T17:52:00.493634+00:00 app[web.1]: 
-2017-05-25T17:52:00.496592+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] stdClass Object
-2017-05-25T17:52:00.496189+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] {"uid":46664630,"timestamp":1495727714,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664630","revision_id":"1","assignment_nid":"1027849742","object":{"revision_id":1,"uid":46664630,"created":1495727714,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027849742","attachments":{"files":{"file":{"436471680":{"id":436471680,"fid":2421882606,"type":"file","title":"Scorecard Over Multiple Years.docx","filename":"Scorecard Over Multiple Years.docx","filesize":266747,"md5_checksum":"8f19de9499e0f19feebd02847c5f88d8","timestamp":1495727699,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Scorecard_Over_Multiple_Years_5926fe531f683.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Scorecard Over Multiple Years.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436471680\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":172369,"converted_md5_checksum":"a7405909683efea6e8174c3de5da513b"}}}}}}}
-2017-05-25T17:52:00.496611+00:00 app[web.1]: (
-2017-05-25T17:52:00.496649+00:00 app[web.1]:     [uid] => 46664630
-2017-05-25T17:52:00.496695+00:00 app[web.1]:     [timestamp] => 1495727714
-2017-05-25T17:52:00.496824+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T17:52:00.496778+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T17:52:00.496925+00:00 app[web.1]:             [realm] => section
-2017-05-25T17:52:00.496850+00:00 app[web.1]:         (
-2017-05-25T17:52:00.496979+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T17:52:00.497030+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T17:52:00.497150+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T17:52:00.497103+00:00 app[web.1]:             [uid] => 46664630
-2017-05-25T17:52:00.497202+00:00 app[web.1]:             [assignment_nid] => 1027849742
-2017-05-25T17:52:00.497266+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T17:52:00.497290+00:00 app[web.1]:                 (
-2017-05-25T17:52:00.497327+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T17:52:00.497366+00:00 app[web.1]:                     [uid] => 46664630
-2017-05-25T17:52:00.497428+00:00 app[web.1]:                     [created] => 1495727714
-2017-05-25T17:52:00.497509+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T17:52:00.497599+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T17:52:00.497555+00:00 app[web.1]:                     [late] => 0
-2017-05-25T17:52:00.497648+00:00 app[web.1]:                     [assignment_nid] => 1027849742
-2017-05-25T17:52:00.497696+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T17:52:00.497747+00:00 app[web.1]:                         (
-2017-05-25T17:52:00.497797+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T17:52:00.497831+00:00 app[web.1]:                                 (
-2017-05-25T17:52:00.497996+00:00 app[web.1]:                                         (
-2017-05-25T17:52:00.497909+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T17:52:00.498085+00:00 app[web.1]:                                             [436471680] => stdClass Object
-2017-05-25T17:52:00.498132+00:00 app[web.1]:                                                 (
-2017-05-25T17:52:00.498193+00:00 app[web.1]:                                                     [id] => 436471680
-2017-05-25T17:52:00.498277+00:00 app[web.1]:                                                     [fid] => 2421882606
-2017-05-25T17:52:00.498336+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T17:52:00.498443+00:00 app[web.1]:                                                     [title] => Scorecard Over Multiple Years.docx
-2017-05-25T17:52:00.498526+00:00 app[web.1]:                                                     [filename] => Scorecard Over Multiple Years.docx
-2017-05-25T17:52:00.498613+00:00 app[web.1]:                                                     [filesize] => 266747
-2017-05-25T17:52:00.498698+00:00 app[web.1]:                                                     [md5_checksum] => 8f19de9499e0f19feebd02847c5f88d8
-2017-05-25T17:52:00.498952+00:00 app[web.1]:                                                     [timestamp] => 1495727699
-2017-05-25T17:52:00.499148+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T17:52:00.499329+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Scorecard_Over_Multiple_Years_5926fe531f683.docx
-2017-05-25T17:52:00.499460+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T17:52:00.499628+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T17:52:00.499692+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T17:52:00.499805+00:00 app[web.1]:                                                     [converted_filename] => Scorecard Over Multiple Years.pdf
-2017-05-25T17:52:00.500015+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436471680/conversion/file.pdf
-2017-05-25T17:52:00.500123+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T17:52:00.500299+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T17:52:00.500484+00:00 app[web.1]:                                                     [converted_filesize] => 172369
-2017-05-25T17:52:00.500706+00:00 app[web.1]:                                                     [converted_md5_checksum] => a7405909683efea6e8174c3de5da513b
-2017-05-25T17:52:00.500961+00:00 app[web.1]: 
-2017-05-25T17:52:00.501001+00:00 app[web.1]:                                         )
-2017-05-25T17:52:00.500949+00:00 app[web.1]:                                                 )
-2017-05-25T17:52:00.501012+00:00 app[web.1]: 
-2017-05-25T17:52:00.501070+00:00 app[web.1]:                                 )
-2017-05-25T17:52:00.501081+00:00 app[web.1]: 
-2017-05-25T17:52:00.501110+00:00 app[web.1]:                         )
-2017-05-25T17:52:00.501121+00:00 app[web.1]: 
-2017-05-25T17:52:00.501171+00:00 app[web.1]:         )
-2017-05-25T17:52:00.501143+00:00 app[web.1]:                 )
-2017-05-25T17:52:00.501154+00:00 app[web.1]: 
-2017-05-25T17:52:00.501181+00:00 app[web.1]: 
-2017-05-25T17:52:00.501207+00:00 app[web.1]: )
-2017-05-25T17:52:00.501229+00:00 app[web.1]: 
-2017-05-25T17:52:00.501339+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] UID: 46664630
-2017-05-25T17:52:00.501498+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] Section ID: 889115804
-2017-05-25T17:52:00.501827+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] Assignment ID: 1027849742
-2017-05-25T17:52:00.501928+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] Requirement Type found - courses
-2017-05-25T17:52:00.501941+00:00 app[web.1]: 
-2017-05-25T17:52:00.502186+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664630' AND Schoology_Grade_ID__c = '1027849742' LIMIT 1
-2017-05-25T17:52:00.502199+00:00 app[web.1]: 
-2017-05-25T17:52:00.502285+00:00 app[web.1]: [25-May-2017 17:52:00 UTC] In Salesforce Query
-2017-05-25T17:52:00.502569+00:00 app[web.1]: 
-2017-05-25T17:52:01.231730+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=138d5f49-fa7f-4f3a-b167-f58a96d4a6ad fwd="52.5.140.116" dyno=web.1 connect=0ms service=889ms status=302 bytes=298 protocol=https
-2017-05-25T17:52:01.218410+00:00 app[web.1]: [25-May-2017 17:52:01 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T17:52:01.219561+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T17:52:01.219566+00:00 app[web.1]: 
-2017-05-25T17:52:01.219563+00:00 app[web.1]: 
-2017-05-25T17:52:01.220485+00:00 app[web.1]: [25-May-2017 17:52:01 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T17:52:01.220489+00:00 app[web.1]: 
-2017-05-25T17:52:01.220600+00:00 app[web.1]: [25-May-2017 17:52:01 UTC] 
-2017-05-25T17:52:01.223828+00:00 app[web.1]: 
-2017-05-25T17:52:01.224289+00:00 app[web.1]: [25-May-2017 17:52:01 UTC] 
-2017-05-25T17:52:01.223823+00:00 app[web.1]: [25-May-2017 17:52:01 UTC] 
-2017-05-25T17:52:01.224290+00:00 app[web.1]: 
-2017-05-25T17:52:01.229978+00:00 app[web.1]: 10.136.154.140 - - [25/May/2017:17:52:00 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T18:26:13.136037+00:00 heroku[web.1]: Idling
-2017-05-25T18:26:13.136817+00:00 heroku[web.1]: State changed from up to down
-2017-05-25T18:26:13.857022+00:00 app[web.1]: Going down, terminating child processes...
-2017-05-25T18:26:13.847514+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2017-05-25T18:26:13.990688+00:00 heroku[web.1]: Process exited with status 143
-2017-05-25T20:28:17.253425+00:00 heroku[web.1]: Unidling
-2017-05-25T20:28:17.253655+00:00 heroku[web.1]: State changed from down to starting
-2017-05-25T20:28:23.484783+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
-2017-05-25T20:28:26.908840+00:00 app[web.1]: Optimizing defaults for 1X dyno...
-2017-05-25T20:28:26.890996+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
-2017-05-25T20:28:27.025349+00:00 app[web.1]: 4 processes at 128MB memory limit.
-2017-05-25T20:28:27.033979+00:00 app[web.1]: Starting php-fpm...
-2017-05-25T20:28:29.039354+00:00 app[web.1]: Starting httpd...
-2017-05-25T20:28:29.270940+00:00 heroku[web.1]: State changed from starting to up
-2017-05-25T20:28:31.349240+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
-2017-05-25T20:28:31.357155+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
-2017-05-25T20:28:31.381155+00:00 app[web.1]: 
-2017-05-25T20:28:31.381153+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] got token!
-2017-05-25T20:28:31.381180+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] Array
-2017-05-25T20:28:31.381273+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T20:28:31.381270+00:00 app[web.1]: (
-2017-05-25T20:28:31.381339+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T20:28:31.381414+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T20:28:31.381442+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T20:28:31.381446+00:00 app[web.1]: 
-2017-05-25T20:28:31.381443+00:00 app[web.1]: )
-2017-05-25T20:28:31.381446+00:00 app[web.1]: 
-2017-05-25T20:28:31.382705+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] {"uid":46664628,"timestamp":1495743904,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664628","revision_id":"1","assignment_nid":"1027844626","object":{"revision_id":1,"uid":46664628,"created":1495743904,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027844626","attachments":{"files":{"file":{"436697916":{"id":436697916,"fid":2422593998,"type":"file","title":"Four-Square_SaraMorrison.docx","filename":"Four-Square_SaraMorrison.docx","filesize":14700,"md5_checksum":"bfb9cb73dbd36e48fd9bac48b881b127","timestamp":1495743902,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Four-Square_SaraMorrison_59273d9ec6cb6.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Four-Square_SaraMorrison.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436697916\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":29241,"converted_md5_checksum":"d99991bd26b7212cb5565d8fcbbcb533"}}}}}}}
-2017-05-25T20:28:31.382743+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] stdClass Object
-2017-05-25T20:28:31.382745+00:00 app[web.1]: (
-2017-05-25T20:28:31.382774+00:00 app[web.1]:     [uid] => 46664628
-2017-05-25T20:28:31.382828+00:00 app[web.1]:     [timestamp] => 1495743904
-2017-05-25T20:28:31.382905+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T20:28:31.382871+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T20:28:31.382968+00:00 app[web.1]:             [realm] => section
-2017-05-25T20:28:31.382908+00:00 app[web.1]:         (
-2017-05-25T20:28:31.383010+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T20:28:31.383047+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T20:28:31.383080+00:00 app[web.1]:             [uid] => 46664628
-2017-05-25T20:28:31.383140+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T20:28:31.383180+00:00 app[web.1]:             [assignment_nid] => 1027844626
-2017-05-25T20:28:31.383243+00:00 app[web.1]:                 (
-2017-05-25T20:28:31.383220+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T20:28:31.383303+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T20:28:31.383343+00:00 app[web.1]:                     [uid] => 46664628
-2017-05-25T20:28:31.383389+00:00 app[web.1]:                     [created] => 1495743904
-2017-05-25T20:28:31.383428+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T20:28:31.383482+00:00 app[web.1]:                     [late] => 0
-2017-05-25T20:28:31.383520+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T20:28:31.383575+00:00 app[web.1]:                     [assignment_nid] => 1027844626
-2017-05-25T20:28:31.383647+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T20:28:31.383676+00:00 app[web.1]:                         (
-2017-05-25T20:28:31.383730+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T20:28:31.383788+00:00 app[web.1]:                                 (
-2017-05-25T20:28:31.383849+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T20:28:31.383891+00:00 app[web.1]:                                         (
-2017-05-25T20:28:31.384034+00:00 app[web.1]:                                                 (
-2017-05-25T20:28:31.383983+00:00 app[web.1]:                                             [436697916] => stdClass Object
-2017-05-25T20:28:31.384128+00:00 app[web.1]:                                                     [id] => 436697916
-2017-05-25T20:28:31.384196+00:00 app[web.1]:                                                     [fid] => 2422593998
-2017-05-25T20:28:31.384615+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T20:28:31.384702+00:00 app[web.1]:                                                     [title] => Four-Square_SaraMorrison.docx
-2017-05-25T20:28:31.384973+00:00 app[web.1]:                                                     [filename] => Four-Square_SaraMorrison.docx
-2017-05-25T20:28:31.385488+00:00 app[web.1]:                                                     [md5_checksum] => bfb9cb73dbd36e48fd9bac48b881b127
-2017-05-25T20:28:31.385041+00:00 app[web.1]:                                                     [filesize] => 14700
-2017-05-25T20:28:31.385883+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T20:28:31.385566+00:00 app[web.1]:                                                     [timestamp] => 1495743902
-2017-05-25T20:28:31.386606+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Four-Square_SaraMorrison_59273d9ec6cb6.docx
-2017-05-25T20:28:31.386686+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T20:28:31.387116+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T20:28:31.387186+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T20:28:31.387479+00:00 app[web.1]:                                                     [converted_filename] => Four-Square_SaraMorrison.pdf
-2017-05-25T20:28:31.387959+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436697916/conversion/file.pdf
-2017-05-25T20:28:31.388031+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T20:28:31.388445+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T20:28:31.388740+00:00 app[web.1]:                                                     [converted_filesize] => 29241
-2017-05-25T20:28:31.388848+00:00 app[web.1]:                                                     [converted_md5_checksum] => d99991bd26b7212cb5565d8fcbbcb533
-2017-05-25T20:28:31.389102+00:00 app[web.1]:                                                 )
-2017-05-25T20:28:31.389105+00:00 app[web.1]: 
-2017-05-25T20:28:31.389158+00:00 app[web.1]:                                         )
-2017-05-25T20:28:31.389160+00:00 app[web.1]: 
-2017-05-25T20:28:31.389191+00:00 app[web.1]:                                 )
-2017-05-25T20:28:31.389192+00:00 app[web.1]: 
-2017-05-25T20:28:31.389620+00:00 app[web.1]:                         )
-2017-05-25T20:28:31.389621+00:00 app[web.1]: 
-2017-05-25T20:28:31.389654+00:00 app[web.1]:                 )
-2017-05-25T20:28:31.389655+00:00 app[web.1]: 
-2017-05-25T20:28:31.389657+00:00 app[web.1]:         )
-2017-05-25T20:28:31.389658+00:00 app[web.1]: 
-2017-05-25T20:28:31.389660+00:00 app[web.1]: )
-2017-05-25T20:28:31.389661+00:00 app[web.1]: 
-2017-05-25T20:28:31.389715+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] UID: 46664628
-2017-05-25T20:28:31.389769+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] Section ID: 889115804
-2017-05-25T20:28:31.389836+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] Assignment ID: 1027844626
-2017-05-25T20:28:31.390354+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] Requirement Type found - courses
-2017-05-25T20:28:31.390355+00:00 app[web.1]: 
-2017-05-25T20:28:31.390570+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664628' AND Schoology_Grade_ID__c = '1027844626' LIMIT 1
-2017-05-25T20:28:31.390572+00:00 app[web.1]: 
-2017-05-25T20:28:31.390609+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] In Salesforce Query
-2017-05-25T20:28:31.390611+00:00 app[web.1]: 
-2017-05-25T20:28:31.823915+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=4cfe0d17-759f-48ab-a161-4043adb781a3 fwd="52.4.171.101" dyno=web.1 connect=2ms service=508ms status=302 bytes=298 protocol=https
-2017-05-25T20:28:31.820513+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T20:28:31.821467+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T20:28:31.821485+00:00 app[web.1]: 
-2017-05-25T20:28:31.821502+00:00 app[web.1]: 
-2017-05-25T20:28:31.821845+00:00 app[web.1]: 
-2017-05-25T20:28:31.821825+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T20:28:31.821889+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] 
-2017-05-25T20:28:31.821961+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] 
-2017-05-25T20:28:31.822151+00:00 app[web.1]: [25-May-2017 20:28:31 UTC] 
-2017-05-25T20:28:31.822107+00:00 app[web.1]: 
-2017-05-25T20:28:31.822183+00:00 app[web.1]: 
-2017-05-25T20:28:31.822509+00:00 app[web.1]: 10.99.212.2 - - [25/May/2017:20:28:31 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T20:55:23.241227+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] got token!
-2017-05-25T20:55:23.241240+00:00 app[web.1]: 
-2017-05-25T20:55:23.241355+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] Array
-2017-05-25T20:55:23.241374+00:00 app[web.1]: (
-2017-05-25T20:55:23.241429+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T20:55:23.241477+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T20:55:23.241531+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T20:55:23.241551+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T20:55:23.241569+00:00 app[web.1]: )
-2017-05-25T20:55:23.241595+00:00 app[web.1]: 
-2017-05-25T20:55:23.242527+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] {"uid":46664628,"timestamp":1495743904,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664628","revision_id":"1","assignment_nid":"1027844626","object":{"revision_id":1,"uid":46664628,"created":1495743904,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027844626","attachments":{"files":{"file":{"436697916":{"id":436697916,"fid":2422593998,"type":"file","title":"Four-Square_SaraMorrison.docx","filename":"Four-Square_SaraMorrison.docx","filesize":14700,"md5_checksum":"bfb9cb73dbd36e48fd9bac48b881b127","timestamp":1495743902,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Four-Square_SaraMorrison_59273d9ec6cb6.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Four-Square_SaraMorrison.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436697916\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":29241,"converted_md5_checksum":"d99991bd26b7212cb5565d8fcbbcb533"}}}}}}}
-2017-05-25T20:55:23.241594+00:00 app[web.1]: 
-2017-05-25T20:55:23.242567+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] stdClass Object
-2017-05-25T20:55:23.242594+00:00 app[web.1]: (
-2017-05-25T20:55:23.242620+00:00 app[web.1]:     [uid] => 46664628
-2017-05-25T20:55:23.242649+00:00 app[web.1]:     [timestamp] => 1495743904
-2017-05-25T20:55:23.242683+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T20:55:23.242724+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T20:55:23.242726+00:00 app[web.1]:         (
-2017-05-25T20:55:23.242764+00:00 app[web.1]:             [realm] => section
-2017-05-25T20:55:23.242795+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T20:55:23.242913+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T20:55:23.242871+00:00 app[web.1]:             [uid] => 46664628
-2017-05-25T20:55:23.242974+00:00 app[web.1]:             [assignment_nid] => 1027844626
-2017-05-25T20:55:23.243032+00:00 app[web.1]:                 (
-2017-05-25T20:55:23.242849+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T20:55:23.243008+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T20:55:23.243065+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T20:55:23.243105+00:00 app[web.1]:                     [uid] => 46664628
-2017-05-25T20:55:23.243150+00:00 app[web.1]:                     [created] => 1495743904
-2017-05-25T20:55:23.243182+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T20:55:23.243248+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T20:55:23.243294+00:00 app[web.1]:                     [assignment_nid] => 1027844626
-2017-05-25T20:55:23.243380+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T20:55:23.243213+00:00 app[web.1]:                     [late] => 0
-2017-05-25T20:55:23.243407+00:00 app[web.1]:                         (
-2017-05-25T20:55:23.243461+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T20:55:23.243484+00:00 app[web.1]:                                 (
-2017-05-25T20:55:23.243559+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T20:55:23.243594+00:00 app[web.1]:                                         (
-2017-05-25T20:55:23.243657+00:00 app[web.1]:                                             [436697916] => stdClass Object
-2017-05-25T20:55:23.243709+00:00 app[web.1]:                                                 (
-2017-05-25T20:55:23.243762+00:00 app[web.1]:                                                     [id] => 436697916
-2017-05-25T20:55:23.243811+00:00 app[web.1]:                                                     [fid] => 2422593998
-2017-05-25T20:55:23.243878+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T20:55:23.243952+00:00 app[web.1]:                                                     [title] => Four-Square_SaraMorrison.docx
-2017-05-25T20:55:23.244033+00:00 app[web.1]:                                                     [filename] => Four-Square_SaraMorrison.docx
-2017-05-25T20:55:23.244107+00:00 app[web.1]:                                                     [filesize] => 14700
-2017-05-25T20:55:23.244243+00:00 app[web.1]:                                                     [timestamp] => 1495743902
-2017-05-25T20:55:23.244390+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T20:55:23.244189+00:00 app[web.1]:                                                     [md5_checksum] => bfb9cb73dbd36e48fd9bac48b881b127
-2017-05-25T20:55:23.244521+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Four-Square_SaraMorrison_59273d9ec6cb6.docx
-2017-05-25T20:55:23.244574+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T20:55:23.244633+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T20:55:23.244702+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T20:55:23.244768+00:00 app[web.1]:                                                     [converted_filename] => Four-Square_SaraMorrison.pdf
-2017-05-25T20:55:23.244919+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436697916/conversion/file.pdf
-2017-05-25T20:55:23.244972+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T20:55:23.245058+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T20:55:23.245517+00:00 app[web.1]:                                                     [converted_md5_checksum] => d99991bd26b7212cb5565d8fcbbcb533
-2017-05-25T20:55:23.245590+00:00 app[web.1]: 
-2017-05-25T20:55:23.245576+00:00 app[web.1]:                                                 )
-2017-05-25T20:55:23.245146+00:00 app[web.1]:                                                     [converted_filesize] => 29241
-2017-05-25T20:55:23.245640+00:00 app[web.1]:                                         )
-2017-05-25T20:55:23.245653+00:00 app[web.1]: 
-2017-05-25T20:55:23.245695+00:00 app[web.1]:                                 )
-2017-05-25T20:55:23.245708+00:00 app[web.1]: 
-2017-05-25T20:55:23.245743+00:00 app[web.1]:                         )
-2017-05-25T20:55:23.245756+00:00 app[web.1]: 
-2017-05-25T20:55:23.245796+00:00 app[web.1]: 
-2017-05-25T20:55:23.245842+00:00 app[web.1]: )
-2017-05-25T20:55:23.245829+00:00 app[web.1]: 
-2017-05-25T20:55:23.245783+00:00 app[web.1]:                 )
-2017-05-25T20:55:23.245855+00:00 app[web.1]: 
-2017-05-25T20:55:23.245816+00:00 app[web.1]:         )
-2017-05-25T20:55:23.245906+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] UID: 46664628
-2017-05-25T20:55:23.245962+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] Section ID: 889115804
-2017-05-25T20:55:23.246027+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] Assignment ID: 1027844626
-2017-05-25T20:55:23.246075+00:00 app[web.1]: 
-2017-05-25T20:55:23.246074+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] Requirement Type found - courses
-2017-05-25T20:55:23.246226+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664628' AND Schoology_Grade_ID__c = '1027844626' LIMIT 1
-2017-05-25T20:55:23.246228+00:00 app[web.1]: 
-2017-05-25T20:55:23.246269+00:00 app[web.1]: 
-2017-05-25T20:55:23.246268+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] In Salesforce Query
-2017-05-25T20:55:23.615292+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=6bb7d048-1810-48b1-b8fe-9d715f283fe9 fwd="52.4.171.101" dyno=web.1 connect=1ms service=406ms status=302 bytes=298 protocol=https
-2017-05-25T20:55:23.611121+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T20:55:23.611446+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T20:55:23.611477+00:00 app[web.1]: 
-2017-05-25T20:55:23.611501+00:00 app[web.1]: 
-2017-05-25T20:55:23.611659+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T20:55:23.611686+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] 
-2017-05-25T20:55:23.611660+00:00 app[web.1]: 
-2017-05-25T20:55:23.611919+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] 
-2017-05-25T20:55:23.611920+00:00 app[web.1]: 
-2017-05-25T20:55:23.611956+00:00 app[web.1]: [25-May-2017 20:55:23 UTC] 
-2017-05-25T20:55:23.611957+00:00 app[web.1]: 
-2017-05-25T20:55:23.613508+00:00 app[web.1]: 10.30.53.152 - - [25/May/2017:20:55:23 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T21:22:55.903583+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] got token!
-2017-05-25T21:22:55.903687+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] Array
-2017-05-25T21:22:55.903598+00:00 app[web.1]: 
-2017-05-25T21:22:55.903691+00:00 app[web.1]: (
-2017-05-25T21:22:55.903724+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T21:22:55.903794+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T21:22:55.903849+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T21:22:55.903883+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T21:22:55.903886+00:00 app[web.1]: )
-2017-05-25T21:22:55.903887+00:00 app[web.1]: 
-2017-05-25T21:22:55.903889+00:00 app[web.1]: 
-2017-05-25T21:22:55.905565+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] stdClass Object
-2017-05-25T21:22:55.905289+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] {"uid":46664628,"timestamp":1495743904,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664628","revision_id":"1","assignment_nid":"1027844626","object":{"revision_id":1,"uid":46664628,"created":1495743904,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027844626","attachments":{"files":{"file":{"436697916":{"id":436697916,"fid":2422593998,"type":"file","title":"Four-Square_SaraMorrison.docx","filename":"Four-Square_SaraMorrison.docx","filesize":14700,"md5_checksum":"bfb9cb73dbd36e48fd9bac48b881b127","timestamp":1495743902,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Four-Square_SaraMorrison_59273d9ec6cb6.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Four-Square_SaraMorrison.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436697916\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":29241,"converted_md5_checksum":"d99991bd26b7212cb5565d8fcbbcb533"}}}}}}}
-2017-05-25T21:22:55.905569+00:00 app[web.1]: (
-2017-05-25T21:22:55.905598+00:00 app[web.1]:     [uid] => 46664628
-2017-05-25T21:22:55.905680+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T21:22:55.905645+00:00 app[web.1]:     [timestamp] => 1495743904
-2017-05-25T21:22:55.905719+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T21:22:55.905736+00:00 app[web.1]:         (
-2017-05-25T21:22:55.905773+00:00 app[web.1]:             [realm] => section
-2017-05-25T21:22:55.905860+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T21:22:55.905821+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T21:22:55.905896+00:00 app[web.1]:             [uid] => 46664628
-2017-05-25T21:22:55.905936+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T21:22:55.905994+00:00 app[web.1]:             [assignment_nid] => 1027844626
-2017-05-25T21:22:55.906058+00:00 app[web.1]:                 (
-2017-05-25T21:22:55.906032+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T21:22:55.906103+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T21:22:55.906200+00:00 app[web.1]:                     [created] => 1495743904
-2017-05-25T21:22:55.906279+00:00 app[web.1]:                     [late] => 0
-2017-05-25T21:22:55.906242+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T21:22:55.906148+00:00 app[web.1]:                     [uid] => 46664628
-2017-05-25T21:22:55.906318+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T21:22:55.906376+00:00 app[web.1]:                     [assignment_nid] => 1027844626
-2017-05-25T21:22:55.906434+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T21:22:55.906525+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T21:22:55.906466+00:00 app[web.1]:                         (
-2017-05-25T21:22:55.906566+00:00 app[web.1]:                                 (
-2017-05-25T21:22:55.906780+00:00 app[web.1]:                                         (
-2017-05-25T21:22:55.906635+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T21:22:55.906860+00:00 app[web.1]:                                             [436697916] => stdClass Object
-2017-05-25T21:22:55.906914+00:00 app[web.1]:                                                 (
-2017-05-25T21:22:55.906997+00:00 app[web.1]:                                                     [id] => 436697916
-2017-05-25T21:22:55.907337+00:00 app[web.1]:                                                     [filename] => Four-Square_SaraMorrison.docx
-2017-05-25T21:22:55.907136+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T21:22:55.907064+00:00 app[web.1]:                                                     [fid] => 2422593998
-2017-05-25T21:22:55.907231+00:00 app[web.1]:                                                     [title] => Four-Square_SaraMorrison.docx
-2017-05-25T21:22:55.907405+00:00 app[web.1]:                                                     [filesize] => 14700
-2017-05-25T21:22:55.907514+00:00 app[web.1]:                                                     [md5_checksum] => bfb9cb73dbd36e48fd9bac48b881b127
-2017-05-25T21:22:55.907589+00:00 app[web.1]:                                                     [timestamp] => 1495743902
-2017-05-25T21:22:55.907728+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T21:22:55.907913+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Four-Square_SaraMorrison_59273d9ec6cb6.docx
-2017-05-25T21:22:55.907984+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T21:22:55.908064+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T21:22:55.908141+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T21:22:55.908246+00:00 app[web.1]:                                                     [converted_filename] => Four-Square_SaraMorrison.pdf
-2017-05-25T21:22:55.908394+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436697916/conversion/file.pdf
-2017-05-25T21:22:55.908477+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T21:22:55.908572+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T21:22:55.908656+00:00 app[web.1]:                                                     [converted_filesize] => 29241
-2017-05-25T21:22:55.908772+00:00 app[web.1]:                                                     [converted_md5_checksum] => d99991bd26b7212cb5565d8fcbbcb533
-2017-05-25T21:22:55.908824+00:00 app[web.1]:                                                 )
-2017-05-25T21:22:55.908826+00:00 app[web.1]: 
-2017-05-25T21:22:55.909696+00:00 app[web.1]:                                         )
-2017-05-25T21:22:55.909697+00:00 app[web.1]: 
-2017-05-25T21:22:55.909739+00:00 app[web.1]:                                 )
-2017-05-25T21:22:55.909740+00:00 app[web.1]: 
-2017-05-25T21:22:55.909774+00:00 app[web.1]:                         )
-2017-05-25T21:22:55.909775+00:00 app[web.1]: 
-2017-05-25T21:22:55.909803+00:00 app[web.1]:                 )
-2017-05-25T21:22:55.909806+00:00 app[web.1]: 
-2017-05-25T21:22:55.909825+00:00 app[web.1]:         )
-2017-05-25T21:22:55.909825+00:00 app[web.1]: 
-2017-05-25T21:22:55.909828+00:00 app[web.1]: )
-2017-05-25T21:22:55.909844+00:00 app[web.1]: 
-2017-05-25T21:22:55.909978+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] UID: 46664628
-2017-05-25T21:22:55.910140+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] Section ID: 889115804
-2017-05-25T21:22:55.910250+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] Assignment ID: 1027844626
-2017-05-25T21:22:55.910378+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] Requirement Type found - courses
-2017-05-25T21:22:55.910380+00:00 app[web.1]: 
-2017-05-25T21:22:55.910656+00:00 app[web.1]: 
-2017-05-25T21:22:55.910655+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664628' AND Schoology_Grade_ID__c = '1027844626' LIMIT 1
-2017-05-25T21:22:55.910758+00:00 app[web.1]: [25-May-2017 21:22:55 UTC] In Salesforce Query
-2017-05-25T21:22:55.910759+00:00 app[web.1]: 
-2017-05-25T21:22:56.425563+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=f7207ac1-0c49-4fb8-8530-3f05f777cea4 fwd="52.5.140.116" dyno=web.1 connect=1ms service=559ms status=302 bytes=298 protocol=https
-2017-05-25T21:22:56.412864+00:00 app[web.1]: [25-May-2017 21:22:56 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T21:22:56.413145+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T21:22:56.413149+00:00 app[web.1]: 
-2017-05-25T21:22:56.413149+00:00 app[web.1]: 
-2017-05-25T21:22:56.413316+00:00 app[web.1]: [25-May-2017 21:22:56 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T21:22:56.413319+00:00 app[web.1]: 
-2017-05-25T21:22:56.413408+00:00 app[web.1]: [25-May-2017 21:22:56 UTC] 
-2017-05-25T21:22:56.413901+00:00 app[web.1]: [25-May-2017 21:22:56 UTC] 
-2017-05-25T21:22:56.413903+00:00 app[web.1]: 
-2017-05-25T21:22:56.413987+00:00 app[web.1]: [25-May-2017 21:22:56 UTC] 
-2017-05-25T21:22:56.413990+00:00 app[web.1]: 
-2017-05-25T21:22:56.424924+00:00 app[web.1]: 10.154.45.231 - - [25/May/2017:21:22:55 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T21:51:35.299053+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] got token!
-2017-05-25T21:51:35.299065+00:00 app[web.1]: 
-2017-05-25T21:51:35.300699+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] Array
-2017-05-25T21:51:35.300703+00:00 app[web.1]: (
-2017-05-25T21:51:35.301553+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T21:51:35.301613+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T21:51:35.301668+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T21:51:35.301698+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T21:51:35.301699+00:00 app[web.1]: )
-2017-05-25T21:51:35.301702+00:00 app[web.1]: 
-2017-05-25T21:51:35.301703+00:00 app[web.1]: 
-2017-05-25T21:51:35.302931+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] {"uid":46664628,"timestamp":1495743904,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664628","revision_id":"1","assignment_nid":"1027844626","object":{"revision_id":1,"uid":46664628,"created":1495743904,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027844626","attachments":{"files":{"file":{"436697916":{"id":436697916,"fid":2422593998,"type":"file","title":"Four-Square_SaraMorrison.docx","filename":"Four-Square_SaraMorrison.docx","filesize":14700,"md5_checksum":"bfb9cb73dbd36e48fd9bac48b881b127","timestamp":1495743902,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Four-Square_SaraMorrison_59273d9ec6cb6.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Four-Square_SaraMorrison.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436697916\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":29241,"converted_md5_checksum":"d99991bd26b7212cb5565d8fcbbcb533"}}}}}}}
-2017-05-25T21:51:35.303212+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] stdClass Object
-2017-05-25T21:51:35.303216+00:00 app[web.1]: (
-2017-05-25T21:51:35.303257+00:00 app[web.1]:     [uid] => 46664628
-2017-05-25T21:51:35.303284+00:00 app[web.1]:     [timestamp] => 1495743904
-2017-05-25T21:51:35.303328+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T21:51:35.303360+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T21:51:35.303376+00:00 app[web.1]:         (
-2017-05-25T21:51:35.303412+00:00 app[web.1]:             [realm] => section
-2017-05-25T21:51:35.303450+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T21:51:35.303486+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T21:51:35.303516+00:00 app[web.1]:             [uid] => 46664628
-2017-05-25T21:51:35.303551+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T21:51:35.303602+00:00 app[web.1]:             [assignment_nid] => 1027844626
-2017-05-25T21:51:35.303637+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T21:51:35.303702+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T21:51:35.303660+00:00 app[web.1]:                 (
-2017-05-25T21:51:35.303740+00:00 app[web.1]:                     [uid] => 46664628
-2017-05-25T21:51:35.303778+00:00 app[web.1]:                     [created] => 1495743904
-2017-05-25T21:51:35.303813+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T21:51:35.303857+00:00 app[web.1]:                     [late] => 0
-2017-05-25T21:51:35.303902+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T21:51:35.303980+00:00 app[web.1]:                     [assignment_nid] => 1027844626
-2017-05-25T21:51:35.304049+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T21:51:35.304079+00:00 app[web.1]:                         (
-2017-05-25T21:51:35.304135+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T21:51:35.304172+00:00 app[web.1]:                                 (
-2017-05-25T21:51:35.304232+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T21:51:35.304271+00:00 app[web.1]:                                         (
-2017-05-25T21:51:35.304343+00:00 app[web.1]:                                             [436697916] => stdClass Object
-2017-05-25T21:51:35.304392+00:00 app[web.1]:                                                 (
-2017-05-25T21:51:35.304465+00:00 app[web.1]:                                                     [id] => 436697916
-2017-05-25T21:51:35.304585+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T21:51:35.304523+00:00 app[web.1]:                                                     [fid] => 2422593998
-2017-05-25T21:51:35.304689+00:00 app[web.1]:                                                     [title] => Four-Square_SaraMorrison.docx
-2017-05-25T21:51:35.304818+00:00 app[web.1]:                                                     [filename] => Four-Square_SaraMorrison.docx
-2017-05-25T21:51:35.304909+00:00 app[web.1]:                                                     [filesize] => 14700
-2017-05-25T21:51:35.305014+00:00 app[web.1]:                                                     [md5_checksum] => bfb9cb73dbd36e48fd9bac48b881b127
-2017-05-25T21:51:35.305085+00:00 app[web.1]:                                                     [timestamp] => 1495743902
-2017-05-25T21:51:35.305205+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T21:51:35.305381+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Four-Square_SaraMorrison_59273d9ec6cb6.docx
-2017-05-25T21:51:35.305445+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T21:51:35.305515+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T21:51:35.305605+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T21:51:35.305718+00:00 app[web.1]:                                                     [converted_filename] => Four-Square_SaraMorrison.pdf
-2017-05-25T21:51:35.305858+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436697916/conversion/file.pdf
-2017-05-25T21:51:35.305924+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T21:51:35.306011+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T21:51:35.306087+00:00 app[web.1]:                                                     [converted_filesize] => 29241
-2017-05-25T21:51:35.306189+00:00 app[web.1]:                                                     [converted_md5_checksum] => d99991bd26b7212cb5565d8fcbbcb533
-2017-05-25T21:51:35.306238+00:00 app[web.1]:                                                 )
-2017-05-25T21:51:35.306241+00:00 app[web.1]: 
-2017-05-25T21:51:35.306297+00:00 app[web.1]:                                         )
-2017-05-25T21:51:35.306300+00:00 app[web.1]: 
-2017-05-25T21:51:35.306346+00:00 app[web.1]:                                 )
-2017-05-25T21:51:35.306387+00:00 app[web.1]:                         )
-2017-05-25T21:51:35.306390+00:00 app[web.1]: 
-2017-05-25T21:51:35.306360+00:00 app[web.1]: 
-2017-05-25T21:51:35.306421+00:00 app[web.1]:                 )
-2017-05-25T21:51:35.306424+00:00 app[web.1]: 
-2017-05-25T21:51:35.306447+00:00 app[web.1]:         )
-2017-05-25T21:51:35.306450+00:00 app[web.1]: 
-2017-05-25T21:51:35.306451+00:00 app[web.1]: )
-2017-05-25T21:51:35.306467+00:00 app[web.1]: 
-2017-05-25T21:51:35.306585+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] UID: 46664628
-2017-05-25T21:51:35.306817+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] Assignment ID: 1027844626
-2017-05-25T21:51:35.306927+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] Requirement Type found - courses
-2017-05-25T21:51:35.306928+00:00 app[web.1]: 
-2017-05-25T21:51:35.307217+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664628' AND Schoology_Grade_ID__c = '1027844626' LIMIT 1
-2017-05-25T21:51:35.306709+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] Section ID: 889115804
-2017-05-25T21:51:35.307218+00:00 app[web.1]: 
-2017-05-25T21:51:35.307339+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] In Salesforce Query
-2017-05-25T21:51:35.307340+00:00 app[web.1]: 
-2017-05-25T21:51:35.788359+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=8bf0a678-6d80-4a91-9fd0-4b53ab1c7f0f fwd="52.5.140.116" dyno=web.1 connect=0ms service=508ms status=302 bytes=298 protocol=https
-2017-05-25T21:51:35.783568+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T21:51:35.783840+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T21:51:35.783844+00:00 app[web.1]: 
-2017-05-25T21:51:35.783845+00:00 app[web.1]: 
-2017-05-25T21:51:35.784011+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T21:51:35.784111+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] 
-2017-05-25T21:51:35.784015+00:00 app[web.1]: 
-2017-05-25T21:51:35.784455+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] 
-2017-05-25T21:51:35.784456+00:00 app[web.1]: 
-2017-05-25T21:51:35.784531+00:00 app[web.1]: [25-May-2017 21:51:35 UTC] 
-2017-05-25T21:51:35.784532+00:00 app[web.1]: 
-2017-05-25T21:51:35.785615+00:00 app[web.1]: 10.154.148.197 - - [25/May/2017:21:51:35 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T22:20:21.073591+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] got token!
-2017-05-25T22:20:21.073605+00:00 app[web.1]: 
-2017-05-25T22:20:21.073754+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] Array
-2017-05-25T22:20:21.073756+00:00 app[web.1]: (
-2017-05-25T22:20:21.073784+00:00 app[web.1]:     [uid] => 22135108
-2017-05-25T22:20:21.073883+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-25T22:20:21.073938+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-25T22:20:21.074097+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-25T22:20:21.074099+00:00 app[web.1]: )
-2017-05-25T22:20:21.074099+00:00 app[web.1]: 
-2017-05-25T22:20:21.074100+00:00 app[web.1]: 
-2017-05-25T22:20:21.075674+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] {"uid":46664628,"timestamp":1495743904,"type":"dropbox_submission.update","data":{"realm":"section","section_id":889115804,"realm_id":889115804,"uid":"46664628","revision_id":"1","assignment_nid":"1027844626","object":{"revision_id":1,"uid":46664628,"created":1495743904,"num_items":1,"late":0,"draft":0,"assignment_nid":"1027844626","attachments":{"files":{"file":{"436697916":{"id":436697916,"fid":2422593998,"type":"file","title":"Four-Square_SaraMorrison.docx","filename":"Four-Square_SaraMorrison.docx","filesize":14700,"md5_checksum":"bfb9cb73dbd36e48fd9bac48b881b127","timestamp":1495743902,"filemime":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/889115804\/Four-Square_SaraMorrison_59273d9ec6cb6.docx","extension":"docx","converted_status":"1","converted_type":4,"converted_filename":"Four-Square_SaraMorrison.pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/436697916\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":29241,"converted_md5_checksum":"d99991bd26b7212cb5565d8fcbbcb533"}}}}}}}
-2017-05-25T22:20:21.076171+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] stdClass Object
-2017-05-25T22:20:21.076174+00:00 app[web.1]: (
-2017-05-25T22:20:21.076201+00:00 app[web.1]:     [uid] => 46664628
-2017-05-25T22:20:21.076271+00:00 app[web.1]:     [timestamp] => 1495743904
-2017-05-25T22:20:21.076314+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-25T22:20:21.076381+00:00 app[web.1]:         (
-2017-05-25T22:20:21.076380+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-25T22:20:21.076433+00:00 app[web.1]:             [realm] => section
-2017-05-25T22:20:21.076475+00:00 app[web.1]:             [section_id] => 889115804
-2017-05-25T22:20:21.076518+00:00 app[web.1]:             [realm_id] => 889115804
-2017-05-25T22:20:21.076554+00:00 app[web.1]:             [uid] => 46664628
-2017-05-25T22:20:21.076623+00:00 app[web.1]:             [revision_id] => 1
-2017-05-25T22:20:21.076670+00:00 app[web.1]:             [assignment_nid] => 1027844626
-2017-05-25T22:20:21.076716+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-25T22:20:21.076770+00:00 app[web.1]:                 (
-2017-05-25T22:20:21.076817+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-25T22:20:21.076859+00:00 app[web.1]:                     [uid] => 46664628
-2017-05-25T22:20:21.076944+00:00 app[web.1]:                     [created] => 1495743904
-2017-05-25T22:20:21.076983+00:00 app[web.1]:                     [num_items] => 1
-2017-05-25T22:20:21.077022+00:00 app[web.1]:                     [late] => 0
-2017-05-25T22:20:21.077063+00:00 app[web.1]:                     [draft] => 0
-2017-05-25T22:20:21.077325+00:00 app[web.1]:                     [assignment_nid] => 1027844626
-2017-05-25T22:20:21.077414+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-25T22:20:21.077451+00:00 app[web.1]:                         (
-2017-05-25T22:20:21.077509+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-25T22:20:21.077550+00:00 app[web.1]:                                 (
-2017-05-25T22:20:21.077654+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-25T22:20:21.077835+00:00 app[web.1]:                                             [436697916] => stdClass Object
-2017-05-25T22:20:21.077693+00:00 app[web.1]:                                         (
-2017-05-25T22:20:21.077957+00:00 app[web.1]:                                                     [id] => 436697916
-2017-05-25T22:20:21.077854+00:00 app[web.1]:                                                 (
-2017-05-25T22:20:21.078035+00:00 app[web.1]:                                                     [fid] => 2422593998
-2017-05-25T22:20:21.078202+00:00 app[web.1]:                                                     [type] => file
-2017-05-25T22:20:21.078228+00:00 app[web.1]:                                                     [title] => Four-Square_SaraMorrison.docx
-2017-05-25T22:20:21.078372+00:00 app[web.1]:                                                     [filename] => Four-Square_SaraMorrison.docx
-2017-05-25T22:20:21.078415+00:00 app[web.1]:                                                     [filesize] => 14700
-2017-05-25T22:20:21.078750+00:00 app[web.1]:                                                     [md5_checksum] => bfb9cb73dbd36e48fd9bac48b881b127
-2017-05-25T22:20:21.078828+00:00 app[web.1]:                                                     [timestamp] => 1495743902
-2017-05-25T22:20:21.079024+00:00 app[web.1]:                                                     [filemime] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
-2017-05-25T22:20:21.079190+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/889115804/Four-Square_SaraMorrison_59273d9ec6cb6.docx
-2017-05-25T22:20:21.079260+00:00 app[web.1]:                                                     [extension] => docx
-2017-05-25T22:20:21.079366+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-25T22:20:21.079470+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-25T22:20:21.079573+00:00 app[web.1]:                                                     [converted_filename] => Four-Square_SaraMorrison.pdf
-2017-05-25T22:20:21.079743+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/436697916/conversion/file.pdf
-2017-05-25T22:20:21.080046+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-25T22:20:21.080105+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-25T22:20:21.080705+00:00 app[web.1]:                                                     [converted_filesize] => 29241
-2017-05-25T22:20:21.080773+00:00 app[web.1]:                                                     [converted_md5_checksum] => d99991bd26b7212cb5565d8fcbbcb533
-2017-05-25T22:20:21.081043+00:00 app[web.1]:                                                 )
-2017-05-25T22:20:21.081045+00:00 app[web.1]: 
-2017-05-25T22:20:21.081104+00:00 app[web.1]:                                         )
-2017-05-25T22:20:21.081105+00:00 app[web.1]: 
-2017-05-25T22:20:21.081134+00:00 app[web.1]:                                 )
-2017-05-25T22:20:21.081349+00:00 app[web.1]: 
-2017-05-25T22:20:21.081381+00:00 app[web.1]:                         )
-2017-05-25T22:20:21.081383+00:00 app[web.1]: 
-2017-05-25T22:20:21.081410+00:00 app[web.1]:                 )
-2017-05-25T22:20:21.081414+00:00 app[web.1]: 
-2017-05-25T22:20:21.081433+00:00 app[web.1]:         )
-2017-05-25T22:20:21.081437+00:00 app[web.1]: )
-2017-05-25T22:20:21.081435+00:00 app[web.1]: 
-2017-05-25T22:20:21.081439+00:00 app[web.1]: 
-2017-05-25T22:20:21.081702+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] UID: 46664628
-2017-05-25T22:20:21.081747+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] Section ID: 889115804
-2017-05-25T22:20:21.081804+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] Assignment ID: 1027844626
-2017-05-25T22:20:21.082102+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] Requirement Type found - courses
-2017-05-25T22:20:21.082103+00:00 app[web.1]: 
-2017-05-25T22:20:21.082597+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '46664628' AND Schoology_Grade_ID__c = '1027844626' LIMIT 1
-2017-05-25T22:20:21.082598+00:00 app[web.1]: 
-2017-05-25T22:20:21.082727+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] In Salesforce Query
-2017-05-25T22:20:21.082728+00:00 app[web.1]: 
-2017-05-25T22:20:21.486152+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=69d23743-2787-4f53-ad69-b007a76a8471 fwd="52.4.171.101" dyno=web.1 connect=1ms service=448ms status=302 bytes=298 protocol=https
-2017-05-25T22:20:21.483169+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-25T22:20:21.483526+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-25T22:20:21.483550+00:00 app[web.1]: 
-2017-05-25T22:20:21.483563+00:00 app[web.1]: 
-2017-05-25T22:20:21.483666+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-25T22:20:21.483681+00:00 app[web.1]: 
-2017-05-25T22:20:21.483740+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] 
-2017-05-25T22:20:21.483776+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] 
-2017-05-25T22:20:21.483788+00:00 app[web.1]: 
-2017-05-25T22:20:21.483824+00:00 app[web.1]: [25-May-2017 22:20:21 UTC] 
-2017-05-25T22:20:21.483836+00:00 app[web.1]: 
-2017-05-25T22:20:21.483956+00:00 app[web.1]: 10.230.231.47 - - [25/May/2017:22:20:21 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
-2017-05-25T22:53:45.255529+00:00 heroku[web.1]: Idling
-2017-05-25T22:53:45.255529+00:00 heroku[web.1]: State changed from up to down
-2017-05-25T22:53:45.921698+00:00 app[web.1]: Going down, terminating child processes...
-2017-05-25T22:53:45.913179+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2017-05-25T22:53:46.039023+00:00 heroku[web.1]: Process exited with status 143
-2017-05-26T17:23:27.794909+00:00 heroku[web.1]: Unidling
-2017-05-26T17:23:27.795171+00:00 heroku[web.1]: State changed from down to starting
-2017-05-26T17:23:33.066537+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
-2017-05-26T17:23:36.611181+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
-2017-05-26T17:23:36.673943+00:00 app[web.1]: Optimizing defaults for 1X dyno...
-2017-05-26T17:23:36.890631+00:00 app[web.1]: 4 processes at 128MB memory limit.
-2017-05-26T17:23:36.890663+00:00 app[web.1]: Starting php-fpm...
-2017-05-26T17:23:38.882154+00:00 app[web.1]: Starting httpd...
-2017-05-26T17:23:39.494746+00:00 heroku[web.1]: State changed from starting to up
-2017-05-26T17:23:41.913912+00:00 app[web.1]: [26-May-2017 17:23:41 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
-2017-05-26T17:23:41.925058+00:00 app[web.1]: [26-May-2017 17:23:41 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
-2017-05-26T17:23:42.004547+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] got token!
-2017-05-26T17:23:42.004572+00:00 app[web.1]: 
-2017-05-26T17:23:42.004615+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] Array
-2017-05-26T17:23:42.004665+00:00 app[web.1]:     [uid] => 22135108
-2017-05-26T17:23:42.004633+00:00 app[web.1]: (
-2017-05-26T17:23:42.009087+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-26T17:23:42.009147+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-26T17:23:42.009206+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-26T17:23:42.009221+00:00 app[web.1]: )
-2017-05-26T17:23:42.009238+00:00 app[web.1]: 
-2017-05-26T17:23:42.009252+00:00 app[web.1]: 
-2017-05-26T17:23:42.009288+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] 
-2017-05-26T17:23:42.009324+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] 
-2017-05-26T17:23:42.009364+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] UID: 
-2017-05-26T17:23:42.009409+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] Section ID: 
-2017-05-26T17:23:42.009479+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] Assignment ID: 
-2017-05-26T17:23:42.009543+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] Requirement Type NOT FOUND!
-2017-05-26T17:23:42.009560+00:00 app[web.1]: 
-2017-05-26T17:23:42.286588+00:00 heroku[router]: at=info method=GET path="/" host=glacial-tor-7252.herokuapp.com request_id=b57a874c-477e-46f3-9778-6e3e2b919092 fwd="38.93.38.58" dyno=web.1 connect=1ms service=406ms status=200 bytes=204 protocol=https
-2017-05-26T17:23:42.284114+00:00 app[web.1]: 10.149.67.224 - - [26/May/2017:17:23:41 +0000] "GET / HTTP/1.1" 200 - "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
-2017-05-26T17:23:42.492637+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] got token!
-2017-05-26T17:23:42.492639+00:00 app[web.1]: 
-2017-05-26T17:23:42.492745+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] Array
-2017-05-26T17:23:42.492746+00:00 app[web.1]: (
-2017-05-26T17:23:42.492768+00:00 app[web.1]:     [uid] => 22135108
-2017-05-26T17:23:42.492824+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-26T17:23:42.492901+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-26T17:23:42.492875+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-26T17:23:42.492902+00:00 app[web.1]: )
-2017-05-26T17:23:42.492905+00:00 app[web.1]: 
-2017-05-26T17:23:42.492906+00:00 app[web.1]: 
-2017-05-26T17:23:42.493033+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] 
-2017-05-26T17:23:42.495827+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] 
-2017-05-26T17:23:42.495905+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] UID: 
-2017-05-26T17:23:42.495989+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] Section ID: 
-2017-05-26T17:23:42.496072+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] Assignment ID: 
-2017-05-26T17:23:42.496171+00:00 app[web.1]: 
-2017-05-26T17:23:42.496169+00:00 app[web.1]: [26-May-2017 17:23:42 UTC] Requirement Type NOT FOUND!
-2017-05-26T17:23:42.686726+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=glacial-tor-7252.herokuapp.com request_id=f9e677d0-5b1a-41d8-9f12-8bf82c7e2b9b fwd="38.93.38.58" dyno=web.1 connect=2ms service=261ms status=200 bytes=204 protocol=https
-2017-05-26T17:23:42.684232+00:00 app[web.1]: 10.149.67.224 - - [26/May/2017:17:23:42 +0000] "GET /favicon.ico HTTP/1.1" 200 - "https://glacial-tor-7252.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
-2017-05-26T17:23:49.140903+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] got token!
-2017-05-26T17:23:49.141623+00:00 app[web.1]: 
-2017-05-26T17:23:49.142663+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] Array
-2017-05-26T17:23:49.142821+00:00 app[web.1]: (
-2017-05-26T17:23:49.142856+00:00 app[web.1]:     [uid] => 22135108
-2017-05-26T17:23:49.143216+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-26T17:23:49.143724+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-26T17:23:49.144041+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-26T17:23:49.144362+00:00 app[web.1]: )
-2017-05-26T17:23:49.144532+00:00 app[web.1]: 
-2017-05-26T17:23:49.144549+00:00 app[web.1]: 
-2017-05-26T17:23:49.145750+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] 
-2017-05-26T17:23:49.146170+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] 
-2017-05-26T17:23:49.147317+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] UID: 
-2017-05-26T17:23:49.149786+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] Assignment ID: 
-2017-05-26T17:23:49.148761+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] Section ID: 
-2017-05-26T17:23:49.151159+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] Requirement Type NOT FOUND!
-2017-05-26T17:23:49.152069+00:00 app[web.1]: 
-2017-05-26T17:23:49.334133+00:00 app[web.1]: 10.149.67.224 - - [26/May/2017:17:23:48 +0000] "GET / HTTP/1.1" 200 - "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
-2017-05-26T17:23:49.336097+00:00 heroku[router]: at=info method=GET path="/" host=glacial-tor-7252.herokuapp.com request_id=fb1e8922-9bbe-42b1-8774-b8dc78795cb8 fwd="38.93.38.58" dyno=web.1 connect=1ms service=415ms status=200 bytes=204 protocol=https
-2017-05-26T17:23:49.513605+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] got token!
-2017-05-26T17:23:49.513619+00:00 app[web.1]: 
-2017-05-26T17:23:49.513633+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] Array
-2017-05-26T17:23:49.513636+00:00 app[web.1]: (
-2017-05-26T17:23:49.513672+00:00 app[web.1]:     [uid] => 22135108
-2017-05-26T17:23:49.513738+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-26T17:23:49.513835+00:00 app[web.1]: )
-2017-05-26T17:23:49.513832+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-26T17:23:49.513810+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-26T17:23:49.513836+00:00 app[web.1]: 
-2017-05-26T17:23:49.513855+00:00 app[web.1]: 
-2017-05-26T17:23:49.513891+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] 
-2017-05-26T17:23:49.513924+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] 
-2017-05-26T17:23:49.513979+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] UID: 
-2017-05-26T17:23:49.514011+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] Section ID: 
-2017-05-26T17:23:49.514062+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] Assignment ID: 
-2017-05-26T17:23:49.514121+00:00 app[web.1]: [26-May-2017 17:23:49 UTC] Requirement Type NOT FOUND!
-2017-05-26T17:23:49.514125+00:00 app[web.1]: 
-2017-05-26T17:23:49.740629+00:00 app[web.1]: 10.149.67.224 - - [26/May/2017:17:23:49 +0000] "GET /favicon.ico HTTP/1.1" 200 - "https://glacial-tor-7252.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
-2017-05-26T17:23:49.743406+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=glacial-tor-7252.herokuapp.com request_id=6177570d-ab1e-45b8-ac4c-dc56c5019c1d fwd="38.93.38.58" dyno=web.1 connect=5ms service=295ms status=200 bytes=204 protocol=https
-2017-05-26T17:27:29.810146+00:00 app[web.1]: [26-May-2017 17:27:29 UTC] got token!
-2017-05-26T17:27:29.810156+00:00 app[web.1]: 
-2017-05-26T17:27:29.810160+00:00 app[web.1]: [26-May-2017 17:27:29 UTC] Array
-2017-05-26T17:27:29.810162+00:00 app[web.1]: (
-2017-05-26T17:27:29.810217+00:00 app[web.1]:     [uid] => 22135108
-2017-05-26T17:27:29.810361+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-26T17:27:29.810364+00:00 app[web.1]: )
-2017-05-26T17:27:29.810273+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-26T17:27:29.810367+00:00 app[web.1]: 
-2017-05-26T17:27:29.810326+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-26T17:27:29.810405+00:00 app[web.1]: [26-May-2017 17:27:29 UTC] 
-2017-05-26T17:27:29.810365+00:00 app[web.1]: 
-2017-05-26T17:27:29.810439+00:00 app[web.1]: [26-May-2017 17:27:29 UTC] 
-2017-05-26T17:27:29.810478+00:00 app[web.1]: [26-May-2017 17:27:29 UTC] UID: 
-2017-05-26T17:27:29.810564+00:00 app[web.1]: [26-May-2017 17:27:29 UTC] Assignment ID: 
-2017-05-26T17:27:29.810516+00:00 app[web.1]: [26-May-2017 17:27:29 UTC] Section ID: 
-2017-05-26T17:27:29.810622+00:00 app[web.1]: 
-2017-05-26T17:27:29.998166+00:00 app[web.1]: 10.61.164.249 - - [26/May/2017:17:27:29 +0000] "GET / HTTP/1.1" 200 - "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
-2017-05-26T17:27:29.810618+00:00 app[web.1]: [26-May-2017 17:27:29 UTC] Requirement Type NOT FOUND!
-2017-05-26T17:27:30.003645+00:00 heroku[router]: at=info method=GET path="/" host=glacial-tor-7252.herokuapp.com request_id=75338ce1-d53c-498e-a873-00fef96bc77d fwd="38.93.38.58" dyno=web.1 connect=0ms service=254ms status=200 bytes=204 protocol=https
-2017-05-26T17:27:30.152838+00:00 app[web.1]: [26-May-2017 17:27:30 UTC] got token!
-2017-05-26T17:27:30.152855+00:00 app[web.1]: 
-2017-05-26T17:27:30.152860+00:00 app[web.1]: [26-May-2017 17:27:30 UTC] Array
-2017-05-26T17:27:30.152861+00:00 app[web.1]: (
-2017-05-26T17:27:30.152882+00:00 app[web.1]:     [uid] => 22135108
-2017-05-26T17:27:30.152944+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-26T17:27:30.153000+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-26T17:27:30.153128+00:00 app[web.1]: )
-2017-05-26T17:27:30.153131+00:00 app[web.1]: 
-2017-05-26T17:27:30.153031+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-26T17:27:30.153132+00:00 app[web.1]: 
-2017-05-26T17:27:30.153170+00:00 app[web.1]: [26-May-2017 17:27:30 UTC] 
-2017-05-26T17:27:30.153335+00:00 app[web.1]: [26-May-2017 17:27:30 UTC] Assignment ID: 
-2017-05-26T17:27:30.153391+00:00 app[web.1]: [26-May-2017 17:27:30 UTC] Requirement Type NOT FOUND!
-2017-05-26T17:27:30.153394+00:00 app[web.1]: 
-2017-05-26T17:27:30.153205+00:00 app[web.1]: [26-May-2017 17:27:30 UTC] 
-2017-05-26T17:27:30.153244+00:00 app[web.1]: [26-May-2017 17:27:30 UTC] UID: 
-2017-05-26T17:27:30.314888+00:00 app[web.1]: 10.61.164.249 - - [26/May/2017:17:27:30 +0000] "GET /favicon.ico HTTP/1.1" 200 - "https://glacial-tor-7252.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
-2017-05-26T17:27:30.153289+00:00 app[web.1]: [26-May-2017 17:27:30 UTC] Section ID: 
-2017-05-26T17:27:30.320299+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=glacial-tor-7252.herokuapp.com request_id=66e8ccd0-95c4-42fe-94d4-76298d3a87be fwd="38.93.38.58" dyno=web.1 connect=0ms service=200ms status=200 bytes=204 protocol=https
-2017-05-26T18:01:45.456018+00:00 heroku[web.1]: Idling
-2017-05-26T18:01:45.456526+00:00 heroku[web.1]: State changed from up to down
-2017-05-26T18:01:46.210192+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2017-05-26T18:01:46.225827+00:00 app[web.1]: Going down, terminating child processes...
-2017-05-26T18:01:46.342061+00:00 heroku[web.1]: Process exited with status 143
-2017-05-26T21:57:15.264902+00:00 heroku[web.1]: Unidling
-2017-05-26T21:57:15.265238+00:00 heroku[web.1]: State changed from down to starting
-2017-05-26T21:57:27.989140+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
-2017-05-26T21:57:31.975706+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
-2017-05-26T21:57:32.008634+00:00 app[web.1]: Optimizing defaults for 1X dyno...
-2017-05-26T21:57:32.331896+00:00 app[web.1]: 4 processes at 128MB memory limit.
-2017-05-26T21:57:32.364159+00:00 app[web.1]: Starting php-fpm...
-2017-05-26T21:57:34.371125+00:00 app[web.1]: Starting httpd...
-2017-05-26T21:57:35.050927+00:00 heroku[web.1]: State changed from starting to up
-2017-05-26T21:57:35.526705+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
-2017-05-26T21:57:35.762460+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
-2017-05-26T21:57:35.799493+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] got token!
-2017-05-26T21:57:35.799503+00:00 app[web.1]: 
-2017-05-26T21:57:35.799753+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] Array
-2017-05-26T21:57:35.799755+00:00 app[web.1]: (
-2017-05-26T21:57:35.799786+00:00 app[web.1]:     [uid] => 22135108
-2017-05-26T21:57:35.799931+00:00 app[web.1]:     [token_is_access] => 1
-2017-05-26T21:57:35.799852+00:00 app[web.1]:     [token_key] => b02bc01919e633cc4cbd3b1b6917966d0558071f2
-2017-05-26T21:57:35.799893+00:00 app[web.1]:     [token_secret] => 595e3771523d7c63b374b437297fb75f
-2017-05-26T21:57:35.799932+00:00 app[web.1]: )
-2017-05-26T21:57:35.799933+00:00 app[web.1]: 
-2017-05-26T21:57:35.799935+00:00 app[web.1]: 
-2017-05-26T21:57:35.800995+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] {"uid":36611569,"timestamp":1495835816,"type":"dropbox_submission.update","data":{"realm":"section","section_id":620117285,"realm_id":620117285,"uid":"36611569","revision_id":"1","assignment_nid":"1039295676","object":{"revision_id":1,"uid":36611569,"created":1495835816,"num_items":1,"late":1,"draft":0,"assignment_nid":"1039295676","attachments":{"files":{"file":{"437256798":{"id":437256798,"fid":2424369484,"type":"file","title":"S5-2017-Assignment_B-Situational_Leadership_Damon Vaughan (extension).pdf","filename":"S5-2017-Assignment_B-Situational_Leadership_Damon Vaughan (extension).pdf","filesize":601023,"md5_checksum":"914d0e4e0c3115731dc01f7148271d59","timestamp":1495835812,"filemime":"application\/pdf","download_path":"http:\/\/api.schoology.com\/v1\/system\/files\/drop_items\/m\/201705\/course\/620117285\/S5-2017-Assignment_B-Situational_Leadership_Damon_Vaughan_extension_5928a4a4457a8.pdf","extension":"pdf","converted_status":"1","converted_type":4,"converted_filename":"S5-2017-Assignment_B-Situational_Leadership_Damon Vaughan (extension).pdf","converted_download_path":"http:\/\/api.schoology.com\/v1\/submission\/437256798\/conversion\/file.pdf","converted_extension":"pdf","converted_filemime":"application\/pdf","converted_filesize":601023,"converted_md5_checksum":"914d0e4e0c3115731dc01f7148271d59"}}}}}}}
-2017-05-26T21:57:35.801716+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] stdClass Object
-2017-05-26T21:57:35.801737+00:00 app[web.1]: (
-2017-05-26T21:57:35.801772+00:00 app[web.1]:     [uid] => 36611569
-2017-05-26T21:57:35.801810+00:00 app[web.1]:     [timestamp] => 1495835816
-2017-05-26T21:57:35.801858+00:00 app[web.1]:     [type] => dropbox_submission.update
-2017-05-26T21:57:35.801898+00:00 app[web.1]:     [data] => stdClass Object
-2017-05-26T21:57:35.801923+00:00 app[web.1]:         (
-2017-05-26T21:57:35.801963+00:00 app[web.1]:             [realm] => section
-2017-05-26T21:57:35.802008+00:00 app[web.1]:             [section_id] => 620117285
-2017-05-26T21:57:35.802054+00:00 app[web.1]:             [realm_id] => 620117285
-2017-05-26T21:57:35.802092+00:00 app[web.1]:             [uid] => 36611569
-2017-05-26T21:57:35.802134+00:00 app[web.1]:             [revision_id] => 1
-2017-05-26T21:57:35.802231+00:00 app[web.1]:             [object] => stdClass Object
-2017-05-26T21:57:35.802184+00:00 app[web.1]:             [assignment_nid] => 1039295676
-2017-05-26T21:57:35.802262+00:00 app[web.1]:                 (
-2017-05-26T21:57:35.802340+00:00 app[web.1]:                     [revision_id] => 1
-2017-05-26T21:57:35.802389+00:00 app[web.1]:                     [uid] => 36611569
-2017-05-26T21:57:35.802441+00:00 app[web.1]:                     [created] => 1495835816
-2017-05-26T21:57:35.802488+00:00 app[web.1]:                     [num_items] => 1
-2017-05-26T21:57:35.802530+00:00 app[web.1]:                     [late] => 1
-2017-05-26T21:57:35.802572+00:00 app[web.1]:                     [draft] => 0
-2017-05-26T21:57:35.802630+00:00 app[web.1]:                     [assignment_nid] => 1039295676
-2017-05-26T21:57:35.802688+00:00 app[web.1]:                     [attachments] => stdClass Object
-2017-05-26T21:57:35.802724+00:00 app[web.1]:                         (
-2017-05-26T21:57:35.802784+00:00 app[web.1]:                             [files] => stdClass Object
-2017-05-26T21:57:35.802826+00:00 app[web.1]:                                 (
-2017-05-26T21:57:35.802901+00:00 app[web.1]:                                     [file] => stdClass Object
-2017-05-26T21:57:35.803650+00:00 app[web.1]:                                         (
-2017-05-26T21:57:35.803742+00:00 app[web.1]:                                             [437256798] => stdClass Object
-2017-05-26T21:57:35.803813+00:00 app[web.1]:                                                 (
-2017-05-26T21:57:35.803884+00:00 app[web.1]:                                                     [id] => 437256798
-2017-05-26T21:57:35.803983+00:00 app[web.1]:                                                     [fid] => 2424369484
-2017-05-26T21:57:35.804052+00:00 app[web.1]:                                                     [type] => file
-2017-05-26T21:57:35.804198+00:00 app[web.1]:                                                     [title] => S5-2017-Assignment_B-Situational_Leadership_Damon Vaughan (extension).pdf
-2017-05-26T21:57:35.804524+00:00 app[web.1]:                                                     [filename] => S5-2017-Assignment_B-Situational_Leadership_Damon Vaughan (extension).pdf
-2017-05-26T21:57:35.804769+00:00 app[web.1]:                                                     [filesize] => 601023
-2017-05-26T21:57:35.804879+00:00 app[web.1]:                                                     [md5_checksum] => 914d0e4e0c3115731dc01f7148271d59
-2017-05-26T21:57:35.805258+00:00 app[web.1]:                                                     [timestamp] => 1495835812
-2017-05-26T21:57:35.805561+00:00 app[web.1]:                                                     [filemime] => application/pdf
-2017-05-26T21:57:35.805957+00:00 app[web.1]:                                                     [download_path] => http://api.schoology.com/v1/system/files/drop_items/m/201705/course/620117285/S5-2017-Assignment_B-Situational_Leadership_Damon_Vaughan_extension_5928a4a4457a8.pdf
-2017-05-26T21:57:35.806056+00:00 app[web.1]:                                                     [extension] => pdf
-2017-05-26T21:57:35.806235+00:00 app[web.1]:                                                     [converted_status] => 1
-2017-05-26T21:57:35.806423+00:00 app[web.1]:                                                     [converted_type] => 4
-2017-05-26T21:57:35.806702+00:00 app[web.1]:                                                     [converted_filename] => S5-2017-Assignment_B-Situational_Leadership_Damon Vaughan (extension).pdf
-2017-05-26T21:57:35.807017+00:00 app[web.1]:                                                     [converted_download_path] => http://api.schoology.com/v1/submission/437256798/conversion/file.pdf
-2017-05-26T21:57:35.807132+00:00 app[web.1]:                                                     [converted_extension] => pdf
-2017-05-26T21:57:35.807303+00:00 app[web.1]:                                                     [converted_filemime] => application/pdf
-2017-05-26T21:57:35.807464+00:00 app[web.1]:                                                     [converted_filesize] => 601023
-2017-05-26T21:57:35.813655+00:00 app[web.1]:                                                     [converted_md5_checksum] => 914d0e4e0c3115731dc01f7148271d59
-2017-05-26T21:57:35.814292+00:00 app[web.1]:                                                 )
-2017-05-26T21:57:35.814312+00:00 app[web.1]: 
-2017-05-26T21:57:35.814359+00:00 app[web.1]:                                         )
-2017-05-26T21:57:35.814964+00:00 app[web.1]: 
-2017-05-26T21:57:35.815008+00:00 app[web.1]:                                 )
-2017-05-26T21:57:35.815137+00:00 app[web.1]: 
-2017-05-26T21:57:35.815178+00:00 app[web.1]:                         )
-2017-05-26T21:57:35.815192+00:00 app[web.1]: 
-2017-05-26T21:57:35.815319+00:00 app[web.1]:                 )
-2017-05-26T21:57:35.815335+00:00 app[web.1]: 
-2017-05-26T21:57:35.815356+00:00 app[web.1]:         )
-2017-05-26T21:57:35.815642+00:00 app[web.1]: 
-2017-05-26T21:57:35.815659+00:00 app[web.1]: )
-2017-05-26T21:57:35.815673+00:00 app[web.1]: 
-2017-05-26T21:57:35.815720+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] UID: 36611569
-2017-05-26T21:57:35.816020+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] Section ID: 620117285
-2017-05-26T21:57:35.816079+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] Assignment ID: 1039295676
-2017-05-26T21:57:35.816705+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] Requirement Type found - courses
-2017-05-26T21:57:35.816723+00:00 app[web.1]: 
-2017-05-26T21:57:35.817110+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] SELECT Id, Submitted_from_Schoology__c, Contact_Schoology_ID__c, Schoology_Grade_ID__c FROM Assessment__c WHERE Contact_Schoology_ID__c = '36611569' AND Schoology_Grade_ID__c = '1039295676' LIMIT 1
-2017-05-26T21:57:35.817679+00:00 app[web.1]: 
-2017-05-26T21:57:35.817734+00:00 app[web.1]: [26-May-2017 21:57:35 UTC] In Salesforce Query
-2017-05-26T21:57:35.818046+00:00 app[web.1]: 
-2017-05-26T21:57:36.577081+00:00 heroku[router]: at=info method=POST path="/?req_type=courses" host=glacial-tor-7252.herokuapp.com request_id=4a7cca5f-81c8-4be8-a794-ebd7da88d730 fwd="52.5.140.116" dyno=web.1 connect=1ms service=1251ms status=302 bytes=298 protocol=https
-2017-05-26T21:57:36.575529+00:00 app[web.1]: <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:partner.soap.sforce.com"><SOAP-ENV:Body><ns1:login><ns1:username>egallo@broadcenter.org.tbc</ns1:username><ns1:password>TBCfosho2016!aey46irNb8KgOr1iNxzjZ31R</ns1:password></ns1:login></SOAP-ENV:Body></SOAP-ENV:Envelope>
-2017-05-26T21:57:36.575090+00:00 app[web.1]: [26-May-2017 21:57:36 UTC] <?xml version="1.0" encoding="UTF-8"?>
-2017-05-26T21:57:36.575548+00:00 app[web.1]: 
-2017-05-26T21:57:36.575566+00:00 app[web.1]: 
-2017-05-26T21:57:36.575707+00:00 app[web.1]: [26-May-2017 21:57:36 UTC] INVALID_LOGIN: Invalid username, password, security token; or user locked out.
-2017-05-26T21:57:36.575725+00:00 app[web.1]: 
-2017-05-26T21:57:36.575848+00:00 app[web.1]: [26-May-2017 21:57:36 UTC] 
-2017-05-26T21:57:36.575768+00:00 app[web.1]: [26-May-2017 21:57:36 UTC] 
-2017-05-26T21:57:36.575866+00:00 app[web.1]: 
-2017-05-26T21:57:36.575905+00:00 app[web.1]: [26-May-2017 21:57:36 UTC] 
-2017-05-26T21:57:36.575921+00:00 app[web.1]: 
-2017-05-26T21:57:36.576649+00:00 app[web.1]: 10.30.53.152 - - [26/May/2017:21:57:35 +0000] "POST /?req_type=courses HTTP/1.1" 302 - "-" "-
+2017-05-25T16:43:49.282267+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-25T16:43:52.806891+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-25T16:43:52.880611+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-25T16:43:53.160937+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-25T16:43:53.189337+00:00 app[web.1]: Starting php-fpm...
+2017-05-25T16:43:55.337320+00:00 heroku[web.1]: State changed from starting to up
+2017-05-25T16:43:55.195746+00:00 app[web.1]: Starting httpd...
+2017-05-25T16:53:23.934056+00:00 heroku[web.1]: Restarting
+2017-05-25T16:53:23.934596+00:00 heroku[web.1]: State changed from up to starting
+2017-05-25T16:53:24.780063+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-25T16:53:24.802568+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-25T16:53:24.967432+00:00 heroku[web.1]: Process exited with status 143
+2017-05-25T16:53:25.766765+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-25T16:53:29.030981+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-25T16:53:29.052396+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-25T16:53:29.203059+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-25T16:53:29.221511+00:00 app[web.1]: Starting php-fpm...
+2017-05-25T16:53:31.229282+00:00 app[web.1]: Starting httpd...
+2017-05-25T16:53:31.890804+00:00 heroku[web.1]: State changed from starting to up
+2017-05-25T17:27:10.971065+00:00 heroku[web.1]: Idling
+2017-05-25T17:27:10.971764+00:00 heroku[web.1]: State changed from up to down
+2017-05-25T17:27:11.827887+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-25T17:27:11.808312+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-25T17:27:12.025368+00:00 heroku[web.1]: Process exited with status 143
+2017-05-25T21:43:34.179415+00:00 heroku[web.1]: State changed from down to starting
+2017-05-25T21:43:42.432639+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-25T21:43:45.524968+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-25T21:43:45.506594+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-25T21:43:45.740754+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-25T21:43:45.750237+00:00 app[web.1]: Starting php-fpm...
+2017-05-25T21:43:47.752589+00:00 app[web.1]: Starting httpd...
+2017-05-25T21:43:48.102563+00:00 heroku[web.1]: State changed from starting to up
+2017-05-25T21:45:25.668679+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=a9000b89-2c2d-4e24-b24f-876959ffd844 fwd="38.93.38.58" dyno=web.1 connect=0ms service=67ms status=500 bytes=169 protocol=https
+2017-05-25T21:45:25.619937+00:00 app[web.1]: [25-May-2017 21:45:25 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-25T21:45:25.655497+00:00 app[web.1]: [25-May-2017 21:45:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "oauth_tokens" does not exist
+2017-05-25T21:45:25.628073+00:00 app[web.1]: [25-May-2017 21:45:25 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-25T21:45:25.655729+00:00 app[web.1]: LINE 1: SELECT * FROM oauth_tokens
+2017-05-25T21:45:25.655783+00:00 app[web.1]:                       ^ in /app/web/index.php:35
+2017-05-25T21:45:25.655807+00:00 app[web.1]: Stack trace:
+2017-05-25T21:45:25.655971+00:00 app[web.1]: #2 {main}
+2017-05-25T21:45:25.655889+00:00 app[web.1]: #0 /app/web/index.php(35): PDO->query('SELECT * FROM o...')
+2017-05-25T21:45:25.656038+00:00 app[web.1]:   thrown in /app/web/index.php on line 35
+2017-05-25T21:45:25.655951+00:00 app[web.1]: #1 /app/web/index.php(210): SchoologyStorage->__construct()
+2017-05-25T21:45:25.657143+00:00 app[web.1]: 10.138.143.17 - - [25/May/2017:21:45:25 +0000] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-25T21:45:49.249380+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=1412f238-5958-4288-96da-37d4bdce35ad fwd="38.93.38.58" dyno=web.1 connect=0ms service=32ms status=500 bytes=169 protocol=https
+2017-05-25T21:45:49.249393+00:00 app[web.1]: [25-May-2017 21:45:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "oauth_tokens" does not exist
+2017-05-25T21:45:49.249411+00:00 app[web.1]: LINE 1: SELECT * FROM oauth_tokens
+2017-05-25T21:45:49.249431+00:00 app[web.1]:                       ^ in /app/web/index.php:35
+2017-05-25T21:45:49.249511+00:00 app[web.1]: #0 /app/web/index.php(35): PDO->query('SELECT * FROM o...')
+2017-05-25T21:45:49.249568+00:00 app[web.1]: #1 /app/web/index.php(210): SchoologyStorage->__construct()
+2017-05-25T21:45:49.249572+00:00 app[web.1]: #2 {main}
+2017-05-25T21:45:49.249452+00:00 app[web.1]: Stack trace:
+2017-05-25T21:45:49.249624+00:00 app[web.1]:   thrown in /app/web/index.php on line 35
+2017-05-25T21:45:49.250522+00:00 app[web.1]: 10.138.143.17 - - [25/May/2017:21:45:49 +0000] "GET / HTTP/1.1" 500 - "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-25T21:45:53.158011+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=eee6b7d7-0442-4575-8711-9da39d7c9ac0 fwd="38.93.38.58" dyno=web.1 connect=0ms service=122ms status=500 bytes=169 protocol=https
+2017-05-25T21:45:53.141879+00:00 app[web.1]: [25-May-2017 21:45:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "oauth_tokens" does not exist
+2017-05-25T21:45:53.141895+00:00 app[web.1]: LINE 1: SELECT * FROM oauth_tokens
+2017-05-25T21:45:53.141926+00:00 app[web.1]:                       ^ in /app/web/index.php:35
+2017-05-25T21:45:53.141944+00:00 app[web.1]: Stack trace:
+2017-05-25T21:45:53.142055+00:00 app[web.1]: #0 /app/web/index.php(35): PDO->query('SELECT * FROM o...')
+2017-05-25T21:45:53.142110+00:00 app[web.1]: #1 /app/web/index.php(210): SchoologyStorage->__construct()
+2017-05-25T21:45:53.158200+00:00 app[web.1]:   thrown in /app/web/index.php on line 35
+2017-05-25T21:45:53.159100+00:00 app[web.1]: 10.138.143.17 - - [25/May/2017:21:45:53 +0000] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-25T21:45:53.142126+00:00 app[web.1]: #2 {main}
+2017-05-25T21:45:54.491510+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=db920e62-03c5-46dd-a4ed-6653153c0836 fwd="38.93.38.58" dyno=web.1 connect=0ms service=48ms status=500 bytes=169 protocol=https
+2017-05-25T21:45:54.490981+00:00 app[web.1]: [25-May-2017 21:45:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "oauth_tokens" does not exist
+2017-05-25T21:45:54.490996+00:00 app[web.1]: LINE 1: SELECT * FROM oauth_tokens
+2017-05-25T21:45:54.491029+00:00 app[web.1]:                       ^ in /app/web/index.php:35
+2017-05-25T21:45:54.491046+00:00 app[web.1]: Stack trace:
+2017-05-25T21:45:54.491103+00:00 app[web.1]: #0 /app/web/index.php(35): PDO->query('SELECT * FROM o...')
+2017-05-25T21:45:54.491174+00:00 app[web.1]: #1 /app/web/index.php(210): SchoologyStorage->__construct()
+2017-05-25T21:45:54.491191+00:00 app[web.1]: #2 {main}
+2017-05-25T21:45:54.491235+00:00 app[web.1]:   thrown in /app/web/index.php on line 35
+2017-05-25T21:45:54.492521+00:00 app[web.1]: 10.138.143.17 - - [25/May/2017:21:45:54 +0000] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-25T22:19:07.008343+00:00 heroku[web.1]: Idling
+2017-05-25T22:19:07.008811+00:00 heroku[web.1]: State changed from up to down
+2017-05-25T22:19:07.910810+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-25T22:19:07.928489+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-25T22:19:08.231955+00:00 heroku[web.1]: Process exited with status 143
+2017-05-25T22:53:38.959296+00:00 heroku[web.1]: Unidling
+2017-05-25T22:53:38.959296+00:00 heroku[web.1]: State changed from down to starting
+2017-05-25T22:53:40.913851+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-25T22:53:44.133945+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-25T22:53:44.161812+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-25T22:53:44.418097+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-25T22:53:44.429029+00:00 app[web.1]: Starting php-fpm...
+2017-05-25T22:53:46.429931+00:00 app[web.1]: Starting httpd...
+2017-05-25T22:53:46.598940+00:00 heroku[web.1]: State changed from starting to up
+2017-05-25T22:53:48.036727+00:00 app[web.1]: [25-May-2017 22:53:48 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-25T22:53:48.050877+00:00 app[web.1]: [25-May-2017 22:53:48 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-25T22:53:48.191799+00:00 app[web.1]: [25-May-2017 22:53:48 UTC] Request Token Results!
+2017-05-25T22:53:48.191804+00:00 app[web.1]: 
+2017-05-25T22:53:48.191916+00:00 app[web.1]: [25-May-2017 22:53:48 UTC] 1
+2017-05-25T22:53:48.191918+00:00 app[web.1]: 
+2017-05-25T22:53:48.211394+00:00 app[web.1]: 10.69.198.55 - - [25/May/2017:22:53:48 +0000] "GET / HTTP/1.1" 302 1726 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-25T22:53:48.206957+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=9a6f5b96-c707-479b-b77f-a4b354913e52 fwd="38.93.38.58" dyno=web.1 connect=1ms service=194ms status=302 bytes=2067 protocol=https
+2017-05-25T23:29:48.780887+00:00 heroku[web.1]: Idling
+2017-05-25T23:29:48.781769+00:00 heroku[web.1]: State changed from up to down
+2017-05-25T23:29:49.733635+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-25T23:29:49.747863+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-25T23:29:50.074348+00:00 heroku[web.1]: Process exited with status 143
+2017-05-26T17:22:04.154859+00:00 heroku[web.1]: State changed from down to starting
+2017-05-26T17:22:05.555455+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-26T17:22:08.128219+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-26T17:22:08.146464+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-26T17:22:08.307161+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-26T17:22:08.337434+00:00 app[web.1]: Starting php-fpm...
+2017-05-26T17:22:10.345156+00:00 app[web.1]: Starting httpd...
+2017-05-26T17:22:10.913181+00:00 heroku[web.1]: State changed from starting to up
+2017-05-26T17:22:39.414444+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-26T17:22:39.577327+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=9a9c4848-55bd-4996-886e-9ce8f142e37d fwd="38.93.38.58" dyno=web.1 connect=0ms service=176ms status=302 bytes=2068 protocol=https
+2017-05-26T17:22:39.570184+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] PHP Warning:  error_log() expects parameter 1 to be string, object given in /app/web/index.php on line 283
+2017-05-26T17:22:39.570241+00:00 app[web.1]: 
+2017-05-26T17:22:39.570285+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] 1
+2017-05-26T17:22:39.570286+00:00 app[web.1]: 
+2017-05-26T17:22:39.570240+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] Request Token Results!
+2017-05-26T17:22:39.420234+00:00 app[web.1]: [26-May-2017 17:22:39 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-26T17:22:39.576943+00:00 app[web.1]: 10.164.172.163 - - [26/May/2017:17:22:39 +0000] "GET / HTTP/1.1" 302 1727 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-26T17:27:25.588742+00:00 heroku[web.1]: Restarting
+2017-05-26T17:27:25.589428+00:00 heroku[web.1]: State changed from up to starting
+2017-05-26T17:27:26.635646+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-26T17:27:26.620499+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-26T17:27:26.778604+00:00 heroku[web.1]: Process exited with status 143
+2017-05-26T17:27:27.513622+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-26T17:27:31.265080+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-26T17:27:31.235348+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-26T17:27:31.633120+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-26T17:27:31.646969+00:00 app[web.1]: Starting php-fpm...
+2017-05-26T17:27:33.650053+00:00 app[web.1]: Starting httpd...
+2017-05-26T17:27:34.541113+00:00 heroku[web.1]: State changed from starting to up
+2017-05-26T17:27:53.167542+00:00 app[web.1]: [26-May-2017 17:27:53 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-26T17:27:53.174337+00:00 app[web.1]: [26-May-2017 17:27:53 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-26T17:27:53.313432+00:00 app[web.1]: [26-May-2017 17:27:53 UTC] 1
+2017-05-26T17:27:53.313647+00:00 app[web.1]: 
+2017-05-26T17:27:53.313753+00:00 app[web.1]: [26-May-2017 17:27:53 UTC] 1
+2017-05-26T17:27:53.313770+00:00 app[web.1]: 
+2017-05-26T17:27:53.313591+00:00 app[web.1]: [26-May-2017 17:27:53 UTC] Request Token Results!
+2017-05-26T17:27:53.323889+00:00 app[web.1]: 10.71.208.240 - - [26/May/2017:17:27:53 +0000] "GET / HTTP/1.1" 302 3456 "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-26T17:27:53.326371+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=d8a1b3d4-5335-44dc-b797-7a3c64681431 fwd="38.93.38.58" dyno=web.1 connect=1ms service=174ms status=302 bytes=3797 protocol=https
+2017-05-26T18:01:07.530963+00:00 heroku[web.1]: Idling
+2017-05-26T18:01:07.531858+00:00 heroku[web.1]: State changed from up to down
+2017-05-26T18:01:08.498522+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-26T18:01:08.522931+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-26T18:01:08.656039+00:00 heroku[web.1]: Process exited with status 143
+2017-05-26T22:15:46.627011+00:00 heroku[web.1]: Unidling
+2017-05-26T22:15:46.627251+00:00 heroku[web.1]: State changed from down to starting
+2017-05-26T22:15:48.429053+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-26T22:15:51.220980+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-26T22:15:51.245175+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-26T22:15:51.412462+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-26T22:15:51.433447+00:00 app[web.1]: Starting php-fpm...
+2017-05-26T22:15:53.435310+00:00 app[web.1]: Starting httpd...
+2017-05-26T22:15:53.687173+00:00 heroku[web.1]: State changed from starting to up
+2017-05-26T22:15:54.689267+00:00 app[web.1]: [26-May-2017 22:15:54 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-26T22:15:54.693520+00:00 app[web.1]: [26-May-2017 22:15:54 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-26T22:15:54.790292+00:00 app[web.1]: [26-May-2017 22:15:54 UTC] 1
+2017-05-26T22:15:54.790328+00:00 app[web.1]: [26-May-2017 22:15:54 UTC] Request Token Results!
+2017-05-26T22:15:54.790344+00:00 app[web.1]: 
+2017-05-26T22:15:54.790365+00:00 app[web.1]: [26-May-2017 22:15:54 UTC] 1
+2017-05-26T22:15:54.790367+00:00 app[web.1]: 
+2017-05-26T22:15:54.796972+00:00 app[web.1]: 10.230.231.47 - - [26/May/2017:22:15:54 +0000] "GET / HTTP/1.1" 302 3460 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-26T22:15:54.796950+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=7fff5799-63e1-4517-968f-0850d932d466 fwd="38.93.38.58" dyno=web.1 connect=0ms service=119ms status=302 bytes=3801 protocol=https
+2017-05-26T22:31:55.809950+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=5966fddb-2341-4477-bae1-28b7427e0109 fwd="38.93.38.58" dyno=web.1 connect=0ms service=92ms status=302 bytes=3791 protocol=https
+2017-05-26T22:31:55.801136+00:00 app[web.1]: [26-May-2017 22:31:55 UTC] 1
+2017-05-26T22:31:55.801152+00:00 app[web.1]: [26-May-2017 22:31:55 UTC] Request Token Results!
+2017-05-26T22:31:55.801154+00:00 app[web.1]: 
+2017-05-26T22:31:55.801196+00:00 app[web.1]: [26-May-2017 22:31:55 UTC] 1
+2017-05-26T22:31:55.801199+00:00 app[web.1]: 
+2017-05-26T22:31:55.809429+00:00 app[web.1]: 10.31.48.247 - - [26/May/2017:22:31:55 +0000] "GET / HTTP/1.1" 302 3450 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-26T23:07:33.822996+00:00 heroku[web.1]: Idling
+2017-05-26T23:07:33.823493+00:00 heroku[web.1]: State changed from up to down
+2017-05-26T23:07:34.837129+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-26T23:07:34.854111+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-26T23:07:34.998363+00:00 heroku[web.1]: Process exited with status 143
+2017-05-30T17:54:33.511635+00:00 heroku[web.1]: State changed from down to starting
+2017-05-30T17:54:35.091137+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-30T17:54:37.588626+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-30T17:54:37.613335+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-30T17:54:37.843235+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-30T17:54:37.849575+00:00 app[web.1]: Starting php-fpm...
+2017-05-30T17:54:39.851566+00:00 app[web.1]: Starting httpd...
+2017-05-30T17:54:40.095804+00:00 heroku[web.1]: State changed from starting to up
+2017-05-30T17:54:48.492400+00:00 app[web.1]: [30-May-2017 17:54:48 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-30T17:54:48.496133+00:00 app[web.1]: [30-May-2017 17:54:48 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-30T17:54:48.573505+00:00 app[web.1]: [30-May-2017 17:54:48 UTC] 1
+2017-05-30T17:54:48.573523+00:00 app[web.1]: [30-May-2017 17:54:48 UTC] Request Token Results!
+2017-05-30T17:54:48.573523+00:00 app[web.1]: 
+2017-05-30T17:54:48.573544+00:00 app[web.1]: [30-May-2017 17:54:48 UTC] 1
+2017-05-30T17:54:48.573544+00:00 app[web.1]: 
+2017-05-30T17:54:48.579264+00:00 app[web.1]: 10.142.142.206 - - [30/May/2017:17:54:48 +0000] "GET / HTTP/1.1" 200 3460 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:54:48.580178+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=2a9c148f-b514-4d15-9914-11ec060beffe fwd="38.93.38.58" dyno=web.1 connect=1ms service=97ms status=200 bytes=3631 protocol=https
+2017-05-30T17:54:48.792524+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=7a6b64a6-0624-4976-aa71-c434a6d121da fwd="38.93.38.58" dyno=web.1 connect=1ms service=81ms status=200 bytes=3631 protocol=https
+2017-05-30T17:54:48.782326+00:00 app[web.1]: [30-May-2017 17:54:48 UTC] 1
+2017-05-30T17:54:48.782664+00:00 app[web.1]: [30-May-2017 17:54:48 UTC] Request Token Results!
+2017-05-30T17:54:48.782665+00:00 app[web.1]: 
+2017-05-30T17:54:48.782680+00:00 app[web.1]: [30-May-2017 17:54:48 UTC] 1
+2017-05-30T17:54:48.782707+00:00 app[web.1]: 
+2017-05-30T17:54:48.791860+00:00 app[web.1]: 10.142.142.206 - - [30/May/2017:17:54:48 +0000] "GET /favicon.ico HTTP/1.1" 200 3460 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:45.231169+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=0fcbe0e1-230f-4648-a400-f570d2e23e1d fwd="38.93.38.58" dyno=web.1 connect=1ms service=134ms status=200 bytes=3627 protocol=https
+2017-05-30T17:58:45.210454+00:00 app[web.1]: [30-May-2017 17:58:45 UTC] 1
+2017-05-30T17:58:45.217642+00:00 app[web.1]: [30-May-2017 17:58:45 UTC] Request Token Results!
+2017-05-30T17:58:45.217669+00:00 app[web.1]: 
+2017-05-30T17:58:45.217763+00:00 app[web.1]: [30-May-2017 17:58:45 UTC] 1
+2017-05-30T17:58:45.217778+00:00 app[web.1]: 
+2017-05-30T17:58:45.241095+00:00 app[web.1]: 10.152.233.4 - - [30/May/2017:17:58:45 +0000] "GET / HTTP/1.1" 200 3456 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:45.535168+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=4640ad11-8c23-4b84-85a9-a133868d04fe fwd="38.93.38.58" dyno=web.1 connect=1ms service=142ms status=200 bytes=3629 protocol=https
+2017-05-30T17:58:45.507633+00:00 app[web.1]: [30-May-2017 17:58:45 UTC] 1
+2017-05-30T17:58:45.507711+00:00 app[web.1]: [30-May-2017 17:58:45 UTC] Request Token Results!
+2017-05-30T17:58:45.507730+00:00 app[web.1]: 
+2017-05-30T17:58:45.507768+00:00 app[web.1]: [30-May-2017 17:58:45 UTC] 1
+2017-05-30T17:58:45.507785+00:00 app[web.1]: 
+2017-05-30T17:58:45.535144+00:00 app[web.1]: 10.152.233.4 - - [30/May/2017:17:58:45 +0000] "GET /favicon.ico HTTP/1.1" 200 3458 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:49.433076+00:00 app[web.1]: [30-May-2017 17:58:49 UTC] 1
+2017-05-30T17:58:49.433099+00:00 app[web.1]: [30-May-2017 17:58:49 UTC] Request Token Results!
+2017-05-30T17:58:49.433100+00:00 app[web.1]: 
+2017-05-30T17:58:49.433137+00:00 app[web.1]: [30-May-2017 17:58:49 UTC] 1
+2017-05-30T17:58:49.433137+00:00 app[web.1]: 
+2017-05-30T17:58:49.438633+00:00 app[web.1]: 10.152.233.4 - - [30/May/2017:17:58:49 +0000] "GET / HTTP/1.1" 200 3456 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:49.623936+00:00 app[web.1]: [30-May-2017 17:58:49 UTC] 1
+2017-05-30T17:58:49.623961+00:00 app[web.1]: [30-May-2017 17:58:49 UTC] Request Token Results!
+2017-05-30T17:58:49.624002+00:00 app[web.1]: 
+2017-05-30T17:58:49.624019+00:00 app[web.1]: [30-May-2017 17:58:49 UTC] 1
+2017-05-30T17:58:49.624020+00:00 app[web.1]: 
+2017-05-30T17:58:49.630307+00:00 app[web.1]: 10.152.233.4 - - [30/May/2017:17:58:49 +0000] "GET /favicon.ico HTTP/1.1" 200 3456 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:49.438460+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=cb4fc4f1-1fab-41c7-8966-6b8b370909a5 fwd="38.93.38.58" dyno=web.1 connect=1ms service=81ms status=200 bytes=3627 protocol=https
+2017-05-30T17:58:49.630988+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=7e51361b-a912-408b-b48c-ece91454b53f fwd="38.93.38.58" dyno=web.1 connect=1ms service=74ms status=200 bytes=3627 protocol=https
+2017-05-30T17:58:52.112869+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=e8d0c754-3cd3-4214-9b24-5d15b09c1cb1 fwd="38.93.38.58" dyno=web.1 connect=1ms service=69ms status=200 bytes=3629 protocol=https
+2017-05-30T17:58:52.108081+00:00 app[web.1]: [30-May-2017 17:58:52 UTC] 1
+2017-05-30T17:58:52.108143+00:00 app[web.1]: [30-May-2017 17:58:52 UTC] Request Token Results!
+2017-05-30T17:58:52.108144+00:00 app[web.1]: 
+2017-05-30T17:58:52.108258+00:00 app[web.1]: [30-May-2017 17:58:52 UTC] 1
+2017-05-30T17:58:52.108260+00:00 app[web.1]: 
+2017-05-30T17:58:52.112781+00:00 app[web.1]: 10.152.233.4 - - [30/May/2017:17:58:52 +0000] "GET / HTTP/1.1" 200 3458 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:52.300796+00:00 app[web.1]: [30-May-2017 17:58:52 UTC] 1
+2017-05-30T17:58:52.300872+00:00 app[web.1]: [30-May-2017 17:58:52 UTC] Request Token Results!
+2017-05-30T17:58:52.300876+00:00 app[web.1]: 
+2017-05-30T17:58:52.301060+00:00 app[web.1]: [30-May-2017 17:58:52 UTC] 1
+2017-05-30T17:58:52.301062+00:00 app[web.1]: 
+2017-05-30T17:58:52.306820+00:00 app[web.1]: 10.152.233.4 - - [30/May/2017:17:58:52 +0000] "GET /favicon.ico HTTP/1.1" 200 3448 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:52.306603+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=581695d0-8da5-4fd2-a4e2-6f1aad95ec18 fwd="38.93.38.58" dyno=web.1 connect=2ms service=76ms status=200 bytes=3619 protocol=https
+2017-05-30T17:58:55.248469+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=29491778-30ef-4e2c-921e-9d4228adfca2 fwd="38.93.38.58" dyno=web.1 connect=1ms service=70ms status=200 bytes=3619 protocol=https
+2017-05-30T17:58:55.239140+00:00 app[web.1]: [30-May-2017 17:58:55 UTC] 1
+2017-05-30T17:58:55.239161+00:00 app[web.1]: [30-May-2017 17:58:55 UTC] Request Token Results!
+2017-05-30T17:58:55.239162+00:00 app[web.1]: 
+2017-05-30T17:58:55.239162+00:00 app[web.1]: [30-May-2017 17:58:55 UTC] 1
+2017-05-30T17:58:55.239163+00:00 app[web.1]: 
+2017-05-30T17:58:55.246154+00:00 app[web.1]: 10.152.233.4 - - [30/May/2017:17:58:55 +0000] "GET / HTTP/1.1" 200 3448 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:55.450387+00:00 app[web.1]: [30-May-2017 17:58:55 UTC] 1
+2017-05-30T17:58:55.450410+00:00 app[web.1]: [30-May-2017 17:58:55 UTC] Request Token Results!
+2017-05-30T17:58:55.450430+00:00 app[web.1]: 
+2017-05-30T17:58:55.450471+00:00 app[web.1]: [30-May-2017 17:58:55 UTC] 1
+2017-05-30T17:58:55.450488+00:00 app[web.1]: 
+2017-05-30T17:58:55.456593+00:00 app[web.1]: 10.152.233.4 - - [30/May/2017:17:58:55 +0000] "GET /favicon.ico HTTP/1.1" 200 3450 "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T17:58:55.456921+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=d381a8ee-d2df-42b9-8ad1-f1cff17680f5 fwd="38.93.38.58" dyno=web.1 connect=1ms service=80ms status=200 bytes=3621 protocol=https
+2017-05-30T18:32:00.597944+00:00 heroku[web.1]: Idling
+2017-05-30T18:32:00.598452+00:00 heroku[web.1]: State changed from up to down
+2017-05-30T18:32:01.544431+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-30T18:32:01.569928+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-30T18:32:01.755569+00:00 heroku[web.1]: Process exited with status 143
