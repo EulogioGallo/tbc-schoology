@@ -79,9 +79,11 @@ class SchoologyStorage implements SchoologyApi_OauthStorage {
 }
 
 // API Class
+/*
 class Schoology extends SchoologyApi {
     
 }
+*/
 
 // Salesforce functions
 function salesforceCall($data, $objectType) {
@@ -212,7 +214,7 @@ $storage = new SchoologyStorage();
 $token = $storage->getAccessTokens($schoology_uid);
 
 error_log("Test!\n");
-error_log(print_r($schoology));
+error_log(print_r($schoology, true));
  
 if($token) {
 
@@ -283,11 +285,11 @@ if($token) {
 } else {
     if(!isset($_GET['oauth_token'])) {
       $api_result = $schoology->api('/oauth/request_token');
- 	  error_log(print_r($api_result));
+ 	  error_log(print_r($api_result, true));
       $result = array();
       parse_str($api_result->result, $result);
       error_log("Request Token Results!\n");
-      error_log(print_r($api_result) . "\n");
+      error_log(print_r($api_result, true) . "\n");
  
       $storage->saveRequestTokens($schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
  

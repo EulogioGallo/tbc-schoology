@@ -70,7 +70,7 @@ class SchoologyApi
     $this->_saml_cert_path = __DIR__ . '/app.schoology.com.crt';
 	
 	error_log("In constructor...\n");
-	error_log(print_r($this));
+	error_log(print_r($this, true));
   }
   
   public function __destruct(){
