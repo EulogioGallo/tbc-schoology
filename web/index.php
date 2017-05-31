@@ -7,9 +7,6 @@ if(php_sapi_name() == 'cli') {
 } else {
 	require('../vendor/autoload.php');
 }
-
-error_log("Directory: \n");
-error_log(__FILE__);
  
  /*
 require_once('../schoology_php_sdk-master/SchoologyApi.class.php');
