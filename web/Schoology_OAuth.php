@@ -7,10 +7,13 @@
 	// Storage class
 	class SchoologyStorage implements SchoologyApi_OauthStorage {
 	  private $db;
+	  private $hostDB = 'pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil';
+	  private $dbUser = 'dsskzsufyjspyz';
+	  private $dbPassword = '5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c';
 	 
 	  public function __construct(){
 		// heroku connect db
-		$this->db = new PDO('pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil', 'dsskzsufyjspyz', '5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c');
+		$this->db = new PDO($this->hostDB, $this->dbUser, $this->dbPassword);
 		$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	 
 		$query = $this->db->query("SELECT * FROM oauth_tokens");
@@ -70,19 +73,19 @@
 		public $token;
 		
 		public function __construct() {
-			$schoology = new SchoologyApi($schoology_key, $schoology_secret, '', '', '', TRUE);
-			$storage = new SchoologyStorage();
+			$this->schoology = new SchoologyApi($this->schoology_key, $this->schoology_secret, '', '', '', TRUE);
+			$this->storage = new SchoologyStorage();
 			 
-			$token = $storage->getAccessTokens($schoology_uid);
+			$this->token = $this->storage->getAccessTokens($this->schoology_uid);
 		}
 		
 		public function schoologyOAuth() {
-			if($token) {
+			if($this->token) {
 
 			  error_log("got token!\n");
 			  error_log(print_r($token, TRUE) . "\n");
-			  $schoology->setKey($token['token_key']);
-			  $schoology->setSecret($token['token_secret']);
+			  $this->schoology->setKey($token['token_key']);
+			  $this->schoology->setSecret($token['token_secret']);
 
 			/*
 			  error_log(file_get_contents("php://input"));
@@ -149,7 +152,7 @@
 				  error_log("Request Token Results!\n");
 				  error_log(print_r($api_result, true) . "\n");
 			 
-				  $storage->saveRequestTokens($schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
+				  $this->storage->saveRequestTokens($this->schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
 			 
 				  // now lets see if we can get some info via API
 				  /*
@@ -165,7 +168,7 @@
 
 				} else {
 					// get existing record from DB
-					$request_tokens = $storage->getRequestTokens($schoology_uid);
+					$request_tokens = $this->storage->getRequestTokens($schoology_uid);
 
 					// If the token doesn't match what we have in the DB, someone's tampering with the requests
 					if($request_tokens['token_key'] !== $_GET['oauth_token']) {
@@ -173,9 +176,9 @@
 					}
 
 					// Request access tokens using our newly approved request tokens
-					$schoology->setKey($request_tokens['token_key']);
-					$schoology->setSecret($request_tokens['token_secret']);
-					$api_result = $schoology->api('/oauth/access_token');
+					$this->schoology->setKey($request_tokens['token_key']);
+					$this->schoology->setSecret($request_tokens['token_secret']);
+					$api_result = $this->schoology->api('/oauth/access_token');
 
 					// Parse the query-string-formatted result
 					$result = array();
@@ -184,11 +187,11 @@
 					error_log(print_r($api_result, TRUE) . "\n");
 
 					// Update our DB to replace the request tokens with access tokens
-					$storage->requestToAccessTokens($schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
+					$this->storage->requestToAccessTokens($this->schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
 
 					// Update our $ouath credentials and proceed normally
-					$schoology->setKey($result['oauth_token']);
-					$schoology->setSecret($result['oauth_token_secret']);
+					$this->schoology->setKey($result['oauth_token']);
+					$this->schoology->setSecret($result['oauth_token_secret']);
 					
 					return true;
 				}
