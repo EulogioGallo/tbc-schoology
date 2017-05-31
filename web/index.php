@@ -3,9 +3,13 @@
 // for heroku
 if(php_sapi_name() == 'cli') {
 	// don't do anything!
+	error_log("CLI!\n");
 } else {
 	require('../vendor/autoload.php');
 }
+
+error_log("Directory: \n");
+error_log(__FILE__);
  
  /*
 require_once('../schoology_php_sdk-master/SchoologyApi.class.php');
