@@ -148,7 +148,7 @@
 			  */
 			} else {
 				if(!isset($_GET['oauth_token'])) {
-				  $api_result = $schoology->api('/oauth/request_token');
+				  $api_result = $this->schoology->api('/oauth/request_token');
 				  error_log(print_r($api_result, true));
 				  $result = array();
 				  parse_str($api_result->result, $result);
