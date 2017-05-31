@@ -1,72 +1,3 @@
-2017-05-30T20:19:02.586611+00:00 app[web.1]:             [Server] => nginx
-2017-05-30T20:19:02.586453+00:00 app[web.1]:             [Date] => Tue, 30 May 2017 20:19:02 GMT
-2017-05-30T20:19:02.586664+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
-2017-05-30T20:19:02.586775+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-6fec-c
-2017-05-30T20:19:02.586710+00:00 app[web.1]:             [X-Schoology-Env] => deploy
-2017-05-30T20:19:02.586822+00:00 app[web.1]:             [Content-Length] => 127
-2017-05-30T20:19:02.586875+00:00 app[web.1]:             [Connection] => keep-alive
-2017-05-30T20:19:02.586900+00:00 app[web.1]:         )
-2017-05-30T20:19:02.587063+00:00 app[web.1]:     [raw_result] => oauth_token=b804e2a93bca4358051d6abd3d3d65650592dd3b6&oauth_token_secret=8f1946bd803cba5ce28d32049097299c&xoauth_token_ttl=3600
-2017-05-30T20:19:02.586918+00:00 app[web.1]: 
-2017-05-30T20:19:02.587178+00:00 app[web.1]:     [result] => oauth_token=b804e2a93bca4358051d6abd3d3d65650592dd3b6&oauth_token_secret=8f1946bd803cba5ce28d32049097299c&xoauth_token_ttl=3600
-2017-05-30T20:19:02.587197+00:00 app[web.1]: )
-2017-05-30T20:19:02.587211+00:00 app[web.1]: 
-2017-05-30T20:19:02.587271+00:00 app[web.1]: [30-May-2017 20:19:02 UTC] Request Token Results!
-2017-05-30T20:19:02.587342+00:00 app[web.1]: [30-May-2017 20:19:02 UTC] stdClass Object
-2017-05-30T20:19:02.587288+00:00 app[web.1]: 
-2017-05-30T20:19:02.587360+00:00 app[web.1]: (
-2017-05-30T20:19:02.587430+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
-2017-05-30T20:19:02.587495+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
-2017-05-30T20:19:02.587534+00:00 app[web.1]:     [http_code] => 200
-2017-05-30T20:19:02.587572+00:00 app[web.1]:     [header_size] => 408
-2017-05-30T20:19:02.587613+00:00 app[web.1]:     [request_size] => 453
-2017-05-30T20:19:02.587645+00:00 app[web.1]:     [filetime] => -1
-2017-05-30T20:19:02.587683+00:00 app[web.1]:     [ssl_verify_result] => 0
-2017-05-30T20:19:02.589310+00:00 app[web.1]:     [total_time] => 0.042891
-2017-05-30T20:19:02.589267+00:00 app[web.1]:     [redirect_count] => 0
-2017-05-30T20:19:02.589355+00:00 app[web.1]:     [namelookup_time] => 0.004304
-2017-05-30T20:19:02.589397+00:00 app[web.1]:     [connect_time] => 0.00481
-2017-05-30T20:19:02.589444+00:00 app[web.1]:     [pretransfer_time] => 0.004891
-2017-05-30T20:19:02.589521+00:00 app[web.1]:     [size_download] => 127
-2017-05-30T20:19:02.589481+00:00 app[web.1]:     [size_upload] => 0
-2017-05-30T20:19:02.589565+00:00 app[web.1]:     [speed_download] => 2960
-2017-05-30T20:19:02.589601+00:00 app[web.1]:     [speed_upload] => 0
-2017-05-30T20:19:02.589648+00:00 app[web.1]:     [download_content_length] => 127
-2017-05-30T20:19:02.589696+00:00 app[web.1]:     [upload_content_length] => -1
-2017-05-30T20:19:02.589750+00:00 app[web.1]:     [starttransfer_time] => 0.042847
-2017-05-30T20:19:02.589789+00:00 app[web.1]:     [redirect_time] => 0
-2017-05-30T20:19:02.589825+00:00 app[web.1]:     [redirect_url] => 
-2017-05-30T20:19:02.589908+00:00 app[web.1]:     [certinfo] => Array
-2017-05-30T20:19:02.589933+00:00 app[web.1]:         (
-2017-05-30T20:19:02.589869+00:00 app[web.1]:     [primary_ip] => 52.203.52.25
-2017-05-30T20:19:02.589960+00:00 app[web.1]:         )
-2017-05-30T20:19:02.589977+00:00 app[web.1]: 
-2017-05-30T20:19:02.590009+00:00 app[web.1]:     [primary_port] => 80
-2017-05-30T20:19:02.590051+00:00 app[web.1]:     [local_ip] => 172.19.28.246
-2017-05-30T20:19:02.590088+00:00 app[web.1]:     [local_port] => 56836
-2017-05-30T20:19:02.590126+00:00 app[web.1]:     [headers] => Array
-2017-05-30T20:19:02.590151+00:00 app[web.1]:         (
-2017-05-30T20:19:02.590243+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
-2017-05-30T20:19:02.590312+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
-2017-05-30T20:19:02.590379+00:00 app[web.1]:             [Date] => Tue, 30 May 2017 20:19:02 GMT
-2017-05-30T20:19:02.590425+00:00 app[web.1]:             [Etag] => "1496175542
-2017-05-30T20:19:02.590482+00:00 app[web.1]:             [Last-Modified] => Tue, 30 May 2017 20:19:02 +0000
-2017-05-30T20:19:02.590517+00:00 app[web.1]:             [Server] => nginx
-2017-05-30T20:19:02.590565+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
-2017-05-30T20:19:02.590610+00:00 app[web.1]:             [X-Schoology-Env] => deploy
-2017-05-30T20:19:02.590668+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-6fec-c
-2017-05-30T20:19:02.590759+00:00 app[web.1]:             [Connection] => keep-alive
-2017-05-30T20:19:02.590709+00:00 app[web.1]:             [Content-Length] => 127
-2017-05-30T20:19:02.590779+00:00 app[web.1]:         )
-2017-05-30T20:19:02.590780+00:00 app[web.1]: 
-2017-05-30T20:19:02.590925+00:00 app[web.1]:     [raw_result] => oauth_token=b804e2a93bca4358051d6abd3d3d65650592dd3b6&oauth_token_secret=8f1946bd803cba5ce28d32049097299c&xoauth_token_ttl=3600
-2017-05-30T20:19:02.591053+00:00 app[web.1]: )
-2017-05-30T20:19:02.591053+00:00 app[web.1]:     [result] => oauth_token=b804e2a93bca4358051d6abd3d3d65650592dd3b6&oauth_token_secret=8f1946bd803cba5ce28d32049097299c&xoauth_token_ttl=3600
-2017-05-30T20:19:02.591055+00:00 app[web.1]: 
-2017-05-30T20:19:02.591063+00:00 app[web.1]: 
-2017-05-30T20:19:02.605430+00:00 app[web.1]: 10.203.237.92 - - [30/May/2017:20:19:02 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
-2017-05-30T20:19:02.714010+00:00 app[web.1]: 
-2017-05-30T20:19:02.714029+00:00 app[web.1]: [30-May-2017 20:19:02 UTC] SchoologyApi Object
 2017-05-30T20:19:02.714007+00:00 app[web.1]: [30-May-2017 20:19:02 UTC] In constructor...
 2017-05-30T20:19:02.714148+00:00 app[web.1]: (
 2017-05-30T20:19:02.714222+00:00 app[web.1]:     [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
@@ -1499,3 +1430,72 @@
 2017-05-30T21:46:36.249060+00:00 app[web.1]: )
 2017-05-30T21:46:36.249073+00:00 app[web.1]: 
 2017-05-30T21:46:36.249284+00:00 app[web.1]: 10.63.100.174 - - [30/May/2017:21:46:36 +0000] "GET /favicon.ico HTTP/1.1" 200 - "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-30T22:19:06.345097+00:00 heroku[web.1]: Idling
+2017-05-30T22:19:06.345866+00:00 heroku[web.1]: State changed from up to down
+2017-05-30T22:19:07.075535+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-30T22:19:07.058406+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-30T22:19:07.233611+00:00 heroku[web.1]: Process exited with status 143
+2017-05-31T16:28:18.820189+00:00 heroku[web.1]: State changed from down to starting
+2017-05-31T16:28:20.157355+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-31T16:28:22.164837+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-31T16:28:22.215107+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-31T16:28:22.333693+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-31T16:28:22.349620+00:00 app[web.1]: Starting php-fpm...
+2017-05-31T16:28:24.352883+00:00 app[web.1]: Starting httpd...
+2017-05-31T16:28:24.602934+00:00 heroku[web.1]: State changed from starting to up
+2017-05-31T16:28:33.027666+00:00 app[web.1]: [31-May-2017 16:28:33 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforceEnterpriseClient has a deprecated constructor in /app/salesforce/soapclient/SforceEnterpriseClient.php on line 38
+2017-05-31T16:28:33.032216+00:00 app[web.1]: [31-May-2017 16:28:33 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; SforcePartnerClient has a deprecated constructor in /app/salesforce/soapclient/SforcePartnerClient.php on line 74
+2017-05-31T16:28:33.032284+00:00 app[web.1]: [31-May-2017 16:28:33 UTC] SchoologyContainer Object
+2017-05-31T16:28:33.032371+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T16:28:33.032286+00:00 app[web.1]: (
+2017-05-31T16:28:33.032469+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T16:28:33.032539+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T16:28:33.032584+00:00 app[web.1]:     [schoology] => 
+2017-05-31T16:28:33.032585+00:00 app[web.1]:     [storage] => 
+2017-05-31T16:28:33.032610+00:00 app[web.1]:     [token] => 
+2017-05-31T16:28:33.032611+00:00 app[web.1]: )
+2017-05-31T16:28:33.032614+00:00 app[web.1]: 
+2017-05-31T16:28:33.113693+00:00 app[web.1]: [31-May-2017 16:28:33 UTC] PHP Fatal error:  Uncaught Exception: OAuth Verification Failed: Can't verify request, missing oauth_consumer_key or oauth_token in /app/schoology_php_sdk-master/SchoologyApi.class.php:240
+2017-05-31T16:28:33.113746+00:00 app[web.1]: Stack trace:
+2017-05-31T16:28:33.113837+00:00 app[web.1]: #0 /app/web/Schoology_OAuth.php(143): SchoologyApi->api('/oauth/request_...')
+2017-05-31T16:28:33.113946+00:00 app[web.1]: #1 /app/web/index.php(28): SchoologyContainer->schoologyOAuth()
+2017-05-31T16:28:33.114089+00:00 app[web.1]:   thrown in /app/schoology_php_sdk-master/SchoologyApi.class.php on line 240
+2017-05-31T16:28:33.113974+00:00 app[web.1]: #2 {main}
+2017-05-31T16:28:33.114330+00:00 app[web.1]: 10.171.127.156 - - [31/May/2017:16:28:33 +0000] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-31T16:28:33.115968+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=c31cce65-0bd2-4d84-8171-838c8c9fd259 fwd="38.93.38.58" dyno=web.1 connect=0ms service=105ms status=500 bytes=169 protocol=https
+2017-05-31T16:28:37.355830+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=2cd4bcbd-0d6e-4b7c-9ff8-99d5ce338a86 fwd="38.93.38.58" dyno=web.1 connect=0ms service=90ms status=500 bytes=169 protocol=https
+2017-05-31T16:28:37.267301+00:00 app[web.1]: [31-May-2017 16:28:37 UTC] SchoologyContainer Object
+2017-05-31T16:28:37.352741+00:00 app[web.1]: [31-May-2017 16:28:37 UTC] PHP Fatal error:  Uncaught Exception: OAuth Verification Failed: Can't verify request, missing oauth_consumer_key or oauth_token in /app/schoology_php_sdk-master/SchoologyApi.class.php:240
+2017-05-31T16:28:37.352744+00:00 app[web.1]: Stack trace:
+2017-05-31T16:28:37.352744+00:00 app[web.1]: #0 /app/web/Schoology_OAuth.php(143): SchoologyApi->api('/oauth/request_...')
+2017-05-31T16:28:37.352745+00:00 app[web.1]: #1 /app/web/index.php(28): SchoologyContainer->schoologyOAuth()
+2017-05-31T16:28:37.352745+00:00 app[web.1]: #2 {main}
+2017-05-31T16:28:37.267319+00:00 app[web.1]: (
+2017-05-31T16:28:37.267533+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T16:28:37.352746+00:00 app[web.1]:   thrown in /app/schoology_php_sdk-master/SchoologyApi.class.php on line 240
+2017-05-31T16:28:37.352747+00:00 app[web.1]: 10.171.127.156 - - [31/May/2017:16:28:37 +0000] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-31T16:28:37.267593+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T16:28:37.267410+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T16:28:37.267722+00:00 app[web.1]: )
+2017-05-31T16:28:37.267739+00:00 app[web.1]: 
+2017-05-31T16:28:37.267625+00:00 app[web.1]:     [schoology] => 
+2017-05-31T16:28:37.267704+00:00 app[web.1]:     [token] => 
+2017-05-31T16:28:37.267671+00:00 app[web.1]:     [storage] => 
+2017-05-31T16:28:39.691297+00:00 app[web.1]: [31-May-2017 16:28:39 UTC] SchoologyContainer Object
+2017-05-31T16:28:39.691309+00:00 app[web.1]: (
+2017-05-31T16:28:39.691381+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T16:28:39.691480+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T16:28:39.691538+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T16:28:39.691563+00:00 app[web.1]:     [schoology] => 
+2017-05-31T16:28:39.691598+00:00 app[web.1]:     [storage] => 
+2017-05-31T16:28:39.691629+00:00 app[web.1]:     [token] => 
+2017-05-31T16:28:39.691647+00:00 app[web.1]: )
+2017-05-31T16:28:39.691664+00:00 app[web.1]: 
+2017-05-31T16:28:39.757169+00:00 app[web.1]: [31-May-2017 16:28:39 UTC] PHP Fatal error:  Uncaught Exception: OAuth Verification Failed: Can't verify request, missing oauth_consumer_key or oauth_token in /app/schoology_php_sdk-master/SchoologyApi.class.php:240
+2017-05-31T16:28:39.757334+00:00 app[web.1]: #0 /app/web/Schoology_OAuth.php(143): SchoologyApi->api('/oauth/request_...')
+2017-05-31T16:28:39.757218+00:00 app[web.1]: Stack trace:
+2017-05-31T16:28:39.757433+00:00 app[web.1]: #2 {main}
+2017-05-31T16:28:39.757407+00:00 app[web.1]: #1 /app/web/index.php(28): SchoologyContainer->schoologyOAuth()
+2017-05-31T16:28:39.757549+00:00 app[web.1]:   thrown in /app/schoology_php_sdk-master/SchoologyApi.class.php on line 240
+2017-05-31T16:28:39.757790+00:00 app[web.1]: 10.171.127.156 - - [31/May/2017:16:28:39 +0000] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-31T16:28:39.759445+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=beabf7a2-f43c-4e1f-91b4-a11533cb683d fwd="38.93.38.58" dyno=web.1 connect=0ms service=70ms status=500 bytes=169 protocol=https

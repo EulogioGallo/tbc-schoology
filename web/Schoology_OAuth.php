@@ -69,12 +69,14 @@
 		public $storage;
 		public $token;
 		
-		public function schoologyOAuth() {
+		public function __construct() {
 			$schoology = new SchoologyApi($schoology_key, $schoology_secret, '', '', '', TRUE);
 			$storage = new SchoologyStorage();
 			 
 			$token = $storage->getAccessTokens($schoology_uid);
-			
+		}
+		
+		public function schoologyOAuth() {
 			if($token) {
 
 			  error_log("got token!\n");
