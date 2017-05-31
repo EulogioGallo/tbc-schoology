@@ -1,8 +1,8 @@
 <?php
 	// Schoology SDK
-	require_once('../schoology_php_sdk-master/SchoologyApi.class.php');
-	require_once('../schoology_php_sdk-master/SchoologyContentApi.class.php');
-	require_once('../schoology_php_sdk-master/SchoologyExceptions.php');
+	require_once($_SERVER['DOCUMENT_ROOT'].'/schoology_php_sdk-master/SchoologyApi.class.php');
+	require_once($_SERVER['DOCUMENT_ROOT'].'/schoology_php_sdk-master/SchoologyContentApi.class.php');
+	require_once($_SERVER['DOCUMENT_ROOT'].'/schoology_php_sdk-master/SchoologyExceptions.php');
 	
 	// Storage class
 	class SchoologyStorage implements SchoologyApi_OauthStorage {

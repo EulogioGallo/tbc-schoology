@@ -1,0 +1,1501 @@
+2017-05-31T23:27:32.472216+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:27:32.472372+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:27:32.472390+00:00 app[web.1]:         )
+2017-05-31T23:27:32.472391+00:00 app[web.1]: 
+2017-05-31T23:27:32.472419+00:00 app[web.1]:     [token] => 
+2017-05-31T23:27:32.472420+00:00 app[web.1]: )
+2017-05-31T23:27:32.472422+00:00 app[web.1]: 
+2017-05-31T23:27:32.515461+00:00 app[web.1]: [31-May-2017 23:27:32 UTC] stdClass Object
+2017-05-31T23:27:32.515499+00:00 app[web.1]: (
+2017-05-31T23:27:32.515560+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:27:32.515617+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:27:32.515680+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:27:32.515752+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:27:32.515713+00:00 app[web.1]:     [header_size] => 408
+2017-05-31T23:27:32.515785+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:27:32.515852+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:27:32.515889+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:27:32.515927+00:00 app[web.1]:     [total_time] => 0.043923
+2017-05-31T23:27:32.515979+00:00 app[web.1]:     [namelookup_time] => 0.004317
+2017-05-31T23:27:32.516030+00:00 app[web.1]:     [connect_time] => 0.005697
+2017-05-31T23:27:32.516071+00:00 app[web.1]:     [pretransfer_time] => 0.005794
+2017-05-31T23:27:32.516103+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:27:32.516200+00:00 app[web.1]:     [speed_download] => 2891
+2017-05-31T23:27:32.516151+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:27:32.516233+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:27:32.516276+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:27:32.516330+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:27:32.516386+00:00 app[web.1]:     [starttransfer_time] => 0.043879
+2017-05-31T23:27:32.516423+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:27:32.516457+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:27:32.516524+00:00 app[web.1]:     [primary_ip] => 34.197.175.235
+2017-05-31T23:27:32.516559+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:27:32.516578+00:00 app[web.1]:         (
+2017-05-31T23:27:32.516597+00:00 app[web.1]:         )
+2017-05-31T23:27:32.516613+00:00 app[web.1]: 
+2017-05-31T23:27:32.516647+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:27:32.516715+00:00 app[web.1]:     [local_ip] => 172.16.245.102
+2017-05-31T23:27:32.516751+00:00 app[web.1]:     [local_port] => 55071
+2017-05-31T23:27:32.516784+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:27:32.516807+00:00 app[web.1]:         (
+2017-05-31T23:27:32.516922+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:27:32.516984+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:27:32.517065+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:27:32 GMT
+2017-05-31T23:27:32.517109+00:00 app[web.1]:             [Etag] => "1496273252
+2017-05-31T23:27:32.517194+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:27:32 +0000
+2017-05-31T23:27:32.517233+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:27:32.517277+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:27:32.517322+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:27:32.517451+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:27:32.517407+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-4c21-b
+2017-05-31T23:27:32.517498+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:27:32.517546+00:00 app[web.1]:         )
+2017-05-31T23:27:32.517562+00:00 app[web.1]: 
+2017-05-31T23:27:32.517715+00:00 app[web.1]:     [raw_result] => oauth_token=b440b5300e6ce56a1ba1f96a01219e500592f5164&oauth_token_secret=7ecf4b9eed0dc740369d63b631009a5f&xoauth_token_ttl=3600
+2017-05-31T23:27:32.517878+00:00 app[web.1]:     [result] => oauth_token=b440b5300e6ce56a1ba1f96a01219e500592f5164&oauth_token_secret=7ecf4b9eed0dc740369d63b631009a5f&xoauth_token_ttl=3600
+2017-05-31T23:27:32.517896+00:00 app[web.1]: )
+2017-05-31T23:27:32.517964+00:00 app[web.1]: [31-May-2017 23:27:32 UTC] Request Token Results!
+2017-05-31T23:27:32.517911+00:00 app[web.1]: 
+2017-05-31T23:27:32.517977+00:00 app[web.1]: 
+2017-05-31T23:27:32.518056+00:00 app[web.1]: [31-May-2017 23:27:32 UTC] stdClass Object
+2017-05-31T23:27:32.518073+00:00 app[web.1]: (
+2017-05-31T23:27:32.518134+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:27:32.518254+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:27:32.518220+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:27:32.518289+00:00 app[web.1]:     [header_size] => 408
+2017-05-31T23:27:32.518337+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:27:32.518381+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:27:32.518418+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:27:32.518454+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:27:32.518490+00:00 app[web.1]:     [total_time] => 0.043923
+2017-05-31T23:27:32.518555+00:00 app[web.1]:     [namelookup_time] => 0.004317
+2017-05-31T23:27:32.518594+00:00 app[web.1]:     [connect_time] => 0.005697
+2017-05-31T23:27:32.518637+00:00 app[web.1]:     [pretransfer_time] => 0.005794
+2017-05-31T23:27:32.518697+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:27:32.518732+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:27:32.518767+00:00 app[web.1]:     [speed_download] => 2891
+2017-05-31T23:27:32.518799+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:27:32.518868+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:27:32.518911+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:27:32.518954+00:00 app[web.1]:     [starttransfer_time] => 0.043879
+2017-05-31T23:27:32.518989+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:27:32.519049+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:27:32.519091+00:00 app[web.1]:     [primary_ip] => 34.197.175.235
+2017-05-31T23:27:32.519124+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:27:32.519146+00:00 app[web.1]:         (
+2017-05-31T23:27:32.519164+00:00 app[web.1]:         )
+2017-05-31T23:27:32.519204+00:00 app[web.1]: 
+2017-05-31T23:27:32.519237+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:27:32.519277+00:00 app[web.1]:     [local_ip] => 172.16.245.102
+2017-05-31T23:27:32.519312+00:00 app[web.1]:     [local_port] => 55071
+2017-05-31T23:27:32.519369+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:27:32.519392+00:00 app[web.1]:         (
+2017-05-31T23:27:32.519484+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:27:32.519567+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:27:32.519606+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:27:32 GMT
+2017-05-31T23:27:32.519640+00:00 app[web.1]:             [Etag] => "1496273252
+2017-05-31T23:27:32.519691+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:27:32 +0000
+2017-05-31T23:27:32.519720+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:27:32.519756+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:27:32.519790+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:27:32.519831+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-4c21-b
+2017-05-31T23:27:32.519872+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:27:32.519906+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:27:32.519913+00:00 app[web.1]:         )
+2017-05-31T23:27:32.519926+00:00 app[web.1]: 
+2017-05-31T23:27:32.520012+00:00 app[web.1]:     [raw_result] => oauth_token=b440b5300e6ce56a1ba1f96a01219e500592f5164&oauth_token_secret=7ecf4b9eed0dc740369d63b631009a5f&xoauth_token_ttl=3600
+2017-05-31T23:27:32.520110+00:00 app[web.1]:     [result] => oauth_token=b440b5300e6ce56a1ba1f96a01219e500592f5164&oauth_token_secret=7ecf4b9eed0dc740369d63b631009a5f&xoauth_token_ttl=3600
+2017-05-31T23:27:32.520111+00:00 app[web.1]: )
+2017-05-31T23:27:32.520114+00:00 app[web.1]: 
+2017-05-31T23:27:32.520114+00:00 app[web.1]: 
+2017-05-31T23:27:32.521178+00:00 app[web.1]: [31-May-2017 23:27:32 UTC] SchoologyContainer Object
+2017-05-31T23:27:32.521197+00:00 app[web.1]: (
+2017-05-31T23:27:32.521306+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:32.521389+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:32.521480+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:27:32.521535+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:27:32.521557+00:00 app[web.1]:         (
+2017-05-31T23:27:32.521668+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:32.521748+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:32.521826+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:27:32.521899+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:27:32.521991+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:27:32.522058+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:27:32.522087+00:00 app[web.1]:                 (
+2017-05-31T23:27:32.522155+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:27:32.522195+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:27:32.522233+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:27:32.522301+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:27:32.522343+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:27:32.522372+00:00 app[web.1]:                 )
+2017-05-31T23:27:32.522388+00:00 app[web.1]: 
+2017-05-31T23:27:32.522487+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:27:32.522565+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:27:32.522672+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:27:32.522718+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #1
+2017-05-31T23:27:32.522759+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:27:32.522865+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:27:32.522901+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:27:32.522938+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:27:32.522976+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:27:32.522790+00:00 app[web.1]:                 (
+2017-05-31T23:27:32.523025+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:27:32.523100+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:27:32.523065+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:27:32.523135+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:27:32.523163+00:00 app[web.1]:                 )
+2017-05-31T23:27:32.523178+00:00 app[web.1]: 
+2017-05-31T23:27:32.523199+00:00 app[web.1]:         )
+2017-05-31T23:27:32.523212+00:00 app[web.1]: 
+2017-05-31T23:27:32.523277+00:00 app[web.1]:         (
+2017-05-31T23:27:32.523257+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:27:32.523406+00:00 app[web.1]: 
+2017-05-31T23:27:32.523339+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:27:32.523367+00:00 app[web.1]:                 (
+2017-05-31T23:27:32.523393+00:00 app[web.1]:                 )
+2017-05-31T23:27:32.523514+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:27:32.523574+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:27:32.523674+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:27:32.523706+00:00 app[web.1]: 
+2017-05-31T23:27:32.523694+00:00 app[web.1]:         )
+2017-05-31T23:27:32.523728+00:00 app[web.1]:     [token] => 
+2017-05-31T23:27:32.523740+00:00 app[web.1]: )
+2017-05-31T23:27:32.523751+00:00 app[web.1]: 
+2017-05-31T23:27:32.611501+00:00 app[web.1]: [31-May-2017 23:27:32 UTC] stdClass Object
+2017-05-31T23:27:32.611552+00:00 app[web.1]: (
+2017-05-31T23:27:32.611583+00:00 app[web.1]:     [section] => Array
+2017-05-31T23:27:32.611602+00:00 app[web.1]:         (
+2017-05-31T23:27:32.611640+00:00 app[web.1]:             [0] => stdClass Object
+2017-05-31T23:27:32.611678+00:00 app[web.1]:                 (
+2017-05-31T23:27:32.611731+00:00 app[web.1]:                     [id] => 1079274138
+2017-05-31T23:27:32.611780+00:00 app[web.1]:                     [course_title] => TBR Cohort
+2017-05-31T23:27:32.611827+00:00 app[web.1]:                     [course_code] => 20172019
+2017-05-31T23:27:32.611899+00:00 app[web.1]:                     [course_id] => 1079274136
+2017-05-31T23:27:32.611943+00:00 app[web.1]:                     [school_id] => 327641
+2017-05-31T23:27:32.611988+00:00 app[web.1]:                     [building_id] => 327641
+2017-05-31T23:27:32.612060+00:00 app[web.1]:                     [access_code] => X3J4F-BX6PG
+2017-05-31T23:27:32.612221+00:00 app[web.1]:                     [section_school_code] => 
+2017-05-31T23:27:32.612151+00:00 app[web.1]:                     [section_code] => 01
+2017-05-31T23:27:32.612259+00:00 app[web.1]:                     [synced] => 0
+2017-05-31T23:27:32.612109+00:00 app[web.1]:                     [section_title] => 2017-2019
+2017-05-31T23:27:32.612295+00:00 app[web.1]:                     [active] => 1
+2017-05-31T23:27:32.612345+00:00 app[web.1]:                     [description] => 
+2017-05-31T23:27:32.612398+00:00 app[web.1]:                     [subject_area] => 0
+2017-05-31T23:27:32.612449+00:00 app[web.1]:                     [grade_level_range_start] => 16
+2017-05-31T23:27:32.612496+00:00 app[web.1]:                     [grade_level_range_end] => 0
+2017-05-31T23:27:32.612559+00:00 app[web.1]:                     [parent_id] => 
+2017-05-31T23:27:32.612606+00:00 app[web.1]:                     [grading_periods] => Array
+2017-05-31T23:27:32.612641+00:00 app[web.1]:                         (
+2017-05-31T23:27:32.612718+00:00 app[web.1]:                             [0] => 411100
+2017-05-31T23:27:32.612757+00:00 app[web.1]:                         )
+2017-05-31T23:27:32.612775+00:00 app[web.1]: 
+2017-05-31T23:27:32.612956+00:00 app[web.1]:                     [profile_url] => http://cdn3-7.cdn.schoology.com/system/files/imagecache/profile_reg/courselogos/logo-1079274138_591e2744dc264.jpg?1495148356
+2017-05-31T23:27:32.613002+00:00 app[web.1]:                     [location] => 
+2017-05-31T23:27:32.613071+00:00 app[web.1]:                     [meeting_days] => Array
+2017-05-31T23:27:32.613105+00:00 app[web.1]:                         (
+2017-05-31T23:27:32.613145+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:27:32.613193+00:00 app[web.1]:                         )
+2017-05-31T23:27:32.613322+00:00 app[web.1]:                         (
+2017-05-31T23:27:32.613242+00:00 app[web.1]: 
+2017-05-31T23:27:32.613289+00:00 app[web.1]:                     [class_periods] => Array
+2017-05-31T23:27:32.613431+00:00 app[web.1]:                         )
+2017-05-31T23:27:32.613447+00:00 app[web.1]: 
+2017-05-31T23:27:32.613392+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:27:32.613489+00:00 app[web.1]:                     [weight] => 0
+2017-05-31T23:27:32.613571+00:00 app[web.1]:                     [options] => stdClass Object
+2017-05-31T23:27:32.613608+00:00 app[web.1]:                         (
+2017-05-31T23:27:32.613679+00:00 app[web.1]:                             [weighted_grading_categories] => 0
+2017-05-31T23:27:32.613765+00:00 app[web.1]:                             [upload_documents] => 0
+2017-05-31T23:27:32.613822+00:00 app[web.1]:                             [create_discussion] => 0
+2017-05-31T23:27:32.613909+00:00 app[web.1]:                             [member_post] => 1
+2017-05-31T23:27:32.613965+00:00 app[web.1]:                             [member_post_comment] => 1
+2017-05-31T23:27:32.614051+00:00 app[web.1]:                             [default_grading_scale_id] => 0
+2017-05-31T23:27:32.614123+00:00 app[web.1]:                             [content_index_visibility] => stdClass Object
+2017-05-31T23:27:32.614175+00:00 app[web.1]:                                 (
+2017-05-31T23:27:32.614237+00:00 app[web.1]:                                     [topics] => 0
+2017-05-31T23:27:32.614292+00:00 app[web.1]:                                     [assignments] => 0
+2017-05-31T23:27:32.614371+00:00 app[web.1]:                                     [assessments] => 0
+2017-05-31T23:27:32.614427+00:00 app[web.1]:                                     [new_test_quiz] => 0
+2017-05-31T23:27:32.614487+00:00 app[web.1]:                                     [common_assessments] => 0
+2017-05-31T23:27:32.614562+00:00 app[web.1]:                                     [documents] => 0
+2017-05-31T23:27:32.614677+00:00 app[web.1]:                                     [album] => 0
+2017-05-31T23:27:32.614616+00:00 app[web.1]:                                     [discussion] => 0
+2017-05-31T23:27:32.614742+00:00 app[web.1]:                                     [pages] => 0
+2017-05-31T23:27:32.614789+00:00 app[web.1]:                                 )
+2017-05-31T23:27:32.614806+00:00 app[web.1]: 
+2017-05-31T23:27:32.614891+00:00 app[web.1]:                             [hide_overall_grade] => 0
+2017-05-31T23:27:32.614959+00:00 app[web.1]:                             [hide_grading_period_grade] => 0
+2017-05-31T23:27:32.615053+00:00 app[web.1]:                             [allow_custom_overall_grade] => 0
+2017-05-31T23:27:32.615118+00:00 app[web.1]:                             [allow_custom_overall_grade_text] => 0
+2017-05-31T23:27:32.615152+00:00 app[web.1]:                         )
+2017-05-31T23:27:32.615167+00:00 app[web.1]: 
+2017-05-31T23:27:32.615227+00:00 app[web.1]:                     [admin] => 1
+2017-05-31T23:27:32.615276+00:00 app[web.1]:                     [links] => stdClass Object
+2017-05-31T23:27:32.615310+00:00 app[web.1]:                         (
+2017-05-31T23:27:32.615412+00:00 app[web.1]:                             [self] => http://api.schoology.com/v1/sections/1079274138
+2017-05-31T23:27:32.615450+00:00 app[web.1]:                         )
+2017-05-31T23:27:32.615465+00:00 app[web.1]: 
+2017-05-31T23:27:32.615491+00:00 app[web.1]:                 )
+2017-05-31T23:27:32.615517+00:00 app[web.1]: 
+2017-05-31T23:27:32.615550+00:00 app[web.1]:         )
+2017-05-31T23:27:32.615564+00:00 app[web.1]: 
+2017-05-31T23:27:32.615600+00:00 app[web.1]:     [links] => stdClass Object
+2017-05-31T23:27:32.615621+00:00 app[web.1]:         (
+2017-05-31T23:27:32.615714+00:00 app[web.1]:             [self] => https://api.schoology.com/v1/users/22135108/sections
+2017-05-31T23:27:32.615735+00:00 app[web.1]:         )
+2017-05-31T23:27:32.615748+00:00 app[web.1]: 
+2017-05-31T23:27:32.615775+00:00 app[web.1]: 
+2017-05-31T23:27:32.615762+00:00 app[web.1]: )
+2017-05-31T23:27:32.615991+00:00 app[web.1]: 10.79.219.198 - - [31/May/2017:23:27:32 +0000] "GET /favicon.ico HTTP/1.1" 200 - "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-31T23:27:48.435091+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] Database found!
+2017-05-31T23:27:48.435108+00:00 app[web.1]: 
+2017-05-31T23:27:48.435113+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] PDO Object
+2017-05-31T23:27:48.435113+00:00 app[web.1]: (
+2017-05-31T23:27:48.435114+00:00 app[web.1]: )
+2017-05-31T23:27:48.435114+00:00 app[web.1]: 
+2017-05-31T23:27:48.435115+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] PDOStatement Object
+2017-05-31T23:27:48.435115+00:00 app[web.1]: (
+2017-05-31T23:27:48.435146+00:00 app[web.1]:     [queryString] => SELECT * FROM oauth_tokens
+2017-05-31T23:27:48.435147+00:00 app[web.1]: 
+2017-05-31T23:27:48.435147+00:00 app[web.1]: )
+2017-05-31T23:27:48.438105+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] SchoologyContainer Object
+2017-05-31T23:27:48.438106+00:00 app[web.1]: (
+2017-05-31T23:27:48.438150+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:48.439422+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:48.439423+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:27:48.439424+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:27:48.439425+00:00 app[web.1]:         (
+2017-05-31T23:27:48.439426+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:48.439427+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:48.439427+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:27:48.439428+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:27:48.439428+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:27:48.439429+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:27:48.629387+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=4d493249-d989-4db9-80a1-168995f84609 fwd="38.93.38.58" dyno=web.1 connect=1ms service=216ms status=200 bytes=150 protocol=https
+2017-05-31T23:27:48.439430+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.439431+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:27:48.439431+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:27:48.439432+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:27:48.439432+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:27:48.439433+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:27:48.439433+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.439433+00:00 app[web.1]: 
+2017-05-31T23:27:48.439434+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:27:48.439434+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:27:48.439436+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:27:48.439436+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #1
+2017-05-31T23:27:48.439437+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:27:48.439437+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.439437+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:27:48.439438+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:27:48.439438+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:27:48.439438+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:27:48.439439+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:27:48.439439+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:27:48.439439+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:27:48.439440+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:27:48.439444+00:00 app[web.1]: 
+2017-05-31T23:27:48.439443+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.439444+00:00 app[web.1]:         )
+2017-05-31T23:27:48.439444+00:00 app[web.1]: 
+2017-05-31T23:27:48.439445+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:27:48.439446+00:00 app[web.1]:         (
+2017-05-31T23:27:48.439447+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:27:48.439447+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.439448+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.439448+00:00 app[web.1]: 
+2017-05-31T23:27:48.439449+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:27:48.439449+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:27:48.439449+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:27:48.439450+00:00 app[web.1]:         )
+2017-05-31T23:27:48.439450+00:00 app[web.1]: 
+2017-05-31T23:27:48.439451+00:00 app[web.1]:     [token] => 
+2017-05-31T23:27:48.439451+00:00 app[web.1]: )
+2017-05-31T23:27:48.439451+00:00 app[web.1]: 
+2017-05-31T23:27:48.493302+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] stdClass Object
+2017-05-31T23:27:48.493307+00:00 app[web.1]: (
+2017-05-31T23:27:48.493346+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:27:48.493401+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:27:48.493430+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:27:48.493456+00:00 app[web.1]:     [header_size] => 411
+2017-05-31T23:27:48.493475+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:27:48.493496+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:27:48.493516+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:27:48.493537+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:27:48.493575+00:00 app[web.1]:     [namelookup_time] => 0.004274
+2017-05-31T23:27:48.493555+00:00 app[web.1]:     [total_time] => 0.054394
+2017-05-31T23:27:48.493595+00:00 app[web.1]:     [connect_time] => 0.004941
+2017-05-31T23:27:48.493633+00:00 app[web.1]:     [pretransfer_time] => 0.005014
+2017-05-31T23:27:48.493636+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:27:48.493651+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:27:48.493665+00:00 app[web.1]:     [speed_download] => 2334
+2017-05-31T23:27:48.493678+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:27:48.493706+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:27:48.493723+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:27:48.493746+00:00 app[web.1]:     [starttransfer_time] => 0.054358
+2017-05-31T23:27:48.493765+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:27:48.493771+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:27:48.493798+00:00 app[web.1]:     [primary_ip] => 52.203.52.25
+2017-05-31T23:27:48.493813+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:27:48.493815+00:00 app[web.1]:         (
+2017-05-31T23:27:48.493830+00:00 app[web.1]:         )
+2017-05-31T23:27:48.493830+00:00 app[web.1]: 
+2017-05-31T23:27:48.493875+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:27:48.493896+00:00 app[web.1]:     [local_ip] => 172.16.245.102
+2017-05-31T23:27:48.493932+00:00 app[web.1]:         (
+2017-05-31T23:27:48.493930+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:27:48.493914+00:00 app[web.1]:     [local_port] => 37091
+2017-05-31T23:27:48.494031+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:27:48.493986+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:27:48.494080+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:27:48 GMT
+2017-05-31T23:27:48.494122+00:00 app[web.1]:             [Etag] => "1496273268
+2017-05-31T23:27:48.494159+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:27:48 +0000
+2017-05-31T23:27:48.494182+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:27:48.494212+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:27:48.494233+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:27:48.494266+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-nr-67f7-c
+2017-05-31T23:27:48.494288+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:27:48.494312+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:27:48.494314+00:00 app[web.1]:         )
+2017-05-31T23:27:48.494327+00:00 app[web.1]: 
+2017-05-31T23:27:48.494402+00:00 app[web.1]:     [raw_result] => oauth_token=f0850ce8895e0e353a9195d51adc1eef0592f5174&oauth_token_secret=12de20a8b39afffe6c6e92fa7348c35f&xoauth_token_ttl=3600
+2017-05-31T23:27:48.494474+00:00 app[web.1]:     [result] => oauth_token=f0850ce8895e0e353a9195d51adc1eef0592f5174&oauth_token_secret=12de20a8b39afffe6c6e92fa7348c35f&xoauth_token_ttl=3600
+2017-05-31T23:27:48.494475+00:00 app[web.1]: 
+2017-05-31T23:27:48.494475+00:00 app[web.1]: )
+2017-05-31T23:27:48.494508+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] Request Token Results!
+2017-05-31T23:27:48.494509+00:00 app[web.1]: 
+2017-05-31T23:27:48.494537+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] stdClass Object
+2017-05-31T23:27:48.494537+00:00 app[web.1]: (
+2017-05-31T23:27:48.494606+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:27:48.494573+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:27:48.494622+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:27:48.494639+00:00 app[web.1]:     [header_size] => 411
+2017-05-31T23:27:48.494665+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:27:48.494688+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:27:48.494721+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:27:48.495543+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:27:48.495545+00:00 app[web.1]:     [total_time] => 0.054394
+2017-05-31T23:27:48.495545+00:00 app[web.1]:     [namelookup_time] => 0.004274
+2017-05-31T23:27:48.495546+00:00 app[web.1]:     [connect_time] => 0.004941
+2017-05-31T23:27:48.495546+00:00 app[web.1]:     [pretransfer_time] => 0.005014
+2017-05-31T23:27:48.495546+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:27:48.495547+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:27:48.495547+00:00 app[web.1]:     [speed_download] => 2334
+2017-05-31T23:27:48.495548+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:27:48.495548+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:27:48.495548+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:27:48.495549+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:27:48.495549+00:00 app[web.1]:     [starttransfer_time] => 0.054358
+2017-05-31T23:27:48.495549+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:27:48.495550+00:00 app[web.1]:     [primary_ip] => 52.203.52.25
+2017-05-31T23:27:48.495550+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:27:48.495551+00:00 app[web.1]:         (
+2017-05-31T23:27:48.495551+00:00 app[web.1]: 
+2017-05-31T23:27:48.495551+00:00 app[web.1]:         )
+2017-05-31T23:27:48.495552+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:27:48.495552+00:00 app[web.1]:     [local_ip] => 172.16.245.102
+2017-05-31T23:27:48.495552+00:00 app[web.1]:     [local_port] => 37091
+2017-05-31T23:27:48.495553+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:27:48.495553+00:00 app[web.1]:         (
+2017-05-31T23:27:48.495553+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:27:48.495554+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:27:48.495554+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:27:48 GMT
+2017-05-31T23:27:48.495555+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:27:48 +0000
+2017-05-31T23:27:48.495555+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:27:48.495556+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:27:48.495555+00:00 app[web.1]:             [Etag] => "1496273268
+2017-05-31T23:27:48.495556+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:27:48.495556+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-nr-67f7-c
+2017-05-31T23:27:48.495557+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:27:48.495557+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:27:48.495557+00:00 app[web.1]:         )
+2017-05-31T23:27:48.495558+00:00 app[web.1]: 
+2017-05-31T23:27:48.495559+00:00 app[web.1]:     [result] => oauth_token=f0850ce8895e0e353a9195d51adc1eef0592f5174&oauth_token_secret=12de20a8b39afffe6c6e92fa7348c35f&xoauth_token_ttl=3600
+2017-05-31T23:27:48.495559+00:00 app[web.1]: )
+2017-05-31T23:27:48.495560+00:00 app[web.1]: 
+2017-05-31T23:27:48.495558+00:00 app[web.1]:     [raw_result] => oauth_token=f0850ce8895e0e353a9195d51adc1eef0592f5174&oauth_token_secret=12de20a8b39afffe6c6e92fa7348c35f&xoauth_token_ttl=3600
+2017-05-31T23:27:48.495560+00:00 app[web.1]: 
+2017-05-31T23:27:48.498263+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] SchoologyContainer Object
+2017-05-31T23:27:48.498264+00:00 app[web.1]: (
+2017-05-31T23:27:48.498367+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:48.498310+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:48.498417+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:27:48.498454+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:27:48.498463+00:00 app[web.1]:         (
+2017-05-31T23:27:48.498551+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:48.498618+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:48.498649+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:27:48.498679+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:27:48.498710+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:27:48.498748+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:27:48.498756+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.498779+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:27:48.498821+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:27:48.498842+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:27:48.498864+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:27:48.498872+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.498800+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:27:48.498872+00:00 app[web.1]: 
+2017-05-31T23:27:48.498919+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:27:48.498961+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:27:48.499016+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:27:48.499053+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #1
+2017-05-31T23:27:48.499085+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:27:48.499093+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.499124+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:27:48.499145+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:27:48.499165+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:27:48.499185+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:27:48.499222+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:27:48.499239+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:27:48.499257+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:27:48.499288+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:27:48.499324+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:27:48.499325+00:00 app[web.1]:         (
+2017-05-31T23:27:48.499288+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.499450+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:27:48.499289+00:00 app[web.1]: 
+2017-05-31T23:27:48.499290+00:00 app[web.1]:         )
+2017-05-31T23:27:48.499291+00:00 app[web.1]: 
+2017-05-31T23:27:48.499372+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.499386+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.499386+00:00 app[web.1]: 
+2017-05-31T23:27:48.499359+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:27:48.499489+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:27:48.499546+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:27:48.499548+00:00 app[web.1]:         )
+2017-05-31T23:27:48.499549+00:00 app[web.1]: 
+2017-05-31T23:27:48.499567+00:00 app[web.1]:     [token] => 
+2017-05-31T23:27:48.499569+00:00 app[web.1]: 
+2017-05-31T23:27:48.499568+00:00 app[web.1]: )
+2017-05-31T23:27:48.621463+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] stdClass Object
+2017-05-31T23:27:48.621510+00:00 app[web.1]: (
+2017-05-31T23:27:48.621534+00:00 app[web.1]:     [section] => Array
+2017-05-31T23:27:48.621536+00:00 app[web.1]:         (
+2017-05-31T23:27:48.621578+00:00 app[web.1]:             [0] => stdClass Object
+2017-05-31T23:27:48.621604+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.621659+00:00 app[web.1]:                     [id] => 1079274138
+2017-05-31T23:27:48.621716+00:00 app[web.1]:                     [course_title] => TBR Cohort
+2017-05-31T23:27:48.621893+00:00 app[web.1]:                     [school_id] => 327641
+2017-05-31T23:27:48.621759+00:00 app[web.1]:                     [course_code] => 20172019
+2017-05-31T23:27:48.621811+00:00 app[web.1]:                     [course_id] => 1079274136
+2017-05-31T23:27:48.622097+00:00 app[web.1]:                     [section_code] => 01
+2017-05-31T23:27:48.622166+00:00 app[web.1]:                     [section_school_code] => 
+2017-05-31T23:27:48.621946+00:00 app[web.1]:                     [building_id] => 327641
+2017-05-31T23:27:48.622000+00:00 app[web.1]:                     [access_code] => X3J4F-BX6PG
+2017-05-31T23:27:48.622048+00:00 app[web.1]:                     [section_title] => 2017-2019
+2017-05-31T23:27:48.622362+00:00 app[web.1]:                     [grade_level_range_start] => 16
+2017-05-31T23:27:48.622300+00:00 app[web.1]:                     [description] => 
+2017-05-31T23:27:48.622327+00:00 app[web.1]:                     [subject_area] => 0
+2017-05-31T23:27:48.622387+00:00 app[web.1]:                     [grade_level_range_end] => 0
+2017-05-31T23:27:48.622409+00:00 app[web.1]:                     [parent_id] => 
+2017-05-31T23:27:48.622222+00:00 app[web.1]:                     [synced] => 0
+2017-05-31T23:27:48.622499+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.622259+00:00 app[web.1]:                     [active] => 1
+2017-05-31T23:27:48.622500+00:00 app[web.1]: 
+2017-05-31T23:27:48.622633+00:00 app[web.1]:                     [meeting_days] => Array
+2017-05-31T23:27:48.622455+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.622697+00:00 app[web.1]: 
+2017-05-31T23:27:48.622481+00:00 app[web.1]:                             [0] => 411100
+2017-05-31T23:27:48.622587+00:00 app[web.1]:                     [profile_url] => http://cdn2-7.cdn.schoology.com/system/files/imagecache/profile_reg/courselogos/logo-1079274138_591e2744dc264.jpg?1495148356
+2017-05-31T23:27:48.622780+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.622607+00:00 app[web.1]:                     [location] => 
+2017-05-31T23:27:48.622780+00:00 app[web.1]: 
+2017-05-31T23:27:48.622651+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.622436+00:00 app[web.1]:                     [grading_periods] => Array
+2017-05-31T23:27:48.622696+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.622804+00:00 app[web.1]:                     [weight] => 0
+2017-05-31T23:27:48.622722+00:00 app[web.1]:                     [class_periods] => Array
+2017-05-31T23:27:48.622833+00:00 app[web.1]:                     [options] => stdClass Object
+2017-05-31T23:27:48.622740+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.623064+00:00 app[web.1]:                             [member_post] => 1
+2017-05-31T23:27:48.622762+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:27:48.623110+00:00 app[web.1]:                             [member_post_comment] => 1
+2017-05-31T23:27:48.622676+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:27:48.622855+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.623242+00:00 app[web.1]:                                 (
+2017-05-31T23:27:48.622953+00:00 app[web.1]:                             [upload_documents] => 0
+2017-05-31T23:27:48.623415+00:00 app[web.1]:                                     [new_test_quiz] => 0
+2017-05-31T23:27:48.623020+00:00 app[web.1]:                             [create_discussion] => 0
+2017-05-31T23:27:48.623462+00:00 app[web.1]:                                     [common_assessments] => 0
+2017-05-31T23:27:48.623284+00:00 app[web.1]:                                     [topics] => 0
+2017-05-31T23:27:48.622899+00:00 app[web.1]:                             [weighted_grading_categories] => 0
+2017-05-31T23:27:48.623370+00:00 app[web.1]:                                     [assessments] => 0
+2017-05-31T23:27:48.623327+00:00 app[web.1]:                                     [assignments] => 0
+2017-05-31T23:27:48.623657+00:00 app[web.1]:                             [hide_overall_grade] => 0
+2017-05-31T23:27:48.623209+00:00 app[web.1]:                             [content_index_visibility] => stdClass Object
+2017-05-31T23:27:48.623603+00:00 app[web.1]:                                     [pages] => 0
+2017-05-31T23:27:48.623830+00:00 app[web.1]:                     [links] => stdClass Object
+2017-05-31T23:27:48.623156+00:00 app[web.1]:                             [default_grading_scale_id] => 0
+2017-05-31T23:27:48.623577+00:00 app[web.1]:                                     [album] => 0
+2017-05-31T23:27:48.623804+00:00 app[web.1]:                     [admin] => 1
+2017-05-31T23:27:48.623624+00:00 app[web.1]:                                 )
+2017-05-31T23:27:48.623847+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.623728+00:00 app[web.1]:                             [allow_custom_overall_grade] => 0
+2017-05-31T23:27:48.623777+00:00 app[web.1]:                             [allow_custom_overall_grade_text] => 0
+2017-05-31T23:27:48.623624+00:00 app[web.1]: 
+2017-05-31T23:27:48.623899+00:00 app[web.1]:                             [self] => http://api.schoology.com/v1/sections/1079274138
+2017-05-31T23:27:48.624004+00:00 app[web.1]:         )
+2017-05-31T23:27:48.623691+00:00 app[web.1]:                             [hide_grading_period_grade] => 0
+2017-05-31T23:27:48.623903+00:00 app[web.1]: 
+2017-05-31T23:27:48.623512+00:00 app[web.1]:                                     [documents] => 0
+2017-05-31T23:27:48.623778+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.623930+00:00 app[web.1]:         )
+2017-05-31T23:27:48.623548+00:00 app[web.1]:                                     [discussion] => 0
+2017-05-31T23:27:48.623779+00:00 app[web.1]: 
+2017-05-31T23:27:48.623931+00:00 app[web.1]: 
+2017-05-31T23:27:48.624003+00:00 app[web.1]:             [self] => https://api.schoology.com/v1/users/22135108/sections
+2017-05-31T23:27:48.623929+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.624007+00:00 app[web.1]: 
+2017-05-31T23:27:48.623929+00:00 app[web.1]: 
+2017-05-31T23:27:48.624113+00:00 app[web.1]: 10.79.219.198 - - [31/May/2017:23:27:48 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-31T23:27:48.624006+00:00 app[web.1]: )
+2017-05-31T23:27:48.623957+00:00 app[web.1]:         (
+2017-05-31T23:27:48.623956+00:00 app[web.1]:     [links] => stdClass Object
+2017-05-31T23:27:48.623902+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.624005+00:00 app[web.1]: 
+2017-05-31T23:27:48.988979+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=328ed0fa-44ad-43bb-afdd-979b29fd3f8a fwd="38.93.38.58" dyno=web.1 connect=1ms service=178ms status=200 bytes=150 protocol=https
+2017-05-31T23:27:48.821095+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] Database found!
+2017-05-31T23:27:48.821108+00:00 app[web.1]: 
+2017-05-31T23:27:48.821114+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] PDO Object
+2017-05-31T23:27:48.821115+00:00 app[web.1]: (
+2017-05-31T23:27:48.821115+00:00 app[web.1]: )
+2017-05-31T23:27:48.821116+00:00 app[web.1]: 
+2017-05-31T23:27:48.821166+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] PDOStatement Object
+2017-05-31T23:27:48.821167+00:00 app[web.1]: (
+2017-05-31T23:27:48.821209+00:00 app[web.1]:     [queryString] => SELECT * FROM oauth_tokens
+2017-05-31T23:27:48.821210+00:00 app[web.1]: )
+2017-05-31T23:27:48.821212+00:00 app[web.1]: 
+2017-05-31T23:27:48.823180+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] SchoologyContainer Object
+2017-05-31T23:27:48.823181+00:00 app[web.1]: (
+2017-05-31T23:27:48.823319+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:48.823260+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:48.823363+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:27:48.823406+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:27:48.823409+00:00 app[web.1]:         (
+2017-05-31T23:27:48.823492+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:48.823550+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:48.823591+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:27:48.823633+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:27:48.823677+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:27:48.823744+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:27:48.823757+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.823794+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:27:48.823825+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:27:48.823870+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:27:48.823903+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:27:48.823960+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.823936+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:27:48.823961+00:00 app[web.1]: 
+2017-05-31T23:27:48.824017+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:27:48.824082+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:27:48.824150+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:27:48.824198+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #1
+2017-05-31T23:27:48.824240+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:27:48.824266+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.824306+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:27:48.824338+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:27:48.824370+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:27:48.824439+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:27:48.824471+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:27:48.824402+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:27:48.824506+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:27:48.824542+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:27:48.824556+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.824557+00:00 app[web.1]: 
+2017-05-31T23:27:48.824582+00:00 app[web.1]:         )
+2017-05-31T23:27:48.824583+00:00 app[web.1]: 
+2017-05-31T23:27:48.824632+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:27:48.824635+00:00 app[web.1]:         (
+2017-05-31T23:27:48.824681+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:27:48.824695+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.824723+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.824724+00:00 app[web.1]: 
+2017-05-31T23:27:48.824801+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:27:48.824847+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:27:48.824923+00:00 app[web.1]: 
+2017-05-31T23:27:48.824921+00:00 app[web.1]:         )
+2017-05-31T23:27:48.824919+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:27:48.824953+00:00 app[web.1]:     [token] => 
+2017-05-31T23:27:48.824954+00:00 app[web.1]: )
+2017-05-31T23:27:48.824955+00:00 app[web.1]: 
+2017-05-31T23:27:48.871318+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] stdClass Object
+2017-05-31T23:27:48.871322+00:00 app[web.1]: (
+2017-05-31T23:27:48.871353+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:27:48.871406+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:27:48.871410+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:27:48.871432+00:00 app[web.1]:     [header_size] => 411
+2017-05-31T23:27:48.871450+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:27:48.871466+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:27:48.871485+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:27:48.871511+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:27:48.871546+00:00 app[web.1]:     [total_time] => 0.047249
+2017-05-31T23:27:48.871568+00:00 app[web.1]:     [namelookup_time] => 0.004265
+2017-05-31T23:27:48.871588+00:00 app[web.1]:     [connect_time] => 0.004764
+2017-05-31T23:27:48.871610+00:00 app[web.1]:     [pretransfer_time] => 0.004824
+2017-05-31T23:27:48.871627+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:27:48.871664+00:00 app[web.1]:     [speed_download] => 2687
+2017-05-31T23:27:48.871645+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:27:48.871690+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:27:48.871728+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:27:48.871750+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:27:48.871772+00:00 app[web.1]:     [starttransfer_time] => 0.047207
+2017-05-31T23:27:48.871890+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:27:48.871891+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:27:48.871892+00:00 app[web.1]:     [primary_ip] => 52.55.100.151
+2017-05-31T23:27:48.871892+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:27:48.871893+00:00 app[web.1]:         (
+2017-05-31T23:27:48.871894+00:00 app[web.1]:         )
+2017-05-31T23:27:48.871895+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:27:48.871895+00:00 app[web.1]: 
+2017-05-31T23:27:48.871898+00:00 app[web.1]:     [local_ip] => 172.16.245.102
+2017-05-31T23:27:48.871915+00:00 app[web.1]:     [local_port] => 50603
+2017-05-31T23:27:48.871934+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:27:48.871936+00:00 app[web.1]:         (
+2017-05-31T23:27:48.871994+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:27:48.872045+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:27:48.872075+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:27:48 GMT
+2017-05-31T23:27:48.872099+00:00 app[web.1]:             [Etag] => "1496273268
+2017-05-31T23:27:48.872134+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:27:48 +0000
+2017-05-31T23:27:48.872154+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:27:48.872187+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:27:48.872225+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:27:48.872259+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-nr-e778-b
+2017-05-31T23:27:48.872281+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:27:48.872305+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:27:48.872307+00:00 app[web.1]:         )
+2017-05-31T23:27:48.872320+00:00 app[web.1]: 
+2017-05-31T23:27:48.872422+00:00 app[web.1]:     [raw_result] => oauth_token=ec92faebc3465b0df781f5e13d9c43490592f5174&oauth_token_secret=f9cfffa3482b7fa339d99b6aa5c3a9b6&xoauth_token_ttl=3600
+2017-05-31T23:27:48.872556+00:00 app[web.1]: )
+2017-05-31T23:27:48.872555+00:00 app[web.1]:     [result] => oauth_token=ec92faebc3465b0df781f5e13d9c43490592f5174&oauth_token_secret=f9cfffa3482b7fa339d99b6aa5c3a9b6&xoauth_token_ttl=3600
+2017-05-31T23:27:48.872556+00:00 app[web.1]: 
+2017-05-31T23:27:48.872557+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] Request Token Results!
+2017-05-31T23:27:48.872557+00:00 app[web.1]: 
+2017-05-31T23:27:48.872559+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] stdClass Object
+2017-05-31T23:27:48.872560+00:00 app[web.1]: (
+2017-05-31T23:27:48.872597+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:27:48.872628+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:27:48.872644+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:27:48.872662+00:00 app[web.1]:     [header_size] => 411
+2017-05-31T23:27:48.872846+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:27:48.872855+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:27:48.872855+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:27:48.872856+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:27:48.872856+00:00 app[web.1]:     [total_time] => 0.047249
+2017-05-31T23:27:48.872857+00:00 app[web.1]:     [namelookup_time] => 0.004265
+2017-05-31T23:27:48.872857+00:00 app[web.1]:     [connect_time] => 0.004764
+2017-05-31T23:27:48.872858+00:00 app[web.1]:     [pretransfer_time] => 0.004824
+2017-05-31T23:27:48.872859+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:27:48.872883+00:00 app[web.1]:     [speed_download] => 2687
+2017-05-31T23:27:48.872860+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:27:48.872910+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:27:48.872936+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:27:48.872959+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:27:48.872980+00:00 app[web.1]:     [starttransfer_time] => 0.047207
+2017-05-31T23:27:48.873000+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:27:48.873019+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:27:48.873040+00:00 app[web.1]:     [primary_ip] => 52.55.100.151
+2017-05-31T23:27:48.873061+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:27:48.873064+00:00 app[web.1]:         (
+2017-05-31T23:27:48.873088+00:00 app[web.1]:         )
+2017-05-31T23:27:48.873089+00:00 app[web.1]: 
+2017-05-31T23:27:48.873110+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:27:48.873132+00:00 app[web.1]:     [local_ip] => 172.16.245.102
+2017-05-31T23:27:48.873152+00:00 app[web.1]:     [local_port] => 50603
+2017-05-31T23:27:48.873170+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:27:48.873171+00:00 app[web.1]:         (
+2017-05-31T23:27:48.873226+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:27:48.873279+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:27:48.873369+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:27:48 GMT
+2017-05-31T23:27:48.873373+00:00 app[web.1]:             [Etag] => "1496273268
+2017-05-31T23:27:48.873374+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:27:48 +0000
+2017-05-31T23:27:48.873374+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:27:48.873409+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:27:48.873440+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:27:48.873469+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-nr-e778-b
+2017-05-31T23:27:48.873495+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:27:48.873519+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:27:48.873520+00:00 app[web.1]:         )
+2017-05-31T23:27:48.873523+00:00 app[web.1]: 
+2017-05-31T23:27:48.873671+00:00 app[web.1]:     [raw_result] => oauth_token=ec92faebc3465b0df781f5e13d9c43490592f5174&oauth_token_secret=f9cfffa3482b7fa339d99b6aa5c3a9b6&xoauth_token_ttl=3600
+2017-05-31T23:27:48.873693+00:00 app[web.1]:     [result] => oauth_token=ec92faebc3465b0df781f5e13d9c43490592f5174&oauth_token_secret=f9cfffa3482b7fa339d99b6aa5c3a9b6&xoauth_token_ttl=3600
+2017-05-31T23:27:48.873694+00:00 app[web.1]: )
+2017-05-31T23:27:48.873695+00:00 app[web.1]: 
+2017-05-31T23:27:48.873695+00:00 app[web.1]: 
+2017-05-31T23:27:48.875394+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] SchoologyContainer Object
+2017-05-31T23:27:48.875395+00:00 app[web.1]: (
+2017-05-31T23:27:48.875443+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:48.875491+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:48.875542+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:27:48.875581+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:27:48.875681+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:27:48.875601+00:00 app[web.1]:         (
+2017-05-31T23:27:48.875763+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:27:48.875802+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:27:48.875832+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:27:48.875865+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:27:48.875900+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:27:48.875915+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.875938+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:27:48.875959+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:27:48.875977+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:27:48.875998+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:27:48.876020+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:27:48.876034+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.876035+00:00 app[web.1]: 
+2017-05-31T23:27:48.876092+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:27:48.876146+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:27:48.876200+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:27:48.876268+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:27:48.876236+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #1
+2017-05-31T23:27:48.876275+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.876308+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:27:48.876327+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:27:48.876348+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:27:48.876368+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:27:48.876388+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:27:48.876408+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:27:48.876427+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:27:48.876449+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:27:48.876451+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.876454+00:00 app[web.1]: 
+2017-05-31T23:27:48.876473+00:00 app[web.1]:         )
+2017-05-31T23:27:48.876474+00:00 app[web.1]: 
+2017-05-31T23:27:48.876497+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:27:48.876499+00:00 app[web.1]:         (
+2017-05-31T23:27:48.876535+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:27:48.876549+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.876564+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.876564+00:00 app[web.1]: 
+2017-05-31T23:27:48.876632+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:27:48.876673+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:27:48.876763+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:27:48.876766+00:00 app[web.1]:         )
+2017-05-31T23:27:48.876784+00:00 app[web.1]: 
+2017-05-31T23:27:48.876821+00:00 app[web.1]:     [token] => 
+2017-05-31T23:27:48.876822+00:00 app[web.1]: )
+2017-05-31T23:27:48.876823+00:00 app[web.1]: 
+2017-05-31T23:27:48.980985+00:00 app[web.1]: [31-May-2017 23:27:48 UTC] stdClass Object
+2017-05-31T23:27:48.980988+00:00 app[web.1]: (
+2017-05-31T23:27:48.980993+00:00 app[web.1]:     [section] => Array
+2017-05-31T23:27:48.980995+00:00 app[web.1]:         (
+2017-05-31T23:27:48.981038+00:00 app[web.1]:             [0] => stdClass Object
+2017-05-31T23:27:48.981065+00:00 app[web.1]:                 (
+2017-05-31T23:27:48.981103+00:00 app[web.1]:                     [id] => 1079274138
+2017-05-31T23:27:48.981142+00:00 app[web.1]:                     [course_title] => TBR Cohort
+2017-05-31T23:27:48.981178+00:00 app[web.1]:                     [course_code] => 20172019
+2017-05-31T23:27:48.981215+00:00 app[web.1]:                     [course_id] => 1079274136
+2017-05-31T23:27:48.981249+00:00 app[web.1]:                     [school_id] => 327641
+2017-05-31T23:27:48.983245+00:00 app[web.1]:                     [building_id] => 327641
+2017-05-31T23:27:48.983247+00:00 app[web.1]:                     [section_title] => 2017-2019
+2017-05-31T23:27:48.983247+00:00 app[web.1]:                     [access_code] => X3J4F-BX6PG
+2017-05-31T23:27:48.983249+00:00 app[web.1]:                     [section_school_code] => 
+2017-05-31T23:27:48.983249+00:00 app[web.1]:                     [synced] => 0
+2017-05-31T23:27:48.983248+00:00 app[web.1]:                     [section_code] => 01
+2017-05-31T23:27:48.983250+00:00 app[web.1]:                     [active] => 1
+2017-05-31T23:27:48.983250+00:00 app[web.1]:                     [description] => 
+2017-05-31T23:27:48.983251+00:00 app[web.1]:                     [subject_area] => 0
+2017-05-31T23:27:48.983252+00:00 app[web.1]:                     [grade_level_range_start] => 16
+2017-05-31T23:27:48.983252+00:00 app[web.1]:                     [grade_level_range_end] => 0
+2017-05-31T23:27:48.983253+00:00 app[web.1]:                     [parent_id] => 
+2017-05-31T23:27:48.983253+00:00 app[web.1]:                     [grading_periods] => Array
+2017-05-31T23:27:48.983254+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.983255+00:00 app[web.1]:                             [0] => 411100
+2017-05-31T23:27:48.983255+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.983256+00:00 app[web.1]: 
+2017-05-31T23:27:48.983265+00:00 app[web.1]:                     [location] => 
+2017-05-31T23:27:48.983264+00:00 app[web.1]:                     [profile_url] => http://cdn3-7.cdn.schoology.com/system/files/imagecache/profile_reg/courselogos/logo-1079274138_591e2744dc264.jpg?1495148356
+2017-05-31T23:27:48.983265+00:00 app[web.1]:                     [meeting_days] => Array
+2017-05-31T23:27:48.983266+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.983267+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:27:48.983267+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.983268+00:00 app[web.1]:                     [class_periods] => Array
+2017-05-31T23:27:48.983269+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.983268+00:00 app[web.1]: 
+2017-05-31T23:27:48.983270+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:27:48.983271+00:00 app[web.1]: 
+2017-05-31T23:27:48.983271+00:00 app[web.1]:                     [weight] => 0
+2017-05-31T23:27:48.983272+00:00 app[web.1]:                     [options] => stdClass Object
+2017-05-31T23:27:48.983272+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.983270+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.983273+00:00 app[web.1]:                             [weighted_grading_categories] => 0
+2017-05-31T23:27:48.983274+00:00 app[web.1]:                             [create_discussion] => 0
+2017-05-31T23:27:48.983274+00:00 app[web.1]:                             [upload_documents] => 0
+2017-05-31T23:27:48.983275+00:00 app[web.1]:                             [member_post] => 1
+2017-05-31T23:27:48.983276+00:00 app[web.1]:                             [member_post_comment] => 1
+2017-05-31T23:27:48.983276+00:00 app[web.1]:                             [default_grading_scale_id] => 0
+2017-05-31T23:27:48.983277+00:00 app[web.1]:                             [content_index_visibility] => stdClass Object
+2017-05-31T23:27:48.983278+00:00 app[web.1]:                                 (
+2017-05-31T23:27:48.983279+00:00 app[web.1]:                                     [topics] => 0
+2017-05-31T23:27:48.983279+00:00 app[web.1]:                                     [assignments] => 0
+2017-05-31T23:27:48.983281+00:00 app[web.1]:                                     [assessments] => 0
+2017-05-31T23:27:48.983281+00:00 app[web.1]:                                     [new_test_quiz] => 0
+2017-05-31T23:27:48.983282+00:00 app[web.1]:                                     [common_assessments] => 0
+2017-05-31T23:27:48.983283+00:00 app[web.1]:                                     [documents] => 0
+2017-05-31T23:27:48.983283+00:00 app[web.1]:                                     [discussion] => 0
+2017-05-31T23:27:48.983284+00:00 app[web.1]:                                     [album] => 0
+2017-05-31T23:27:48.983285+00:00 app[web.1]:                                     [pages] => 0
+2017-05-31T23:27:48.983285+00:00 app[web.1]:                                 )
+2017-05-31T23:27:48.983286+00:00 app[web.1]: 
+2017-05-31T23:27:48.983287+00:00 app[web.1]:                             [hide_overall_grade] => 0
+2017-05-31T23:27:48.983288+00:00 app[web.1]:                             [hide_grading_period_grade] => 0
+2017-05-31T23:27:48.983288+00:00 app[web.1]:                             [allow_custom_overall_grade] => 0
+2017-05-31T23:27:48.983289+00:00 app[web.1]:                             [allow_custom_overall_grade_text] => 0
+2017-05-31T23:27:48.983290+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.983291+00:00 app[web.1]: 
+2017-05-31T23:27:48.983291+00:00 app[web.1]:                     [admin] => 1
+2017-05-31T23:27:48.983292+00:00 app[web.1]:                     [links] => stdClass Object
+2017-05-31T23:27:48.983293+00:00 app[web.1]:                         (
+2017-05-31T23:27:48.983294+00:00 app[web.1]:                             [self] => http://api.schoology.com/v1/sections/1079274138
+2017-05-31T23:27:48.983295+00:00 app[web.1]: 
+2017-05-31T23:27:48.983294+00:00 app[web.1]:                         )
+2017-05-31T23:27:48.983295+00:00 app[web.1]:                 )
+2017-05-31T23:27:48.983296+00:00 app[web.1]: 
+2017-05-31T23:27:48.983296+00:00 app[web.1]:         )
+2017-05-31T23:27:48.983297+00:00 app[web.1]: 
+2017-05-31T23:27:48.983298+00:00 app[web.1]:     [links] => stdClass Object
+2017-05-31T23:27:48.983298+00:00 app[web.1]:         (
+2017-05-31T23:27:48.983299+00:00 app[web.1]:             [self] => https://api.schoology.com/v1/users/22135108/sections
+2017-05-31T23:27:48.983299+00:00 app[web.1]:         )
+2017-05-31T23:27:48.983301+00:00 app[web.1]: )
+2017-05-31T23:27:48.983300+00:00 app[web.1]: 
+2017-05-31T23:27:48.983301+00:00 app[web.1]: 
+2017-05-31T23:27:48.983305+00:00 app[web.1]: 10.79.219.198 - - [31/May/2017:23:27:48 +0000] "GET /favicon.ico HTTP/1.1" 200 - "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-31T23:33:23.293584+00:00 heroku[scheduler.7314]: Starting process with command `php ~/web/index.php`
+2017-05-31T23:33:23.948561+00:00 heroku[scheduler.7314]: State changed from starting to up
+2017-05-31T23:33:24.883437+00:00 app[scheduler.7314]: PHP Warning:  require_once(../schoology_php_sdk-master/SchoologyApi.class.php): failed to open stream: No such file or directory in /app/web/Schoology_OAuth.php on line 3
+2017-05-31T23:33:24.883455+00:00 app[scheduler.7314]: PHP Fatal error:  require_once(): Failed opening required '../schoology_php_sdk-master/SchoologyApi.class.php' (include_path='.:/app/.heroku/php/lib/php') in /app/web/Schoology_OAuth.php on line 3
+2017-05-31T23:33:24.945726+00:00 heroku[scheduler.7314]: Process exited with status 255
+2017-05-31T23:33:24.965884+00:00 heroku[scheduler.7314]: State changed from up to complete
+2017-05-31T23:38:50.478204+00:00 heroku[web.1]: Restarting
+2017-05-31T23:38:50.479677+00:00 heroku[web.1]: State changed from up to starting
+2017-05-31T23:38:51.317072+00:00 app[web.1]: Going down, terminating child processes...
+2017-05-31T23:38:51.291667+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-05-31T23:38:51.417965+00:00 heroku[web.1]: Process exited with status 143
+2017-05-31T23:38:52.331593+00:00 heroku[web.1]: Starting process with command `vendor/bin/heroku-php-apache2 web/`
+2017-05-31T23:38:55.140595+00:00 app[web.1]: DOCUMENT_ROOT changed to 'web/'
+2017-05-31T23:38:55.215093+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-05-31T23:38:55.455876+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-05-31T23:38:55.486318+00:00 app[web.1]: Starting php-fpm...
+2017-05-31T23:38:57.487737+00:00 app[web.1]: Starting httpd...
+2017-05-31T23:38:58.244582+00:00 heroku[web.1]: State changed from starting to up
+2017-05-31T23:39:14.853072+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] Directory: 
+2017-05-31T23:39:14.853094+00:00 app[web.1]: 
+2017-05-31T23:39:14.853134+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] /app/web/index.php
+2017-05-31T23:39:14.880548+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] Database found!
+2017-05-31T23:39:14.880554+00:00 app[web.1]: 
+2017-05-31T23:39:14.880808+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] PDO Object
+2017-05-31T23:39:14.880811+00:00 app[web.1]: (
+2017-05-31T23:39:14.880812+00:00 app[web.1]: )
+2017-05-31T23:39:14.880814+00:00 app[web.1]: 
+2017-05-31T23:39:14.880880+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] PDOStatement Object
+2017-05-31T23:39:14.880895+00:00 app[web.1]: (
+2017-05-31T23:39:14.880971+00:00 app[web.1]:     [queryString] => SELECT * FROM oauth_tokens
+2017-05-31T23:39:14.880974+00:00 app[web.1]: )
+2017-05-31T23:39:14.880974+00:00 app[web.1]: 
+2017-05-31T23:39:14.889776+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] SchoologyContainer Object
+2017-05-31T23:39:14.889778+00:00 app[web.1]: (
+2017-05-31T23:39:14.889855+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:39:14.889942+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:39:14.890124+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:39:14.890125+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:39:14.890126+00:00 app[web.1]:         (
+2017-05-31T23:39:14.890245+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:39:14.890363+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:39:14.890541+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:39:14.890542+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:39:14.890543+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:39:14.890561+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:39:14.890592+00:00 app[web.1]:                 (
+2017-05-31T23:39:14.890627+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:39:14.890663+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:39:14.890698+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:39:14.890736+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:39:14.890773+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:39:14.890797+00:00 app[web.1]:                 )
+2017-05-31T23:39:14.890798+00:00 app[web.1]: 
+2017-05-31T23:39:14.890872+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:39:14.890969+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:39:14.891030+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:39:14.891094+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #10
+2017-05-31T23:39:14.891191+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:39:14.891207+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:39:14.891245+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:39:14.891193+00:00 app[web.1]:                 (
+2017-05-31T23:39:14.891315+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:39:14.891280+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:39:14.891350+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:39:14.891383+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:39:14.891415+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:39:14.891447+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:39:14.891473+00:00 app[web.1]:                 )
+2017-05-31T23:39:14.891474+00:00 app[web.1]: 
+2017-05-31T23:39:14.891496+00:00 app[web.1]:         )
+2017-05-31T23:39:14.891497+00:00 app[web.1]: 
+2017-05-31T23:39:14.891544+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:39:14.891547+00:00 app[web.1]:         (
+2017-05-31T23:39:14.891608+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:39:14.891630+00:00 app[web.1]:                 (
+2017-05-31T23:39:14.891655+00:00 app[web.1]:                 )
+2017-05-31T23:39:14.891656+00:00 app[web.1]: 
+2017-05-31T23:39:14.891767+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:39:14.891825+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:39:14.891918+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:39:14.892007+00:00 app[web.1]:         )
+2017-05-31T23:39:14.892009+00:00 app[web.1]: 
+2017-05-31T23:39:14.892009+00:00 app[web.1]:     [token] => 
+2017-05-31T23:39:14.892010+00:00 app[web.1]: )
+2017-05-31T23:39:14.892010+00:00 app[web.1]: 
+2017-05-31T23:39:14.958851+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] stdClass Object
+2017-05-31T23:39:14.958854+00:00 app[web.1]: (
+2017-05-31T23:39:14.958895+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:39:14.958945+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:39:14.958968+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:39:14.959114+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:39:14.959135+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:39:14.958998+00:00 app[web.1]:     [header_size] => 408
+2017-05-31T23:39:14.959166+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:39:14.959207+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:39:14.959316+00:00 app[web.1]:     [total_time] => 0.064947
+2017-05-31T23:39:14.960468+00:00 app[web.1]:     [namelookup_time] => 0.013674
+2017-05-31T23:39:14.960502+00:00 app[web.1]:     [connect_time] => 0.014592
+2017-05-31T23:39:14.960537+00:00 app[web.1]:     [pretransfer_time] => 0.014665
+2017-05-31T23:39:14.960603+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:39:14.960620+00:00 app[web.1]:     [speed_download] => 1955
+2017-05-31T23:39:14.960604+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:39:14.960635+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:39:14.960674+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:39:14.960704+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:39:14.960773+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:39:14.960740+00:00 app[web.1]:     [starttransfer_time] => 0.064848
+2017-05-31T23:39:14.960793+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:39:14.960828+00:00 app[web.1]:     [primary_ip] => 52.203.52.25
+2017-05-31T23:39:14.960853+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:39:14.960856+00:00 app[web.1]:         (
+2017-05-31T23:39:14.960877+00:00 app[web.1]:         )
+2017-05-31T23:39:14.960878+00:00 app[web.1]: 
+2017-05-31T23:39:14.960907+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:39:14.960947+00:00 app[web.1]:     [local_ip] => 172.17.173.166
+2017-05-31T23:39:14.965979+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:39:14.965941+00:00 app[web.1]:     [local_port] => 38565
+2017-05-31T23:39:14.965981+00:00 app[web.1]:         (
+2017-05-31T23:39:14.966058+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:39:14.966209+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:39:14 GMT
+2017-05-31T23:39:14.966160+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:39:14.966241+00:00 app[web.1]:             [Etag] => "1496273954
+2017-05-31T23:39:14.966302+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:39:14 +0000
+2017-05-31T23:39:14.966341+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:39:14.966368+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:39:14.967595+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:39:14.967673+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-fead-d
+2017-05-31T23:39:14.967674+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:39:14.967723+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:39:14.967725+00:00 app[web.1]:         )
+2017-05-31T23:39:14.967725+00:00 app[web.1]: 
+2017-05-31T23:39:14.968175+00:00 app[web.1]:     [raw_result] => oauth_token=3a166f4f19f4fadec26c854a6dd1d6fb0592f5422&oauth_token_secret=645e28ad922d0c3a66a53f0c03ef8530&xoauth_token_ttl=3600
+2017-05-31T23:39:14.968295+00:00 app[web.1]:     [result] => oauth_token=3a166f4f19f4fadec26c854a6dd1d6fb0592f5422&oauth_token_secret=645e28ad922d0c3a66a53f0c03ef8530&xoauth_token_ttl=3600
+2017-05-31T23:39:14.968296+00:00 app[web.1]: )
+2017-05-31T23:39:14.968299+00:00 app[web.1]: 
+2017-05-31T23:39:14.970992+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] Request Token Results!
+2017-05-31T23:39:14.970993+00:00 app[web.1]: 
+2017-05-31T23:39:14.974492+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] stdClass Object
+2017-05-31T23:39:14.974494+00:00 app[web.1]: (
+2017-05-31T23:39:14.974536+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:39:14.974584+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:39:14.974608+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:39:14.974636+00:00 app[web.1]:     [header_size] => 408
+2017-05-31T23:39:14.974668+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:39:14.974686+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:39:14.974719+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:39:14.974745+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:39:14.974776+00:00 app[web.1]:     [total_time] => 0.064947
+2017-05-31T23:39:14.974809+00:00 app[web.1]:     [namelookup_time] => 0.013674
+2017-05-31T23:39:14.974842+00:00 app[web.1]:     [connect_time] => 0.014592
+2017-05-31T23:39:14.974876+00:00 app[web.1]:     [pretransfer_time] => 0.014665
+2017-05-31T23:39:14.974901+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:39:14.974927+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:39:14.974958+00:00 app[web.1]:     [speed_download] => 1955
+2017-05-31T23:39:14.974985+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:39:14.975022+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:39:14.975052+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:39:14.975089+00:00 app[web.1]:     [starttransfer_time] => 0.064848
+2017-05-31T23:39:14.975115+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:39:14.975140+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:39:14.975173+00:00 app[web.1]:     [primary_ip] => 52.203.52.25
+2017-05-31T23:39:14.976180+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:39:14.976184+00:00 app[web.1]:         (
+2017-05-31T23:39:14.976201+00:00 app[web.1]:         )
+2017-05-31T23:39:14.976202+00:00 app[web.1]: 
+2017-05-31T23:39:14.976257+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:39:14.976258+00:00 app[web.1]:     [local_ip] => 172.17.173.166
+2017-05-31T23:39:14.976292+00:00 app[web.1]:     [local_port] => 38565
+2017-05-31T23:39:14.976316+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:39:14.976331+00:00 app[web.1]:         (
+2017-05-31T23:39:14.976415+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:39:14.976469+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:39:14.976520+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:39:14 GMT
+2017-05-31T23:39:14.976553+00:00 app[web.1]:             [Etag] => "1496273954
+2017-05-31T23:39:14.976608+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:39:14 +0000
+2017-05-31T23:39:14.976639+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:39:14.976679+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:39:14.976718+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:39:14.976770+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-fead-d
+2017-05-31T23:39:14.976802+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:39:14.977243+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:39:14.977245+00:00 app[web.1]:         )
+2017-05-31T23:39:14.977245+00:00 app[web.1]: 
+2017-05-31T23:39:14.978025+00:00 app[web.1]:     [raw_result] => oauth_token=3a166f4f19f4fadec26c854a6dd1d6fb0592f5422&oauth_token_secret=645e28ad922d0c3a66a53f0c03ef8530&xoauth_token_ttl=3600
+2017-05-31T23:39:14.978027+00:00 app[web.1]:     [result] => oauth_token=3a166f4f19f4fadec26c854a6dd1d6fb0592f5422&oauth_token_secret=645e28ad922d0c3a66a53f0c03ef8530&xoauth_token_ttl=3600
+2017-05-31T23:39:14.978027+00:00 app[web.1]: )
+2017-05-31T23:39:14.978028+00:00 app[web.1]: 
+2017-05-31T23:39:14.978028+00:00 app[web.1]: 
+2017-05-31T23:39:14.998972+00:00 app[web.1]: [31-May-2017 23:39:14 UTC] SchoologyContainer Object
+2017-05-31T23:39:14.998980+00:00 app[web.1]: (
+2017-05-31T23:39:14.999038+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:39:14.999107+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:39:14.999159+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:39:14.999197+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:39:14.999212+00:00 app[web.1]:         (
+2017-05-31T23:39:15.000202+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:39:15.000277+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:39:15.000376+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:39:15.000322+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:39:15.000415+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:39:15.000481+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:39:15.000534+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:39:15.000499+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.000571+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:39:15.000595+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:39:15.000630+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:39:15.000662+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:39:15.000685+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.000686+00:00 app[web.1]: 
+2017-05-31T23:39:15.000751+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:39:15.000824+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:39:15.000923+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:39:15.000965+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #10
+2017-05-31T23:39:15.001016+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:39:15.002196+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.011092+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:39:15.011122+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:39:15.011162+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:39:15.011202+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:39:15.011234+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:39:15.011265+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:39:15.011294+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:39:15.011323+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:39:15.011347+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.011348+00:00 app[web.1]: 
+2017-05-31T23:39:15.011364+00:00 app[web.1]:         )
+2017-05-31T23:39:15.011365+00:00 app[web.1]: 
+2017-05-31T23:39:15.011410+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:39:15.011425+00:00 app[web.1]:         (
+2017-05-31T23:39:15.012522+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:39:15.012540+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.012566+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.012569+00:00 app[web.1]: 
+2017-05-31T23:39:15.012675+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:39:15.012729+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:39:15.012833+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:39:15.012836+00:00 app[web.1]:         )
+2017-05-31T23:39:15.012837+00:00 app[web.1]: 
+2017-05-31T23:39:15.012860+00:00 app[web.1]:     [token] => 
+2017-05-31T23:39:15.012862+00:00 app[web.1]: 
+2017-05-31T23:39:15.012861+00:00 app[web.1]: )
+2017-05-31T23:39:15.106696+00:00 heroku[router]: at=info method=GET path="/" host=tbc-schoology.herokuapp.com request_id=412b3880-e5ba-4385-a9e4-81a6662f877a fwd="38.93.38.58" dyno=web.1 connect=1ms service=270ms status=200 bytes=150 protocol=https
+2017-05-31T23:39:15.106205+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] stdClass Object
+2017-05-31T23:39:15.106219+00:00 app[web.1]: (
+2017-05-31T23:39:15.106219+00:00 app[web.1]:     [section] => Array
+2017-05-31T23:39:15.106220+00:00 app[web.1]:         (
+2017-05-31T23:39:15.106221+00:00 app[web.1]:             [0] => stdClass Object
+2017-05-31T23:39:15.106221+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.106222+00:00 app[web.1]:                     [id] => 1079274138
+2017-05-31T23:39:15.106223+00:00 app[web.1]:                     [course_title] => TBR Cohort
+2017-05-31T23:39:15.106223+00:00 app[web.1]:                     [course_code] => 20172019
+2017-05-31T23:39:15.106224+00:00 app[web.1]:                     [course_id] => 1079274136
+2017-05-31T23:39:15.106224+00:00 app[web.1]:                     [school_id] => 327641
+2017-05-31T23:39:15.106225+00:00 app[web.1]:                     [building_id] => 327641
+2017-05-31T23:39:15.106225+00:00 app[web.1]:                     [access_code] => X3J4F-BX6PG
+2017-05-31T23:39:15.106226+00:00 app[web.1]:                     [section_title] => 2017-2019
+2017-05-31T23:39:15.106226+00:00 app[web.1]:                     [section_code] => 01
+2017-05-31T23:39:15.106227+00:00 app[web.1]:                     [section_school_code] => 
+2017-05-31T23:39:15.106227+00:00 app[web.1]:                     [synced] => 0
+2017-05-31T23:39:15.106228+00:00 app[web.1]:                     [active] => 1
+2017-05-31T23:39:15.106228+00:00 app[web.1]:                     [description] => 
+2017-05-31T23:39:15.106228+00:00 app[web.1]:                     [subject_area] => 0
+2017-05-31T23:39:15.106229+00:00 app[web.1]:                     [grade_level_range_start] => 16
+2017-05-31T23:39:15.106229+00:00 app[web.1]:                     [grade_level_range_end] => 0
+2017-05-31T23:39:15.106229+00:00 app[web.1]:                     [parent_id] => 
+2017-05-31T23:39:15.106230+00:00 app[web.1]:                     [grading_periods] => Array
+2017-05-31T23:39:15.106230+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.106230+00:00 app[web.1]:                             [0] => 411100
+2017-05-31T23:39:15.106231+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.106231+00:00 app[web.1]: 
+2017-05-31T23:39:15.106233+00:00 app[web.1]:                     [profile_url] => http://cdn3-7.cdn.schoology.com/system/files/imagecache/profile_reg/courselogos/logo-1079274138_591e2744dc264.jpg?1495148356
+2017-05-31T23:39:15.106234+00:00 app[web.1]:                     [location] => 
+2017-05-31T23:39:15.106234+00:00 app[web.1]:                     [meeting_days] => Array
+2017-05-31T23:39:15.106234+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.106235+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:39:15.106235+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.106235+00:00 app[web.1]: 
+2017-05-31T23:39:15.106236+00:00 app[web.1]:                     [class_periods] => Array
+2017-05-31T23:39:15.106236+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.106236+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:39:15.106237+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.106237+00:00 app[web.1]: 
+2017-05-31T23:39:15.106238+00:00 app[web.1]:                     [weight] => 0
+2017-05-31T23:39:15.106239+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.106238+00:00 app[web.1]:                     [options] => stdClass Object
+2017-05-31T23:39:15.106239+00:00 app[web.1]:                             [weighted_grading_categories] => 0
+2017-05-31T23:39:15.106239+00:00 app[web.1]:                             [upload_documents] => 0
+2017-05-31T23:39:15.106240+00:00 app[web.1]:                             [create_discussion] => 0
+2017-05-31T23:39:15.106240+00:00 app[web.1]:                             [member_post_comment] => 1
+2017-05-31T23:39:15.106240+00:00 app[web.1]:                             [member_post] => 1
+2017-05-31T23:39:15.106241+00:00 app[web.1]:                             [content_index_visibility] => stdClass Object
+2017-05-31T23:39:15.106241+00:00 app[web.1]:                             [default_grading_scale_id] => 0
+2017-05-31T23:39:15.106241+00:00 app[web.1]:                                 (
+2017-05-31T23:39:15.106242+00:00 app[web.1]:                                     [topics] => 0
+2017-05-31T23:39:15.106242+00:00 app[web.1]:                                     [assignments] => 0
+2017-05-31T23:39:15.106242+00:00 app[web.1]:                                     [assessments] => 0
+2017-05-31T23:39:15.106243+00:00 app[web.1]:                                     [new_test_quiz] => 0
+2017-05-31T23:39:15.106243+00:00 app[web.1]:                                     [common_assessments] => 0
+2017-05-31T23:39:15.106243+00:00 app[web.1]:                                     [documents] => 0
+2017-05-31T23:39:15.106244+00:00 app[web.1]:                                     [discussion] => 0
+2017-05-31T23:39:15.106244+00:00 app[web.1]:                                     [album] => 0
+2017-05-31T23:39:15.106244+00:00 app[web.1]:                                     [pages] => 0
+2017-05-31T23:39:15.106360+00:00 app[web.1]:                                 )
+2017-05-31T23:39:15.106362+00:00 app[web.1]: 
+2017-05-31T23:39:15.106585+00:00 app[web.1]: 
+2017-05-31T23:39:15.106413+00:00 app[web.1]:                             [hide_overall_grade] => 0
+2017-05-31T23:39:15.106457+00:00 app[web.1]:                             [hide_grading_period_grade] => 0
+2017-05-31T23:39:15.106501+00:00 app[web.1]:                             [allow_custom_overall_grade] => 0
+2017-05-31T23:39:15.106557+00:00 app[web.1]:                             [allow_custom_overall_grade_text] => 0
+2017-05-31T23:39:15.106584+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.106619+00:00 app[web.1]:                     [admin] => 1
+2017-05-31T23:39:15.106656+00:00 app[web.1]:                     [links] => stdClass Object
+2017-05-31T23:39:15.106684+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.106745+00:00 app[web.1]:                             [self] => http://api.schoology.com/v1/sections/1079274138
+2017-05-31T23:39:15.106781+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.106782+00:00 app[web.1]: 
+2017-05-31T23:39:15.106808+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.106809+00:00 app[web.1]: 
+2017-05-31T23:39:15.106861+00:00 app[web.1]:     [links] => stdClass Object
+2017-05-31T23:39:15.106829+00:00 app[web.1]:         )
+2017-05-31T23:39:15.106829+00:00 app[web.1]: 
+2017-05-31T23:39:15.106881+00:00 app[web.1]:         (
+2017-05-31T23:39:15.106947+00:00 app[web.1]:             [self] => https://api.schoology.com/v1/users/22135108/sections
+2017-05-31T23:39:15.106951+00:00 app[web.1]:         )
+2017-05-31T23:39:15.106957+00:00 app[web.1]: 
+2017-05-31T23:39:15.106974+00:00 app[web.1]: )
+2017-05-31T23:39:15.106975+00:00 app[web.1]: 
+2017-05-31T23:39:15.107083+00:00 app[web.1]: 10.150.73.107 - - [31/May/2017:23:39:14 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2017-05-31T23:39:15.301395+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] Directory: 
+2017-05-31T23:39:15.301472+00:00 app[web.1]: 
+2017-05-31T23:39:15.301525+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] /app/web/index.php
+2017-05-31T23:39:15.334726+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] Database found!
+2017-05-31T23:39:15.334753+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] PDO Object
+2017-05-31T23:39:15.334729+00:00 app[web.1]: 
+2017-05-31T23:39:15.334754+00:00 app[web.1]: (
+2017-05-31T23:39:15.334756+00:00 app[web.1]: )
+2017-05-31T23:39:15.334757+00:00 app[web.1]: 
+2017-05-31T23:39:15.334813+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] PDOStatement Object
+2017-05-31T23:39:15.334814+00:00 app[web.1]: (
+2017-05-31T23:39:15.334865+00:00 app[web.1]:     [queryString] => SELECT * FROM oauth_tokens
+2017-05-31T23:39:15.334866+00:00 app[web.1]: )
+2017-05-31T23:39:15.334869+00:00 app[web.1]: 
+2017-05-31T23:39:15.351139+00:00 app[web.1]: (
+2017-05-31T23:39:15.351405+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:39:15.351500+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:39:15.351636+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:39:15.351133+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] SchoologyContainer Object
+2017-05-31T23:39:15.351700+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:39:15.351703+00:00 app[web.1]:         (
+2017-05-31T23:39:15.351865+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:39:15.351987+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:39:15.352029+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:39:15.352116+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:39:15.352177+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:39:15.352073+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:39:15.352197+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.352230+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:39:15.352286+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:39:15.352321+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:39:15.352271+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:39:15.352373+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.352353+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:39:15.352444+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:39:15.352376+00:00 app[web.1]: 
+2017-05-31T23:39:15.352507+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:39:15.352619+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:39:15.352661+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #1
+2017-05-31T23:39:15.352709+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:39:15.352730+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.352774+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:39:15.352804+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:39:15.352833+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:39:15.352970+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:39:15.352996+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:39:15.353027+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:39:15.352864+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:39:15.353223+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:39:15.353242+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.353243+00:00 app[web.1]: 
+2017-05-31T23:39:15.353261+00:00 app[web.1]:         )
+2017-05-31T23:39:15.353313+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:39:15.353262+00:00 app[web.1]: 
+2017-05-31T23:39:15.353363+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:39:15.353384+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.353315+00:00 app[web.1]:         (
+2017-05-31T23:39:15.353405+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.353406+00:00 app[web.1]: 
+2017-05-31T23:39:15.353509+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:39:15.353569+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:39:15.353675+00:00 app[web.1]: 
+2017-05-31T23:39:15.353674+00:00 app[web.1]:         )
+2017-05-31T23:39:15.353699+00:00 app[web.1]: )
+2017-05-31T23:39:15.353698+00:00 app[web.1]:     [token] => 
+2017-05-31T23:39:15.353659+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:39:15.353701+00:00 app[web.1]: 
+2017-05-31T23:39:15.554211+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=tbc-schoology.herokuapp.com request_id=e041215b-28d1-4084-8a68-67c4de6a5030 fwd="38.93.38.58" dyno=web.1 connect=1ms service=256ms status=200 bytes=150 protocol=https
+2017-05-31T23:39:15.421125+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] stdClass Object
+2017-05-31T23:39:15.421515+00:00 app[web.1]: (
+2017-05-31T23:39:15.421783+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:39:15.421953+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:39:15.421983+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:39:15.422481+00:00 app[web.1]:     [header_size] => 408
+2017-05-31T23:39:15.422530+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:39:15.422534+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:39:15.422574+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:39:15.423005+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:39:15.423007+00:00 app[web.1]:     [total_time] => 0.068045
+2017-05-31T23:39:15.423058+00:00 app[web.1]:     [namelookup_time] => 0.031461
+2017-05-31T23:39:15.423072+00:00 app[web.1]:     [connect_time] => 0.032824
+2017-05-31T23:39:15.423119+00:00 app[web.1]:     [pretransfer_time] => 0.032969
+2017-05-31T23:39:15.423185+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:39:15.423156+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:39:15.423263+00:00 app[web.1]:     [speed_download] => 1866
+2017-05-31T23:39:15.423267+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:39:15.423264+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:39:15.423318+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:39:15.423354+00:00 app[web.1]:     [starttransfer_time] => 0.067988
+2017-05-31T23:39:15.423385+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:39:15.423414+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:39:15.423476+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:39:15.423445+00:00 app[web.1]:     [primary_ip] => 52.55.100.151
+2017-05-31T23:39:15.423495+00:00 app[web.1]:         (
+2017-05-31T23:39:15.423512+00:00 app[web.1]:         )
+2017-05-31T23:39:15.423514+00:00 app[web.1]: 
+2017-05-31T23:39:15.423636+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:39:15.423638+00:00 app[web.1]:     [local_ip] => 172.17.173.166
+2017-05-31T23:39:15.424031+00:00 app[web.1]:     [local_port] => 60765
+2017-05-31T23:39:15.424057+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:39:15.424230+00:00 app[web.1]:         (
+2017-05-31T23:39:15.424384+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:39:15.424386+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:39:15.424481+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:39:15 GMT
+2017-05-31T23:39:15.424717+00:00 app[web.1]:             [Etag] => "1496273955
+2017-05-31T23:39:15.424808+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:39:15.424775+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:39:15 +0000
+2017-05-31T23:39:15.425082+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:39:15.425121+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:39:15.430186+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-a284-b
+2017-05-31T23:39:15.430188+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:39:15.430190+00:00 app[web.1]:         )
+2017-05-31T23:39:15.430189+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:39:15.430191+00:00 app[web.1]: 
+2017-05-31T23:39:15.430192+00:00 app[web.1]:     [raw_result] => oauth_token=95146f7c03c24984e71791f5cf47a6ba0592f5423&oauth_token_secret=88569d68572b9ef13c5918866b35e2ae&xoauth_token_ttl=3600
+2017-05-31T23:39:15.430194+00:00 app[web.1]: )
+2017-05-31T23:39:15.430193+00:00 app[web.1]:     [result] => oauth_token=95146f7c03c24984e71791f5cf47a6ba0592f5423&oauth_token_secret=88569d68572b9ef13c5918866b35e2ae&xoauth_token_ttl=3600
+2017-05-31T23:39:15.430194+00:00 app[web.1]: 
+2017-05-31T23:39:15.430195+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] Request Token Results!
+2017-05-31T23:39:15.430196+00:00 app[web.1]: 
+2017-05-31T23:39:15.430196+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] stdClass Object
+2017-05-31T23:39:15.430197+00:00 app[web.1]: (
+2017-05-31T23:39:15.430197+00:00 app[web.1]:     [url] => http://api.schoology.com/v1/oauth/request_token
+2017-05-31T23:39:15.430199+00:00 app[web.1]:     [http_code] => 200
+2017-05-31T23:39:15.430198+00:00 app[web.1]:     [content_type] => application/x-www-form-urlencoded
+2017-05-31T23:39:15.430200+00:00 app[web.1]:     [request_size] => 453
+2017-05-31T23:39:15.430200+00:00 app[web.1]:     [header_size] => 408
+2017-05-31T23:39:15.430201+00:00 app[web.1]:     [filetime] => -1
+2017-05-31T23:39:15.430201+00:00 app[web.1]:     [ssl_verify_result] => 0
+2017-05-31T23:39:15.430202+00:00 app[web.1]:     [redirect_count] => 0
+2017-05-31T23:39:15.430203+00:00 app[web.1]:     [total_time] => 0.068045
+2017-05-31T23:39:15.430203+00:00 app[web.1]:     [namelookup_time] => 0.031461
+2017-05-31T23:39:15.430204+00:00 app[web.1]:     [connect_time] => 0.032824
+2017-05-31T23:39:15.430204+00:00 app[web.1]:     [pretransfer_time] => 0.032969
+2017-05-31T23:39:15.430205+00:00 app[web.1]:     [size_upload] => 0
+2017-05-31T23:39:15.430206+00:00 app[web.1]:     [speed_download] => 1866
+2017-05-31T23:39:15.430206+00:00 app[web.1]:     [size_download] => 127
+2017-05-31T23:39:15.430207+00:00 app[web.1]:     [speed_upload] => 0
+2017-05-31T23:39:15.430207+00:00 app[web.1]:     [download_content_length] => 127
+2017-05-31T23:39:15.430208+00:00 app[web.1]:     [upload_content_length] => -1
+2017-05-31T23:39:15.430209+00:00 app[web.1]:     [starttransfer_time] => 0.067988
+2017-05-31T23:39:15.430209+00:00 app[web.1]:     [redirect_time] => 0
+2017-05-31T23:39:15.430210+00:00 app[web.1]:     [redirect_url] => 
+2017-05-31T23:39:15.430210+00:00 app[web.1]:     [primary_ip] => 52.55.100.151
+2017-05-31T23:39:15.430211+00:00 app[web.1]:     [certinfo] => Array
+2017-05-31T23:39:15.430211+00:00 app[web.1]:         (
+2017-05-31T23:39:15.430212+00:00 app[web.1]:         )
+2017-05-31T23:39:15.430212+00:00 app[web.1]: 
+2017-05-31T23:39:15.430213+00:00 app[web.1]:     [primary_port] => 80
+2017-05-31T23:39:15.430213+00:00 app[web.1]:     [local_ip] => 172.17.173.166
+2017-05-31T23:39:15.430214+00:00 app[web.1]:     [local_port] => 60765
+2017-05-31T23:39:15.430215+00:00 app[web.1]:         (
+2017-05-31T23:39:15.430215+00:00 app[web.1]:     [headers] => Array
+2017-05-31T23:39:15.430216+00:00 app[web.1]:             [Cache-Control] => no-cache, no-store, must-revalidate, post-check=0, pre-check=0
+2017-05-31T23:39:15.430222+00:00 app[web.1]:             [Content-Type] => application/x-www-form-urlencoded
+2017-05-31T23:39:15.430383+00:00 app[web.1]:             [Etag] => "1496273955
+2017-05-31T23:39:15.430330+00:00 app[web.1]:             [Date] => Wed, 31 May 2017 23:39:15 GMT
+2017-05-31T23:39:15.430443+00:00 app[web.1]:             [Last-Modified] => Wed, 31 May 2017 23:39:15 +0000
+2017-05-31T23:39:15.430514+00:00 app[web.1]:             [Server] => nginx
+2017-05-31T23:39:15.430575+00:00 app[web.1]:             [X-Frame-Options] => SAMEORIGIN
+2017-05-31T23:39:15.430635+00:00 app[web.1]:             [X-Schoology-Env] => deploy
+2017-05-31T23:39:15.430715+00:00 app[web.1]:             [X-Schoology-Server] => prod-core-api-a284-b
+2017-05-31T23:39:15.431035+00:00 app[web.1]:             [Content-Length] => 127
+2017-05-31T23:39:15.431411+00:00 app[web.1]:             [Connection] => keep-alive
+2017-05-31T23:39:15.431769+00:00 app[web.1]:         )
+2017-05-31T23:39:15.432099+00:00 app[web.1]:     [raw_result] => oauth_token=95146f7c03c24984e71791f5cf47a6ba0592f5423&oauth_token_secret=88569d68572b9ef13c5918866b35e2ae&xoauth_token_ttl=3600
+2017-05-31T23:39:15.431956+00:00 app[web.1]: 
+2017-05-31T23:39:15.434402+00:00 app[web.1]:     [result] => oauth_token=95146f7c03c24984e71791f5cf47a6ba0592f5423&oauth_token_secret=88569d68572b9ef13c5918866b35e2ae&xoauth_token_ttl=3600
+2017-05-31T23:39:15.434702+00:00 app[web.1]: )
+2017-05-31T23:39:15.437560+00:00 app[web.1]: 
+2017-05-31T23:39:15.437579+00:00 app[web.1]: 
+2017-05-31T23:39:15.440677+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] SchoologyContainer Object
+2017-05-31T23:39:15.440682+00:00 app[web.1]: (
+2017-05-31T23:39:15.441229+00:00 app[web.1]:     [schoology_key:SchoologyContainer:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:39:15.440961+00:00 app[web.1]:     [schoology_secret:SchoologyContainer:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:39:15.441288+00:00 app[web.1]:     [schoology_uid:SchoologyContainer:private] => 22135108
+2017-05-31T23:39:15.441474+00:00 app[web.1]:     [schoology] => SchoologyApi Object
+2017-05-31T23:39:15.441478+00:00 app[web.1]:         (
+2017-05-31T23:39:15.441565+00:00 app[web.1]:             [_consumer_key:SchoologyApi:private] => 1dd53b528230ad488c8545fa1c263dba05568d1e8
+2017-05-31T23:39:15.441781+00:00 app[web.1]:             [_consumer_secret:SchoologyApi:private] => da12e9775938fc21a144e8d39292f10a
+2017-05-31T23:39:15.441829+00:00 app[web.1]:             [_token_key:SchoologyApi:private] => 
+2017-05-31T23:39:15.441955+00:00 app[web.1]:             [_is_two_legged:SchoologyApi:private] => 1
+2017-05-31T23:39:15.441880+00:00 app[web.1]:             [_token_secret:SchoologyApi:private] => 
+2017-05-31T23:39:15.442033+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.442010+00:00 app[web.1]:             [_api_supported_methods:SchoologyApi:private] => Array
+2017-05-31T23:39:15.442067+00:00 app[web.1]:                     [0] => POST
+2017-05-31T23:39:15.442161+00:00 app[web.1]:                     [1] => GET
+2017-05-31T23:39:15.442162+00:00 app[web.1]:                     [2] => PUT
+2017-05-31T23:39:15.442204+00:00 app[web.1]:                     [3] => DELETE
+2017-05-31T23:39:15.442310+00:00 app[web.1]:                     [4] => OPTIONS
+2017-05-31T23:39:15.442336+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.442436+00:00 app[web.1]:             [_api_base:SchoologyApi:private] => http://api.schoology.com/v1
+2017-05-31T23:39:15.442361+00:00 app[web.1]: 
+2017-05-31T23:39:15.442600+00:00 app[web.1]:             [_api_site_base:SchoologyApi:private] => https://www.schoology.com
+2017-05-31T23:39:15.442694+00:00 app[web.1]:             [_saml_cert_path:SchoologyApi:private] => /app/schoology_php_sdk-master/app.schoology.com.crt
+2017-05-31T23:39:15.442805+00:00 app[web.1]:             [curl_resource:SchoologyApi:private] => Resource id #1
+2017-05-31T23:39:15.442958+00:00 app[web.1]:             [curl_opts:SchoologyApi:private] => Array
+2017-05-31T23:39:15.443116+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.443185+00:00 app[web.1]:                     [10018] => schoology-php-1.0
+2017-05-31T23:39:15.443262+00:00 app[web.1]:                     [19913] => 1
+2017-05-31T23:39:15.443224+00:00 app[web.1]:                     [78] => 20
+2017-05-31T23:39:15.443300+00:00 app[web.1]:                     [13] => 60
+2017-05-31T23:39:15.443340+00:00 app[web.1]:                     [68] => 10
+2017-05-31T23:39:15.443380+00:00 app[web.1]:                     [42] => 1
+2017-05-31T23:39:15.443492+00:00 app[web.1]:                     [52] => 
+2017-05-31T23:39:15.443539+00:00 app[web.1]:                     [96] => 
+2017-05-31T23:39:15.443570+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.443586+00:00 app[web.1]: 
+2017-05-31T23:39:15.443609+00:00 app[web.1]:         )
+2017-05-31T23:39:15.443624+00:00 app[web.1]: 
+2017-05-31T23:39:15.443668+00:00 app[web.1]:     [storage] => SchoologyStorage Object
+2017-05-31T23:39:15.443847+00:00 app[web.1]:             [db:SchoologyStorage:private] => PDO Object
+2017-05-31T23:39:15.443689+00:00 app[web.1]:         (
+2017-05-31T23:39:15.443876+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.443904+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.443985+00:00 app[web.1]: 
+2017-05-31T23:39:15.444097+00:00 app[web.1]:             [hostDB:SchoologyStorage:private] => pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil
+2017-05-31T23:39:15.444407+00:00 app[web.1]:             [dbPassword:SchoologyStorage:private] => 5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c
+2017-05-31T23:39:15.444431+00:00 app[web.1]:         )
+2017-05-31T23:39:15.444163+00:00 app[web.1]:             [dbUser:SchoologyStorage:private] => dsskzsufyjspyz
+2017-05-31T23:39:15.444494+00:00 app[web.1]: 
+2017-05-31T23:39:15.444535+00:00 app[web.1]:     [token] => 
+2017-05-31T23:39:15.444559+00:00 app[web.1]: )
+2017-05-31T23:39:15.444575+00:00 app[web.1]: 
+2017-05-31T23:39:15.552835+00:00 app[web.1]: [31-May-2017 23:39:15 UTC] stdClass Object
+2017-05-31T23:39:15.556770+00:00 app[web.1]:     [section] => Array
+2017-05-31T23:39:15.556402+00:00 app[web.1]: (
+2017-05-31T23:39:15.556798+00:00 app[web.1]:         (
+2017-05-31T23:39:15.556950+00:00 app[web.1]:             [0] => stdClass Object
+2017-05-31T23:39:15.556987+00:00 app[web.1]:                 (
+2017-05-31T23:39:15.557119+00:00 app[web.1]:                     [id] => 1079274138
+2017-05-31T23:39:15.557637+00:00 app[web.1]:                     [course_code] => 20172019
+2017-05-31T23:39:15.557294+00:00 app[web.1]:                     [course_title] => TBR Cohort
+2017-05-31T23:39:15.557696+00:00 app[web.1]:                     [course_id] => 1079274136
+2017-05-31T23:39:15.558134+00:00 app[web.1]:                     [school_id] => 327641
+2017-05-31T23:39:15.558396+00:00 app[web.1]:                     [building_id] => 327641
+2017-05-31T23:39:15.558459+00:00 app[web.1]:                     [access_code] => X3J4F-BX6PG
+2017-05-31T23:39:15.558892+00:00 app[web.1]:                     [section_title] => 2017-2019
+2017-05-31T23:39:15.558957+00:00 app[web.1]:                     [section_code] => 01
+2017-05-31T23:39:15.559038+00:00 app[web.1]:                     [section_school_code] => 
+2017-05-31T23:39:15.559269+00:00 app[web.1]:                     [synced] => 0
+2017-05-31T23:39:15.559317+00:00 app[web.1]:                     [active] => 1
+2017-05-31T23:39:15.559441+00:00 app[web.1]:                     [description] => 
+2017-05-31T23:39:15.559612+00:00 app[web.1]:                     [subject_area] => 0
+2017-05-31T23:39:15.560010+00:00 app[web.1]:                     [grade_level_range_start] => 16
+2017-05-31T23:39:15.562422+00:00 app[web.1]:                     [parent_id] => 
+2017-05-31T23:39:15.560099+00:00 app[web.1]:                     [grade_level_range_end] => 0
+2017-05-31T23:39:15.562690+00:00 app[web.1]:                     [grading_periods] => Array
+2017-05-31T23:39:15.562743+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.562817+00:00 app[web.1]:                             [0] => 411100
+2017-05-31T23:39:15.563213+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.563232+00:00 app[web.1]: 
+2017-05-31T23:39:15.563607+00:00 app[web.1]:                     [profile_url] => http://cdn3-7.cdn.schoology.com/system/files/imagecache/profile_reg/courselogos/logo-1079274138_591e2744dc264.jpg?1495148356
+2017-05-31T23:39:15.563770+00:00 app[web.1]:                     [location] => 
+2017-05-31T23:39:15.564186+00:00 app[web.1]:                     [meeting_days] => Array
+2017-05-31T23:39:15.568455+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:39:15.564516+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.569890+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.569988+00:00 app[web.1]: 
+2017-05-31T23:39:15.571579+00:00 app[web.1]:                     [class_periods] => Array
+2017-05-31T23:39:15.571857+00:00 app[web.1]:                             [0] => 
+2017-05-31T23:39:15.571693+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.574000+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.576840+00:00 app[web.1]: 
+2017-05-31T23:39:15.576893+00:00 app[web.1]:                     [weight] => 0
+2017-05-31T23:39:15.576999+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.576957+00:00 app[web.1]:                     [options] => stdClass Object
+2017-05-31T23:39:15.577101+00:00 app[web.1]:                             [weighted_grading_categories] => 0
+2017-05-31T23:39:15.577165+00:00 app[web.1]:                             [upload_documents] => 0
+2017-05-31T23:39:15.577233+00:00 app[web.1]:                             [create_discussion] => 0
+2017-05-31T23:39:15.577297+00:00 app[web.1]:                             [member_post] => 1
+2017-05-31T23:39:15.577364+00:00 app[web.1]:                             [member_post_comment] => 1
+2017-05-31T23:39:15.577434+00:00 app[web.1]:                             [default_grading_scale_id] => 0
+2017-05-31T23:39:15.577833+00:00 app[web.1]:                             [content_index_visibility] => stdClass Object
+2017-05-31T23:39:15.577947+00:00 app[web.1]:                                     [topics] => 0
+2017-05-31T23:39:15.577883+00:00 app[web.1]:                                 (
+2017-05-31T23:39:15.578014+00:00 app[web.1]:                                     [assignments] => 0
+2017-05-31T23:39:15.578078+00:00 app[web.1]:                                     [assessments] => 0
+2017-05-31T23:39:15.578161+00:00 app[web.1]:                                     [new_test_quiz] => 0
+2017-05-31T23:39:15.578235+00:00 app[web.1]:                                     [common_assessments] => 0
+2017-05-31T23:39:15.578297+00:00 app[web.1]:                                     [documents] => 0
+2017-05-31T23:39:15.578360+00:00 app[web.1]:                                     [discussion] => 0
+2017-05-31T23:39:15.578419+00:00 app[web.1]:                                     [album] => 0
+2017-05-31T23:39:15.578477+00:00 app[web.1]:                                     [pages] => 0
+2017-05-31T23:39:15.578541+00:00 app[web.1]: 
+2017-05-31T23:39:15.578524+00:00 app[web.1]:                                 )
+2017-05-31T23:39:15.578676+00:00 app[web.1]:                             [hide_grading_period_grade] => 0
+2017-05-31T23:39:15.578746+00:00 app[web.1]:                             [allow_custom_overall_grade] => 0
+2017-05-31T23:39:15.578819+00:00 app[web.1]:                             [allow_custom_overall_grade_text] => 0
+2017-05-31T23:39:15.578607+00:00 app[web.1]:                             [hide_overall_grade] => 0
+2017-05-31T23:39:15.578859+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.578878+00:00 app[web.1]: 
+2017-05-31T23:39:15.578925+00:00 app[web.1]:                     [admin] => 1
+2017-05-31T23:39:15.578986+00:00 app[web.1]:                     [links] => stdClass Object
+2017-05-31T23:39:15.579027+00:00 app[web.1]:                         (
+2017-05-31T23:39:15.579132+00:00 app[web.1]:                             [self] => http://api.schoology.com/v1/sections/1079274138
+2017-05-31T23:39:15.579174+00:00 app[web.1]:                         )
+2017-05-31T23:39:15.579192+00:00 app[web.1]: 
+2017-05-31T23:39:15.579225+00:00 app[web.1]:                 )
+2017-05-31T23:39:15.579242+00:00 app[web.1]: 
+2017-05-31T23:39:15.579267+00:00 app[web.1]:         )
+2017-05-31T23:39:15.579283+00:00 app[web.1]: 
+2017-05-31T23:39:15.579326+00:00 app[web.1]:     [links] => stdClass Object
+2017-05-31T23:39:15.579350+00:00 app[web.1]:         (
+2017-05-31T23:39:15.579430+00:00 app[web.1]:             [self] => https://api.schoology.com/v1/users/22135108/sections
+2017-05-31T23:39:15.579455+00:00 app[web.1]:         )
+2017-05-31T23:39:15.579471+00:00 app[web.1]: 
+2017-05-31T23:39:15.579488+00:00 app[web.1]: )
+2017-05-31T23:39:15.579505+00:00 app[web.1]: 
+2017-05-31T23:39:15.579739+00:00 app[web.1]: 10.150.73.107 - - [31/May/2017:23:39:15 +0000] "GET /favicon.ico HTTP/1.1" 200 - "https://tbc-schoology.herokuapp.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
