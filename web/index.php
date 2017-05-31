@@ -3,11 +3,13 @@
 // for heroku
 require('../vendor/autoload.php');
  
+ /*
 require_once('../schoology_php_sdk-master/SchoologyApi.class.php');
 require_once('../schoology_php_sdk-master/SchoologyContentApi.class.php');
 require_once('../schoology_php_sdk-master/SchoologyExceptions.php');
 require_once('../salesforce/soapclient/SforceEnterpriseClient.php');
 require_once('../salesforce/soapclient/SforcePartnerClient.php');
+*/
 require_once('Schoology_OAuth.php');
 
  
