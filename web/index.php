@@ -1,7 +1,11 @@
 <?php
  
 // for heroku
-require('../vendor/autoload.php');
+if(php_sapi_name() == 'cli') {
+	// don't do anything!
+} else {
+	require('../vendor/autoload.php');
+}
  
  /*
 require_once('../schoology_php_sdk-master/SchoologyApi.class.php');
