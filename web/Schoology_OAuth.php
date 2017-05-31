@@ -19,6 +19,7 @@
 		$query = $this->db->query("SELECT * FROM oauth_tokens");
 		error_log("Database found!\n");
 		error_log(print_r($this->db, true));
+		error_log(print_r($query,true));
 		if(!$query) {
 		  throw new Exception("Could not connect to DB\r\n");
 		}
