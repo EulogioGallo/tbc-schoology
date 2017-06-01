@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/app/.heroku/php/bin/php
 
 <?php
 	while(true) {
