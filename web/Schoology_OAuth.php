@@ -7,13 +7,14 @@
 	// Storage class
 	class SchoologyStorage implements SchoologyApi_OauthStorage {
 	  private $db;
-	  private $hostDB = 'pgsql:host=ec2-54-83-26-65.compute-1.amazonaws.com;dbname=df6v2am65gvvil';
+	  private $dbHost = 'host=ec2-54-83-26-65.compute-1.amazonaws.com';
+	  private $dbName = 'dbname=df6v2am65gvvil';
 	  private $dbUser = 'dsskzsufyjspyz';
 	  private $dbPassword = '5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c';
 	 
 	  public function __construct(){
 		// heroku connect db
-		$this->db = new PDO($this->hostDB, $this->dbUser, $this->dbPassword);
+		$this->db = new PDO('pgsql:' . $this->dbHost . ';' . $this->dbName, $this->dbUser, $this->dbPassword);
 		$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	 
 		$query = $this->db->query("SELECT * FROM oauth_tokens");
@@ -62,6 +63,22 @@
 	  public function revokeAccessTokens($uid) {
 		$query = $this->db->prepare("DELETE FROM oauth_tokens WHERE uid = :uid");
 		$query->execute(array(':uid' => $uid));
+	  }
+	  
+	  public function getDbHost() {
+		  return $this->dbHost;
+	  }
+	  
+	  public function getDbName() {
+		  return $this->dbName;
+	  }
+	  
+	  public function getDbUser() {
+		  return $this->dbUser;
+	  }
+	  
+	  public function getDbPassword() {
+		  return $this->dbPassword;
 	  }
 	}
 	
