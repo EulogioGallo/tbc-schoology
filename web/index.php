@@ -21,16 +21,20 @@ if(php_sapi_name() == 'cli') {
 		exit;
 	}
 	
-	// Lets try and listen
+	// Lets try and listen, but only for about 10 seconds
 	pg_query($listenConn, 'LISTEN events');
 	
-	while (!$end) {
+	$timer = 0;
+	while ($timer < 100) {
 	  $arr=pg_get_notify($listenConn);
 	  if (!$arr) {
 		usleep(100000);
 	  }
-	  else
+	  else {
 		error_log(print_r($arr,true));
+	  }
+	  
+	  $timer += 1;
 	}
 	
 } else {
