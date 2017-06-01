@@ -11,8 +11,8 @@ if(php_sapi_name() == 'cli') {
 	$listenConn = pg_pconnect(
 							$SchoologyApi->storage->getDbHost() . ' ' .
 							$SchoologyApi->storage->getDbName() . ' ' .
-							$SchoologyApi->storage->getDbUser() . ' ' .
-							$SchoologyApi->storage->getDbPassword()
+							'user=' . $SchoologyApi->storage->getDbUser() . ' ' .
+							'password=' . $SchoologyApi->storage->getDbPassword()
 						);
 						
 	if(!$listenConn) {
