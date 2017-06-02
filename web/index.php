@@ -40,10 +40,9 @@ if(php_sapi_name() == 'cli') {
 } else {
 	require('../vendor/autoload.php');
 	$SchoologyApi = new SchoologyContainer();
-	 error_log(print_r($SchoologyApi, true));
-	 $SchoologyApi->schoologyOAuth();
-	 error_log(print_r($SchoologyApi, true));
-	 $api_result = $SchoologyApi->schoology->apiResult('users/22135108/sections');
-	 error_log(print_r($api_result, true));
+	$SchoologyApi->schoologyOAuth();
+	$json_result = json_decode(file_get_contents("php://input"));
+	error_log(print__r($json_result,true));
+	//$api_result = $SchoologyApi->schoology->apiResult('users/22135108/sections');
 }
 ?>
