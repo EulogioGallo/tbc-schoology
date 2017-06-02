@@ -42,7 +42,7 @@ if(php_sapi_name() == 'cli') {
 	$SchoologyApi = new SchoologyContainer();
 	$SchoologyApi->schoologyOAuth();
 	$json_result = json_decode(file_get_contents("php://input"));
-	error_log(print__r($json_result,true));
+	error_log(print_r($json_result,true));
 	//$api_result = $SchoologyApi->schoology->apiResult('users/22135108/sections');
 }
 ?>
