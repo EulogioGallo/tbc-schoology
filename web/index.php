@@ -9,5 +9,4 @@ $SchoologyApi->schoologyOAuth();
 //$json_result = json_decode(file_get_contents("php://input"));
 Schoology_Functions::sendAssignmentToSF(file_get_contents("php:://input"));
 
-}
 ?>
