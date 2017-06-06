@@ -5,8 +5,8 @@ class Schoology_Functions {
 		error_log(jsonObject);
 	}
 	
-	static function sendAssignmentToSF(String jsonObject) {
-		error_log(jsonObject);
+	static function sendAssignmentToSF(Object jsonObject) {
+		error_log(print_r(jsonObject,true));
 	}
 }
 
