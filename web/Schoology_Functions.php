@@ -1,11 +1,11 @@
 <?php
 
 class Schoology_Functions {
-	static function sendAssignmentMaster(String jsonObject) {
-		error_log(jsonObject);
+	public static function sendAssignmentMaster(Object jsonObject) {
+		error_log(print_r(jsonObject,true));
 	}
 	
-	static function sendAssignmentToSF(Object jsonObject) {
+	public static function sendAssignmentToSF(Object jsonObject) {
 		error_log(print_r(jsonObject,true));
 	}
 }
