@@ -224,7 +224,7 @@
 				\"title\":\"Test\",
 				\"course_code\":\"T101\",
 				\"department\":\"dept\",
-				\"description":"description\",
+				\"description\":\"description\",
 				\"credits\":5
 			}";
 		  //$this->schoology->api('/courses');
