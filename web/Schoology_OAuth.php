@@ -18,9 +18,7 @@
 		$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	 
 		$query = $this->db->query("SELECT * FROM oauth_tokens");
-		error_log("Database found!\n");
-		error_log(print_r($this->db, true));
-		error_log(print_r($query,true));
+
 		if(!$query) {
 		  throw new Exception("Could not connect to DB\r\n");
 		}
@@ -101,9 +99,6 @@
 		
 		public function schoologyOAuth() {
 			if($this->token) {
-
-			  error_log("got token!\n");
-			  error_log(print_r($token, TRUE) . "\n");
 			  $this->schoology->setKey($token['token_key']);
 			  $this->schoology->setSecret($token['token_secret']);
 
@@ -166,11 +161,8 @@
 			} else {
 				if(!isset($_GET['oauth_token'])) {
 				  $api_result = $this->schoology->api('/oauth/request_token');
-				  error_log(print_r($api_result, true));
 				  $result = array();
 				  parse_str($api_result->result, $result);
-				  error_log("Request Token Results!\n");
-				  error_log(print_r($api_result, true) . "\n");
 			 
 				  $this->storage->saveRequestTokens($this->schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
 			 
@@ -203,8 +195,6 @@
 					// Parse the query-string-formatted result
 					$result = array();
 					parse_str($api_result->result, $result);
-					error_log("Access Token Results!\n");
-					error_log(print_r($api_result, TRUE) . "\n");
 
 					// Update our DB to replace the request tokens with access tokens
 					$this->storage->requestToAccessTokens($this->schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);

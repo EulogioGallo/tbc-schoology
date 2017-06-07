@@ -8,6 +8,7 @@ $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
 // Lets list all assignments to see how they're structured in Schoology
 $api_result = $SchoologyApi->schoology->api('/sections/1102963310/assignments?with_attachments=1');
+error_log(print_r($api_result,true));
 
 /*
 $json_result = json_decode(file_get_contents("php://input"));
