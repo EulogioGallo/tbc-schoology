@@ -211,23 +211,21 @@
 		}
 		
 		// DB Update functions
-		public function createCourse(String $jsonRecord) {
-		  if(!$jsonRecord) {
+		public function createCourse(stdClass $newCourse) {
+		  if(!$newCourse) {
 			  error_log('Error! Invalid JSON for creating course');
-			  error_log(print_r($jsonRecord,true));
+			  error_log(print_r($newRecord,true));
 			  throw new Exception('Invalid JSON');
 		  }
 			  
-		  $thisCourse = json_decode(jsonRecord, true);
-		  error_log(print_r($thisCourse,true));
+		  error_log(print_r($newCourse,true));
 		  $jsonCourseString = "			{
-				\"title\":\"Test\",
-				\"course_code\":\"T101\",
-				\"department\":\"dept\",
-				\"description\":\"description\",
-				\"credits\":5
+				\"title\":\"". $newCourse->data->name . "\",
+				\"course_code\":\"" . $newCourse->data->schoology_course_code__c . "\",
 			}";
-		  //$this->schoology->api('/courses');
+			
+		  $api_result = $this->schoology->api('/courses', 'POST', $jsonCourseString);
+		  error_log(print_r($api_result,true));
 		}
 		  
 		public function updateCourse(String $jsonRecord) {
