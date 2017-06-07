@@ -4,16 +4,17 @@
  require('../vendor/autoload.php');
  
  
+ 
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
-// Lets list all assignments to see how they're structured in Schoology
-$api_result = $SchoologyApi->schoology->api('/sections/1102963310/assignments?with_attachments=1');
-error_log(print_r(json_encode($api_result),true));
-
-/*
 $json_result = json_decode(file_get_contents("php://input"));
 error_log(print_r($json_result,true));
-Schoology_Functions::sendAssignmentToSF($json_result);
+// Lets list all assignments to see how they're structured in Schoology
+//$api_result = $SchoologyApi->schoology->api('/sections/1102963310/assignments?with_attachments=1');
+//error_log(print_r(json_encode($api_result),true));
+
+/*
+
 */
 
 ?>

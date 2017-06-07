@@ -78,6 +78,7 @@
 	  public function getDbPassword() {
 		  return $this->dbPassword;
 	  }
+	  
 	}
 	
 	// Schoology API / Authorization class
@@ -208,6 +209,35 @@
 			   
 			}
 		}
+		
+		// DB Update functions
+		public function createCourse(String $jsonRecord) {
+		  if(!$jsonRecord) {
+			  error_log('Error! Invalid JSON for creating course');
+			  error_log(print_r($jsonRecord,true));
+			  throw new Exception('Invalid JSON');
+		  }
+			  
+		  $thisCourse = json_decode(jsonRecord, true);
+		  error_log(print_r($thisCourse,true));
+		  $jsonCourseString = "			{
+				\"title\":\"Test\",
+				\"course_code\":\"T101\",
+				\"department\":\"dept\",
+				\"description":"description\",
+				\"credits\":5
+			}";
+		  //$this->schoology->api('/courses');
+		}
+		  
+		public function updateCourse(String $jsonRecord) {
+			  
+		}
+		  
+		public function deleteCourse(String $jsonRecord) {
+		 
+		}
+	  
 	}
-	
+
 ?>
