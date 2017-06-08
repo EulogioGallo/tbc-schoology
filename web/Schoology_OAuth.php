@@ -219,14 +219,19 @@
 			  throw new Exception('Invalid Course data');
 		  }
 		  
-		  $courseOptions = array("title" => $newCourse->data->name, "course_code" => $newCourse->data->schoology_course_code__c);
-		  $api_result = $this->schoology->api('/courses', 'POST', $courseOptions);
-		  error_log(print_r($api_result,true));
+		  $courseOptions = array("title" => $newCourse->data->name, "course_code" => $newCourse->data->schoology_course_code__c, "description" => $newCourse->data->description__c);
+		  try {
+			$api_result = $this->schoology->api('/courses', 'POST', $courseOptions);
+			error_log(print_r($api_result,true));
+		  } catch(Exception $e) {
+			  error_log('Exception when making API call');
+			  error_log($e->getMessage());
+		  }
 		  
 		  // successful call result
 		  if($api_result != null && $api_result->http_code == "201") {
 			  $query = $this->storage->db->prepare("UPDATE salesforce.ram_cohort__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
-			  if($query->execute(array(':schoology_id' => $api_result->resut->id, ':sfid' => $newCourse->data->sfid))) {
+			  if($query->execute(array(':schoology_id' => (string) $api_result->resut->id, ':sfid' => $newCourse->data->sfid))) {
 				  error_log('Success! Created Course ' . $newCourse->data->name . ' with ID: ' . $api_result->result->id);
 				  return true;
 			  } else {
@@ -237,12 +242,55 @@
 		  
 		}
 		  
-		public function updateCourse(String $jsonRecord) {
+		public function updateCourse($thisCourse) {
+			  if(!$thisCourse) {
+					error_log('Error! Invalid data for updating course');
+					error_log(print_r($thisCourse,true));
+					throw new Exception('Invalid Course data');
+			  }
 			  
+			  $courseOptions = array("title" => $thisCourse->data->name, "course_code" => $thisCourse->data->schoology_course_code__c, "description" => $thisCourse->data->description__c);
+			  
+			  try {
+				$api_result = $this->schoology->api('/courses/' . $thisCourse->data->schoology_id__c, 'PUT', $courseOptions);
+				error_log(print_r($api_result,true));
+			  } catch(Exception $e) {
+				  error_log('Exception when making API call');
+				  error_log($e->getMessage());
+			  }
+			  
+			  // successful call result
+			  if($api_result != null && $api_result->http_code == "201") {
+				  $query = $this->storage->db->prepare("UPDATE salesforce.ram_cohort__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
+				  if($query->execute(array(':sfid' => $thisCourse->data->sfid))) {
+					  error_log('Success! Updated Course ' . $thisCourse->data->name . ' with ID: ' . $api_result->result->id);
+					  return true;
+				  } else {
+					  error_log('Could not update Course ' . $thisCourse->data->name);
+					  throw new Exception('Could not update Course');
+				  }
+			  }
 		}
 		  
-		public function deleteCourse(String $jsonRecord) {
-		 
+		public function deleteCourse($thisCourse) {
+			if(!$thisCourse) {
+					error_log('Error! Invalid data for deleting course');
+					error_log(print_r($thisCourse,true));
+					throw new Exception('Invalid Course data');
+			  }
+			  
+			  try {
+				$api_result = $this->schoology->api('/courses/' . $thisCourse->data->schoology_id__c, 'DELETE');
+				error_log(print_r($api_result,true));
+			  } catch(Exception $e) {
+				  error_log('Exception when making API call');
+				  error_log($e->getMessage());
+			  }
+			  
+			  // successful call result
+			  if($api_result != null /*&& $api_result->http_code == "201"*/) {
+				  error_log('Success! Deleted Course ' . $thisCourse->data->name . ' with ID: ' . $thisCourse->data->schoology_id__c);
+			  }
 		}
 	  
 	}
