@@ -224,7 +224,7 @@
 		  
 		  // successful call result
 		  if($api_result != null && $api_result->http_code == "201") {
-			  $query = $this->db->query("UPDATE ram_cohort__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
+			  $query = $this->db->prepare("UPDATE ram_cohort__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
 			  if($query->execute(array(':schoology_id' => $api_result->resut->id, ':sfid' => $newCourse->data->sfid))) {
 				  error_log('Success! Created Course ' . $newCourse->data->name . ' with ID: ' . $api_result->result->id);
 				  return true;
