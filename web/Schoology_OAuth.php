@@ -220,7 +220,8 @@
 			  
 		  error_log(print_r($newCourse,true));
 		  $jsonCourseString = "{\"title\":\"" . $newCourse->data->name . "\",\"course_code\":\"" . $newCourse->data->schoology_course_code__c . "\"}";
-			
+		  error_log(print_r($jsonCourseString,true));
+		
 		  $api_result = $this->schoology->api('/courses', 'POST', $jsonCourseString);
 		  error_log(print_r($api_result,true));
 		}
