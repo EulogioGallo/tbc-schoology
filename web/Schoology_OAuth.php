@@ -214,15 +214,12 @@
 		public function createCourse(stdClass $newCourse) {
 		  if(!$newCourse) {
 			  error_log('Error! Invalid JSON for creating course');
-			  error_log(print_r($newRecord,true));
+			  error_log(print_r($newCourse,true));
 			  throw new Exception('Invalid JSON');
 		  }
 			  
 		  error_log(print_r($newCourse,true));
-		  $jsonCourseString = "			{
-				\"title\":\"". $newCourse->data->name . "\",
-				\"course_code\":\"" . $newCourse->data->schoology_course_code__c . "\",
-			}";
+		  $jsonCourseString = "{\"title\":\"" . $newCourse->data->name . "\",\"course_code\":\"" . $newCourse->data->schoology_course_code__c . "\"}";
 			
 		  $api_result = $this->schoology->api('/courses', 'POST', $jsonCourseString);
 		  error_log(print_r($api_result,true));
