@@ -88,6 +88,7 @@
 		private $schoology_secret = 'da12e9775938fc21a144e8d39292f10a';
 		private $schoology_key = '1dd53b528230ad488c8545fa1c263dba05568d1e8';
 		private $schoology_uid = '22135108';
+		private $httpSuccessCodes = array(200, 201, 202, 203, 204);
 		public $schoology;
 		public $storage;
 		public $token;
@@ -229,7 +230,7 @@
 		  }
 		  
 		  // successful call result
-		  if($api_result != null && $api_result->http_code == "201") {
+		  if($api_result != null && in_array($api_result->http_code, $httpSuccessCodes)) {
 			  $query = $this->storage->db->prepare("UPDATE salesforce.ram_cohort__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
 			  if($query->execute(array(':schoology_id' => (string) $api_result->resut->id, ':sfid' => $newCourse->data->sfid))) {
 				  error_log('Success! Created Course ' . $newCourse->data->name . ' with ID: ' . $api_result->result->id);
@@ -260,7 +261,7 @@
 			  }
 			  
 			  // successful call result
-			  if($api_result != null && $api_result->http_code == "201") {
+			  if($api_result != null && in_array($api_result->http_code, $httpSuccessCodes)) {
 				  $query = $this->storage->db->prepare("UPDATE salesforce.ram_cohort__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
 				  if($query->execute(array(':sfid' => $thisCourse->data->sfid))) {
 					  error_log('Success! Updated Course ' . $thisCourse->data->name . ' with ID: ' . $api_result->result->id);
@@ -288,7 +289,7 @@
 			  }
 			  
 			  // successful call result
-			  if($api_result != null /*&& $api_result->http_code == "201"*/) {
+			  if($api_result != null  && in_array($api_result->http_code, $httpSuccessCodes)) {
 				  error_log('Success! Deleted Course ' . $thisCourse->data->name . ' with ID: ' . $thisCourse->data->schoology_id__c);
 			  }
 		}
