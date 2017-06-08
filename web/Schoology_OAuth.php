@@ -217,14 +217,23 @@
 			  error_log(print_r($newCourse,true));
 			  throw new Exception('Invalid Course data');
 		  }
-			  
-		  error_log(print_r($newCourse,true));
-		  //$jsonCourseString = "{\"title\":\"" . $newCourse->data->name . "\",\"course_code\":\"" . $newCourse->data->schoology_course_code__c . "\"}";
-		  //error_log(print_r($jsonCourseString,true));
+		  
 		  $courseOptions = array("title" => $newCourse->data->name, "course_code" => $newCourse->data->schoology_course_code__c);
-		
 		  $api_result = $this->schoology->api('/courses', 'POST', $courseOptions);
 		  error_log(print_r($api_result,true));
+		  
+		  // successful call result
+		  if($api_result != null && $api_result->http_code == "201") {
+			  $query = $this->db->query("UPDATE ram_cohort__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
+			  if($query->execute(array(':schoology_id' => $api_result->resut->id':sfid' => $newCourse->data->sfid))) {
+				  error_log('Success! Created Course ' . $newCourse->data->name . ' with ID: ' . $api_result->result->id);
+				  return true;
+			  } else {
+				  error_log('Could not create Course ' . $newCourse->data->name);
+				  throw new Exception('Could not create Course');
+			  }
+		  }
+		  
 		}
 		  
 		public function updateCourse(String $jsonRecord) {
