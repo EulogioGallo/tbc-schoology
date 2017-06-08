@@ -213,16 +213,17 @@
 		// DB Update functions
 		public function createCourse($newCourse) {
 		  if(!$newCourse) {
-			  error_log('Error! Invalid JSON for creating course');
+			  error_log('Error! Invalid data for creating course');
 			  error_log(print_r($newCourse,true));
-			  throw new Exception('Invalid JSON');
+			  throw new Exception('Invalid Course data');
 		  }
 			  
 		  error_log(print_r($newCourse,true));
-		  $jsonCourseString = "{\"title\":\"" . $newCourse->data->name . "\",\"course_code\":\"" . $newCourse->data->schoology_course_code__c . "\"}";
-		  error_log(print_r($jsonCourseString,true));
+		  //$jsonCourseString = "{\"title\":\"" . $newCourse->data->name . "\",\"course_code\":\"" . $newCourse->data->schoology_course_code__c . "\"}";
+		  //error_log(print_r($jsonCourseString,true));
+		  $courseOptions = array("title" => $newCourse->data->name, "course_code" => $newCourse->data->schoology_course_code__c);
 		
-		  $api_result = $this->schoology->api('/courses', 'POST', $jsonCourseString);
+		  $api_result = $this->schoology->api('/courses', 'POST', $courseOptions);
 		  error_log(print_r($api_result,true));
 		}
 		  
