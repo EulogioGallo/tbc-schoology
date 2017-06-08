@@ -211,7 +211,7 @@
 		}
 		
 		// DB Update functions
-		public function createCourse(stdClass $newCourse) {
+		public function createCourse($newCourse) {
 		  if(!$newCourse) {
 			  error_log('Error! Invalid JSON for creating course');
 			  error_log(print_r($newCourse,true));
