@@ -1,6 +1,5 @@
 <?php
  require_once('Schoology_OAuth.php');
- require_once('Schoology_Functions.php');
  require('../vendor/autoload.php');
  
  
@@ -26,6 +25,11 @@ switch($object_result->action) {
 	case 'DELETE':
 		if($object_result->table == 'ram_cohort__c') {
 			$SchoologyApi->deleteCourse($object_result);
+		}
+		break;
+	default: // this means that Schoology is sending back info
+		if(strpos($object_result->type, 'dropbox_submission') !== false) {
+			$SchoologyApi->updateAssignmentSubmission($object_result->data);
 		}
 		break;
 }

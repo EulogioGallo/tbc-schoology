@@ -104,63 +104,9 @@
 			if($this->token) {
 			  $this->schoology->setKey($token['token_key']);
 			  $this->schoology->setSecret($token['token_secret']);
-
-			/*
-			  error_log(file_get_contents("php://input"));
-			  $json_result = json_decode(file_get_contents("php://input"));
-			  $submitted_user_id = $json_result->uid;
-			  $submitted_assignment_id = $json_result->data->assignment_nid;
-			  error_log(print_r($json_result, TRUE));
-			  error_log(print_r("UID: " . $json_result->uid, TRUE));
-			  error_log(print_r("Section ID: " . $json_result->data->section_id, TRUE));
-			  error_log(print_r("Assignment ID: " . $json_result->data->assignment_nid, TRUE));
-			*/
 			
 			return true;
 
-			/*
-			  try {
-				  if(isset($_GET['req_type'])) {
-					  error_log("Requirement Type found - " . $_GET['req_type'] . "\n");
-					  $result = updateAssessments($submitted_user_id, $submitted_assignment_id);
-					  error_log(print_r($result, TRUE) . "\n");
-					  $reqType = $_GET['req_type'];
-					  $reqType = 'courses/302180662';
-					  
-					  $reqType = 'sections/302180664/assignments';
-					  error_log("Req var: " . $reqType . "\n");
-					  
-					  // get list of assignments for course
-					  $api_result = $schoology->apiResult($reqType);
-					  $result = array();
-					  $grade_item_id = $api_result->assignment[0]->grade_item_id;
-					  error_log(print_r($grade_item_id, TRUE));
-					  $reqType = 'sections/302180664/submissions/' . $grade_item_id;
-					  error_log("Req var: " . $reqType . "\n");
-					  $api_result = $schoology->apiResult($reqType);
-					  $result = createAssessments($api_result->revision, $grade_item_id);
-					  
-					  error_log(print_r($_GET, TRUE) . "\n");
-				  } else {
-					  error_log("Requirement Type NOT FOUND!\n");
-				  }
-				  
-				$header_string = 'Location: https://skuid.cs16.visual.force.com/apex/skuid__ui?page=Schoology&returned=true';
-				header($header_string);
-				return $result;
-			  } catch(Exception $e) {
-				if($e->getCode() == 401) {
-				  $storage->revokeAccessTokens($schoology_uid);
-				  // use temp variables cuz php is dumb
-				  $tempKey = $schoology->getKey();
-				  $tempSecret = $schoology->getSecret();
-				  error_log("Exception!\n");
-				  error_log("Key: " . $tempKey . "\n");
-				  error_log("Secret: " . $tempSecret . "\n");
-				  unset($token, $tempKey, $tempSecret);
-				}
-			  }
-			  */
 			} else {
 				if(!isset($_GET['oauth_token'])) {
 				  $api_result = $this->schoology->api('/oauth/request_token');
@@ -169,16 +115,6 @@
 			 
 				  $this->storage->saveRequestTokens($this->schoology_uid, $result['oauth_token'], $result['oauth_token_secret']);
 			 
-				  // now lets see if we can get some info via API
-				  /*
-				  $token = $storage->getAccessTokens($schoology_uid);
-				  error_log(print_r($token, true));
-				  $schoology->setKey($token['token_key']);
-				  $schoology->setSecret($token['token_secret']);
-				  $api_result = $schoology->apiResult('users/22135108/sections');
-				  error_log(print_r($api_result, true));
-				  exit;
-				  */
 				  return true;
 
 				} else {
@@ -296,6 +232,9 @@
 			  }
 		}
 	  
+		public function updateAssignmentSubmission($thisAss) {
+			return null;
+		};
 	}
 
 ?>
