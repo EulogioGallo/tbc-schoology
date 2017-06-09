@@ -234,7 +234,7 @@
 	  
 		public function updateAssignmentSubmission($thisAss) {
 			return null;
-		};
+		}
 	}
 
 ?>
