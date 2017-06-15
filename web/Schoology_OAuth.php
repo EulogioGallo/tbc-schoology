@@ -264,7 +264,7 @@
 			
 			// successful call result
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-				$query ->$this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
+				$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
 				$schoologyId = $api_result->result->id;
 				error_log('Id: ' . $schoologyId);
 				if($query->execute(array(':schoology_id' => "$schoologyId", ':sfid' => $newAss->data->sfid))) {
