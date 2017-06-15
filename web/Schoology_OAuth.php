@@ -255,7 +255,7 @@
 			error_log(print_r($newAss));
 			
 			try {
-				$api_result = $this->schoology->api('/secions/'.$newAss->data->schoology_course_id__c.'/assignments', 'POST', $assOptions);
+				$api_result = $this->schoology->api('/sections/'.$newAss->data->schoology_course_id__c.'/assignments', 'POST', $assOptions);
 				error_log(print_r($api_result,true));
 			} catch(Exceptioni $e) {
 				error_log('Exception when making API call');
