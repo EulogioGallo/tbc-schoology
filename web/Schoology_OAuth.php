@@ -258,6 +258,7 @@
 				//"allow_dropbox" => ,
 				"published" => $newAss->data->publish__c,
 				"type" => "assignment",
+				"course_fid" => 83398284,
 				//"assignees" => 
 			);
 			
@@ -303,6 +304,7 @@
 				//"allow_dropbox" => ,
 				"published" => $thisAss->data->publish__c,
 				"type" => "assignment",
+				"course_fid" => 83398284,				
 				//"assignees" => 
 			);
 			
