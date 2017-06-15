@@ -232,6 +232,40 @@
 			  }
 		}
 	  
+		public function createAssignment($newAss) {
+			if(!$newAss) {
+				error_log('Error! Invalid data for creating assignment');
+				error_log(print_r($newAss,true));
+				throw new Exception('Invalid Assignment data');
+			}
+			
+			/*
+			$assOptions = array(
+				"title" => ,
+				"description" => ,
+				"due" => ,
+				"grading_scale" => ,
+				"grading_period" => ,
+				"grading_category" => ,
+				"allow_dropbox" => ,
+				"published" => ,
+				"type" => "assignment",
+				"assignees" => 
+			);
+			*/
+			error_log(print_r($newAss));
+			
+			return null;
+		}
+		
+		public function updateAssignment($thisAss) {
+			return null;
+		}
+		
+		public function deleteAssignment($thisAss) {
+			return null;
+		}
+		
 		public function updateAssignmentSubmission($thisAss) {
 			return null;
 		}
