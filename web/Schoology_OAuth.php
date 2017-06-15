@@ -273,6 +273,7 @@
 				} else {
 					error_log('Could not create Assignment ' . $newAss->data->assignment_title__c);
 					throw new Exception('Could not create Assignment');
+				}
 			}
 			// https://app.schoology.com/system_settings/grades/periods/327641/435422
 
