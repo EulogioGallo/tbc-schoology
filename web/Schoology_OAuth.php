@@ -239,23 +239,43 @@
 				throw new Exception('Invalid Assignment data');
 			}
 			
-			/*
 			$assOptions = array(
-				"title" => ,
-				"description" => ,
-				"due" => ,
-				"grading_scale" => ,
-				"grading_period" => ,
-				"grading_category" => ,
-				"allow_dropbox" => ,
-				"published" => ,
+				"title" => $newAss->data->assignment_title__c,
+				"description" => $newAss->data->assignment_description__c,
+				"due" => $newAss->data->due_date__c,
+				//"grading_scale" => ,
+				"grading_period" => 435422,
+				//"grading_category" => ,
+				//"allow_dropbox" => ,
+				"published" => $newAss->data->publish__c,
 				"type" => "assignment",
-				"assignees" => 
+				//"assignees" => 
 			);
-			*/
+			
 			error_log(print_r($newAss));
 			
-			return null;
+			try {
+				$api_result = $this->schoology->api('/secions/'.$newAss->data->schoology_course_id__c.'/assignments', 'POST', $assOptions);
+				error_log(print_r($api_result,true));
+			} catch(Exceptioni $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			}
+			
+			// successful call result
+			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+				$query ->$this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
+				$schoologyId = $api_result->result->id;
+				error_log('Id: ' . $schoologyId);
+				if($query->execute(array(':schoology_id' => "$schoologyId", ':sfid' => $newAss->data->sfid))) {
+					error_log('Success! Created Assignment ' . $newAss->data->assignment_title__c . ' with ID: ' . $api_result->result->id);
+					return true;
+				} else {
+					error_log('Could not create Assignment ' . $newAss->data->assignment_title__c);
+					throw new Exception('Could not create Assignment');
+			}
+			// https://app.schoology.com/system_settings/grades/periods/327641/435422
+
 		}
 		
 		public function updateAssignment($thisAss) {
