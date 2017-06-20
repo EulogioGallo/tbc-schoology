@@ -156,7 +156,12 @@
 			  throw new Exception('Invalid Course data');
 		  }
 		  
-		  $courseOptions = array("title" => $newCourse->data->name, "course_code" => $newCourse->data->schoology_course_code__c, "description" => $newCourse->data->description__c);
+		$courseOptions = array(
+			"title" => $newCourse->data->name, 
+			"course_code" => $newCourse->data->schoology_course_code__c, 
+			"description" => $newCourse->data->description__c
+		);
+		
 		  try {
 			$api_result = $this->schoology->api('/courses', 'POST', $courseOptions);
 			error_log(print_r($api_result,true));
@@ -188,7 +193,11 @@
 					throw new Exception('Invalid Course data');
 			  }
 			  
-			  $courseOptions = array("title" => $thisCourse->data->name, "course_code" => $thisCourse->data->schoology_course_code__c, "description" => $thisCourse->data->description__c);
+			$courseOptions = array(
+				"title" => $thisCourse->data->name, 
+				"course_code" => $thisCourse->data->schoology_course_code__c, 
+				"description" => $thisCourse->data->description__c
+			);
 			  
 			  try {
 				$api_result = $this->schoology->api('/courses/' . $thisCourse->data->schoology_id__c, 'PUT', $courseOptions);
@@ -232,6 +241,115 @@
 			  }
 		}
 	  
+		public function createAssignment($newAss) {
+			if(!$newAss) {
+				error_log('Error! Invalid data for creating assignment');
+				error_log(print_r($newAss,true));
+				throw new Exception('Invalid Assignment data');
+			}
+			
+			$assOptions = array(
+				"title" => $newAss->data->assignment_title__c,
+				"description" => $newAss->data->assignment_description__c,
+				"due" => $newAss->data->due_date__c,
+				//"grading_scale" => ,
+				"grading_period" => 435422,
+				//"grading_category" => ,
+				//"allow_dropbox" => ,
+				"published" => $newAss->data->publish__c,
+				"type" => "assignment",
+				"course_fid" => 83398284,
+				//"assignees" => 
+			);
+			
+			error_log(print_r($newAss));
+			
+			try {
+				$api_result = $this->schoology->api('/sections/'.$newAss->data->schoology_course_id__c.'/assignments', 'POST', $assOptions);
+				error_log(print_r($api_result,true));
+			} catch(Exceptioni $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			}
+			
+			// successful call result
+			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+				$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE, schoology_id__c = :schoology_id WHERE sfid = :sfid");
+				$schoologyId = $api_result->result->id;
+				error_log('Id: ' . $schoologyId);
+				if($query->execute(array(':schoology_id' => "$schoologyId", ':sfid' => $newAss->data->sfid))) {
+					error_log('Success! Created Assignment ' . $newAss->data->assignment_title__c . ' with ID: ' . $api_result->result->id);
+					return true;
+				} else {
+					error_log('Could not create Assignment ' . $newAss->data->assignment_title__c);
+					throw new Exception('Could not create Assignment');
+				}
+			}
+		}
+		
+		public function updateAssignment($thisAss) {
+			if(!$thisAss) {
+				error_log('Error! Invalid data for updating assignment');
+				error_log(print_r($thisAss,true));
+				throw new Exception('Invalid Assignment data');
+			}
+			
+			$assOptions = array(
+				"title" => $thisAss->data->assignment_title__c,
+				"description" => $thisAss->data->assignment_description__c,
+				"due" => $thisAss->data->due_date__c,
+				//"grading_scale" => ,
+				"grading_period" => 435422,
+				//"grading_category" => ,
+				//"allow_dropbox" => ,
+				"published" => $thisAss->data->publish__c,
+				"type" => "assignment",
+				"course_fid" => 83398284,				
+				//"assignees" => 
+			);
+			
+			try {
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/assignments/'.$thisAss->data->schoology_id__c, 'PUT', $assOptions);
+				error_log(print_r($api_result,true));
+			} catch(Exception $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			}
+			
+			// successful call result
+			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+				$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
+				if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
+					error_log('Success! Updated Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->id);
+					return true;
+				} else {
+					error_log('Could not update Assignment ' . $thisAss->data->assignment_title__c);
+					throw new Exception('Could not update Assignment');
+				}
+			}
+		}
+		
+		public function deleteAssignment($thisAss) {
+			if(!$thisAss) {
+				error_log('Error! Invalid data for deleting Assignment');
+				error_log(print_r($thisAss,true));
+				throw new Exception('Invalid Assignment data');
+			}
+			
+			try {
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/assignments/'.$thisAss->data->schoology_id__c, 'DELETE');
+				error_log(print_r($api_result,true));
+			} catch(Exception $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			}
+			
+			// successful call result
+			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+				error_log('Success! Deleted Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' .$thisAss->data->schoology_id__c);
+			}
+		}
+		
 		public function updateAssignmentSubmission($thisAss) {
 			return null;
 		}

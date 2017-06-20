@@ -15,16 +15,22 @@ switch($object_result->action) {
 	case 'INSERT':
 		if($object_result->table == 'ram_cohort__c') {
 			$SchoologyApi->createCourse($object_result);
+		} else if($object_result->table == 'ram_assignment_master__c') {
+			$SchoologyApi->createAssignment($object_result);
 		}
 		break;
 	case 'UPDATE':
 		if($object_result->table == 'ram_cohort__c') {
 			$SchoologyApi->updateCourse($object_result);
+		} else if($object_result->table == 'ram_assignment_master__c') {
+			$SchoologyApi->updateAssignment($object_result);
 		}
 		break;
 	case 'DELETE':
 		if($object_result->table == 'ram_cohort__c') {
 			$SchoologyApi->deleteCourse($object_result);
+		} else if($object_result->table == 'ram_assignment_master__c') {
+			$SchoologyApi->deleteAssignment($object_result);
 		}
 		break;
 	default: // this means that Schoology is sending back info
