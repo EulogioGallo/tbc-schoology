@@ -32,6 +32,8 @@ switch($object_result->action) {
 			$SchoologyApi->updateAssignmentSubmission($object_result->data);
 		}
 		break;
+
+		error_log("Hey!");
 }
 
 
