@@ -351,6 +351,7 @@
 		}
 		
 		public function updateAssignmentSubmission($thisAss) {
+			error_log("Hi Edgar!");
 			return null;
 		}
 	}
