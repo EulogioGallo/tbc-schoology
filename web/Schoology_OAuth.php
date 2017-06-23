@@ -148,7 +148,16 @@
 			}
 		}
 		
-		// DB Update functions
+		/**
+		 * Creates a Schoology Course
+		 *
+		 * @param JSON   $newCourse Salesforce Cohort 
+		 * 
+		 * @throws "Invalid Course Data" If $newCourse is invalid
+		 * @throws "Exception When Making API Call" If API call is unsuccessful
+		 * @author Eulogio Gallo <egallo@broadcenter.org>
+		 * @return
+		 */ 
 		public function createCourse($newCourse) {
 		  if(!$newCourse) {
 			  error_log('Error! Invalid data for creating course');
@@ -186,6 +195,16 @@
 		  
 		}
 		  
+		 /**
+		 * Updates a Schoology Course
+		 *
+		 * @param JSON   $thisCourse Salesforce Cohort 
+		 * 
+		 * @throws "Invalid Course Data" If $thisCourse is invalid
+		 * @throws "Exception When Making API Call" If API call is unsuccessful
+		 * @author Eulogio Gallo <egallo@broadcenter.org>
+		 * @return
+		 */ 
 		public function updateCourse($thisCourse) {
 			  if(!$thisCourse) {
 					error_log('Error! Invalid data for updating course');
@@ -220,6 +239,16 @@
 			  }
 		}
 		  
+		 /**
+		 * Deletes a Schoology Course
+		 *
+		 * @param JSON   $thisCourse Salesforce Cohort
+		 * 
+		 * @throws "Invalid Course Data" If $thisCourse is invalid
+		 * @throws "Exception When Making API Call" If API call is unsuccessful
+		 * @author Eulogio Gallo <egallo@broadcenter.org>
+		 * @return
+		 */ 
 		public function deleteCourse($thisCourse) {
 			if(!$thisCourse) {
 					error_log('Error! Invalid data for deleting course');
@@ -241,6 +270,16 @@
 			  }
 		}
 	  
+		/**
+		 * Creates a Schoology Assignment
+		 *
+		 * @param JSON   $newAss Salesforce Assignment 
+		 * 
+		 * @throws "Invalid Assignment Data" If $newAss is invalid
+		 * @throws "Exception When Making API Call" If API call is unsuccessful
+		 * @author Eulogio Gallo <egallo@broadcenter.org>
+		 * @return
+		 */ 
 		public function createAssignment($newAss) {
 			if(!$newAss) {
 				error_log('Error! Invalid data for creating assignment');
@@ -287,6 +326,16 @@
 			}
 		}
 		
+		/**
+		 * Updates a Schoology Assignment
+		 *
+		 * @param JSON   $thisAss Salesforce Assignment 
+		 * 
+		 * @throws "Invalid Assignment Data" If $thisAss is invalid
+		 * @throws "Exception When Making API Call" If API call is unsuccessful
+		 * @author Eulogio Gallo <egallo@broadcenter.org>
+		 * @return
+		 */ 
 		public function updateAssignment($thisAss) {
 			if(!$thisAss) {
 				error_log('Error! Invalid data for updating assignment');
@@ -299,12 +348,12 @@
 				"description" => $thisAss->data->assignment_description__c,
 				"due" => $thisAss->data->due_date__c,
 				//"grading_scale" => ,
-				"grading_period" => 435422,
+				"grading_period" => 435422, // static for now, need to pass this from SF
 				//"grading_category" => ,
 				//"allow_dropbox" => ,
 				"published" => $thisAss->data->publish__c,
 				"type" => "assignment",
-				"course_fid" => 83398284,				
+				"course_fid" => 83398284, // static for now, need to pass this from SF		
 				//"assignees" => 
 			);
 			
@@ -329,6 +378,16 @@
 			}
 		}
 		
+		/**
+		 * Deletes a Schoology Assignment
+		 *
+		 * @param JSON   $thisAss Salesforce Assignment 
+		 * 
+		 * @throws "Invalid Assignment Data" If $thisAss is invalid
+		 * @throws "Exception When Making API Call" If API call is unsuccessful
+		 * @author Eulogio Gallo <egallo@broadcenter.org>
+		 * @return
+		 */ 
 		public function deleteAssignment($thisAss) {
 			if(!$thisAss) {
 				error_log('Error! Invalid data for deleting Assignment');
@@ -350,7 +409,32 @@
 			}
 		}
 		
-		public function updateAssignmentSubmission($thisAss) {
+		/**
+		 * Retrieves an Assignment submission from Schoology
+		 *
+		 * @param JSON   $thisAss Schoology Assignment
+		 * 
+		 * @throws "Invalid Assignment Data" If $thisAss is invalid
+		 * @throws "Exception When Making API Call" If API call is unsuccessful
+		 * @author Edgar Lopez <elopez@broadcenter.org>
+		 * @return
+		 */ 
+		public function getAssignmentSubmission($thisAss) {
+			error_log("Hi Edgar!");
+			return null;
+		}
+		
+		/**
+		 * Creates a Schoology Grade from a grades Salesforce Assignment
+		 *
+		 * @param JSON   $thisAss Salesforce Assignment 
+		 * 
+		 * @throws "Invalid Assignment Data" If $thisAss is invalid
+		 * @throws "Exception When Making API Call" If API call is unsuccessful
+		 * @author Edgar Lopez <elopez@broadcenter.org>
+		 * @return
+		 */ 
+		public function gradeAssignment($thisAss) {
 			error_log("Hi Edgar!");
 			return null;
 		}
