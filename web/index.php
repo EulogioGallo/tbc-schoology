@@ -6,7 +6,7 @@
  // establish connection
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
-$object_result = json_decode(file_get_contents("php://input"));
+$object_result = json_decode(file_get_contents("php://input"));	
 error_log(print_r($object_result,true));
 error_log(print_r($object_result->action,true));
 
