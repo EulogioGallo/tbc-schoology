@@ -6,8 +6,7 @@
 	
 	// Storage class
 	class SchoologyStorage implements SchoologyApi_OauthStorage {
-	  //private $db; SHOULD REMAIN PRIVATE
-	  public $db;
+	  private $db;
 	  private $dbHost = 'host=ec2-54-83-26-65.compute-1.amazonaws.com';
 	  private $dbName = 'dbname=df6v2am65gvvil';
 	  private $dbUser = 'dsskzsufyjspyz';
@@ -25,6 +24,9 @@
 		}
 	  } 
 	 
+	 public function getDB() {
+		 return $this->db;
+	 }
 	 
 	  public function getAccessTokens($uid) {
 		$query = $this->db->prepare("SELECT * FROM oauth_tokens WHERE uid = :uid AND token_is_access = TRUE LIMIT 1");
