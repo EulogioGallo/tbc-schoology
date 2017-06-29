@@ -165,11 +165,11 @@
 			  throw new Exception('Invalid Course data');
 		  }
 		  
-		$courseOptions = array(
+			$courseOptions = array(
 			"title" => $newCourse->data->name, 
 			"course_code" => $newCourse->data->schoology_course_code__c, 
 			"description" => $newCourse->data->description__c
-		);
+			);
 		
 		  try {
 			$api_result = $this->schoology->api('/courses', 'POST', $courseOptions);
@@ -212,14 +212,14 @@
 					throw new Exception('Invalid Course data');
 			  }
 			  
-			$courseOptions = array(
+				$courseOptions = array(
 				"title" => $thisCourse->data->name, 
 				"course_code" => $thisCourse->data->schoology_course_code__c, 
 				"description" => $thisCourse->data->description__c
-			);
+				);
 			  
-			  try {
-				$api_result = $this->schoology->api('/courses/' . $thisCourse->data->schoology_id__c, 'PUT', $courseOptions);
+			 try {
+			 	$api_result = $this->schoology->api('/courses/' . $thisCourse->data->schoology_id__c, 'PUT', $courseOptions);
 				error_log(print_r($api_result,true));
 			  } catch(Exception $e) {
 				  error_log('Exception when making API call');
@@ -420,57 +420,32 @@
 		 * @return
 		 */ 
 		public function getAssignmentSubmission($thisAss) {
-			//parse the assignment's raw data
-			//parse the assignment id
-			//parse the user id
-			if(!$thisAss) {
-				error_log('Error! Invalid data for Assignment Submission');
+			error_log('getAssignmentSubmission');
+			return null;
+			/*if(!$thisAss) {
+				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
-				throw new Exception('Invalid Assignment Submission data');
+				throw new Exception('Invalid data for Retrieving Submission');
 			}
 			$subOptions = array(
-			"assignment_id" => $thisAss->data->assignment_nid,
-			"user_id" => $thisAss->data->uid,
-			"submission_info" => $thisAss->data->object->attachments->
-							files->file->442689908->converted_download_path, //figure out how to get key value and why is files purple
-			"submission_title" => $thisAss->data->object->attachments->
-							files->file->442689908->title,
-			); 
+			"body" => /*$thisAss->data->object->attachments-> files->file->442689908->converted_download_path*/ 
+			//figure out how to get key value and why is //files purple
+		//	); */
 
-			try {
-				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'.$thisAss->data->assignment_nid.'/submission_info/', 'GET');
+		/*	try {
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'./*$thisAss->data->assignment_nid.'/submission_info/'*//*, 'GET', $subOptions);
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
 				error_log($e->getMessage());
-			}
-			
-			// successful call result
+			  }*/
+//*/			
+		/*	// successful call result
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-				error_log('Success! Assignment Submitted');
-			}
+				//error_log('Success! Assignment Submitted');
+			}*/
+
 		}
-
-		$mySforceConnection = new /app/schoology_php_sdk-master/SchoologyApi.class.php();
-		$mySoapClient = $mySforceConnection->createConnection("tbc_wsdl.xml");
-		$mylogin = $mySforceConnection->login("elopez@broadcenter.dev.ram", "********");
-		
-        $AssFields = array(
-            'Body' => base64_encode($subOptions[submission_info]),
-            'ContentType' => $contentType,
-            'Name' => $subOptions[submission_title],
-            'Description' => /*revision number*/
-            'ParentID' => $subOptions[assignment_id],
-            'IsPrivate' => 'false'
-
-        );
-        $sObject = new Assignment();
-        $sObject->fields = $AssFields;
-        $sObject->type = 'Attachment';
-
-        echo "Creating Attachment";
-        $upsertResponse = $this->SFConnection->create(array($sObject));
-        print_r($upsertResponse);
 		
 		/**
 		 * Creates a Schoology Grade from a grades Salesforce Assignment
@@ -483,14 +458,35 @@
 		 * @return
 		 */ 
 		public function gradeAssignment($thisAss) {
-
-			error_log("Hi Edgar!");
+			error_log('gradeAssignment');
 			return null;
-		//salesforce to gradescope
-	   //gradescope needs to set up a grade record and other fields 
+
+		/*	if(!$thisAss) {
+				error_log('Error! Invalid data for grading assignment');
+				error_log(print_r($thisAss,true));
+				throw new Exception('Invalid Assignment data');
+			}
+*/
+		/*	//schology grade object members and coressponding salesforce object fields
+			$gradeOptions = array(
+				"enrollment_id" => $thisAss->data->assignment_title__c,
+				"assignment_id" => /*$thisAss->data->assignment_description__c,
+				"grade" => /*$thisAss->data->due_date__c
+		//	);*//*/
+
+			/*try {
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','PUT', $assOptions);
+				error_log(print_r($api_result,true));
+			} catch(Exception $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			}
+
+			//successful call result
+			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+			}*/
+			
 		}
+
 	}
-
-//create try functions
-
 ?>
