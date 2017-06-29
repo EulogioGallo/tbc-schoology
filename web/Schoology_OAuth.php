@@ -422,28 +422,54 @@
 		public function getAssignmentSubmission($thisAss) {
 			error_log('getAssignmentSubmission');
 			return null;
-			/*if(!$thisAss) {
+
+		/*
+			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
 				throw new Exception('Invalid data for Retrieving Submission');
 			}
-			$subOptions = array(
-			"body" => /*$thisAss->data->object->attachments-> files->file->442689908->converted_download_path*/ 
-			//figure out how to get key value and why is //files purple
-		//	); */
 
-		/*	try {
-				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'./*$thisAss->data->assignment_nid.'/submission_info/'*//*, 'GET', $subOptions);
+			$subOptions = array(
+			"body" => $thisAss->data->object->attachments-> files->file->442689908->converted_download_path
+			//figure out how to get key value and why is files purple
+			); 
+
+			try {
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'.$thisAss->data->assignment_nid.'/submission_info/', 'GET', $subOptions);
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
 				error_log($e->getMessage());
-			  }*/
-//*/			
-		/*	// successful call result
+			  }
+
+			// successful call result
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-				//error_log('Success! Assignment Submitted');
-			}*/
+				error_log('Success! Assignment Submitted');
+			}
+
+        
+       		 //variable holding attachementBody and attachmentName
+				//$attachmentBody = $subOptions["body"];
+				//$attachmentName = something;
+	
+			
+      		  $AttachFields = array(
+        	    'Body' => base64_encode($attachmentBody),
+           		//    'ContentType' => $contentType,
+          		'Name' => $attachmentName,
+          		'ParentID' => // ,
+           		'IsPrivate' => 'false'
+           		 );
+
+        $sObject = new stdclass();
+        $sObject->fields = $createFields;
+        $sObject->type = 'Attachment';
+
+        echo "Creating Attachment";
+        $upsertResponse = $this->SFConnection->create(array($sObject));
+        print_r($upsertResponse);
+    */
 
 		}
 		
