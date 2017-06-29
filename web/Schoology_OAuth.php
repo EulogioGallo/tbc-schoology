@@ -419,11 +419,10 @@
 		 * @author Edgar Lopez <elopez@broadcenter.org>
 		 * @return
 		 */ 
+
 		public function getAssignmentSubmission($thisAss) {
 			error_log('getAssignmentSubmission');
-			return null;
 
-		/*
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
@@ -431,10 +430,15 @@
 			}
 
 			$subOptions = array(
-			"body" => $thisAss->data->object->attachments-> files->file->442689908->converted_download_path
+			"body" =>$thisAss->data->object->attachments->files->file->id->converted_download_path
 			//figure out how to get key value and why is files purple
 			); 
 
+			printf($subOptions["body"]);
+			
+			return null;
+
+		/*
 			try {
 				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'.$thisAss->data->assignment_nid.'/submission_info/', 'GET', $subOptions);
 				error_log(print_r($api_result,true));
@@ -462,15 +466,14 @@
            		'IsPrivate' => 'false'
            		 );
 
-        $sObject = new stdclass();
-        $sObject->fields = $createFields;
-        $sObject->type = 'Attachment';
+        	$sObject = new stdclass();
+        	$sObject->fields = $createFields;
+        	$sObject->type = 'Attachment';
 
-        echo "Creating Attachment";
-        $upsertResponse = $this->SFConnection->create(array($sObject));
-        print_r($upsertResponse);
-    */
-
+        	echo "Creating Attachment";
+        	$upsertResponse = $this->SFConnection->create(array($sObject));
+        	print_r($upsertResponse);
+    	*/
 		}
 		
 		/**
