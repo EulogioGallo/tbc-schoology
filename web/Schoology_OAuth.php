@@ -431,7 +431,7 @@
 
 			$subArray = array("body" => $thisAss->data->object->attachments->files->file);
 			$subKeys = array_keys($subArray);
-			$subOptions = $subArray[$subKeys[0] = $subKeys[0][0]->converted_download_path; 
+			$subOptions = $subArray[$subKeys[0]] = $subKeys[0][0]->converted_download_path; 
 
 			error_log(print_r($subOptions["body"],true));
 
