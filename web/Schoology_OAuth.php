@@ -433,6 +433,8 @@
 			$keys = array_keys($myArray);
 			$option = $myArray[$keys[0][0]];
 			error_log($option);
+			error_log($thisAss->uid);
+			error_log($thisAss->data->uid);
 
 
 			$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
