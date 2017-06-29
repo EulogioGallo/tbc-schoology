@@ -429,6 +429,12 @@
 				throw new Exception('Invalid data for Retrieving Submission');
 			}
 
+
+
+			$resAss = json_decode($thisAss);
+			error_log($resAss->data->assignment_nid);
+
+			/*
 			$myArray = array("path" => $thisAss->data->object->attachments->files->file);
 			$keys = array_keys($myArray);
 			$option = $myArray[$keys[0][0]];
@@ -448,7 +454,7 @@
 
 			$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
 			error_log(print_r($subOptions["body"],true));
-			
+			*/
 
 			return null;
 
