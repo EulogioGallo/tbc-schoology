@@ -429,10 +429,9 @@
 				throw new Exception('Invalid data for Retrieving Submission');
 			}
 
-			$subOptions = array(
-			"body" =>$thisAss->data->object->attachments->files->file->id->converted_download_path
-			//figure out how to get key value and why is files purple
-			); 
+			$subArray = array("body" => $thisAss->data->object->attachments->files->file);
+			$subKeys = array_keys($subArray);
+			$subOptions = $subArray[$subKeys[0] = $subKeys[0][0]->converted_download_path; 
 
 			error_log(print_r($subOptions["body"],true));
 
