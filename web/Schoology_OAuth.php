@@ -421,7 +421,7 @@
 		 */ 
 
 		public function getAssignmentSubmission($thisAss) {
-			error_log('getAssignmentSubmission');
+			error_log('getAssignmentSubmission',true);
 
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
@@ -429,12 +429,8 @@
 				throw new Exception('Invalid data for Retrieving Submission');
 			}
 
-			$subArray = array("body" => $thisAss->data->object->attachments->files->file);
-			$subKeys = array_keys($subArray);
-			$subOptions = $subArray[$subKeys[0]] = $subKeys[0][0]->converted_download_path; 
-
+			$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
 			error_log(print_r($subOptions["body"],true));
-
 			return null;
 
 		/*
@@ -505,7 +501,7 @@
 				"grade" => $thisAss->data->due_date__c
 			);
 
-			printf($gradeOptions["grade"]);
+		//	printf($gradeOptions["grade"]);
 
 			/*
 			try {
