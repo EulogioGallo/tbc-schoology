@@ -438,7 +438,7 @@
 			//error_log($thisAss->data[1]);
 			error_log($option);
 			error_log($thisAss->uid);
-			error_log($thisAss->data.assignment_nid;
+			error_log($thisAss->data.assignment_nid);
 			error_log($thisAss->data[1]);
 
 
