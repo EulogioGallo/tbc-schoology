@@ -440,6 +440,10 @@
 			error_log($thisAss->uid);
 			error_log($thisAss->data.assignment_nid);
 			error_log($thisAss->data[1]);
+			$insider = $thisAss->data;
+			error_log($insider->assignment_nid);
+
+
 
 
 			$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
