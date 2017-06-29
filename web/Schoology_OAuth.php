@@ -431,7 +431,7 @@
 
 
 
-			$resAss = json_decode($thisAss);
+			$resAss = json_encode($thisAss);
 			error_log($resAss->data->assignment_nid);
 
 			/*
