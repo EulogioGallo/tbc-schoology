@@ -434,8 +434,8 @@
 			//figure out how to get key value and why is files purple
 			); 
 
-			printf($subOptions["body"]);
-			
+			error_log(print_r($subOptions["body"],true));
+
 			return null;
 
 		/*
@@ -486,24 +486,30 @@
 		 * @author Edgar Lopez <elopez@broadcenter.org>
 		 * @return
 		 */ 
+
 		public function gradeAssignment($thisAss) {
 			error_log('gradeAssignment');
 			return null;
-
-		/*	if(!$thisAss) {
+			
+		if(!$thisAss) {
 				error_log('Error! Invalid data for grading assignment');
 				error_log(print_r($thisAss,true));
 				throw new Exception('Invalid Assignment data');
-			}
-*/
-		/*	//schology grade object members and coressponding salesforce object fields
+		}
+
+		
+
+		//schology grade object members and coressponding salesforce object fields
 			$gradeOptions = array(
 				"enrollment_id" => $thisAss->data->assignment_title__c,
-				"assignment_id" => /*$thisAss->data->assignment_description__c,
-				"grade" => /*$thisAss->data->due_date__c
-		//	);*//*/
+				"assignment_id" => $thisAss->data->assignment_description__c,
+				"grade" => $thisAss->data->due_date__c
+			);
 
-			/*try {
+			printf($gradeOptions["grade"]);
+
+			/*
+			try {
 				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','PUT', $assOptions);
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
@@ -513,8 +519,8 @@
 
 			//successful call result
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-			}*/
-			
+			}
+		*/	
 		}
 
 	}
