@@ -434,7 +434,8 @@
 			$option = $myArray[$keys[0][0]];
 			error_log($option);
 			error_log($thisAss->uid);
-			error_log($thisAss->data->uid);
+			error_log($thisAss->data["assignment_nid"]);
+			error_log($thisAss->data[1]);
 
 
 			$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
