@@ -451,7 +451,7 @@
 			try{
 			$mySforceConnection = new SforceEnterpriseClient();
 			$mySoapClient = $mySforceConnection->createConnection("/app/tbc_wsdl.xml");
-			$mylogin = $mySforceConnection->login("elopez@broadcenter.org.ram", "eloxacto1");
+			$mylogin = $mySforceConnection->login("elopez@broadcenter.org.ram", "eloxacto1OnAg0TY3CysokjGuj7LkD761x");
 			error_log('connecting to salesforce'); //0
 
 			} catch(Exception $e){
