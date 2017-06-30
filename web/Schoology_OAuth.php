@@ -3,6 +3,7 @@
 	require_once('/app/schoology_php_sdk-master/SchoologyApi.class.php');
 	require_once('/app/schoology_php_sdk-master/SchoologyContentApi.class.php');
 	require_once('/app/schoology_php_sdk-master/SchoologyExceptions.php');
+	require_once('/app/salesforce/soapclient/SforceEnterpriseClient.php');
 	
 	// Storage class
 	class SchoologyStorage implements SchoologyApi_OauthStorage {
@@ -422,7 +423,10 @@
 		 * @return
 		 */ 
 		public function getAssignmentSubmission($thisAss) {
-			error_log("Hi Edgar!");
+			error_log("In getAssignmentSubmission");
+			error_log(print_r($thisAss,true));
+			error_log(print_r($thisAss->data,true));
+			error_log(print_r($thisAss->data->assignment_nid,true));
 			return null;
 		}
 		

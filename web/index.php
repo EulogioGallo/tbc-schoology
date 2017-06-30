@@ -35,7 +35,7 @@ switch($object_result->action) {
 		break;
 	default: // this means that Schoology is sending back info
 		if(strpos($object_result->type, 'dropbox_submission') !== false) {
-			$SchoologyApi->updateAssignmentSubmission($object_result->data);
+			$SchoologyApi->getAssignmentSubmission($object_result->data);
 		}
 		break;
 }
