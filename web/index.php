@@ -38,6 +38,8 @@ switch($object_result->action) {
 			$SchoologyApi->getAssignmentSubmission($object_result->data);
 		}
 		break;
+
+		error_log("Hey!");
 }
 
 

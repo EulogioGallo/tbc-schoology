@@ -7,7 +7,8 @@
 	
 	// Storage class
 	class SchoologyStorage implements SchoologyApi_OauthStorage {
-	  private $db;
+	  //private $db; SHOULD REMAIN PRIVATE
+	  public $db;
 	  private $dbHost = 'host=ec2-54-83-26-65.compute-1.amazonaws.com';
 	  private $dbName = 'dbname=df6v2am65gvvil';
 	  private $dbUser = 'dsskzsufyjspyz';
@@ -25,9 +26,6 @@
 		}
 	  } 
 	 
-	 public function getDB() {
-		 return $this->db;
-	 }
 	 
 	  public function getAccessTokens($uid) {
 		$query = $this->db->prepare("SELECT * FROM oauth_tokens WHERE uid = :uid AND token_is_access = TRUE LIMIT 1");
@@ -168,11 +166,11 @@
 			  throw new Exception('Invalid Course data');
 		  }
 		  
-		$courseOptions = array(
+			$courseOptions = array(
 			"title" => $newCourse->data->name, 
 			"course_code" => $newCourse->data->schoology_course_code__c, 
 			"description" => $newCourse->data->description__c
-		);
+			);
 		
 		  try {
 			$api_result = $this->schoology->api('/courses', 'POST', $courseOptions);
@@ -215,14 +213,14 @@
 					throw new Exception('Invalid Course data');
 			  }
 			  
-			$courseOptions = array(
+				$courseOptions = array(
 				"title" => $thisCourse->data->name, 
 				"course_code" => $thisCourse->data->schoology_course_code__c, 
 				"description" => $thisCourse->data->description__c
-			);
+				);
 			  
-			  try {
-				$api_result = $this->schoology->api('/courses/' . $thisCourse->data->schoology_id__c, 'PUT', $courseOptions);
+			 try {
+			 	$api_result = $this->schoology->api('/courses/' . $thisCourse->data->schoology_id__c, 'PUT', $courseOptions);
 				error_log(print_r($api_result,true));
 			  } catch(Exception $e) {
 				  error_log('Exception when making API call');
@@ -422,12 +420,88 @@
 		 * @author Edgar Lopez <elopez@broadcenter.org>
 		 * @return
 		 */ 
+
 		public function getAssignmentSubmission($thisAss) {
+<<<<<<< HEAD
 			error_log("In getAssignmentSubmission");
 			error_log(print_r($thisAss,true));
 			error_log(print_r($thisAss->data,true));
 			error_log(print_r($thisAss->data->assignment_nid,true));
+=======
+			error_log('getAssignmentSubmission');
+
+			if(!$thisAss) {
+				error_log('Error! Invalid data for Retrieving Assignment Submission');
+				error_log(print_r($thisAss,true));
+				throw new Exception('Invalid data for Retrieving Submission');
+			}
+
+
+
+			$resAss = json_decode(json_encode($thisAss),true);
+			error_log($resAss->data->assignment_nid);
+
+			/*
+			$myArray = array("path" => $thisAss->data->object->attachments->files->file);
+			$keys = array_keys($myArray);
+			$option = $myArray[$keys[0][0]];
+			//error_log($option);
+			//error_log($thisAss->uid);
+			error_log($thisAss->data[assignment_nid]);
+			//error_log($thisAss->data[1]);
+			error_log($option);
+			error_log($thisAss->uid);
+			error_log($thisAss->data.assignment_nid);
+			error_log($thisAss->data[1]);
+			$insider = $thisAss->data;
+			error_log($insider->assignment_nid);
+
+
+
+
+			$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
+			error_log(print_r($subOptions["body"],true));
+			*/
+
+>>>>>>> 691578ac5ac0e9458c208c5a175b29642e61d11e
 			return null;
+
+		/*
+			try {
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'.$thisAss->data->assignment_nid.'/submission_info/', 'GET', $subOptions);
+				error_log(print_r($api_result,true));
+			} catch(Exception $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			  }
+
+			// successful call result
+			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+				error_log('Success! Assignment Submitted');
+			}
+
+        
+       		 //variable holding attachementBody and attachmentName
+				//$attachmentBody = $subOptions["body"];
+				//$attachmentName = something;
+	
+			
+      		  $AttachFields = array(
+        	    'Body' => base64_encode($attachmentBody),
+           		//    'ContentType' => $contentType,
+          		'Name' => $attachmentName,
+          		'ParentID' => // ,
+           		'IsPrivate' => 'false'
+           		 );
+
+        	$sObject = new stdclass();
+        	$sObject->fields = $createFields;
+        	$sObject->type = 'Attachment';
+
+        	echo "Creating Attachment";
+        	$upsertResponse = $this->SFConnection->create(array($sObject));
+        	print_r($upsertResponse);
+    	*/
 		}
 		
 		/**
@@ -440,10 +514,42 @@
 		 * @author Edgar Lopez <elopez@broadcenter.org>
 		 * @return
 		 */ 
-		public function gradeAssignment($thisAss) {
-			error_log("Hi Edgar!");
-			return null;
-		}
-	}
 
+		public function gradeAssignment($thisAss) {
+			error_log('gradeAssignment');
+			return null;
+			
+		if(!$thisAss) {
+				error_log('Error! Invalid data for grading assignment');
+				error_log(print_r($thisAss,true));
+				throw new Exception('Invalid Assignment data');
+		}
+
+		
+
+		//schology grade object members and coressponding salesforce object fields
+			$gradeOptions = array(
+				"enrollment_id" => $thisAss->data->assignment_title__c,
+				"assignment_id" => $thisAss->data->assignment_description__c,
+				"grade" => $thisAss->data->due_date__c
+			);
+
+		//	printf($gradeOptions["grade"]);
+
+			/*
+			try {
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','PUT', $assOptions);
+				error_log(print_r($api_result,true));
+			} catch(Exception $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			}
+
+			//successful call result
+			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+			}
+		*/	
+		}
+
+	}
 ?>
