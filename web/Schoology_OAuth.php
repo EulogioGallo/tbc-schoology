@@ -425,7 +425,7 @@
 			error_log("In getAssignmentSubmission");
 			error_log(print_r($thisAss,true));
 			error_log(print_r($thisAss->object,true));
-			error_log(print_r($thisAss->data->object->attachments->files->file,true));
+			error_log(print_r($thisAss->object->attachments->files->file,true));
 
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
