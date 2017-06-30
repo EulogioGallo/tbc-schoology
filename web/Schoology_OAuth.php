@@ -3,6 +3,7 @@
 	require_once('/app/schoology_php_sdk-master/SchoologyApi.class.php');
 	require_once('/app/schoology_php_sdk-master/SchoologyContentApi.class.php');
 	require_once('/app/schoology_php_sdk-master/SchoologyExceptions.php');
+	require_once('/app/salesforce/soapclient/SforceEnterpriseClient.php');
 	
 	// Storage class
 	class SchoologyStorage implements SchoologyApi_OauthStorage {
@@ -420,7 +421,13 @@
 		 */ 
 
 		public function getAssignmentSubmission($thisAss) {
-			error_log('getAssignmentSubmission');
+			error_log("In getAssignmentSubmission");
+			error_log(print_r(reset($thisAss->object->attachments->files->file)->converted_download_path,true));
+			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
+			error_log(print_r($downloadPath,true));
+			//$keys = array_keys($thisAss->object->attachments->files->file);
+			//error_log(print_r($keys,true));
+			//error_log(print_r($thisAss->object->attachments->files->file[$keys[0]],true));
 
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
@@ -454,6 +461,25 @@
 		    }
 		    error_log(print_r($newf,true));    //nada
 		    error_log(print_r($newfname,true)); //zip
+
+			//$resAss = json_decode(json_encode($thisAss),true);
+			//error_log($resAss->data->assignment_nid);
+
+			/*
+			$myArray = array("path" => $thisAss->data->object->attachments->files->file);
+			$keys = array_keys($myArray);
+			$option = $myArray[$keys[0][0]];
+			//error_log($option);
+			//error_log($thisAss->uid);
+			error_log($thisAss->data[assignment_nid]);
+			//error_log($thisAss->data[1]);
+			error_log($option);
+			error_log($thisAss->uid);
+			error_log($thisAss->data.assignment_nid);
+			error_log($thisAss->data[1]);
+			$insider = $thisAss->data;
+			error_log($insider->assignment_nid);
+>>>>>>> a002ab273cc21cab420ad888b947538287cec167
 
 
 		    //Log into Salesforce
