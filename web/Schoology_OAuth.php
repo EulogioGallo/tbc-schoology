@@ -430,14 +430,13 @@
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
 			error_log(print_r($downloadPath,true));
-			error_log("Test #1");
+			echo"Test #1";
 			
-			$subOptions = array("body" => $downloadPath);			
-
+			$subOptions = array("body" => $downloadPath); //Is creating an array necessary?			
 			try {
 				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'.$thisAss->data->assignment_nid.'/submission_info/', 'GET', $subOptions);
 				error_log(print_r($api_result,true));
-				error_log("Test #2");
+				echo "Test #2";
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
 				error_log($e->getMessage());
@@ -445,7 +444,7 @@
 
 			// successful call result
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-				error_log('Success! Assignment Submitted');
+				echo "Success! Assignment Submitted".$subOptions;
 			}
 
         /*
