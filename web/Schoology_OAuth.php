@@ -443,56 +443,9 @@
 			error_log("Test #1");                               //not being output
 
 			//Grab submission
-			//$attachmentBody = gzdecode(file_get_contents($downloadPath));
+			$attachmentBody = file_get_contents($downloadPath);
 
-			$ch = curl_init();
-			curl_setopt ($ch, CURLOPT_URL, $downloadPath);
-			curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt ($ch, CURLOPT_ENCODING , 'gzip');
-			$content = curl_exec ($ch);
-
-			error_log(print_r($content.'curl method',true));
-
-		   	/*
-		   	$newfname = ""; //empty string
-		    $file = fopen ($downloadPath, 'rb');
-		    if ($file) {
-		        $newf = fopen ($newfname, 'wb');
-		        if ($newf) {
-		            while(!feof($file)) {
-		                fwrite($newf, fread($file, 1024 * 8), 1024 * 8);
-		            }
-		        }
-		    }
-		    if ($file) {
-		        fclose($file);
-		    }
-		    if ($newf) {
-		        fclose($newf);
-		    }
-		    error_log(print_r($newf,true));    //nada
-		    error_log(print_r($newfname,true)); //zip
-		    */
-
-			//$resAss = json_decode(json_encode($thisAss),true);
-			//error_log($resAss->data->assignment_nid);
-
-			/*
-			$myArray = array("path" => $thisAss->data->object->attachments->files->file);
-			$keys = array_keys($myArray);
-			$option = $myArray[$keys[0][0]];
-			//error_log($option);
-			//error_log($thisAss->uid);
-			error_log($thisAss->data[assignment_nid]);
-			//error_log($thisAss->data[1]);
-			error_log($option);
-			error_log($thisAss->uid);
-			error_log($thisAss->data.assignment_nid);
-			error_log($thisAss->data[1]);
-			$insider = $thisAss->data;
-			error_log($insider->assignment_nid);
->>>>>>> a002ab273cc21cab420ad888b947538287cec167
-
+			error_log(print_r($attachmentBody,true));
 
 		    //Log into Salesforce
 		    require_once ('soapclient/SforceEnterpriseClient.php'); //are the needed files for the connection present?
