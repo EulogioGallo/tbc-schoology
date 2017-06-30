@@ -429,9 +429,30 @@
 			}
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
+			$attachmentName = reset($thisAss->object->attachments->files->file)->id;
+			error_log(print_r($attachmentName,true));
 			error_log(print_r($downloadPath,true));
 			echo"Test #1";
 			
+   $newfname = "Submission";
+    $file = fopen ($downloadPath, 'rb');
+    if ($file) {
+        $newf = fopen ($newfname, 'wb');
+        if ($newf) {
+            while(!feof($file)) {
+                fwrite($newf, fread($file, 1024 * 8), 1024 * 8);
+            }
+        }
+    }
+    if ($file) {
+        fclose($file);
+    }
+    if ($newf) {
+        fclose($newf);
+    }
+    error_log(print_r($newf,true));
+
+/*
 			$subOptions = array("filepathl" => $downloadPath); //Is creating an array necessary?			
 			try {
 				$api_result = $this->schoology->api('/sections/'.reset($thisAss->data)->section_id.'/submissions/'.reset($thisAss->data)->assignment_nid.'/submission_info/', 'GET', $subOptions);
@@ -465,6 +486,7 @@
         	echo "Creating Attachment";
         	$upsertResponse = $this->SFConnection->create(array($sObject));
         	print_r($upsertResponse);
+     */
         	return null;
 		}
 		
