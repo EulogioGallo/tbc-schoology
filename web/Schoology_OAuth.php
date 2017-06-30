@@ -429,37 +429,13 @@
 			}
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
-			error_log(print_r($downloadPath,true));
+			error_log(print_r($downloadPath.'Test #1',true));
 			
-			/*
-			//Success extracting most outer field
-			error_log($thisAss->uid);
+			$subOptions = array("body" => $downloadPath);			
 
-			//Failures, produce empty log messages:
-			$myArray = array("path" => $thisAss->data->object->attachments->files->file);
-			$keys = array_keys($myArray);
-			$option = $myArray[$keys[0][0]];
-			error_log($option);			
-
-			$insider = $thisAss->data;
-			error_log($insider->assignment_nid);
-
-			$resAss = json_decode(json_encode($thisAss),true);
-			error_log($resAss->data->assignment_nid);
-			error_log($thisAss->data[assignment_nid]);
-
-			error_log($thisAss->data.assignment_nid);
-			error_log($thisAss->data[1]);
-			*/
-
-
-		//	$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
-		//	error_log(print_r($subOptions["body"],true));
-			
-		/*
 			try {
 				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'.$thisAss->data->assignment_nid.'/submission_info/', 'GET', $subOptions);
-				error_log(print_r($api_result,true));
+				error_log(print_r($api_result.'Test #2',true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
 				error_log($e->getMessage());
@@ -470,7 +446,7 @@
 				error_log('Success! Assignment Submitted');
 			}
 
-        
+        /*
        		 //variable holding attachementBody and attachmentName
 				//$attachmentBody = $subOptions["body"];
 				//$attachmentName = something;
