@@ -463,7 +463,7 @@
         	  'Body' => base64_encode($attachmentBody),
            	//    'ContentType' => $contentType,
           	  'Name' => $attachmentName,
-          	  'ParentID' => reset($thisAss->object)->assignment_nid;
+          	  'ParentID' => reset($thisAss->object)->assignment_nid,
            	  'IsPrivate' => 'false'
            	   );
 
@@ -475,7 +475,7 @@
         	error_log("Creating Attachment");
         	$upsertResponse = $this->SFConnection->create(array($sObject));
         	print_r($upsertResponse,true);
-        	
+
         	return null;
 		}
 		
