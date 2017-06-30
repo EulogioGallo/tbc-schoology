@@ -431,11 +431,12 @@
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
 			$attachmentName = reset($thisAss->object->attachments->files->file)->id;
 
-			error_log(print_r($attachmentName,true));
+			error_log(print_r($attachmentName,true));			//not being ouput
 			error_log(print_r($downloadPath,true));
-			error_log("Test #1");
+			error_log("Test #1");                               //not being output
 
-		   	$newfname = "Submission";
+			//Grab submission
+		   	$newfname = ""; //empty string
 		    $file = fopen ($downloadPath, 'rb');
 		    if ($file) {
 		        $newf = fopen ($newfname, 'wb');
@@ -451,15 +452,24 @@
 		    if ($newf) {
 		        fclose($newf);
 		    }
-		    error_log(print_r($newf,true));
+		    error_log(print_r($newf,true));    //nada
+		    error_log(print_r($newfname,true)); //zip
 
+
+		    //Log into Salesforce
 		    require_once ('soapclient/SforceEnterpriseClient.php'); //are the needed files for the connection present?
-
+			try{
 			$mySforceConnection = new SforceEnterpriseClient();
-			$mySoapClient = $mySforceConnection->createConnection("tbc_wsdl.xml");
+			$mySoapClient = $mySforceConnection->createConnection("tbc_wsdl.xml"); //tbc.wsdl.xml??
 			$mylogin = $mySforceConnection->login("elopez@broadcenter.org.ram", "eloxacto1");
-			
+
+			} catch(Exception $e){
+				error_log('error connecting to salesforce');
+				error_log($e->faultstring);
+			}
+			/*
 			 //variable holding attachementBody and attachmentName
+			}
 			$attachmentBody = $downloadPath;
 			$attachmentName = reset($thisAss->object->attachments->files->file)->id;
       		$createFields = array(
