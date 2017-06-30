@@ -429,28 +429,55 @@
 			}
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
-			$attachmentName = reset($thisAss->object->attachments->files->file)->id;
+			
+			attachmentName = reset($thisAss->object->attachments->files->file)->id;
 			error_log(print_r($attachmentName,true));
 			error_log(print_r($downloadPath,true));
 			echo"Test #1";
+
+		   	$newfname = "Submission";
+		    $file = fopen ($downloadPath, 'rb');
+		    if ($file) {
+		        $newf = fopen ($newfname, 'wb');
+		        if ($newf) {
+		            while(!feof($file)) {
+		                fwrite($newf, fread($file, 1024 * 8), 1024 * 8);
+		            }
+		        }
+		    }
+		    if ($file) {
+		        fclose($file);
+		    }
+		    if ($newf) {
+		        fclose($newf);
+		    }
+		    error_log(print_r($newf,true));
+
+		    require_once ('soapclient/SforceEnterpriseClient.php'); //are the needed files for the connection present?
+
+			$mySforceConnection = new SforceEnterpriseClient();
+			$mySoapClient = $mySforceConnection->createConnection("tbc_wsdl.xml");
+			$mylogin = $mySforceConnection->login("elopez@broadcenter.org.ram", "eloxacto1");
 			
-   $newfname = "Submission";
-    $file = fopen ($downloadPath, 'rb');
-    if ($file) {
-        $newf = fopen ($newfname, 'wb');
-        if ($newf) {
-            while(!feof($file)) {
-                fwrite($newf, fread($file, 1024 * 8), 1024 * 8);
-            }
-        }
-    }
-    if ($file) {
-        fclose($file);
-    }
-    if ($newf) {
-        fclose($newf);
-    }
-    error_log(print_r($newf,true));
+			 //variable holding attachementBody and attachmentName
+			$attachmentBody = $downloadPath;
+			$attachmentName = reset($thisAss->object->attachments->files->file)->id;
+      		$createFields = array(
+        	  'Body' => base64_encode($attachmentBody),
+           	//    'ContentType' => $contentType,
+          	  'Name' => $attachmentName,
+          	  'ParentID' => reset($thisAss->object)->assignment_nid;
+           	  'IsPrivate' => 'false'
+           	   );
+
+      		echo "Got it".$createFields["Body"];
+        	$sObject = new stdclass();
+        	$sObject->fields = $createFields;
+        	$sObject->type = 'Attachment';
+
+        	echo "Creating Attachment";
+        	$upsertResponse = $this->SFConnection->create(array($sObject));
+        	print_r($upsertResponse);
 
 /*
 			$subOptions = array("filepathl" => $downloadPath); //Is creating an array necessary?			
@@ -467,25 +494,6 @@
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
 				echo "Success! Assignment Submitted".$subOptions;
 			}
-       		 //variable holding attachementBody and attachmentName
-				$attachmentBody = $downloadPath;
-				$attachmentName = reset($thisAss->object->attachments->files->file)->id;
-      		  $createFields = array(
-        	    'Body' => base64_encode($attachmentBody),
-           		//    'ContentType' => $contentType,
-          		'Name' => $attachmentName,
-          		'ParentID' => reset($thisAss->object)->assignment_nid;
-           		'IsPrivate' => 'false'
-           		 );
-
-      		echo "Got it".$createFields["Body"];
-        	$sObject = new stdclass();
-        	$sObject->fields = $createFields;
-        	$sObject->type = 'Attachment';
-
-        	echo "Creating Attachment";
-        	$upsertResponse = $this->SFConnection->create(array($sObject));
-        	print_r($upsertResponse);
      */
         	return null;
 		}
