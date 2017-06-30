@@ -422,13 +422,10 @@
 		 */ 
 
 		public function getAssignmentSubmission($thisAss) {
-<<<<<<< HEAD
 			error_log("In getAssignmentSubmission");
 			error_log(print_r($thisAss,true));
 			error_log(print_r($thisAss->data,true));
 			error_log(print_r($thisAss->data->assignment_nid,true));
-=======
-			error_log('getAssignmentSubmission');
 
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
@@ -438,8 +435,8 @@
 
 
 
-			$resAss = json_decode(json_encode($thisAss),true);
-			error_log($resAss->data->assignment_nid);
+			//$resAss = json_decode(json_encode($thisAss),true);
+			//error_log($resAss->data->assignment_nid);
 
 			/*
 			$myArray = array("path" => $thisAss->data->object->attachments->files->file);
@@ -463,7 +460,6 @@
 			error_log(print_r($subOptions["body"],true));
 			*/
 
->>>>>>> 691578ac5ac0e9458c208c5a175b29642e61d11e
 			return null;
 
 		/*
