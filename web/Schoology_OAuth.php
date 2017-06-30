@@ -363,8 +363,7 @@
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
 				error_log($e->getMessage());
-			}
-			
+			}		
 			// successful call result
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
 				$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
@@ -429,35 +428,34 @@
 				throw new Exception('Invalid data for Retrieving Submission');
 			}
 
-
-
-			$resAss = json_decode(json_encode($thisAss),true);
-			error_log($resAss->data->assignment_nid);
-
+			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
+			error_log(print_r($downloadPath,true));
+			
 			/*
+			//Success extracting most outer field
+			error_log($thisAss->uid);
+
+			//Failures, produce empty log messages:
 			$myArray = array("path" => $thisAss->data->object->attachments->files->file);
 			$keys = array_keys($myArray);
 			$option = $myArray[$keys[0][0]];
-			//error_log($option);
-			//error_log($thisAss->uid);
-			error_log($thisAss->data[assignment_nid]);
-			//error_log($thisAss->data[1]);
-			error_log($option);
-			error_log($thisAss->uid);
-			error_log($thisAss->data.assignment_nid);
-			error_log($thisAss->data[1]);
+			error_log($option);			
+
 			$insider = $thisAss->data;
 			error_log($insider->assignment_nid);
 
+			$resAss = json_decode(json_encode($thisAss),true);
+			error_log($resAss->data->assignment_nid);
+			error_log($thisAss->data[assignment_nid]);
 
-
-
-			$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
-			error_log(print_r($subOptions["body"],true));
+			error_log($thisAss->data.assignment_nid);
+			error_log($thisAss->data[1]);
 			*/
 
-			return null;
 
+		//	$subOptions = array("body" => $thisAss->data->object->attachments->files->file[0]->converted_download_path);
+		//	error_log(print_r($subOptions["body"],true));
+			
 		/*
 			try {
 				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'.$thisAss->data->assignment_nid.'/submission_info/', 'GET', $subOptions);
@@ -494,6 +492,7 @@
         	$upsertResponse = $this->SFConnection->create(array($sObject));
         	print_r($upsertResponse);
     	*/
+        	return null;
 		}
 		
 		/**
@@ -508,13 +507,10 @@
 		 */ 
 
 		public function gradeAssignment($thisAss) {
-			error_log('gradeAssignment');
-			return null;
-			
 		if(!$thisAss) {
 				error_log('Error! Invalid data for grading assignment');
 				error_log(print_r($thisAss,true));
-				throw new Exception('Invalid Assignment data');
+				throw new Exception('Invalid Grading data');
 		}
 
 		
@@ -523,14 +519,15 @@
 			$gradeOptions = array(
 				"enrollment_id" => $thisAss->data->assignment_title__c,
 				"assignment_id" => $thisAss->data->assignment_description__c,
-				"grade" => $thisAss->data->due_date__c
+				"grade" => $thisAss->data-> //In which Salesforce field will the grade exist?
 			);
 
-		//	printf($gradeOptions["grade"]);
+			//were the values obtained?
+		error_log($gradeOptions["enrollment_id"]);
+		error_log($gradeOptions["enrollment_id"]);
 
-			/*
 			try {
-				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','PUT', $assOptions);
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions); //PUT if grade 																															already exsits
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
@@ -539,8 +536,15 @@
 
 			//successful call result
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-			}
-		*/	
+			$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
+				if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
+					error_log('Success! Updated Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->id);
+					return true;
+				} else {
+					error_log('Could not update Assignment ' . $thisAss->data->assignment_title__c);
+					throw new Exception('Could not update Assignment');
+				}
+			}	
 		}
 
 	}
