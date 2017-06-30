@@ -432,9 +432,9 @@
 			error_log(print_r($downloadPath,true));
 			echo"Test #1";
 			
-			$subOptions = array("body" => $downloadPath); //Is creating an array necessary?			
+			$subOptions = array("filepathl" => $downloadPath); //Is creating an array necessary?			
 			try {
-				$api_result = $this->schoology->api('/sections/'.$thisAss->data->section_id.'/submissions/'.$thisAss->data->assignment_nid.'/submission_info/', 'GET', $subOptions);
+				$api_result = $this->schoology->api('/sections/'.reset($thisAss->data)->section_id.'/submissions/'.reset($thisAss->data)->assignment_nid.'/submission_info/', 'GET', $subOptions);
 				error_log(print_r($api_result,true));
 				echo "Test #2";
 			} catch(Exception $e) {
@@ -446,21 +446,18 @@
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
 				echo "Success! Assignment Submitted".$subOptions;
 			}
-
-        /*
        		 //variable holding attachementBody and attachmentName
-				//$attachmentBody = $subOptions["body"];
-				//$attachmentName = something;
-	
-			
-      		  $AttachFields = array(
+				$attachmentBody = $downloadPath;
+				$attachmentName = reset($thisAss->object->attachments->files->file)->id;
+      		  $createFields = array(
         	    'Body' => base64_encode($attachmentBody),
            		//    'ContentType' => $contentType,
           		'Name' => $attachmentName,
-          		'ParentID' => // ,
+          		'ParentID' => reset($thisAss->object)->assignment_nid;
            		'IsPrivate' => 'false'
            		 );
 
+      		echo "Got it".$createFields["Body"];
         	$sObject = new stdclass();
         	$sObject->fields = $createFields;
         	$sObject->type = 'Attachment';
@@ -468,7 +465,6 @@
         	echo "Creating Attachment";
         	$upsertResponse = $this->SFConnection->create(array($sObject));
         	print_r($upsertResponse);
-    	*/
         	return null;
 		}
 		
