@@ -423,11 +423,9 @@
 
 		public function getAssignmentSubmission($thisAss) {
 			error_log("In getAssignmentSubmission");
-			error_log(print_r($thisAss,true));
-			error_log(print_r($thisAss->object,true));
-			error_log(print_r($thisAss->object->attachments->files->file,true));
-			error_log(print_r($thisAss->object->attachments->files->file,true));
-			error_log(print_r(reset($thisAss->object->attachments->files->file),true));
+			error_log(print_r(reset($thisAss->object->attachments->files->file)->converted_download_path,true));
+			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
+			error_log(print_r($downloadPath,true));
 			//$keys = array_keys($thisAss->object->attachments->files->file);
 			//error_log(print_r($keys,true));
 			//error_log(print_r($thisAss->object->attachments->files->file[$keys[0]],true));
