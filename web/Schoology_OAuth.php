@@ -473,7 +473,7 @@
         	$sObject->type = 'Attachment';
 
         	error_log("Creating Attachment");
-        	$upsertResponse = $mySforceConnection->create($sObject->fields,$sObject->type));
+        	$upsertResponse = $mySforceConnection->create($sObject->fields,$sObject->type);
         	print_r($upsertResponse,true);
 		}
 		
