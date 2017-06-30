@@ -475,8 +475,6 @@
         	error_log("Creating Attachment");
         	$upsertResponse = $this->SFConnection->create(array($sObject));
         	print_r($upsertResponse,true);
-
-        	return null;
 		}
 		
 		/**
