@@ -426,7 +426,7 @@
 			error_log(print_r($thisAss,true));
 			error_log(print_r($thisAss->object,true));
 			error_log(print_r($thisAss->object->attachments->files->file,true));
-			error_log(print_r($thisAss->object->attachments->files->file->download_path,true));
+			error_log(print_r($thisAss->object->attachments->files->file{0},true));
 			//$keys = array_keys($thisAss->object->attachments->files->file);
 			//error_log(print_r($keys,true));
 			//error_log(print_r($thisAss->object->attachments->files->file[$keys[0]],true));
