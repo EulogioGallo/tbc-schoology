@@ -443,6 +443,11 @@
 			error_log("Test #1");                               //not being output
 
 			//Grab submission
+			$attachmentBody = file_get_contents($downloadPath);
+
+			error_log(print_r($attachmentBody,true));
+
+		   	/*
 		   	$newfname = ""; //empty string
 		    $file = fopen ($downloadPath, 'rb');
 		    if ($file) {
@@ -461,6 +466,7 @@
 		    }
 		    error_log(print_r($newf,true));    //nada
 		    error_log(print_r($newfname,true)); //zip
+		    */
 
 			//$resAss = json_decode(json_encode($thisAss),true);
 			//error_log($resAss->data->assignment_nid);
