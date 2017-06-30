@@ -443,7 +443,7 @@
 			error_log("Test #1");                               //not being output
 
 			//Grab submission
-			$attachmentBody = file_get_contents($downloadPath);
+			$attachmentBody = gzdecode(file_get_contents($downloadPath));
 
 			error_log(print_r($attachmentBody,true));
 
