@@ -426,6 +426,9 @@
 			error_log(print_r($thisAss,true));
 			error_log(print_r($thisAss->object,true));
 			error_log(print_r($thisAss->object->attachments->files->file,true));
+			$keys = array_keys($thisAss->object->attachments->files->file);
+			error_log(print_r($keys,true));
+			error_log(print_r($thisAss->object->attachments->files->file[$keys[0]],true));
 
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
