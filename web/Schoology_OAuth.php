@@ -443,9 +443,15 @@
 			error_log("Test #1");                               //not being output
 
 			//Grab submission
-			$attachmentBody = gzdecode(file_get_contents($downloadPath));
+			//$attachmentBody = gzdecode(file_get_contents($downloadPath));
 
-			error_log(print_r($attachmentBody,true));
+			$ch = curl_init();
+			curl_setopt ($ch, CURLOPT_URL, $downloadPath);
+			curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt ($ch, CURLOPT_ENCODING , 'gzip');
+			$content = curl_exec ($ch);
+
+			error_log(print_r($content.'curl method',true));
 
 		   	/*
 		   	$newfname = ""; //empty string
