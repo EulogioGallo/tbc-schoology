@@ -462,10 +462,11 @@
 			$mySforceConnection = new SforceEnterpriseClient();
 			$mySoapClient = $mySforceConnection->createConnection("tbc_wsdl.xml"); //tbc.wsdl.xml??
 			$mylogin = $mySforceConnection->login("elopez@broadcenter.org.ram", "eloxacto1");
+			error_log('connecting to salesforce'); //0
 
 			} catch(Exception $e){
 				error_log('error connecting to salesforce');
-				error_log($e->faultstring);
+				error_log($e->faultstring); //0
 			}
 			/*
 			 //variable holding attachementBody and attachmentName
@@ -525,19 +526,17 @@
 				error_log(print_r($thisAss,true));
 				throw new Exception('Invalid Grading data');
 		}
-
-		
-
 		//schology grade object members and coressponding salesforce object fields
 			$gradeOptions = array(
-				"enrollment_id" => $thisAss->data->assignment_title__c,
-				"assignment_id" => $thisAss->data->assignment_description__c,
-				"grade" => $thisAss->data-> //In which Salesforce field will the grade exist?
+				"enrollment_id" => reset($thisAss->data)->assignment_title__c,
+				"assignment_id" => reset($thisAss->data)->assignment_description__c,
+				"grade" => $thisAss->data->score__c //In which Salesforce field will the grade exist?
 			);
 
 			//were the values obtained?
 		error_log($gradeOptions["enrollment_id"]);
-		error_log($gradeOptions["enrollment_id"]);
+		error_log($gradeOptions["assignment_id"]);
+		error_log($gradeOptions["grade"]);
 
 			try {
 				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions); //PUT if grade 																															already exsits
@@ -551,11 +550,11 @@
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
 			$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
 				if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
-					error_log('Success! Updated Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->id);
+					error_log('Success! Graded Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->assignment_id);
 					return true;
 				} else {
-					error_log('Could not update Assignment ' . $thisAss->data->assignment_title__c);
-					throw new Exception('Could not update Assignment');
+					error_log('Could not grade Assignment ' . $thisAss->data->assignment_title__c);
+					throw new Exception('Could not grade Assignment');
 				}
 			}	
 		}
