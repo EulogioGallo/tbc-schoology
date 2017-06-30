@@ -429,11 +429,11 @@
 			}
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
-			
-			attachmentName = reset($thisAss->object->attachments->files->file)->id;
+			$attachmentName = reset($thisAss->object->attachments->files->file)->id;
+
 			error_log(print_r($attachmentName,true));
 			error_log(print_r($downloadPath,true));
-			echo"Test #1";
+			error_log("Test #1");
 
 		   	$newfname = "Submission";
 		    $file = fopen ($downloadPath, 'rb');
@@ -470,12 +470,12 @@
            	  'IsPrivate' => 'false'
            	   );
 
-      		echo "Got it".$createFields["Body"];
+      		error_log("Got it".$createFields["Body"]);
         	$sObject = new stdclass();
         	$sObject->fields = $createFields;
         	$sObject->type = 'Attachment';
 
-        	echo "Creating Attachment";
+        	error_log("Creating Attachment");
         	$upsertResponse = $this->SFConnection->create(array($sObject));
         	print_r($upsertResponse);
 
