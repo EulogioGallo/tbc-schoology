@@ -436,7 +436,7 @@
 			}
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
-			$attachmentName = reset($thisAss->object->attachments->files->file)->id;
+			$attachmentName = $thisAss->assignment_nid;
 
 			error_log(print_r($attachmentName,true));			//not being ouput
 			error_log(print_r($downloadPath,true));
@@ -458,11 +458,7 @@
 				error_log('error connecting to salesforce');
 				error_log($e->faultstring); //0
 			}
-			/*
-			 //variable holding attachementBody and attachmentName
-			}
-			$attachmentBody = $downloadPath;
-			$attachmentName = reset($thisAss->object->attachments->files->file)->id;
+
       		$createFields = array(
         	  'Body' => base64_encode($attachmentBody),
            	//    'ContentType' => $contentType,
@@ -471,31 +467,15 @@
            	  'IsPrivate' => 'false'
            	   );
 
-      		error_log("Got it".$createFields["Body"]);
+      		error_log("Got it");
         	$sObject = new stdclass();
         	$sObject->fields = $createFields;
         	$sObject->type = 'Attachment';
 
         	error_log("Creating Attachment");
         	$upsertResponse = $this->SFConnection->create(array($sObject));
-        	print_r($upsertResponse);
-
-/*
-			$subOptions = array("filepathl" => $downloadPath); //Is creating an array necessary?			
-			try {
-				$api_result = $this->schoology->api('/sections/'.reset($thisAss->data)->section_id.'/submissions/'.reset($thisAss->data)->assignment_nid.'/submission_info/', 'GET', $subOptions);
-				error_log(print_r($api_result,true));
-				echo "Test #2";
-			} catch(Exception $e) {
-				error_log('Exception when making API call');
-				error_log($e->getMessage());
-			  }
-
-			// successful call result
-			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-				echo "Success! Assignment Submitted".$subOptions;
-			}
-     */
+        	print_r($upsertResponse,true);
+        	
         	return null;
 		}
 		
