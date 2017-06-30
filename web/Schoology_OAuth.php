@@ -448,7 +448,6 @@
 			error_log(print_r($attachmentBody,true));
 
 		    //Log into Salesforce
-		    require_once ('soapclient/SforceEnterpriseClient.php'); //are the needed files for the connection present?
 			try{
 			$mySforceConnection = new SforceEnterpriseClient();
 			$mySoapClient = $mySforceConnection->createConnection("tbc_wsdl.xml"); //tbc.wsdl.xml??
