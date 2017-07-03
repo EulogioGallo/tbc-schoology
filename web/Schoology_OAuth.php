@@ -475,7 +475,7 @@
 			$records[0]->Name = 'Attachment to Assignmnet 0';
           	$records[0]->ParentID = 'a02S000000A8NnU';
            	$records[0]->IsPrivate = 'false';
-           	$records[0]->ContentType = '.pdf';
+           	$records[0]->ContentType = 'pdf';
 
       		error_log("Got it");
 
