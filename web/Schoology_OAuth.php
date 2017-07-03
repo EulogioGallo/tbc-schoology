@@ -436,6 +436,9 @@
 				$subType = 'application/pdf';
 				break;
 
+				case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+				$subType = 'application/msword';
+
 				case 'image/jpeg':
 				$subType = 'image/jpeg';
 				break;
