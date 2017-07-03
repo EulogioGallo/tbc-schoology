@@ -424,27 +424,21 @@
 			error_log("In getAssignmentSubmission");
 			error_log(print_r(reset($thisAss->object->attachments->files->file)->converted_download_path,true));
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
-			error_log(print_r($downloadPath,true));
-			//$keys = array_keys($thisAss->object->attachments->files->file);
-			//error_log(print_r($keys,true));
-			//error_log(print_r($thisAss->object->attachments->files->file[$keys[0]],true));
-
+		
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
 				throw new Exception('Invalid data for Retrieving Submission');
 			}
 
-			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path; //why () not include final field?
 			$attachmentName = $thisAss->assignment_nid;
 
-			error_log(print_r($attachmentName,true));			//not being ouput
+			error_log(print_r($attachmentName,true));
 			error_log(print_r($downloadPath,true));
-			error_log("Test #1");                               //not being output
+			error_log("Test #1");                               
 
 			//Grab submission
 			$attachmentBody = file_get_contents($downloadPath);
-
 			error_log(print_r($attachmentBody,true));
 
 		    //Log into Salesforce
@@ -452,18 +446,18 @@
 			$mySforceConnection = new SforceEnterpriseClient();
 			$mySoapClient = $mySforceConnection->createConnection("/app/tbc_wsdl.xml");
 			$mylogin = $mySforceConnection->login("elopez@broadcenter.org.ram", "eloxacto1OnAg0TY3CysokjGuj7LkD761x");
-			error_log('connecting to salesforce'); //0
+			error_log('connecting to salesforce');
 
 			} catch(Exception $e){
 				error_log('error connecting to salesforce');
-				error_log($e->faultstring); //0
+				error_log($e->faultstring);
 			}
 
       		$createFields = array(
         	  'Body' => base64_encode($attachmentBody),
-           	//    'ContentType' => $contentType,
-          	  'Name' => $attachmentName,
-          	  'ParentID' => reset($thisAss->object)->assignment_nid,
+            //'ContentType' => $contentType,
+          	  'Name' => 'Attachment to Assignmnet 0',
+          	  'ParentID' => $attachmentName,
            	  'IsPrivate' => 'false'
            	   );
 
