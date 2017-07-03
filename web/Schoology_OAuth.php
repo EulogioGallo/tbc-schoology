@@ -496,7 +496,6 @@
 				error_log($e->faultstring);
 			}
 
-			$subType = 'application/vnd.ms-excel';
 
 			
 			$records = array();
@@ -505,7 +504,7 @@
 			$records[0]->Name = $attachmentName;
           	$records[0]->ParentID = 'a02S000000A8NnU';
            	$records[0]->IsPrivate = 'false';
-           	$records[0]->ContentType = $subType;
+           	$records[0]->ContentType = 'application/vnd.ms-excel';
 
       		error_log("Got it");
 
