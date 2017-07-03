@@ -454,12 +454,29 @@
 				error_log($e->faultstring);
 			}
 
+        $createFields = array(
+            'Body' => base64_encode($attachmentBody),
+            //    'ContentType' => $contentType,
+            'Name' => 'Attachment to Assignmnet 0',
+            'ParentID' => 'a02S000000A8NnU',
+            'IsPrivate' => 'false'
+
+        );
+        $sObject = new stdclass();
+        $sObject->fields = $createFields;
+        $sObject->type = 'Attachment';
+
+        $upsertResponse = $mySforceConnection->create(array($sObject));
+        print_r($upsertResponse)
+
+
+			/*
 			$records = array();
 			$records[0] = new stdclass();
-			$records[0]->Body__c = base64_encode($attachmentBody);
-			$records[0]->Name__c = 'Attachment to Assignmnet 0';
-          	$records[0]->ParentID__c = 'a02S000000A8NnU';
-           	$records[0]->IsPrivate__c = 'false';
+			$records[0]->Body = base64_encode($attachmentBody);
+			$records[0]->Name = 'Attachment to Assignmnet 0';
+          	$records[0]->ParentID = 'a02S000000A8NnU';
+           	$records[0]->IsPrivate = 'false';
 
             //'ContentType' => $contentType,
 
@@ -467,6 +484,7 @@
 
         	error_log("Creating Attachment");
         	$upsertResponse = $mySforceConnection->create(array($records),'Attachment');
+        	*/
         	print_r($upsertResponse,true);
 		}
 		
