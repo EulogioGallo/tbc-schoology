@@ -425,8 +425,9 @@
 			error_log(print_r(reset($thisAss->object->attachments->files->file)->converted_download_path,true));
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
-			$initalType = reset($thisAss->object->attachments->files->file)->filemime;
+			$subType = reset($thisAss->object->attachments->files->file)->filemime;
 
+			/*
 			switch($initalType){
 				case 'application/pdf':
 				$subType = 'application/pdf';
@@ -443,6 +444,10 @@
 				$subType = 'image/jpeg';
 				break;
 
+				case 'image/png':
+				$subType = 'image/png';
+				break;
+
 				case 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
 				$subType = 'application/vnd.ms-excel';
 				break;
@@ -451,8 +456,10 @@
 				$subType = 'application/pdf';
 
 			}
+			*/
 
-		
+			error_log(print_r($subType,true));
+
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
