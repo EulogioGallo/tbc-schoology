@@ -425,38 +425,48 @@
 			error_log(print_r(reset($thisAss->object->attachments->files->file)->converted_download_path,true));
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
-			$subType = reset($thisAss->object->attachments->files->file)->filemime;
+			$initialType = reset($thisAss->object->attachments->files->file)->filemime;
 
-			/*
+			
 			switch($initalType){
-				case 'application/pdf':
-				$subType = 'application/pdf';
-				break;
 
-				case 'text/html':
-				$subType = 'application/pdf';
-				break;
-
-				case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+				case'application/msword':
+				case'application/vnd.google-apps.document':
+				case'application/vnd.ms-word.document.macroEnabled.12':
+				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+				case'application/vnd.openxmlformats-officedocument.wordprocessingml.template':
+				case'application/vnd.oasis.opendocument.text':
+				
 				$subType = 'application/msword';
+				break;
 
 				case 'image/jpeg':
+				
 				$subType = 'image/jpeg';
 				break;
 
 				case 'image/png':
+				
 				$subType = 'image/png';
 				break;
 
-				case 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+				case 'application/vnd.google-apps.spreadsheet':
+				case'application/vnd.ms-excel':
+				case'application/vnd.ms-excel.sheet.macroEnabled.12':
+				case'application/vnd.oasis.opendocument.spreadsheet':
+				case'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+				case'application/vnd.openxmlformats-officedocument.spreadsheetml.template':
+				
 				$subType = 'application/vnd.ms-excel';
 				break;
 
 				default:
+				
 				$subType = 'application/pdf';
 
 			}
-			*/
+			
 
 			error_log(print_r($subType,true));
 
