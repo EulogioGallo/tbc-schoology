@@ -426,6 +426,7 @@
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
+			//$subType  = reset($thisAss->object->attachments->files->file)->filemime;
 			$initialName  = reset($thisAss->object->attachments->files->file)->filename;
 
 			error_log(print_r($initialType,true));
@@ -433,6 +434,7 @@
 			
 			switch($initialType){
 
+				//Word Document
 				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
 				case'application/msword':
 				case'application/vnd.google-apps.document':
@@ -443,6 +445,28 @@
 					$subType = 'application/msword';
 					break;
 
+				//Powerpoint
+				case 'application/vnd.google-apps.presentation':
+				case'application/vnd.ms-powerpoint':
+				case'application/vnd.ms-powerpoint.presentation.macroEnabled.12':
+				case'application/vnd.oasis.opendocument.presentation':
+				case'application/vnd.openxmlformats-officedocument.presentationml.slideshow':
+				case'application/vnd.openxmlformats-officedocument.presentationml.presentation':
+				case'application/vnd.openxmlformats-officedocument.presentationml.template':
+					$subType = 'application/vnd.ms-excel';
+					break;
+
+				//Excel
+				case 'application/vnd.google-apps.spreadsheet':
+				case'application/vnd.ms-excel':
+				case'application/vnd.ms-excel.sheet.macroEnabled.12':
+				case'application/vnd.oasis.opendocument.spreadsheet':
+				case'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+				case'application/vnd.openxmlformats-officedocument.spreadsheetml.template':
+					$subType = 'application/vnd.ms-powerpoint';
+					break;
+
+				//Images
 				case 'image/jpeg':
 					$subType = 'image/jpeg';
 					break;
@@ -451,20 +475,19 @@
 					$subType = 'image/png';
 					break;
 
-				case 'application/vnd.google-apps.spreadsheet':
-				case'application/vnd.ms-excel':
-				case'application/vnd.ms-excel.sheet.macroEnabled.12':
-				case'application/vnd.oasis.opendocument.spreadsheet':
-				case'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
-				case'application/vnd.openxmlformats-officedocument.spreadsheetml.template':
-					$subType = 'application/vnd.ms-excel';
-					break;
-
 				default:
 					$subType = 'application/pdf';
 					break;
 			}
 			
+			/*----------------------------------------------------------------------------------
+            |Adding the extension to the title seems to do the trick, but if not fullproof try |
+			|1. Leaving the ContentType as the filemime (no action)							   |
+			|2. Switch statement to convert different types to desired type 				   |
+			|3.									                                               |
+			|_________________________________________________________________________________*/
+
+
 
 			error_log(print_r($subType,true));
 
@@ -475,7 +498,7 @@
 			}
 
 			$attachmentNumber = $thisAss->object->revision_id;
-			$attachmentName = 'v '.$attachmentNumber.' '.$initialName;
+			$attachmentName = 'Rev #'.$attachmentNumber.' of '.$initialName;
 
 			error_log(print_r($attachmentName,true));
 			error_log(print_r($downloadPath,true));
