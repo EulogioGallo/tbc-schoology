@@ -426,11 +426,12 @@
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
+			$initialName  = reset($thisAss->object->attachments->files->file)->filename;
 
-
-			error_log(print_r($initalType,true));
+			error_log(print_r($initialType,true));
+			error_log(print_r($initialName,true));
 			
-			switch($initalType){
+			switch($initialType){
 
 				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
 				case'application/msword':
@@ -474,7 +475,7 @@
 			}
 
 			$attachmentNumber = $thisAss->object->revision_id;
-			$attachmentName = 'Submission v'.$attachmentNumber;
+			$attachmentName = 'v '.$attachmentNumber.' '.$initialName;
 
 			error_log(print_r($attachmentName,true));
 			error_log(print_r($downloadPath,true));
@@ -504,7 +505,7 @@
 			$records[0]->Name = $attachmentName;
           	$records[0]->ParentID = 'a02S000000A8NnU';
            	$records[0]->IsPrivate = 'false';
-           	$records[0]->ContentType = 'application/msword';
+           	$records[0]->ContentType = $subType;
 
       		error_log("Got it");
 
