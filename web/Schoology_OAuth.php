@@ -457,7 +457,7 @@
         	  'Body' => base64_encode($attachmentBody),
             //'ContentType' => $contentType,
           	  'Name' => 'Attachment to Assignmnet 0',
-          	  'ParentID' => $attachmentName,
+          	  'ParentID' => 'a02S000000A8NnU',
            	  'IsPrivate' => 'false'
            	   );
 
@@ -488,12 +488,13 @@
 				error_log(print_r($thisAss,true));
 				throw new Exception('Invalid Grading data');
 		}
+
 		//schology grade object members and coressponding salesforce object fields
 			$gradeOptions = array(
-				"enrollment_id" => reset($thisAss->data)->assignment_title__c,
-				"assignment_id" => reset($thisAss->data)->assignment_description__c,
-				"grade" => $thisAss->data->score__c //In which Salesforce field will the grade exist?
-			);
+				"enrollment_id" => $thisAss->data->assignment_title__c,			//course ID
+				"assignment_id" => $thisAss->data->assignment_description__c,  
+				"grade" => $thisAss->data->score__c 				//In which Salesforce field will the grade exist?, string or integer
+			);		
 
 			//were the values obtained?
 		error_log($gradeOptions["enrollment_id"]);
@@ -501,7 +502,7 @@
 		error_log($gradeOptions["grade"]);
 
 			try {
-				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions); //PUT if grade 																															already exsits
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions); //PUT if grade 																sections/{section_id}/grades section id same as enrollement id?							already exsits                                               cohort section id
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
@@ -510,12 +511,12 @@
 
 			//successful call result
 			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-			$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment_master__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
+			$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
 				if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
 					error_log('Success! Graded Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->assignment_id);
 					return true;
 				} else {
-					error_log('Could not grade Assignment ' . $thisAss->data->assignment_title__c);
+					error_log('Could not grade Assignment ' . $thisAss->data->assignment_title__c); //change assignment title
 					throw new Exception('Could not grade Assignment');
 				}
 			}	
