@@ -427,6 +427,7 @@
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 			$initialType = reset($thisAss->object->attachments->files->file)->filemime;
 
+			error_log(print_r($initalType,true));
 			
 			switch($initalType){
 
@@ -459,6 +460,7 @@
 
 				default:
 					$subType = 'application/pdf';
+					break;
 			}
 			
 
