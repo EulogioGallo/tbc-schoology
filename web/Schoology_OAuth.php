@@ -423,6 +423,7 @@
 		public function getAssignmentSubmission($thisAss) {
 			error_log("In getAssignmentSubmission");
 			error_log(print_r(reset($thisAss->object->attachments->files->file)->converted_download_path,true));
+
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 		
 			if(!$thisAss) {
@@ -467,7 +468,7 @@
         	$sObject->type = 'Attachment';
 
         	error_log("Creating Attachment");
-        	$upsertResponse = $mySforceConnection->create($sObject->fields,$sObject->type);
+        	$upsertResponse = $mySforceConnection->create(array($sObject),$sObject);
         	print_r($upsertResponse,true);
 		}
 		
@@ -502,7 +503,7 @@
 		error_log($gradeOptions["grade"]);
 
 			try {
-				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions); //PUT if grade 																sections/{section_id}/grades section id same as enrollement id?							already exsits                                               cohort section id
+				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions); //PUT if grade 																sections/{section_id}/grades section id same as enrollement id?							already exsits                                               cohort section
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
