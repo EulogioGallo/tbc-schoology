@@ -466,7 +466,7 @@
       		error_log("Got it");
 
         	error_log("Creating Attachment");
-        	$upsertResponse = $mySforceConnection->create(array($records,'Attachment'));
+        	$upsertResponse = $mySforceConnection->create(array($records),'Attachment');
         	print_r($upsertResponse,true);
 		}
 		
