@@ -453,7 +453,7 @@
 				error_log('error connecting to salesforce');
 				error_log($e->faultstring);
 			}
-
+				/*
         $createFields = array(
             'Body' => base64_encode($attachmentBody),
             //    'ContentType' => $contentType,
@@ -467,21 +467,21 @@
         $sObject->type = 'Attachment';
 
         $upsertResponse = $mySforceConnection->create(array($sObject),'Attachment');
-			/*
+        */
+			
 			$records = array();
 			$records[0] = new stdclass();
 			$records[0]->Body = base64_encode($attachmentBody);
 			$records[0]->Name = 'Attachment to Assignmnet 0';
           	$records[0]->ParentID = 'a02S000000A8NnU';
            	$records[0]->IsPrivate = 'false';
-
-            //'ContentType' => $contentType,
+           	$records[0]->ContentType = '.pdf';
 
       		error_log("Got it");
 
         	error_log("Creating Attachment");
-        	$upsertResponse = $mySforceConnection->create(array($records),'Attachment');
-        	*/
+        	$upsertResponse = $mySforceConnection->create($records,'Attachment');
+        	
         	print_r($upsertResponse,true);
 		}
 		
