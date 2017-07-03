@@ -427,10 +427,6 @@
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
 
-		while (list($key, $val) = each($thisAss->object->attachments->files->file)) {
-    	echo "$key => $val\n";
-		}
-
 
 			error_log(print_r($initalType,true));
 			
@@ -499,6 +495,9 @@
 				error_log('error connecting to salesforce');
 				error_log($e->faultstring);
 			}
+
+			$subType = 'application/vnd.ms-excel';
+
 			
 			$records = array();
 			$records[0] = new stdclass();
