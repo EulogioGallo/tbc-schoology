@@ -467,9 +467,6 @@
         $sObject->type = 'Attachment';
 
         $upsertResponse = $mySforceConnection->create(array($sObject));
-        print_r($upsertResponse)
-
-
 			/*
 			$records = array();
 			$records[0] = new stdclass();
