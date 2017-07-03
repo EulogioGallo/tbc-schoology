@@ -466,7 +466,7 @@
         $sObject->fields = $createFields;
         $sObject->type = 'Attachment';
 
-        $upsertResponse = $mySforceConnection->create(array($sObject));
+        $upsertResponse = $mySforceConnection->create(array($sObject),'Attachment');
 			/*
 			$records = array();
 			$records[0] = new stdclass();
