@@ -437,19 +437,16 @@
 				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
 				case'application/vnd.openxmlformats-officedocument.wordprocessingml.template':
 				case'application/vnd.oasis.opendocument.text':
-				
-				$subType = 'application/msword';
-				break;
+					$subType = 'application/msword';
+					break;
 
 				case 'image/jpeg':
-				
-				$subType = 'image/jpeg';
-				break;
+					$subType = 'image/jpeg';
+					break;
 
 				case 'image/png':
-				
-				$subType = 'image/png';
-				break;
+					$subType = 'image/png';
+					break;
 
 				case 'application/vnd.google-apps.spreadsheet':
 				case'application/vnd.ms-excel':
@@ -457,14 +454,11 @@
 				case'application/vnd.oasis.opendocument.spreadsheet':
 				case'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
 				case'application/vnd.openxmlformats-officedocument.spreadsheetml.template':
-				
-				$subType = 'application/vnd.ms-excel';
-				break;
+					$subType = 'application/vnd.ms-excel';
+					break;
 
 				default:
-				
-				$subType = 'application/pdf';
-
+					$subType = 'application/pdf';
 			}
 			
 
