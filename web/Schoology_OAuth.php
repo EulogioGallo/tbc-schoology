@@ -479,7 +479,7 @@
 					$subType = 'application/pdf';
 					break;
 			}
-			
+
 			/*----------------------------------------------------------------------------------
             |Adding the extension to the title seems to do the trick, but if not fullproof try |
 			|1. Leaving the ContentType as the filemime (no action)							   |
@@ -526,6 +526,7 @@
 
 				if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
 					error_log('Success! Found Assignment ');
+					$queryRes = $query->fetch();
 				} else {
 					error_log('Could not Find Assignment / You are not the correct User ');
 					throw new Exception('Could not get Assignment Submission');
@@ -539,7 +540,7 @@
 			$records[0] = new stdclass();
 			$records[0]->Body = base64_encode($attachmentBody);
 			$records[0]->Name = $attachmentName;
-          	$records[0]->ParentID = /*'a02S000000A8NnU'*/$query[0];
+          	$records[0]->ParentID = /*'a02S000000A8NnU'*/$queryRes;
            	$records[0]->IsPrivate = 'false';
            	$records[0]->ContentType = $subType;
 
