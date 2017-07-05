@@ -421,6 +421,7 @@
 		 */ 
 
 		public function getAssignmentSubmission($thisAss) {
+
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
@@ -433,7 +434,7 @@
 				$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
 			}
 
-			error_log($download_path);
+			error_log($downloadpath);
 
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
 			//$subType  = reset($thisAss->object->attachments->files->file)->filemime;
