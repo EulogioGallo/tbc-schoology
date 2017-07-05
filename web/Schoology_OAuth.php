@@ -526,7 +526,6 @@
 
 				if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
 					error_log('Success! Found Assignment ');
-					return true;
 				} else {
 					error_log('Could not Find Assignment / You are not the correct User ');
 					throw new Exception('Could not get Assignment Submission');
