@@ -524,7 +524,7 @@
 			$schoologyAssId = reset($thisAss->object)->assignment_nid;
 			$schoologyUserId= reset($thisAss->object)->uid;
 //query for the salesforce assignment record with the matching id
-			$query = prepare("SELECT sfid FROM salesforce.ram_assignment_master__c WHERE (:schoologyAssId = Schoology_Assignment_ID__c) AND (:schoologyUserId = Schoology_User_ID__c"));
+			$query = prepare("SELECT sfid FROM salesforce.ram_assignment_master__c WHERE (:schoologyAssId = Schoology_Assignment_ID__c) AND (:schoologyUserId = Schoology_User_ID__c");
 
 				if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
 					error_log('Success! Found Assignment ');
