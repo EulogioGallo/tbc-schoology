@@ -529,11 +529,12 @@
 //query for the salesforce assignment record with the matching id
 			$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)");
 
+				$queryRes = $query->fetch(PDO::FETCH_ASSOC);
+
 				if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
 					error_log($schoologyUserId);
 					error_log($schoologyAssId);
 					error_log('Success! Found Assignment ');
-					$queryRes = $query->fetch(PDO::FETCH_ASSOC);
 				} else {
 					error_log('Could not Find Assignment / You are not the correct User ');
 					throw new Exception('Could not get Assignment Submission');
