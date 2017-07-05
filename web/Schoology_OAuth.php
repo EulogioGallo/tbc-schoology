@@ -430,9 +430,9 @@
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 			
-			if ($downloadPath == null){
-				$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
-			}
+			//if ($downloadPath == null){
+			//	$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
+			//}
 
 			error_log($downloadpath);
 
