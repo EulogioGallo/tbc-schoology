@@ -535,7 +535,11 @@
 
 //assign that to the ParentID
 //$records[0]->ParentID = $query;
-			error_log($queryRes);
+				if ($queryRes == null){
+				error_log("message");
+				else
+				error_log($queryRes);
+				}
 			$records = array();
 			$records[0] = new stdclass();
 			$records[0]->Body = base64_encode($attachmentBody);
