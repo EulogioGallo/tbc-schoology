@@ -424,7 +424,11 @@
 			error_log("In getAssignmentSubmission");
 			error_log(print_r(reset($thisAss->object->attachments->files->file)->converted_download_path,true));
 
+			
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
+			if ($downloadPath = null){
+				$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
+			}
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
 			//$subType  = reset($thisAss->object->attachments->files->file)->filemime;
 			$initialName  = reset($thisAss->object->attachments->files->file)->filename;
