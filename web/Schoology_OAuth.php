@@ -533,7 +533,6 @@
 					error_log('Could not Find Assignment / You are not the correct User ');
 					throw new Exception('Could not get Assignment Submission');
 				}
-			}
 //extract the salesforce id of the assignment,this is done through the call
 
 //assign that to the ParentID
