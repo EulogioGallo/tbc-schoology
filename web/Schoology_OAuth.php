@@ -426,7 +426,8 @@
 
 			
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
-			if ($downloadPath = null){
+			
+			if ($downloadPath == null){
 				$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
 			}
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
