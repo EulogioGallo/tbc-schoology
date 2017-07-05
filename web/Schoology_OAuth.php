@@ -421,15 +421,20 @@
 		 */ 
 
 		public function getAssignmentSubmission($thisAss) {
-			error_log("In getAssignmentSubmission");
-			error_log(print_r(reset($thisAss->object->attachments->files->file)->converted_download_path,true));
+			if(!$thisAss) {
+				error_log('Error! Invalid data for Retrieving Assignment Submission');
+				error_log(print_r($thisAss,true));
+				throw new Exception('Invalid data for Retrieving Submission');
+			}
 
-			
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 			
 			if ($downloadPath == null){
 				$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
 			}
+
+			error_log($download_path);
+
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
 			//$subType  = reset($thisAss->object->attachments->files->file)->filemime;
 			$initialName  = reset($thisAss->object->attachments->files->file)->filename;
@@ -494,18 +499,10 @@
 
 			error_log(print_r($subType,true));
 
-			if(!$thisAss) {
-				error_log('Error! Invalid data for Retrieving Assignment Submission');
-				error_log(print_r($thisAss,true));
-				throw new Exception('Invalid data for Retrieving Submission');
-			}
-
 			$attachmentNumber = $thisAss->object->revision_id;
 			$attachmentName = 'Rev #'.$attachmentNumber.' of '.$initialName;
 
-			error_log(print_r($attachmentName,true));
-			error_log(print_r($downloadPath,true));
-			error_log("Test #1");                               
+			error_log(print_r($attachmentName,true));                             
 
 			//Grab submission
 			$attachmentBody = file_get_contents($downloadPath);
@@ -522,25 +519,22 @@
 				error_log('error connecting to salesforce');
 				error_log($e->faultstring);
 			}
-
 //get the schoology id from the call
 			$schoologyAssId = $thisAss->object->assignment_nid;
 			$schoologyUserId= $thisAss->object->uid;
 //query for the salesforce assignment record with the matching id
 			$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)");
 
-				$queryRes = $query->fetch(PDO::FETCH_ASSOC);
-
-				if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
-					error_log($schoologyUserId);
-					error_log($schoologyAssId);
-					error_log('Success! Found Assignment ');
-				} else {
-					error_log('Could not Find Assignment / You are not the correct User ');
-					throw new Exception('Could not get Assignment Submission');
+			if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+				error_log($schoologyUserId);
+				error_log($schoologyAssId);
+				error_log('Success! Found Assignment ');
+			} else {
+				error_log('Could not Find Assignment / You are not the correct User ');
+				throw new Exception('Could not get Assignment Submission');
 				}
 //extract the salesforce id of the assignment,this is done through the call
-
+			$queryRes = $query->fetch(PDO::FETCH_ASSOC);
 //assign that to the ParentID
 //$records[0]->ParentID = $query;
 				if ($queryRes == null){
