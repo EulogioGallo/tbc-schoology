@@ -422,30 +422,29 @@
 
 		public function getAssignmentSubmission($thisAss) {
 
-			//if(!$thisAss) {
-			//	error_log('Error! Invalid data for Retrieving Assignment Submission');
-			//	error_log(print_r($thisAss,true));
-			//	throw new Exception('Invalid data for Retrieving Submission');
-			//}
+			if(!$thisAss) {
+				error_log('Error! Invalid data for Retrieving Assignment Submission');
+				error_log(print_r($thisAss,true));
+				throw new Exception('Invalid data for Retrieving Submission');
+			}
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 			
-			//if ($downloadPath == null){
-			//	$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
-			//}
-
+			//Case Handling: Inconsistancy in JSON Response, (converted_download_path vs. download_path) 
+			if ($downloadPath == null){
+				$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
+			}
 			error_log($downloadPath);
 
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
-			//$subType  = reset($thisAss->object->attachments->files->file)->filemime;
+			$subType  = reset($thisAss->object->attachments->files->file)->filemime;
 			$initialName  = reset($thisAss->object->attachments->files->file)->filename;
 
 			error_log(print_r($initialType,true));
 			error_log(print_r($initialName,true));
 			
-			switch($initialType){
-
-				//Word Document
+			/* switch($initialType){
+				//Word Documents
 				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
 				case'application/msword':
 				case'application/vnd.google-apps.document':
@@ -456,7 +455,7 @@
 					$subType = 'application/msword';
 					break;
 
-				//Powerpoint
+				//Powerpoints
 				case 'application/vnd.google-apps.presentation':
 				case'application/vnd.ms-powerpoint':
 				case'application/vnd.ms-powerpoint.presentation.macroEnabled.12':
@@ -467,7 +466,7 @@
 					$subType = 'application/vnd.ms-excel';
 					break;
 
-				//Excel
+				//Excel Sheets
 				case 'application/vnd.google-apps.spreadsheet':
 				case'application/vnd.ms-excel':
 				case'application/vnd.ms-excel.sheet.macroEnabled.12':
@@ -486,64 +485,64 @@
 					$subType = 'image/png';
 					break;
 
+				//Meeting Q: What are all the types of submissions we will be expecting?
+
+				//If no other form is specified default to a pdf submission form
 				default:
 					$subType = 'application/pdf';
 					break;
-			}
-
+			} */
 			/*----------------------------------------------------------------------------------
             |Adding the extension to the title seems to do the trick, but if not fullproof try |
 			|1. Leaving the ContentType as the filemime (no action)							   |
 			|2. Switch statement to convert different types to desired type 				   |
 			|3.									                                               |
 			|_________________________________________________________________________________*/
+			error_log(print_r($subType,true)); //final Submission type decision
 
-			error_log(print_r($subType,true));
-
+			//Meeting Q: Incorporating specific naming conventions for files
+			//If not 'Revision #x Filename.ext'?
 			$attachmentNumber = $thisAss->object->revision_id;
-			$attachmentName = 'Rev #'.$attachmentNumber.' of '.$initialName;
+			$attachmentName = 'Rev #'.$attachmentNumber.' of '.$initialName;                             
 
-			error_log(print_r($attachmentName,true));                             
-
-			//Grab submission
+			//Grab submission content
 			$attachmentBody = file_get_contents($downloadPath);
-			error_log(print_r($attachmentBody,true));
 
 		    //Log into Salesforce
 			try{
 			$mySforceConnection = new SforceEnterpriseClient();
 			$mySoapClient = $mySforceConnection->createConnection("/app/tbc_wsdl.xml");
 			$mylogin = $mySforceConnection->login("elopez@broadcenter.org.ram", "eloxacto1OnAg0TY3CysokjGuj7LkD761x");
-			error_log('connecting to salesforce');
-
+			error_log('Connecting to Salesforce. . .');
 			} catch(Exception $e){
-				error_log('error connecting to salesforce');
+				error_log('Error Connecting to Salesforce!');
 				error_log($e->faultstring);
 			}
-//get the schoology id from the call
+
+			//Schoology ID Information
 			$schoologyAssId = $thisAss->object->assignment_nid;
 			$schoologyUserId= $thisAss->object->uid;
-//query for the salesforce assignment record with the matching id
-			$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)");
+
+			//Query for the Salesforce Assignment record (sfid) possesing the matching Schoology Assignment ID
+			$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
 
 			if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
-				error_log($schoologyUserId);
-				error_log($schoologyAssId);
-				error_log('Success! Found Assignment ');
+				error_log('Successful Query Call ');
 			} else {
-				error_log('Could not Find Assignment / You are not the correct User ');
+				error_log('Could not perform Query call. Perhaps you are not the correct User');
 				throw new Exception('Could not get Assignment Submission');
-				}
-//extract the salesforce id of the assignment,this is done through the call
+			}
+
+			//Extract the salesforce id of the obtained assignment record
 			$queryRes = $query->fetch(PDO::FETCH_ASSOC);
-//assign that to the ParentID
-//$records[0]->ParentID = $query;
-				if ($queryRes == null){
-				error_log("message");
-				}
-				else{
-				error_log($queryRes[sfid]);
-				}
+
+			if ($queryRes == null){
+			error_log("Missing sfid");
+			}
+			else{
+			error_log('The Salesforce Assignment is '.$queryRes[sfid]);
+			}
+
 			$records = array();
 			$records[0] = new stdclass();
 			$records[0]->Body = base64_encode($attachmentBody);
@@ -552,11 +551,8 @@
            	$records[0]->IsPrivate = 'false';
            	$records[0]->ContentType = $subType;
 
-      		error_log("Got it");
-
-        	error_log("Creating Attachment");
-        	$upsertResponse = $mySforceConnection->create($records,'Attachment');
-        	
+        	error_log("Creating Attachment in Salesforce. . .");
+        	$upsertResponse = $mySforceConnection->create($records,'Attachment');       	
         	print_r($upsertResponse,true);
 		}
 		
@@ -580,9 +576,9 @@
 
 		//schology grade object members and coressponding salesforce object fields
 			$gradeOptions = array(
-				"enrollment_id" => $thisAss->data->assignment_title__c,			//course ID
-				"assignment_id" => $thisAss->data->assignment_description__c,  
-				"grade" => $thisAss->data->score__c 				//In which Salesforce field will the grade exist?, string or integer
+				"enrollment_id" => $thisAss->data->course_enrollement__c,	//course ID
+				"assignment_id" => $thisAss->data->schoology_assignment_id__c,
+				"grade" => $thisAss->data->score__c
 			);		
 
 			//were the values obtained?
@@ -591,7 +587,8 @@
 		error_log($gradeOptions["grade"]);
 
 			try {
-				$api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions); //PUT if grade 																sections/{section_id}/grades section id same as enrollement id?							already exsits                                               cohort section
+			   $api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions);
+				//Use PUT if already graded
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
@@ -599,16 +596,16 @@
 			}
 
 			//successful call result
-			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-			$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
-				if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
-					error_log('Success! Graded Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->assignment_id);
-					return true;
-				} else {
-					error_log('Could not grade Assignment ' . $thisAss->data->assignment_title__c); //change assignment title
-					throw new Exception('Could not grade Assignment');
-				}
-			}	
+		//	if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+		//	$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
+		//		if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
+		//			error_log('Success! Graded Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->assignment_id);
+		//			return true;
+		//		} else {
+		//			error_log('Could not grade Assignment ' . $thisAss->data->assignment_title__c); //change assignment title
+		//			throw new Exception('Could not grade Assignment');
+		//		}
+		//	}	
 		}
 
 	}
