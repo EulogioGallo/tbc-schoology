@@ -520,13 +520,21 @@
 				error_log($e->faultstring);
 			}
 
+//get the schoology id from the call
+			$schoologyAssId = reset($thisAss->object->attachments->files->file)->id;
+			$schoologyUserId= reset($thisAss->object)->uid;
+//query for the salesforce assignment record with the matching id
+			$query = SELECT sfid FROM $this->storage->db->salesforce.ram_assignment_master__c WHERE ($schoologyAssId == Schoology_Assignment_ID__c) AND (schoologyUserId == Schoology_User_ID__c);
+//extract the salesforce id of the assignment,this is done through the call
 
-			
+//assign that to the ParentID
+//$records[0]->ParentID = $query;
+
 			$records = array();
 			$records[0] = new stdclass();
 			$records[0]->Body = base64_encode($attachmentBody);
 			$records[0]->Name = $attachmentName;
-          	$records[0]->ParentID = 'a02S000000A8NnU';
+          	$records[0]->ParentID = /*'a02S000000A8NnU'*/$query;
            	$records[0]->IsPrivate = 'false';
            	$records[0]->ContentType = $subType;
 
