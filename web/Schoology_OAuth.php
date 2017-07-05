@@ -541,13 +541,13 @@
 				error_log("message");
 				}
 				else{
-				error_log($queryRes[0]);
+				error_log($queryRes[sfid]);
 				}
 			$records = array();
 			$records[0] = new stdclass();
 			$records[0]->Body = base64_encode($attachmentBody);
 			$records[0]->Name = $attachmentName;
-          	$records[0]->ParentID = $queryRes[0];
+          	$records[0]->ParentID = $queryRes[sfid];
            	$records[0]->IsPrivate = 'false';
            	$records[0]->ContentType = $subType;
 
