@@ -422,11 +422,11 @@
 
 		public function getAssignmentSubmission($thisAss) {
 
-			if(!$thisAss) {
-				error_log('Error! Invalid data for Retrieving Assignment Submission');
-				error_log(print_r($thisAss,true));
-				throw new Exception('Invalid data for Retrieving Submission');
-			}
+			//if(!$thisAss) {
+			//	error_log('Error! Invalid data for Retrieving Assignment Submission');
+			//	error_log(print_r($thisAss,true));
+			//	throw new Exception('Invalid data for Retrieving Submission');
+			//}
 
 			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
 			
