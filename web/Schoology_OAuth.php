@@ -519,8 +519,8 @@
 			}
 
 //get the schoology id from the call
-			$schoologyAssId = reset($thisAss->object)->assignment_nid;
-			$schoologyUserId= reset($thisAss->object)->uid;
+			$schoologyAssId = $thisAss->object->assignment_nid;
+			$schoologyUserId= $thisAss->object->uid;
 //query for the salesforce assignment record with the matching id
 			$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)");
 
