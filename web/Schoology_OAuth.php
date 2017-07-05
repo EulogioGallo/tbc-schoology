@@ -537,7 +537,8 @@
 //$records[0]->ParentID = $query;
 				if ($queryRes == null){
 				error_log("message");
-				else
+				}
+				else{
 				error_log($queryRes);
 				}
 			$records = array();
