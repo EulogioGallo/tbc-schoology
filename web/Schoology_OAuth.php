@@ -434,7 +434,7 @@
 			//	$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
 			//}
 
-			error_log($downloadpath);
+			error_log($downloadPath);
 
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
 			//$subType  = reset($thisAss->object->attachments->files->file)->filemime;
