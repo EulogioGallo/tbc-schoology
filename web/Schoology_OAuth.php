@@ -535,12 +535,12 @@
 
 //assign that to the ParentID
 //$records[0]->ParentID = $query;
-
+			error_log($queryRes);
 			$records = array();
 			$records[0] = new stdclass();
 			$records[0]->Body = base64_encode($attachmentBody);
 			$records[0]->Name = $attachmentName;
-          	$records[0]->ParentID = /*'a02S000000A8NnU'*/$queryRes;
+          	$records[0]->ParentID = $queryRes;
            	$records[0]->IsPrivate = 'false';
            	$records[0]->ContentType = $subType;
 
