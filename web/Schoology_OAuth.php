@@ -422,6 +422,8 @@
 
 		public function getAssignmentSubmission($thisAss) {
 
+			error_log(reset($thisAss->object->attachments->files)->file);
+/*
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
@@ -497,7 +499,7 @@
 			|1. Leaving the ContentType as the filemime (no action)							   |
 			|2. Switch statement to convert different types to desired type 				   |
 			|3.									                                               |
-			|_________________________________________________________________________________*/
+			|_________________________________________________________________________________
 			error_log(print_r($subType,true)); //final Submission type decision
 
 			//Meeting Q: Incorporating specific naming conventions for files
@@ -564,6 +566,7 @@
         	$upsertResponse = $mySforceConnection->create($records,'Attachment');       	
         	print_r($upsertResponse,true);
 		}
+		*/
 		
 		/**
 		 * Creates a Schoology Grade from a grades Salesforce Assignment
