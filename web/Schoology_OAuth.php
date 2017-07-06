@@ -437,13 +437,13 @@
 			error_log($downloadPath);
 
 			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
-			$subType  = reset($thisAss->object->attachments->files->file)->filemime;
+			//$subType  = reset($thisAss->object->attachments->files->file)->filemime;
 			$initialName  = reset($thisAss->object->attachments->files->file)->filename;
 
 			error_log(print_r($initialType,true));
 			error_log(print_r($initialName,true));
 			
-			/* switch($initialType){
+			 switch($initialType){
 				//Word Documents
 				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
 				case'application/msword':
@@ -491,7 +491,7 @@
 				default:
 					$subType = 'application/pdf';
 					break;
-			} */
+			}
 			/*----------------------------------------------------------------------------------
             |Adding the extension to the title seems to do the trick, but if not fullproof try |
 			|1. Leaving the ContentType as the filemime (no action)							   |
@@ -535,7 +535,7 @@
 
 			$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
 
-			if($query2->execute(array(':currTime' => time() , ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+			if($query2->execute(array(':currTime' => date_timestamp_get() , ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
 				error_log('Successful Query Call ');
 			} else {
 				error_log('Could not perform Query call.');
