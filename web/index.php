@@ -17,6 +17,8 @@ switch($object_result->action) {
 			$SchoologyApi->createCourse($object_result);
 		} else if($object_result->table == 'ram_assignment_master__c') {
 			$SchoologyApi->createAssignment($object_result);
+		} else if($object_result->table == 'ram_assignment__c') {
+			$SchoologyApi->gradeAssignment($object_result);
 		}
 		break;
 	case 'UPDATE':
@@ -24,6 +26,8 @@ switch($object_result->action) {
 			$SchoologyApi->updateCourse($object_result);
 		} else if($object_result->table == 'ram_assignment_master__c') {
 			$SchoologyApi->updateAssignment($object_result);
+		} else if($object_result->table == 'ram_assignment__c') {
+			$SchoologyApi->gradeAssignment($object_result);
 		}
 		break;
 	case 'DELETE':

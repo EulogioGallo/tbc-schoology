@@ -568,26 +568,38 @@
 		 */ 
 
 		public function gradeAssignment($thisAss) {
-		if(!$thisAss) {
+			if(!$thisAss) {
 				error_log('Error! Invalid data for grading assignment');
 				error_log(print_r($thisAss,true));
 				throw new Exception('Invalid Grading data');
-		}
+			}
 
-		//schology grade object members and coressponding salesforce object fields
+			//REST Call for Course Section ID
+			try {
+				$api_ = $this->schoology->api('/courses/'.'1101895390'.'/sections/'., 'GET');
+				error_log(print_r($api_result,true));
+			} catch(Exception $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			}
+
+			//RSET Call for Enrollement ID
+
+			/*
+			schology grade object members and coressponding salesforce object fields
 			$gradeOptions = array(
-				"enrollment_id" => $thisAss->data->course_enrollement__c,	//course ID
-				"assignment_id" => $thisAss->data->schoology_assignment_id__c,
+				"enrollment_id" =>'11111118' $thisAss->data->user_program__c->program__c->enrollment_id__c,	
+				"assignment_id" => '1101903616'$thisAss->data->schoology_assignment_id__c,
 				"grade" => $thisAss->data->score__c
 			);		
 
 			//were the values obtained?
-		error_log($gradeOptions["enrollment_id"]);
-		error_log($gradeOptions["assignment_id"]);
-		error_log($gradeOptions["grade"]);
+			error_log($gradeOptions["enrollment_id"]);
+			error_log($gradeOptions["assignment_id"]);
+			error_log($gradeOptions["grade"]);
 
 			try {
-			   $api_result = $this->schoology->api('/sections/'.$thisAss->data->schoology_course_id__c.'/grades/','POST', $gradeOptions);
+			   $api_result = $this->schoology->api('/sections/'.'805542321230'/*$thisAss->data->cohort__c->course_section_id__c.'/grades/','POST', $gradeOptions);
 				//Use PUT if already graded
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
@@ -595,17 +607,18 @@
 				error_log($e->getMessage());
 			}
 
-			//successful call result
-		//	if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-		//	$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
-		//		if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
-		//			error_log('Success! Graded Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->assignment_id);
-		//			return true;
-		//		} else {
-		//			error_log('Could not grade Assignment ' . $thisAss->data->assignment_title__c); //change assignment title
-		//			throw new Exception('Could not grade Assignment');
-		//		}
-		//	}	
+				//successful call result
+			//	if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+			//	$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
+			//		if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
+			//			error_log('Success! Graded Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->assignment_id);
+			//			return true;
+			//		} else {
+			//			error_log('Could not grade Assignment ' . $thisAss->data->assignment_title__c); //change assignment title
+			//			throw new Exception('Could not grade Assignment');
+			//		}
+			//	}	
+			*/
 		}
 
 	}
