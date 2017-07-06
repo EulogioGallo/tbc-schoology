@@ -420,7 +420,12 @@
 		 * @return
 		 */ 
 
+		$Response = 0;
 		public function getAssignmentSubmission($thisAss) {
+			if($GLOBALS['Response'] == 1){
+				return;
+			}
+
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
@@ -437,8 +442,9 @@
 				error_log('Error Connecting to Salesforce!');
 				error_log($e->faultstring);
 			}
-			
+
 			reset($thisAss->object->attachments->files->file);
+
 			do { //if current is not working use reset
 				error_log(current($thisAss->object->attachments->files->file)->id);
 				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
@@ -559,11 +565,12 @@
 				$records[0]->Name = $attachmentName;
 		        $records[0]->ParentID = $queryRes[sfid];
 		        $records[0]->IsPrivate = 'false';
-		        $records[0]->ContentType = $subType;
+		        $records[0]->ContentType = $initialType;
 
 		        error_log("Creating Attachment in Salesforce. . .");
 		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
 		        print_r($upsertResponse,true);
+		        $GLOBALS['Response'] = 1;
 	        } while(next($thisAss->object->attachments->files->file));
 		}
 
