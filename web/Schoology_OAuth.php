@@ -575,8 +575,8 @@
 			}
 
 			//REST Call for Course Section ID
-			try {
-				$api_ = $this->schoology->api('/courses/'.'1101895390'.'/sections/'., 'GET');
+			try { //https://api.schoology.com/v1/courses/{course_id}/sections
+				$api_ = $this->schoology->api('https://api.schoology.com'.'/v1/'.'/courses/'.'1101895390'.'/sections/'., 'GET');
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
