@@ -438,7 +438,7 @@
 				error_log($e->faultstring);
 			}
 
-			do{ //if current is not working use reset
+			do { //if current is not working use reset
 				error_log(current($thisAss->object->attachments->files->file)->id);
 				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
 				
@@ -502,9 +502,9 @@
 					default:
 						$subType = 'application/pdf';
 						break;
-				}
+					}
 				/*----------------------------------------------------------------------------------
-	            |Adding the extension to the title seems to do the trick, but if not fullproof try |
+		        |Adding the extension to the title seems to do the trick, but if not fullproof try |
 				|1. Leaving the ContentType as the filemime (no action)							   |
 				|2. Switch statement to convert different types to desired type 				   |
 				|3.									                                               |
@@ -533,16 +533,16 @@
 					throw new Exception('Could not get Assignment Submission');
 				}
 
-				//$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
+					//$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
 
-				//if($query2->execute(array(':currTime' => date_timestamp_get() , ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
-				//	error_log('Successful Query Call ');
-				//} else {
-				//	error_log('Could not perform Query call.');
-				//	throw new Exception('Could not add timestamp to Assignment Submission');
-				//}
+					//if($query2->execute(array(':currTime' => date_timestamp_get() , ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+					//	error_log('Successful Query Call ');
+					//} else {
+					//	error_log('Could not perform Query call.');
+					//	throw new Exception('Could not add timestamp to Assignment Submission');
+					//}
 
-				//Extract the salesforce id of the obtained assignment record
+					//Extract the salesforce id of the obtained assignment record
 				$queryRes = $query->fetch(PDO::FETCH_ASSOC);
 
 				if ($queryRes == null){
@@ -556,15 +556,14 @@
 				$records[0] = new stdclass();
 				$records[0]->Body = base64_encode($attachmentBody);
 				$records[0]->Name = $attachmentName;
-	          	$records[0]->ParentID = $queryRes[sfid];
-	           	$records[0]->IsPrivate = 'false';
-	           	$records[0]->ContentType = $subType;
+		        $records[0]->ParentID = $queryRes[sfid];
+		        $records[0]->IsPrivate = 'false';
+		        $records[0]->ContentType = $subType;
 
-	        	error_log("Creating Attachment in Salesforce. . .");
-	        	$upsertResponse = $mySforceConnection->create($records,'Attachment');       	
-	        	print_r($upsertResponse,true);
-        	}
-			while(next($thisAss->object->attachments->files->file));
+		        error_log("Creating Attachment in Salesforce. . .");
+		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
+		        print_r($upsertResponse,true);
+	        } while(next($thisAss->object->attachments->files->file));
 		}
 
 		
