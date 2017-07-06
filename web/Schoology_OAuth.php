@@ -82,7 +82,9 @@
 	  }
 	  
 	}
-	
+
+	$Response = 0; 
+
 	// Schoology API / Authorization class
 	class SchoologyContainer {
 		// Eulogio's Schoology Stuffs
@@ -423,7 +425,7 @@
 		$Response = 0;
 
 		public function getAssignmentSubmission($thisAss) {
-			if( global $Response == 1){
+			if( $GLOBALS['Response'] == 1){
 				return;
 			}
 
@@ -571,7 +573,7 @@
 		        error_log("Creating Attachment in Salesforce. . .");
 		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
 		        print_r($upsertResponse,true);
-		        global $Response = 1;
+		        $GLOBALS['Response'] = 1;
 	        } while(next($thisAss->object->attachments->files->file));
 		}
 
