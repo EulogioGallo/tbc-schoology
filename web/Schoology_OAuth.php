@@ -437,7 +437,8 @@
 				error_log('Error Connecting to Salesforce!');
 				error_log($e->faultstring);
 			}
-
+			
+			reset($thisAss->object->attachments->files->file);
 			do { //if current is not working use reset
 				error_log(current($thisAss->object->attachments->files->file)->id);
 				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
