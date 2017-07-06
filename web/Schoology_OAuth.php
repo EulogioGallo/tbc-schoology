@@ -421,98 +421,13 @@
 		 */ 
 
 		public function getAssignmentSubmission($thisAss) {
-			do{
-				error_log(current($thisAss->object->attachments->files->file)->id);
-			}
-			while(next($thisAss->object->attachments->files->file));
-/*
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
 				throw new Exception('Invalid data for Retrieving Submission');
 			}
 
-			$downloadPath = reset($thisAss->object->attachments->files->file)->converted_download_path;
-			
-			//Case Handling: Inconsistancy in JSON Response, (converted_download_path vs. download_path) 
-			if ($downloadPath == null){
-				$downloadPath = reset($thisAss->object->attachments->files->file)->download_path; 
-			}
-			error_log($downloadPath);
-
-			$initialType  = reset($thisAss->object->attachments->files->file)->filemime;
-			//$subType  = reset($thisAss->object->attachments->files->file)->filemime;
-			$initialName  = reset($thisAss->object->attachments->files->file)->filename;
-
-			error_log(print_r($initialType,true));
-			error_log(print_r($initialName,true));
-			
-			 switch($initialType){
-				//Word Documents
-				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
-				case'application/msword':
-				case'application/vnd.google-apps.document':
-				case'application/vnd.ms-word.document.macroEnabled.12':
-				case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
-				case'application/vnd.openxmlformats-officedocument.wordprocessingml.template':
-				case'application/vnd.oasis.opendocument.text':
-					$subType = 'application/msword';
-					break;
-
-				//Powerpoints
-				case 'application/vnd.google-apps.presentation':
-				case'application/vnd.ms-powerpoint':
-				case'application/vnd.ms-powerpoint.presentation.macroEnabled.12':
-				case'application/vnd.oasis.opendocument.presentation':
-				case'application/vnd.openxmlformats-officedocument.presentationml.slideshow':
-				case'application/vnd.openxmlformats-officedocument.presentationml.presentation':
-				case'application/vnd.openxmlformats-officedocument.presentationml.template':
-					$subType = 'application/vnd.ms-excel';
-					break;
-
-				//Excel Sheets
-				case 'application/vnd.google-apps.spreadsheet':
-				case'application/vnd.ms-excel':
-				case'application/vnd.ms-excel.sheet.macroEnabled.12':
-				case'application/vnd.oasis.opendocument.spreadsheet':
-				case'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
-				case'application/vnd.openxmlformats-officedocument.spreadsheetml.template':
-					$subType = 'application/vnd.ms-powerpoint';
-					break;
-
-				//Images
-				case 'image/jpeg':
-					$subType = 'image/jpeg';
-					break;
-
-				case 'image/png':
-					$subType = 'image/png';
-					break;
-
-				//Meeting Q: What are all the types of submissions we will be expecting?
-
-				//If no other form is specified default to a pdf submission form
-				default:
-					$subType = 'application/pdf';
-					break;
-			}
-			/*----------------------------------------------------------------------------------
-            |Adding the extension to the title seems to do the trick, but if not fullproof try |
-			|1. Leaving the ContentType as the filemime (no action)							   |
-			|2. Switch statement to convert different types to desired type 				   |
-			|3.									                                               |
-			|_________________________________________________________________________________
-			error_log(print_r($subType,true)); //final Submission type decision
-
-			//Meeting Q: Incorporating specific naming conventions for files
-			//If not 'Revision #x Filename.ext'?
-			$attachmentNumber = $thisAss->object->revision_id;
-			$attachmentName = 'Rev #'.$attachmentNumber.' of '.$initialName;                             
-
-			//Grab submission content
-			$attachmentBody = file_get_contents($downloadPath);
-
-		    //Log into Salesforce
+			//Log into Salesforce
 			try{
 			$mySforceConnection = new SforceEnterpriseClient();
 			$mySoapClient = $mySforceConnection->createConnection("/app/tbc_wsdl.xml");
@@ -523,51 +438,134 @@
 				error_log($e->faultstring);
 			}
 
-			//Schoology ID Information
-			$schoologyAssId = $thisAss->object->assignment_nid;
-			$schoologyUserId= $thisAss->object->uid;
+			do{ //if current is not working use reset
+				error_log(current($thisAss->object->attachments->files->file)->id);
+				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
+				
+				//Case Handling: Inconsistancy in JSON Response, (converted_download_path vs. download_path) 
+				if ($downloadPath == null){
+					$downloadPath = current($thisAss->object->attachments->files->file)->download_path; 
+				}
+				error_log($downloadPath);
 
-			//Query for the Salesforce Assignment record (sfid) possesing the matching Schoology Assignment ID
-			$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
+				$initialType  = current($thisAss->object->attachments->files->file)->filemime;
+				$initialName  = current($thisAss->object->attachments->files->file)->filename;
 
-			if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
-				error_log('Successful Query Call ');
-			} else {
-				error_log('Could not perform Query call. Perhaps you are not the correct User');
-				throw new Exception('Could not get Assignment Submission');
-			}
+				error_log(print_r($initialType,true));
+				error_log(print_r($initialName,true));
+				
+				 switch($initialType){
+					//Word Documents
+					case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+					case'application/msword':
+					case'application/vnd.google-apps.document':
+					case'application/vnd.ms-word.document.macroEnabled.12':
+					case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
+					case'application/vnd.openxmlformats-officedocument.wordprocessingml.template':
+					case'application/vnd.oasis.opendocument.text':
+						$subType = 'application/msword';
+						break;
 
-			$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
+					//Powerpoints
+					case 'application/vnd.google-apps.presentation':
+					case'application/vnd.ms-powerpoint':
+					case'application/vnd.ms-powerpoint.presentation.macroEnabled.12':
+					case'application/vnd.oasis.opendocument.presentation':
+					case'application/vnd.openxmlformats-officedocument.presentationml.slideshow':
+					case'application/vnd.openxmlformats-officedocument.presentationml.presentation':
+					case'application/vnd.openxmlformats-officedocument.presentationml.template':
+						$subType = 'application/vnd.ms-excel';
+						break;
 
-			if($query2->execute(array(':currTime' => date_timestamp_get() , ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
-				error_log('Successful Query Call ');
-			} else {
-				error_log('Could not perform Query call.');
-				throw new Exception('Could not add timestamp to Assignment Submission');
-			}
+					//Excel Sheets
+					case 'application/vnd.google-apps.spreadsheet':
+					case'application/vnd.ms-excel':
+					case'application/vnd.ms-excel.sheet.macroEnabled.12':
+					case'application/vnd.oasis.opendocument.spreadsheet':
+					case'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+					case'application/vnd.openxmlformats-officedocument.spreadsheetml.template':
+						$subType = 'application/vnd.ms-powerpoint';
+						break;
 
-			//Extract the salesforce id of the obtained assignment record
-			$queryRes = $query->fetch(PDO::FETCH_ASSOC);
+					//Images
+					case 'image/jpeg':
+						$subType = 'image/jpeg';
+						break;
 
-			if ($queryRes == null){
-			error_log("Missing sfid");
-			}
-			else{
-			error_log('The Salesforce Assignment is '.$queryRes[sfid]);
-			}
+					case 'image/png':
+						$subType = 'image/png';
+						break;
 
-			$records = array();
-			$records[0] = new stdclass();
-			$records[0]->Body = base64_encode($attachmentBody);
-			$records[0]->Name = $attachmentName;
-          	$records[0]->ParentID = $queryRes[sfid];
-           	$records[0]->IsPrivate = 'false';
-           	$records[0]->ContentType = $subType;
+					//Meeting Q: What are all the types of submissions we will be expecting?
 
-        	error_log("Creating Attachment in Salesforce. . .");
-        	$upsertResponse = $mySforceConnection->create($records,'Attachment');       	
-        	print_r($upsertResponse,true);
-        	*/
+					//If no other form is specified default to a pdf submission form
+					default:
+						$subType = 'application/pdf';
+						break;
+				}
+				/*----------------------------------------------------------------------------------
+	            |Adding the extension to the title seems to do the trick, but if not fullproof try |
+				|1. Leaving the ContentType as the filemime (no action)							   |
+				|2. Switch statement to convert different types to desired type 				   |
+				|3.									                                               |
+				|_________________________________________________________________________________*/
+				error_log(print_r($subType,true)); //final Submission type decision
+
+				//Meeting Q: Incorporating specific naming conventions for files
+				//If not 'Revision #x Filename.ext'?
+				$attachmentNumber = $thisAss->object->revision_id;
+				$attachmentName = 'v'.$attachmentNumber.' '.$initialName;                             
+
+				//Grab submission content
+				$attachmentBody = file_get_contents($downloadPath);
+
+				//Schoology ID Information
+				$schoologyAssId = $thisAss->object->assignment_nid;
+				$schoologyUserId= $thisAss->object->uid;
+
+				//Query for the Salesforce Assignment record (sfid) possesing the matching Schoology Assignment ID
+				$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
+
+				if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+					error_log('Successful Query Call ');
+				} else {
+					error_log('Could not perform Query call. Perhaps you are not the correct User');
+					throw new Exception('Could not get Assignment Submission');
+				}
+
+				//$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
+
+				//if($query2->execute(array(':currTime' => date_timestamp_get() , ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+				//	error_log('Successful Query Call ');
+				//} else {
+				//	error_log('Could not perform Query call.');
+				//	throw new Exception('Could not add timestamp to Assignment Submission');
+				//}
+
+				//Extract the salesforce id of the obtained assignment record
+				$queryRes = $query->fetch(PDO::FETCH_ASSOC);
+
+				if ($queryRes == null){
+				error_log("Missing sfid");
+				}
+				else{
+				error_log('The Salesforce Assignment is '.$queryRes[sfid]);
+				}
+
+				$records = array();
+				$records[0] = new stdclass();
+				$records[0]->Body = base64_encode($attachmentBody);
+				$records[0]->Name = $attachmentName;
+	          	$records[0]->ParentID = $queryRes[sfid];
+	           	$records[0]->IsPrivate = 'false';
+	           	$records[0]->ContentType = $subType;
+
+	        	error_log("Creating Attachment in Salesforce. . .");
+	        	$upsertResponse = $mySforceConnection->create($records,'Attachment');       	
+	        	print_r($upsertResponse,true);
+	        	*/
+        	}
+			while(next($thisAss->object->attachments->files->file));
 		}
 
 		
