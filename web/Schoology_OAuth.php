@@ -533,14 +533,14 @@
 				throw new Exception('Could not get Assignment Submission');
 			}
 
-			$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
+		//	$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
 
-			if($query2->execute(array(':currTime' => date_timestamp_get() , ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
-				error_log('Successful Query Call ');
-			} else {
-				error_log('Could not perform Query call.');
-				throw new Exception('Could not add timestamp to Assignment Submission');
-			}
+		//	if($query2->execute(array(':currTime' => date_timestamp_get() , ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+		//		error_log('Successful Query Call ');
+		//	} else {
+		//		error_log('Could not perform Query call.');
+		//		throw new Exception('Could not add timestamp to Assignment Submission');
+		//	}
 
 			//Extract the salesforce id of the obtained assignment record
 			$queryRes = $query->fetch(PDO::FETCH_ASSOC);
