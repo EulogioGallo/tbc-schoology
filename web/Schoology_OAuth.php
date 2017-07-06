@@ -580,50 +580,47 @@
 
 			//REST Call for Course Section ID
 			try {
-				$api_ = $this->schoology->api('https://api.schoology.com'.'/v1/'.'/courses/'.'1101895390'.'/sections/'., 'GET');
+				$api_result = $this->schoology->api('https://api.schoology.com'.'/v1/'.'/courses/'.$courseid.'/sections/', 'GET');
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
 				error_log($e->getMessage());
 			}
-			// successful call result
-			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
-				$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
-				if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
-					error_log('Success! Updated Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->id);
-					return true;
-				} else {
-					error_log('Could not update Assignment ' . $thisAss->data->assignment_title__c);
-					throw new Exception('Could not update Assignment');
-				}
-			}
+
+			$courseSectionID = '0';
+			error_log("<----Space---->");
 
 			//RSET Call for Enrollement ID
+			try {
+				$api_result = $this->schoology->api('https://api.schoology.com'.'/v1/'.$courseSectionID.'/enrollements/', 'GET');
+				error_log(print_r($api_result,true));
+			} catch(Exception $e) {
+				error_log('Exception when making API call');
+				error_log($e->getMessage());
+			}
+			$enrollementID = '0';
 
-			/*
-			schology grade object members and coressponding salesforce object fields
+			//schology grade object members and coressponding salesforce object fields
 			$gradeOptions = array(
-				"enrollment_id" =>'11111118' $thisAss->data->user_program__c->program__c->enrollment_id__c,	
-				"assignment_id" => '1101903616'$thisAss->data->schoology_assignment_id__c,
+				"enrollment_id" =>$enrollementID,	
+				"assignment_id" =>$thisAss->data->schoology_assignment_id__c,
 				"grade" => $thisAss->data->score__c
 			);		
-
 			//were the values obtained?
 			error_log($gradeOptions["enrollment_id"]);
 			error_log($gradeOptions["assignment_id"]);
 			error_log($gradeOptions["grade"]);
 
+			//Insert score into schoology Grade object 
 			try {
-			   $api_result = $this->schoology->api('/sections/'.'805542321230'/*$thisAss->data->cohort__c->course_section_id__c.'/grades/','POST', $gradeOptions);
-				//Use PUT if already graded
+				$api_result = $this->schoology->api('https://api,schoology.com'.'/v1/'.'/sections/'.$courseSectionID.'/grades/', 'PUT', $gradeOptions);
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
 				error_log('Exception when making API call');
 				error_log($e->getMessage());
-			}
-
+			}					
+			/*
 				//successful call result
-			//	if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
 			//	$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
 			//		if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
 			//			error_log('Success! Graded Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->assignment_id);
