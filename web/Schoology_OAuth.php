@@ -422,8 +422,6 @@
 		 * @return
 		 */ 
 
-		$Response = 0;
-
 		public function getAssignmentSubmission($thisAss) {
 			if( $GLOBALS['Response'] == 1){
 				return;
