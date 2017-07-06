@@ -422,7 +422,7 @@
 
 		public function getAssignmentSubmission($thisAss) {
 
-			error_log($thisAss->object->attachments->files->file->id);
+			error_log(reset($thisAss->object->attachments->files->file)->id);
 /*
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
