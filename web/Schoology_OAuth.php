@@ -421,8 +421,9 @@
 		 */ 
 
 		public function getAssignmentSubmission($thisAss) {
-
-			error_log(reset($thisAss->object->attachments->files->file)->id);
+			while($attacmentfile = each($thisAss->object->attachments->files->file)){
+			error_log($attacmentfile->id);
+			}
 /*
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
