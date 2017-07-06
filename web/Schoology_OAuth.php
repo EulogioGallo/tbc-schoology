@@ -582,6 +582,17 @@
 				error_log('Exception when making API call');
 				error_log($e->getMessage());
 			}
+			// successful call result
+			if($api_result != null && in_array($api_result->http_code, $this->httpSuccessCodes)) {
+				$query = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET synced_to_schoology__c = TRUE, publish__c = FALSE WHERE sfid = :sfid");
+				if($query->execute(array(':sfid' => $thisAss->data->sfid))) {
+					error_log('Success! Updated Assignment ' . $thisAss->data->assignment_title__c . ' with ID: ' . $api_result->result->id);
+					return true;
+				} else {
+					error_log('Could not update Assignment ' . $thisAss->data->assignment_title__c);
+					throw new Exception('Could not update Assignment');
+				}
+			}
 
 			//RSET Call for Enrollement ID
 
