@@ -574,8 +574,12 @@
 				throw new Exception('Invalid Grading data');
 			}
 
+			//Get Course ID
+			$courseid = $thisAss->data->assignment_master__c->course_master__c->cohort__c->schoology_id__c;
+			error_log($courseid);
+
 			//REST Call for Course Section ID
-			try { //https://api.schoology.com/v1/courses/{course_id}/sections
+			try {
 				$api_ = $this->schoology->api('https://api.schoology.com'.'/v1/'.'/courses/'.'1101895390'.'/sections/'., 'GET');
 				error_log(print_r($api_result,true));
 			} catch(Exception $e) {
