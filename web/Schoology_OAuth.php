@@ -563,7 +563,6 @@
 	        	error_log("Creating Attachment in Salesforce. . .");
 	        	$upsertResponse = $mySforceConnection->create($records,'Attachment');       	
 	        	print_r($upsertResponse,true);
-	        	*/
         	}
 			while(next($thisAss->object->attachments->files->file));
 		}
