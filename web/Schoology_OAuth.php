@@ -420,10 +420,10 @@
 		 * @return
 		 */ 
 
-		$GLOBALS['Response'] = 0;
+		$Response = 0;
 
 		public function getAssignmentSubmission($thisAss) {
-			if($GLOBALS['Response'] == 1){
+			if( global $Response == 1){
 				return;
 			}
 
@@ -571,7 +571,7 @@
 		        error_log("Creating Attachment in Salesforce. . .");
 		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
 		        print_r($upsertResponse,true);
-		        $GLOBALS['Response'] = 1;
+		        global $Response = 1;
 	        } while(next($thisAss->object->attachments->files->file));
 		}
 
