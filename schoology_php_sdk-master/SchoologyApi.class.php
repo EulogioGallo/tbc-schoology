@@ -409,7 +409,7 @@ class SchoologyApi
     }
   }
 
-  private function _makeOauthHeaders( $url = '' , $method = '' , $body = '' )
+  public function _makeOauthHeaders( $url = '' , $method = '' , $body = '' )
   {
     $timestamp = time();
 
