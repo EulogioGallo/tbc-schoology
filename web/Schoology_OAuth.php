@@ -511,9 +511,8 @@
 				$schoologyUserId= $thisAss->object->uid;
 				$timeStamp = current($thisAss->object->attachments->files->file)->timestamp;
 
-				$date = date($timeStamp);
 				$subDate = new DateTime();
-				$subDate = DateTime::date_create_from_format('Y-m-d\TH:i:s\Z', $date);
+				$subDate = DateTime::createFromFormat('Y-m-d\TH:i:s\Z', $timeStamp);
 
 				error_log($subDate);
 
