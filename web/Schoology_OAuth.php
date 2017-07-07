@@ -473,7 +473,7 @@
 					case'application/vnd.openxmlformats-officedocument.presentationml.slideshow':
 					case'application/vnd.openxmlformats-officedocument.presentationml.presentation':
 					case'application/vnd.openxmlformats-officedocument.presentationml.template':
-						$subType = 'application/vnd.ms-excel';
+						$subType = 'application/vnd.ms-powerpoint';
 						break;
 
 					//Excel Sheets
@@ -483,7 +483,7 @@
 					case'application/vnd.oasis.opendocument.spreadsheet':
 					case'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
 					case'application/vnd.openxmlformats-officedocument.spreadsheetml.template':
-						$subType = 'application/vnd.ms-powerpoint';
+						$subType = 'application/vnd.ms-excel';
 						break;
 
 					//Images
