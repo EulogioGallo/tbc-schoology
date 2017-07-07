@@ -12,6 +12,7 @@ $test_array[] = $SchoologyApi->schoology->_makeOauthHeaders($testurl);
 error_log($testurl);
 error_log(print_r($test_array,true));
 error_log(print_r($test_array[0],true));
+error_log(print_r($test_array[0]["oauth_signature_method"],true));
 
 
 $object_result = json_decode(file_get_contents("php://input"));	
