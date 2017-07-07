@@ -511,7 +511,7 @@
 				$schoologyUserId= $thisAss->object->uid;
 				$timeStamp = current($thisAss->object->attachments->files->file)->timestamp;
 
-				$subDate1 = (string) Date('Y-m-d H:i:s', $timeStamp);
+				$subDate1 = $timeStamp;
 
 
 				//$subDate = new DateTime();
