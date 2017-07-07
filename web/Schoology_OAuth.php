@@ -24,8 +24,7 @@
 		if(!$query) {
 		  throw new Exception("Could not connect to DB\r\n");
 		}
-	  } 
-	 
+	  } 	 
 	 
 	  public function getAccessTokens($uid) {
 		$query = $this->db->prepare("SELECT * FROM oauth_tokens WHERE uid = :uid AND token_is_access = TRUE LIMIT 1");
@@ -82,8 +81,6 @@
 	  }
 	  
 	}
-
-	$Response = 0; 
 
 	// Schoology API / Authorization class
 	class SchoologyContainer {
@@ -421,19 +418,14 @@
 		 * @author Edgar Lopez <elopez@broadcenter.org>
 		 * @return
 		 */ 
-
 		public function getAssignmentSubmission($thisAss) {
-			if( $GLOBALS['Response'] == 1){
-				return;
-			}
-
 			if(!$thisAss) {
 				error_log('Error! Invalid data for Retrieving Assignment Submission');
 				error_log(print_r($thisAss,true));
 				throw new Exception('Invalid data for Retrieving Submission');
 			}
 
-			//Log into Salesforce
+			//Logging into Salesforce
 			try{
 			$mySforceConnection = new SforceEnterpriseClient();
 			$mySoapClient = $mySforceConnection->createConnection("/app/tbc_wsdl.xml");
@@ -445,8 +437,7 @@
 			}
 
 			reset($thisAss->object->attachments->files->file);
-
-			do { //if current is not working use reset
+			do {
 				error_log(current($thisAss->object->attachments->files->file)->id);
 				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
 				
@@ -458,10 +449,10 @@
 
 				$initialType  = current($thisAss->object->attachments->files->file)->filemime;
 				$initialName  = current($thisAss->object->attachments->files->file)->filename;
+				$subType = 'application/pdf';
 
 				error_log(print_r($initialType,true));
-				error_log(print_r($initialName,true));
-				
+
 				 switch($initialType){
 					//Word Documents
 					case'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
@@ -511,18 +502,11 @@
 						$subType = 'application/pdf';
 						break;
 					}
-				/*----------------------------------------------------------------------------------
-		        |Adding the extension to the title seems to do the trick, but if not fullproof try |
-				|1. Leaving the ContentType as the filemime (no action)							   |
-				|2. Switch statement to convert different types to desired type 				   |
-				|3.									                                               |
-				|_________________________________________________________________________________*/
+
 				error_log(print_r($subType,true)); //final Submission type decision
 
-				//Meeting Q: Incorporating specific naming conventions for files
-				//If not 'Revision #x Filename.ext'?
-				$attachmentNumber = $thisAss->object->revision_id;
-				$attachmentName = 'v'.$attachmentNumber.' '.$initialName;                             
+				$revisionNum = $thisAss->object->revision_id;
+				$attachmentName = 'v'.$revisionNum.' '.$initialName;                             
 
 				//Grab submission content
 				$attachmentBody = file_get_contents($downloadPath);
@@ -557,7 +541,7 @@
 				error_log("Missing sfid");
 				}
 				else{
-				error_log('The Salesforce Assignment is '.$queryRes[sfid]);
+				error_log('The Salesforce Assignment ID is: '.$queryRes[sfid]);
 				}
 
 				$records = array();
@@ -566,12 +550,11 @@
 				$records[0]->Name = $attachmentName;
 		        $records[0]->ParentID = $queryRes[sfid];
 		        $records[0]->IsPrivate = 'false';
-		        $records[0]->ContentType = $initialType;
+		        $records[0]->ContentType = $subType;
 
 		        error_log("Creating Attachment in Salesforce. . .");
 		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
 		        print_r($upsertResponse,true);
-		        $GLOBALS['Response'] = 1;
 	        } while(next($thisAss->object->attachments->files->file));
 		}
 
