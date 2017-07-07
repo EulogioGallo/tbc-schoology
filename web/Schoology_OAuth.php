@@ -513,7 +513,7 @@
 
 				$date = date($timeStamp);
 				$subDate = new DateTime();
-				$subDate = DateTime::createFromFormat('Y-m-d\TH:i:s\Z', $date);
+				$subDate = DateTime::date_create_from_format('Y-m-d\TH:i:s\Z', $date);
 
 				error_log($subDate);
 
