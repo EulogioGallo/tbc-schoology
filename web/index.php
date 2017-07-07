@@ -6,6 +6,24 @@
  // establish connection
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
+
+$testurl = "http://api.schoology.com/v1/system/files/drop_items/m/201707/course/1101895390/Word_Document_test_595fbfed6ba4f.docx";
+$test_array[] = $SchoologyApi->schoology->_makeOauthHeaders($testurl);
+
+$context = stream_context_create(array (
+	'http' => array (
+		'header' => 'Authorization: ' . $test_array[0]
+	)
+));
+$attachmentBody = file_get_contents($testurl, false, $context);
+error_log(print_r($attachmentBody,true));
+
+error_log($testurl);
+error_log(print_r($test_array,true));
+error_log(print_r($test_array[0],true));
+
+
+
 $object_result = json_decode(file_get_contents("php://input"));	
 error_log(print_r($object_result,true));
 error_log(print_r($object_result->action,true));

@@ -358,7 +358,7 @@ class SchoologyApi
     return $this->_getApiResponse($curl_resource, $result);
   }
   
-  private function _authenticateOauth($storage, $uid){
+  public function _authenticateOauth($storage, $uid){
     // Get and authorize a request token
     if(!isset($_GET['oauth_token'])){
     
@@ -409,7 +409,7 @@ class SchoologyApi
     }
   }
 
-  private function _makeOauthHeaders( $url = '' , $method = '' , $body = '' )
+  public function _makeOauthHeaders( $url = '' , $method = '' , $body = '' )
   {
     $timestamp = time();
 
