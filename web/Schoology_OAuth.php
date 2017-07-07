@@ -527,7 +527,7 @@
 					throw new Exception('Could not get Assignment Submission');
 				}
 				//Extract the salesforce id of the obtained assignment record
-				$queryRes = $query->fetch(PDO::FETCH_ASSOC);
+				$queryRes = $queryID->fetch(PDO::FETCH_ASSOC);
 
 				if ($queryRes == null){
 				error_log("Missing sfid");
@@ -535,7 +535,7 @@
 				else{
 				error_log('The Salesforce Assignment ID is: '.$queryRes[sfid]);
 				}
-				
+
 				$records = array();
 				$records[0] = new stdclass();
 				$records[0]->Body = base64_encode($attachmentBody);
