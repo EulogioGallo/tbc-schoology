@@ -16,6 +16,7 @@ $context = stream_context_create(array (
 	)
 ));
 $attachmentBody = file_get_contents($testurl, false, $context);
+error_log(print_r($attachmentBody,true));
 
 error_log($testurl);
 error_log(print_r($test_array,true));
