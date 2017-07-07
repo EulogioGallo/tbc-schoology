@@ -511,7 +511,7 @@
 				$schoologyUserId= $thisAss->object->uid;
 				$timeStamp = current($thisAss->object->attachments->files->file)->timestamp;
 
-				$submissionDate = date('Y/m/d H:i:s',$timeStamp);
+				$submissionDate = date('Y-m-dTH:i:sZ',$timeStamp);
 
 				error_log($submissionDate);
 
