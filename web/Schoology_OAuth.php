@@ -442,14 +442,11 @@
 				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
 				
 				//Case Handling: Inconsistancy in JSON Response, (converted_download_path vs. download_path) 
-				//if ($downloadPath == null){
-				//	$downloadPath = current($thisAss->object->attachments->files->file)->download_path; 
-				//}
 				error_log($downloadPath);
 
 				$initialType  = current($thisAss->object->attachments->files->file)->filemime;
 				$initialName  = current($thisAss->object->attachments->files->file)->filename;
-				$subType = 'application/pdf';
+				$subType = 'no content';
 
 				error_log(print_r($initialType,true));
 
@@ -494,8 +491,6 @@
 					case 'image/png':
 						$subType = 'image/png';
 						break;
-
-					//Meeting Q: What are all the types of submissions we will be expecting?
 
 					//If no other form is specified default to a pdf submission form
 					default:
@@ -550,8 +545,8 @@
 				$records[0]->Name = $attachmentName;
 		        $records[0]->ParentID = $queryRes[sfid];
 		        $records[0]->IsPrivate = 'false';
-		        $records[0]->ContentType = 'application/pdf';
-		        
+		        $records[0]->ContentType = $subType;
+
 		        error_log("Creating Attachment in Salesforce. . .");
 		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
 		        print_r($upsertResponse,true);
