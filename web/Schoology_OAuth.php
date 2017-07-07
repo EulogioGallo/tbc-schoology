@@ -511,10 +511,13 @@
 				$schoologyUserId= $thisAss->object->uid;
 				$timeStamp = current($thisAss->object->attachments->files->file)->timestamp;
 
+				$subDate1 = Date('Y-m-d\TH:i:s\Z', $timeStamp);
+
 				$subDate = new DateTime();
 				$subDate = DateTime::createFromFormat('Y-m-d\TH:i:s\Z', $timeStamp);
 
 				error_log($subDate);
+				error_log($subDate1);
 
 				//Query for the Salesforce Assignment record (sfid) possesing the matching Schoology Assignment ID
 				$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
@@ -528,7 +531,7 @@
 
 				$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
 
-					if($query2->execute(array(':currTime' => '$subDate', ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+					if($query2->execute(array(':currTime' => '$subDate1', ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
 					error_log('Successful Query Call ');
 					} else {
 						error_log('Could not perform Query call.');
