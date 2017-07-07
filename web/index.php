@@ -8,7 +8,7 @@ $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
 
 $testurl = "http://api.schoology.com/v1/system/files/drop_items/m/201707/course/1101895390/Word_Document_test_595fbfed6ba4f.docx";
-$test_array[] = $SchoologyApi->_makeOauthHeaders($testurl);
+$test_array[] = $SchoologyApi->schoology->_makeOauthHeaders($testurl);
 error_log($testurl);
 error_log($test_array);
 
