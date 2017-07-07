@@ -436,12 +436,14 @@
 				error_log($e->faultstring);
 			}
 
+			//Begin at JSON elements of the first attached file
 			reset($thisAss->object->attachments->files->file);
-			do {
+			
+			do {//For each attached file
 				error_log(current($thisAss->object->attachments->files->file)->id);
 				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
 				
-				//Case Handling: Inconsistancy in JSON Response, (converted_download_path vs. download_path) 
+				//Case Handling: Inconsistancy in JSON Response, (converted_download_path vs. download_path(inaccesssible)) 
 				error_log($downloadPath);
 
 				$initialType  = current($thisAss->object->attachments->files->file)->filemime;
@@ -516,24 +518,14 @@
 				error_log($subDate);
 
 				//Query for the Salesforce Assignment record (sfid) possesing the matching Schoology Assignment ID
-				$query = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)"); //sync to schoology?
+				$queryID = $this->storage->db->prepare("SELECT sfid FROM salesforce.ram_assignment__c WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)");
 
-				if($query->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+				if($queryID->execute(array(':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
 					error_log('Successful Query Call ');
 				} else {
 					error_log('Could not perform Query call. Perhaps you are not the correct User');
 					throw new Exception('Could not get Assignment Submission');
 				}
-
-				$query2 = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)");
-
-				if($query2->execute(array(':currTime' => $subDate, ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
-					error_log('Successful Query Call ');
-				} else {
-					error_log('Could not perform Query call.');
-					throw new Exception('Could not add timestamp to Assignment Submission');
-				}
-
 				//Extract the salesforce id of the obtained assignment record
 				$queryRes = $query->fetch(PDO::FETCH_ASSOC);
 
@@ -543,7 +535,7 @@
 				else{
 				error_log('The Salesforce Assignment ID is: '.$queryRes[sfid]);
 				}
-
+				
 				$records = array();
 				$records[0] = new stdclass();
 				$records[0]->Body = base64_encode($attachmentBody);
@@ -555,6 +547,17 @@
 		        error_log("Creating Attachment in Salesforce. . .");
 		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
 		        print_r($upsertResponse,true);
+
+				//Set newest Submission Date and Time in the Assignment record of Salesforce
+				$queryTime = $this->storage->db->prepare("UPDATE salesforce.ram_assignment__c SET submission_date_time__c  = :currTime WHERE (schoology_assignment_id__c = :schoologyAssId) AND (schoology_user_id__c = :schoologyUserId)");
+
+				if($queryTime->execute(array(':currTime' => $subDate, ':schoologyAssId' => $schoologyAssId , ':schoologyUserId' => $schoologyUserId))) {
+					error_log('Successful Query Call ');
+				} else {
+					error_log('Could not perform Query call.');
+					throw new Exception('Could not add timestamp to Assignment Submission');
+				}
+
 	        } while(next($thisAss->object->attachments->files->file));
 		}
 
