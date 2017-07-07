@@ -550,7 +550,7 @@
 				$records[0]->Name = $attachmentName;
 		        $records[0]->ParentID = $queryRes[sfid];
 		        $records[0]->IsPrivate = 'false';
-		        $records[0]->ContentType = $subType;
+		        $records[0]->ContentType = $initialType;
 
 		        error_log("Creating Attachment in Salesforce. . .");
 		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
