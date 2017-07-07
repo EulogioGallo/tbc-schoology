@@ -11,6 +11,7 @@ $testurl = "http://api.schoology.com/v1/system/files/drop_items/m/201707/course/
 $test_array[] = $SchoologyApi->schoology->_makeOauthHeaders($testurl);
 error_log($testurl);
 error_log(print_r($test_array));
+error_log(print_r($test_array[0]));
 
 $object_result = json_decode(file_get_contents("php://input"));	
 error_log(print_r($object_result,true));
