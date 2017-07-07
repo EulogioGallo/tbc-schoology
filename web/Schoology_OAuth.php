@@ -439,7 +439,7 @@
 			reset($thisAss->object->attachments->files->file);
 			do {
 				error_log(current($thisAss->object->attachments->files->file)->id);
-				$downloadPath = current($thisAss->object->attachments->files->file)->download_path;
+				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
 				
 				//Case Handling: Inconsistancy in JSON Response, (converted_download_path vs. download_path) 
 				//if ($downloadPath == null){
@@ -550,8 +550,8 @@
 				$records[0]->Name = $attachmentName;
 		        $records[0]->ParentID = $queryRes[sfid];
 		        $records[0]->IsPrivate = 'false';
-		        $records[0]->ContentType = $subType;
-
+		        $records[0]->ContentType = 'application/pdf';
+		        
 		        error_log("Creating Attachment in Salesforce. . .");
 		        $upsertResponse = $mySforceConnection->create($records,'Attachment');       	
 		        print_r($upsertResponse,true);
