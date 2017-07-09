@@ -523,7 +523,33 @@
 				$attachmentName = 'v'.$revisionNum.' '.$initialName;                             
 
 				//Grab submission content
-				$attachmentBody = file_get_contents($downloadPath);
+				//$attachmentBody = file_get_contents($downloadPath);
+				$attachmentBody = null;
+				try {
+					$oauth = new OAuth($this->getSchoologyKey(),$this->getSchoologySecret());
+					$oauth->setToken($this->token['token_key'],$this->token['token_secret']);
+
+					$oauth->fetch($downloadPath,null,OAUTH_HTTP_METHOD_GET);
+
+					$response_info = $oauth->getLastResponseInfo();
+					
+					$keys = array_keys($response_info);
+					error_log("Keys: \n");
+					error_log(count($keys));
+					error_log(print_r(array_keys($response_info),true));
+					for($i = 0; $i < count($keys); $i++) {
+						error_log($keys[$i]);
+						error_log(print_r($response_info[$keys[$i]],true));
+					}
+					error_log(print_r($response_info['http_code'],true));
+					$attachmentBody = $oauth->getLastResponse();
+					error_log("Actual response: \n");
+					error_log(print_r($attachmentBody,true));
+				} catch(OAuthException $E) {
+					error_log("Exception caught!\n");
+					error_log("Response: ". $E->getMessage() . "\n");
+					error_log($E->debugInfo . "\n");
+				}
 
 				//Schoology ID Information
 				$schoologyAssId = $thisAss->object->assignment_nid;
