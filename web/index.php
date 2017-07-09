@@ -1,6 +1,7 @@
 <?php
  require_once('Schoology_OAuth.php');
  require('../vendor/autoload.php');
+ ini_set('log_errors_max_len', 0);
  
  
  // establish connection
@@ -10,10 +11,10 @@ $SchoologyApi->schoologyOAuth();
 error_log(print_r($SchoologyApi->token,true));
 
 try {
-    $oauth = new OAuth($SchoologyApi->getSchoologyKey(),$SchoologyApi->getSchoologySecret(),OAUTH_SIG_METHOD_HMACSHA1,OAUTH_AUTH_TYPE_AUTHORIZATION);
+    $oauth = new OAuth($SchoologyApi->getSchoologyKey(),$SchoologyApi->getSchoologySecret());
     $oauth->setToken($SchoologyApi->token['token_key'],$SchoologyApi->token['token_secret']);
 
-    $oauth->fetch("http://api.schoology.com/v1/system/files/drop_items/m/201707/course/1101895390/Word_Document_test_595fbfed6ba4f.docx");
+    $oauth->fetch("http://api.schoology.com/v1/system/files/drop_items/m/201707/course/1101895390/Word_Document_test_595fbfed6ba4f.docx",null,OAUTH_HTTP_METHOD_GET);
 
     $response_info = $oauth->getLastResponseInfo();
     error_log(print_r($response_info,true));
