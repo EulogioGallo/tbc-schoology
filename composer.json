@@ -3,6 +3,7 @@
     "silex/silex": "~1.1",
     "monolog/monolog": "~1.7",
     "oauth-io/oauth": "0.3.2",
+	"ext-oauth": "*",
     "herrera-io/silex-pdo": "~1.2",
     "twig/twig": "~1.0",
     "ext-mbstring": "*",
