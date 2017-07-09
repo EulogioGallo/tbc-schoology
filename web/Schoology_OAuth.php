@@ -26,7 +26,7 @@
 		}
 	  } 	 
 	 
-	  public function getAccessTokens($uid) {
+	  public function getAccessTokens($uid = '22135108') {
 		$query = $this->db->prepare("SELECT * FROM oauth_tokens WHERE uid = :uid AND token_is_access = TRUE LIMIT 1");
 		$query->execute(array(':uid' => $uid));
 	 
@@ -98,6 +98,14 @@
 			$this->storage = new SchoologyStorage();
 			 
 			$this->token = $this->storage->getAccessTokens($this->schoology_uid);
+		}
+		
+		public function getSchoologySecret() {
+			return $this->$schoology_secret;
+		}
+		
+		public function getSchoologyKey() {
+			return $this->$schoology_key;
 		}
 		
 		public function schoologyOAuth() {

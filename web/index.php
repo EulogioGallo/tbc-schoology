@@ -7,6 +7,25 @@
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
 
+error_log(print_r($SchoologyApi->storage->getAccessTokens()));
+
+/*
+try {
+    $oauth = new OAuth($SchoologyApi->getSchoologyKey(),$SchoologyApi->getSchoologySecret(),OAUTH_SIG_METHOD_HMACSHA1,OAUTH_AUTH_TYPE_AUTHORIZATION);
+    $oauth->setToken("access_token","access_token_secret");
+
+    $oauth->fetch("http://photos.example.net/photo?file=vacation.jpg");
+
+    $response_info = $oauth->getLastResponseInfo();
+    header("Content-Type: {$response_info["content_type"]}");
+    echo $oauth->getLastResponse();
+} catch(OAuthException $E) {
+    echo "Exception caught!\n";
+    echo "Response: ". $E->lastResponse . "\n";
+}
+*/
+
+/*
 $testurl = "http://api.schoology.com/v1/system/files/drop_items/m/201707/course/1101895390/Word_Document_test_595fbfed6ba4f.docx";
 $test_array[] = $SchoologyApi->schoology->_makeOauthHeaders($testurl);
 
@@ -21,6 +40,7 @@ error_log(print_r($attachmentBody,true));
 error_log($testurl);
 error_log(print_r($test_array,true));
 error_log(print_r($test_array[0],true));
+*/
 
 
 
