@@ -6,7 +6,7 @@
  // establish connection
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
-
+echo phpinfo();
 error_log(print_r($SchoologyApi->token,true));
 
 try {
