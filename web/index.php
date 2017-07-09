@@ -7,7 +7,7 @@
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
 
-error_log(print_r($SchoologyApi->storage->getAccessTokens()));
+error_log(print_r($SchoologyApi->storage->getAccessTokens(),true));
 
 /*
 try {
