@@ -18,6 +18,7 @@ try {
 
     $response_info = $oauth->getLastResponseInfo();
     error_log(print_r($response_info,true));
+	error_log(print_r(array_keys($response_info),true));
 } catch(OAuthException $E) {
     error_log("Exception caught!\n");
     error_log("Response: ". $E->getMessage() . "\n");
