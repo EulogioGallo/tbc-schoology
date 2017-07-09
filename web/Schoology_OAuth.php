@@ -105,11 +105,11 @@
 		}
 		
 		public function getSchoologySecret() {
-			return $this->$schoology_secret;
+			return $this->schoology_secret;
 		}
 		
 		public function getSchoologyKey() {
-			return $this->$schoology_key;
+			return $this->schoology_key;
 		}
 		
 		public function schoologyOAuth() {
