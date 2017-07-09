@@ -458,7 +458,7 @@
 			
 			do {//For each attached file
 				error_log(current($thisAss->object->attachments->files->file)->id);
-				$downloadPath = current($thisAss->object->attachments->files->file)->converted_download_path;
+				$downloadPath = current($thisAss->object->attachments->files->file)->download_path;
 				
 				//Case Handling: Inconsistancy in JSON Response, (converted_download_path vs. download_path(inaccesssible)) 
 				error_log($downloadPath);
