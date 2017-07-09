@@ -19,9 +19,9 @@ try {
     $response_info = $oauth->getLastResponseInfo();
 	$keys = array_keys($response_info);
 	error_log("Keys: \n");
-	error_log($keys.count());
+	error_log(count($keys));
 	error_log(print_r(array_keys($response_info),true));
-	for($i = 0; $i < $keys.count(); $i++) {
+	for($i = 0; $i < count($keys); $i++) {
 		error_log($keys[$i]);
 	}
 	error_log(print_r($response_info['http_code'],true));
