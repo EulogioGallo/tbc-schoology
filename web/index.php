@@ -6,7 +6,7 @@
  // establish connection
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
-echo phpinfo();
+
 error_log(print_r($SchoologyApi->token,true));
 
 try {
@@ -19,7 +19,8 @@ try {
     error_log(print_r($response_info,true));
 } catch(OAuthException $E) {
     error_log("Exception caught!\n");
-    error_log("Response: ". $E->lastResponse . "\n");
+    error_log("Response: ". $E->getMessage() . "\n");
+	error_log($E->debugInfo . "\n");
 }
 
 /*
