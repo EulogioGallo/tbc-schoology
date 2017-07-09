@@ -27,6 +27,7 @@
 	  } 	 
 	 
 	  public function getAccessTokens($uid = '22135108') {
+		error_log(print_r($uid,true));
 		$query = $this->db->prepare("SELECT * FROM oauth_tokens WHERE uid = :uid AND token_is_access = TRUE LIMIT 1");
 		$query->execute(array(':uid' => $uid));
 	 
