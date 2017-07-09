@@ -29,7 +29,7 @@
 	  } 	 
 	 
 	  public function getAccessTokens($uid = '22135108') {
-		error_log(print_r($uid,true));
+		error_log('In getAccessTokens');
 		$query = $this->db->prepare("SELECT * FROM oauth_tokens WHERE uid = :uid AND token_is_access = TRUE LIMIT 1");
 		$query->execute(array(':uid' => $uid));
 	 
@@ -37,6 +37,7 @@
 		$this->accessKey = $queryResult['token_key'];
 		$this->accessSecret = $queryResult['token_secret'];
 		
+		error_log(print_r($queryResult,true));
 		error_log(print_r($this->accessKey,true));
 		error_log(print_r($this->accessSecret,true));
 		
@@ -55,6 +56,8 @@
 		  $query = $this->db->prepare("UPDATE oauth_tokens SET token_key = :key, token_secret = :secret, token_is_access = FALSE WHERE uid = :uid");
 		  $res = $query->execute(array(':uid' => $uid, ':key' => $token_key, ':secret' => $token_secret));
 		}
+		
+		error_log('Saved request token!');
 	 
 	  }
 	 
@@ -129,6 +132,7 @@
 		
 		public function schoologyOAuth() {
 			if($this->token) {
+				error_log('Found token!');
 			  $this->schoology->setKey($token['token_key']);
 			  $this->schoology->setSecret($token['token_secret']);
 			
@@ -136,6 +140,7 @@
 
 			} else {
 				if(!isset($_GET['oauth_token'])) {
+					error_log('Requesting token...');
 				  $api_result = $this->schoology->api('/oauth/request_token');
 				  $result = array();
 				  parse_str($api_result->result, $result);
@@ -153,6 +158,7 @@
 						throw new Exception('Invalid oauth_token received');
 					}
 
+					error_log('Have request token, converting to access...');
 					// Request access tokens using our newly approved request tokens
 					$this->schoology->setKey($request_tokens['token_key']);
 					$this->schoology->setSecret($request_tokens['token_secret']);
@@ -168,6 +174,8 @@
 					// Update our $ouath credentials and proceed normally
 					$this->schoology->setKey($result['oauth_token']);
 					$this->schoology->setSecret($result['oauth_token_secret']);
+					
+					error_log('Access token found!');
 					
 					return true;
 				}

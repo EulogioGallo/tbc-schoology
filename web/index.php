@@ -7,11 +7,6 @@
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
 
-$accessToken = $SchoologyApi->storage->getAccessTokens();
-error_log(print_r($accessToken,true));
-error_log(print_r($accessToken['token_key'],true));
-error_log(print_r($accessToken['token_secret'],true));
-
 /*
 try {
     $oauth = new OAuth($SchoologyApi->getSchoologyKey(),$SchoologyApi->getSchoologySecret(),OAUTH_SIG_METHOD_HMACSHA1,OAUTH_AUTH_TYPE_AUTHORIZATION);
