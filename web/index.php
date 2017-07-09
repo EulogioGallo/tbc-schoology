@@ -17,10 +17,16 @@ try {
     $oauth->fetch("http://api.schoology.com/v1/system/files/drop_items/m/201707/course/1101895390/Word_Document_test_595fbfed6ba4f.docx",null,OAUTH_HTTP_METHOD_GET);
 
     $response_info = $oauth->getLastResponseInfo();
-    error_log(print_r($response_info,true));
+	$keys = array_keys($response_info);
+	error_log("Keys: \n");
+	error_log($keys.count());
 	error_log(print_r(array_keys($response_info),true));
+	for($i = 0; $i < $keys.count(); $i++) {
+		error_log($keys[$i]);
+	}
 	error_log(print_r($response_info['http_code'],true));
 	$response = $oauth->getLastResponse();
+	error_log("Actual response: \n");
 	error_log(print_r($response,true));
 } catch(OAuthException $E) {
     error_log("Exception caught!\n");
