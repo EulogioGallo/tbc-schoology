@@ -23,6 +23,7 @@ try {
 	error_log(print_r(array_keys($response_info),true));
 	for($i = 0; $i < count($keys); $i++) {
 		error_log($keys[$i]);
+		error_log(print_r($response_info[$keys[$i]],true));
 	}
 	error_log(print_r($response_info['http_code'],true));
 	$response = $oauth->getLastResponse();
