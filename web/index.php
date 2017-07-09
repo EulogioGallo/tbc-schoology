@@ -7,21 +7,20 @@
 $SchoologyApi = new SchoologyContainer();
 $SchoologyApi->schoologyOAuth();
 
-/*
+error_log(print_r($SchoologyApi->token,true));
+
 try {
     $oauth = new OAuth($SchoologyApi->getSchoologyKey(),$SchoologyApi->getSchoologySecret(),OAUTH_SIG_METHOD_HMACSHA1,OAUTH_AUTH_TYPE_AUTHORIZATION);
-    $oauth->setToken("access_token","access_token_secret");
+    $oauth->setToken($SchoologyApi->token['token_key'],$SchoologyApi->token['token_secret']);
 
-    $oauth->fetch("http://photos.example.net/photo?file=vacation.jpg");
+    $oauth->fetch("http://api.schoology.com/v1/system/files/drop_items/m/201707/course/1101895390/Word_Document_test_595fbfed6ba4f.docx");
 
     $response_info = $oauth->getLastResponseInfo();
-    header("Content-Type: {$response_info["content_type"]}");
-    echo $oauth->getLastResponse();
+    error_log(print_r($response_info,true));
 } catch(OAuthException $E) {
-    echo "Exception caught!\n";
-    echo "Response: ". $E->lastResponse . "\n";
+    error_log("Exception caught!\n");
+    error_log("Response: ". $E->lastResponse . "\n");
 }
-*/
 
 /*
 $testurl = "http://api.schoology.com/v1/system/files/drop_items/m/201707/course/1101895390/Word_Document_test_595fbfed6ba4f.docx";
