@@ -13,6 +13,8 @@
 	  private $dbName = 'dbname=df6v2am65gvvil';
 	  private $dbUser = 'dsskzsufyjspyz';
 	  private $dbPassword = '5573cbf997c1edb2c3d416fd6b4af3e59549df9f547bca100c8ee362f553767c';
+	  private $accessKey;
+	  private $accessSecret;
 	 
 	  public function __construct(){
 		// heroku connect db
@@ -31,7 +33,14 @@
 		$query = $this->db->prepare("SELECT * FROM oauth_tokens WHERE uid = :uid AND token_is_access = TRUE LIMIT 1");
 		$query->execute(array(':uid' => $uid));
 	 
-		return $query->fetch(PDO::FETCH_ASSOC);
+		$queryResult = $query->fetch(PDO::FETCH_ASSOC);
+		$this->accessKey = $queryResult['token_key'];
+		$this->accessSecret = $queryResult['token_secret'];
+		
+		error_log(print_r($this->accessKey,true));
+		error_log(print_r($this->accessSecret,true));
+		
+		return $queryResult;
 	  }
 	 
 	  public function saveRequestTokens($uid, $token_key, $token_secret) {
@@ -52,6 +61,7 @@
 	  public function getRequestTokens($uid) {
 		$query = $this->db->prepare("SELECT * FROM oauth_tokens WHERE uid = :uid AND token_is_access = FALSE");
 		$query->execute(array(':uid' => $uid));
+		
 		return $query->fetch(PDO::FETCH_ASSOC);
 	  }
 	 
@@ -79,6 +89,14 @@
 	  
 	  public function getDbPassword() {
 		  return $this->dbPassword;
+	  }
+	  
+	  public function getAccessKey() {
+		  return $this->accesskey;
+	  }
+	  
+	  public function getAccessSecret() {
+		  return $this->accessSecret;
 	  }
 	  
 	}
